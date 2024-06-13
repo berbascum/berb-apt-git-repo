@@ -46,6 +46,22 @@ SHA256: f6be44ed718857727b7e9b716d2d1724abb2653f89433f8a63ff69b04a6c5a0e
 SHA512: 8c8cbcff65e2fd3e4e1bb17daae11cebfc66013f0f14e8e0479a4f3beeb6a5765cef70e3d472ce03f94f7f5e92b6c5a3c4d293d1f022f9389fa0f08fdbec2282
 Description: berbascum's bash net functions
 
+Package: berb-apt-mgr
+Architecture: all
+Version: 1.0.0.1+git20240614000124.e8bd3d6.testing
+Priority: optional
+Section: utils
+Maintainer: berbascum
+Installed-Size: 15
+Depends: wget, git, curl, apt-utils, dpkg-dev, gnupg
+Filename: pool/main/berb-apt-mgr_1.0.0.1+git20240614000124.e8bd3d6.testing_all.deb
+Size: 3520
+MD5sum: 1c432f00672dd530d5e985ffae7bf4fd
+SHA1: 5bc81984860dc2c1d21be1cc7270b26e268b0ef3
+SHA256: 3234cf0a252332ce4827c65ecaaa22ab1863c72c5ea5c6ffd6d4a07627f877c7
+SHA512: 1d08f9d20cfec4cfa0e7fc9df5517b49308b49617e583b8cc5a8a05d351ec26ae5d3fc8571d6dcebcf93a6928b89c17c06854602ecde59f6dd326770d273ed06
+Description: Bash script to manage docker containers with multiple plugins
+
 Package: berb-docker-mgr
 Architecture: all
 Version: 2.1.1.1+git20240609114335.f820cd0.sid
