@@ -48,33 +48,17 @@ Description: berbascum's bash net functions
 
 Package: berb-apt-mgr
 Architecture: all
-Version: 1.0.0.1+git20240614000124.e8bd3d6.testing
+Version: 1.0.0.1+git20240614094454.a5a1431.testing
 Priority: optional
 Section: utils
 Maintainer: berbascum
-Installed-Size: 15
+Installed-Size: 17
 Depends: wget, git, curl, apt-utils, dpkg-dev, gnupg
-Filename: pool/main/berb-apt-mgr_1.0.0.1+git20240614000124.e8bd3d6.testing_all.deb
-Size: 3520
-MD5sum: 1c432f00672dd530d5e985ffae7bf4fd
-SHA1: 5bc81984860dc2c1d21be1cc7270b26e268b0ef3
-SHA256: 3234cf0a252332ce4827c65ecaaa22ab1863c72c5ea5c6ffd6d4a07627f877c7
-SHA512: 1d08f9d20cfec4cfa0e7fc9df5517b49308b49617e583b8cc5a8a05d351ec26ae5d3fc8571d6dcebcf93a6928b89c17c06854602ecde59f6dd326770d273ed06
-Description: Bash script to manage docker containers with multiple plugins
-
-Package: berb-docker-mgr
-Architecture: all
-Version: 2.1.1.1+git20240609114335.f820cd0.sid
-Priority: optional
-Section: utils
-Maintainer: berbascum
-Installed-Size: 85
-Depends: docker.io, wget
-Filename: pool/main/berb-docker-mgr_2.1.1.1+git20240609114335.f820cd0.sid_all.deb
-Size: 15316
-MD5sum: dfb9cce61bb17682f26cfac5dbbe62c0
-SHA1: 00fa4fd2add19f754628f937038f7a4d340ad850
-SHA256: 0394c0160eabdbcf0072109c86c3d2494347370c55dcbe8f14535559819361a1
-SHA512: 1270ef4eae6eb4d595bf954cbbdce99bef33dd38fdefc8732ee945c5ce98d4d30010c4a9828330330e7f100929c07814c1472e24a2aaaff4a1da9f6240ceac2c
-Description: Bash script to manage docker containers with multiple plugins
+Filename: pool/main/berb-apt-mgr_1.0.0.1+git20240614094454.a5a1431.testing_all.deb
+Size: 3764
+MD5sum: 356e73311794a1c758c52dd77a3aaba5
+SHA1: 287ffe606c7e0873030e406557d9ee2336e7579b
+SHA256: c36229afff45bb70e9e79af717368bd0c2252682f44bc86a7b86774a31de299e
+SHA512: 212528bd4b52e6fd6d00d6dc1edb06ead97c71f9fe770d8821708d203d7e549cab274f87afd1f8e574b248a435834f90341b62eafca6ea1936227f336a848a36
+Description: Bash script to manage a local apt repo
 
