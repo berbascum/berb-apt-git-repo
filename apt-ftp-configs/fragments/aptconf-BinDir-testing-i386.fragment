@@ -1,0 +1,5 @@
+BinDirectory "dists/testing/main/binary-i386" {
+  Packages "dists/testing/main/binary-i386/Packages";
+  Contents "dists/testing/Contents-i386";
+};
+

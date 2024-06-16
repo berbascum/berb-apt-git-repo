@@ -1,0 +1,5 @@
+BinDirectory "dists/stable/main/binary-all" {
+  Packages "dists/stable/main/binary-all/Packages";
+  Contents "dists/stable/Contents-all";
+};
+

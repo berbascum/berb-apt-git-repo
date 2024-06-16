@@ -1,1 +1,0 @@
-deb [arch=arm64,amd64,all signed-by=/usr/share/keyrings/apt-berb.gpg] https://github.com/berbascum/berb-apt-git-repo testing  main

@@ -1,0 +1,5 @@
+BinDirectory "dists/stable/main/binary-arm64" {
+  Packages "dists/stable/main/binary-arm64/Packages";
+  Contents "dists/stable/Contents-arm64";
+};
+

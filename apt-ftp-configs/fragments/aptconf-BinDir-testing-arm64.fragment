@@ -1,0 +1,5 @@
+BinDirectory "dists/testing/main/binary-arm64" {
+  Packages "dists/testing/main/binary-arm64/Packages";
+  Contents "dists/testing/Contents-arm64";
+};
+
