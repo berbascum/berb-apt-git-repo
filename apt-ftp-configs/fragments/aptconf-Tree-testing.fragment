@@ -1,5 +1,5 @@
 Tree "dists/testing" {
   Sections "main";
-  Architectures "all" "arm64" "amd64" "i386";
+  Architectures "all" "arm64" "amd64";
 };
 
