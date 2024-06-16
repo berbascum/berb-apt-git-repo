@@ -1,3 +1,19 @@
+Package: adaptation-droidian-vayu
+Architecture: all
+Version: 0.1.5+git20240616212927.2dc0dc9.transition
+Priority: optional
+Section: metapackages
+Maintainer: vacuumbeef
+Installed-Size: 9
+Filename: pool/testing/main/binary-all/adaptation-droidian-vayu_0.1.5+git20240616212927.2dc0dc9.transition_all.deb
+Size: 2936
+MD5sum: 7da30b425b4eb5536041098945d0f791
+SHA1: 7cd6382097e852f146a2f478d2682953de014de7
+SHA256: a397005592b096cc9c8c67c58573aec85a6a9b7380c8eea28b56dedf10888e3c
+SHA512: 9ba6e14d837f44099711bccd2a97cd277ef6f422fdac9f4f9d4c5fef282aa6a4f03ac4a4b2a1ea7b3e09d735475e0903e89ba36d0c5deb28f9970ddbbc3b09ca
+Description: adaptation vayu deprecated
+ replaced by adaptation-xiaomi-vayu
+
 Package: bbl-general-lib
 Architecture: all
 Version: 1.0.0.1+git20240613231557.537083b.testing
