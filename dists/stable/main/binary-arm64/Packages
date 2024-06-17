@@ -31,3 +31,19 @@ SHA256: 43f9e0472d2a3a50820e1bfbfdeea2c4c56cca1ff355a1d2b8d34b60f52d5b74
 SHA512: 5cf705a34739c8941c05614585eefb972b2fede3f2cc132044f458daedd1ea9f372ebed60c2b9bee18ab732886241959dd91245bfc136710846ad7cdd3082566
 Description: Community adaptation for xiaomi-vayu api30 - metapackage
 
+Package: postmarketos-tweaks
+Architecture: arm64
+Version: 0.13.2+git20240617234445.d87f523.trixie
+Priority: optional
+Section: utils
+Maintainer: berbascum
+Installed-Size: 136
+Depends: meson, python3-yaml, libhandy-1-dev
+Filename: pool/testing/main/binary-arm64/postmarketos-tweaks_0.13.2+git20240617234445.d87f523.trixie_arm64.deb
+Size: 22640
+MD5sum: 096847ca610e9e10629b68f01e35db36
+SHA1: 0d08607c05e2a4c117c259e9e54a3a2a4834a769
+SHA256: 3ffcba39dbbd47bbde7cf39826b06afda8ba2db5931696119ab13ea62eed42a3
+SHA512: e9b0a5358f8ee9583c5732bf6cd82d5beb5350e8248ff3e9112e2e4b3eedb2cc45be271c820334528252af9747aab283d3b1470b2c347c4e2a7fb0ff8721325f
+Description: PostmarketOS tweaks packaged for Debian
+
