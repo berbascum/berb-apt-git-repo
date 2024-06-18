@@ -1,16 +1,17 @@
 Package: adaptation-transition-xiaomi-vayu
 Architecture: arm64
-Version: 0.0.1+git20240618212233.6a886b2.trixie
+Version: 0.0.2+git20240618221141.e0dd2d0.trixie
 Priority: optional
 Section: utils
 Maintainer: berbascum
 Installed-Size: 12
-Filename: pool/testing/main/binary-arm64/adaptation-transition-xiaomi-vayu_0.0.1+git20240618212233.6a886b2.trixie_arm64.deb
-Size: 2460
-MD5sum: 25e548e129f4c1d11fc05d92f53a8224
-SHA1: 1c8c4fc02b507e0f7249d4971464fa5000d2fb87
-SHA256: 04baff56b423cda7a9569c3178f2c53dd42e6a6a22f284a8cf3cf78e90f348d3
-SHA512: 3861385074da4351abd6ecd8c93fd77b35703a79cbda63707fde2c55dad40099f4b8cd69359bb926cfcd130eb638bd111e7b186e8875e8e5990c32897a7306c2
+Depends: coreutils
+Filename: pool/testing/main/binary-arm64/adaptation-transition-xiaomi-vayu_0.0.2+git20240618221141.e0dd2d0.trixie_arm64.deb
+Size: 2564
+MD5sum: 94f8f4bad33aaeaa5bd4cb3f9d116fe4
+SHA1: bacad25b1e47ec539cf5279da57f9751e9f72a55
+SHA256: 930ecc916ac2b49ebc59b56213103dd78f15cf9388a58cd0715913a893589b7d
+SHA512: 781387dafa331f2e0640cfbb546088324d56a067ff001542e117aa12744bbdb929e2afce02cc980f935fc6371ecd75945399cc24f4178f20cf2d88008bd38d18
 Description: Transition package from old adaptation-droidian-vayu
  to new adaptation-xiaomi-vayu
 
