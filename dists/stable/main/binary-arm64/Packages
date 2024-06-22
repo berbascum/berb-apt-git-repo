@@ -15,6 +15,40 @@ SHA512: 8fe79d4be73f787560209407936152a324a57e8c74dd0d97953b328917ebd7c5628b7d12
 Description: Transition package from old adaptation-droidian-vayu
  to new adaptation-xiaomi-vayu
 
+Package: adaptation-xiaomi-vayu-configs
+Architecture: arm64
+Version: 7+git20240622214920.bd80a98.droidian
+Priority: optional
+Section: metapackages
+Source: adaptation-xiaomi-vayu
+Maintainer: vacuumbeef
+Installed-Size: 124
+Depends: dconf-gsettings-backend | gsettings-backend
+Filename: pool/testing/main/binary-arm64/adaptation-xiaomi-vayu-configs_7+git20240622214920.bd80a98.droidian_arm64.deb
+Size: 13072
+MD5sum: 0e4f04a18cff19cb7bc8b94e1f3c1557
+SHA1: 50f8f1497379ab07750bdae86a233f0d664bbde5
+SHA256: f64978104ae0550548f77bb2cf4ce531ea1aadae3ecbadd603504759361bb26e
+SHA512: a0a0e08d7ef472390f422c26e99c0440a6b56a175a54763605b9215e7abd3bdd228e9f68967c019eefb188d1a8a9474923271ab05e03e611444b78709929a51d
+Description: Droidian adaptation for Xiaomi Pocophone X3 Pro vayu api30 - adaptation configurations
+
+Package: adaptation-xiaomi-vayu
+Architecture: arm64
+Version: 7+git20240622214920.bd80a98.droidian
+Priority: optional
+Section: metapackages
+Maintainer: vacuumbeef
+Installed-Size: 10
+Depends: adaptation-hybris-api30-phone, linux-bootimage-xiaomi-vayu, adaptation-xiaomi-vayu-configs
+Conflicts: adaptation-droidian-vayu, adaptation-vayu-configs
+Filename: pool/testing/main/binary-arm64/adaptation-xiaomi-vayu_7+git20240622214920.bd80a98.droidian_arm64.deb
+Size: 3920
+MD5sum: d284b9dc1851106a09df25628ae546e2
+SHA1: 1cb8a6bfefa11f9b6d2c4d31139776a71fa5993b
+SHA256: 58d3113208641a0a557810be62a0e29d4b228635a0404b76d31c6f2aee9f5f4c
+SHA512: 5de8b2f98a1e68bb33064bd4a1a1ce66e5af6e6fdb2c3894e786856a6d3d1499e688f3dc23c6caa0fbfe121c89fa1f7f24fb394350e254627e79cd869fa4895e
+Description: Community adaptation for xiaomi-vayu api30 - metapackage
+
 Package: postmarketos-tweaks
 Architecture: arm64
 Version: 0.13.2+git20240617234445.d87f523.trixie
