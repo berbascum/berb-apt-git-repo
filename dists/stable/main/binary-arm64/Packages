@@ -15,6 +15,23 @@ SHA512: 6a1fb9515f61ff1af086ccdbfc6b4e1db05322a16f67b5f9ca71f5520206b0efe7e69d35
 Description: Transition package from old adaptation-droidian-vayu
  to new adaptation-xiaomi-vayu
 
+Package: adaptation-transition-xiaomi-vayu
+Architecture: arm64
+Version: 0.0.8+git20240622094448.0dea958.trixie
+Priority: optional
+Section: utils
+Maintainer: berbascum
+Installed-Size: 22
+Depends: coreutils
+Filename: pool/testing/main/binary-arm64/adaptation-transition-xiaomi-vayu_0.0.8+git20240622094448.0dea958.trixie_arm64.deb
+Size: 4436
+MD5sum: 7cffc3389cf7ed298569643e74e8d329
+SHA1: 079ea31d4d9c250258136f102b9ba2b7a2900fcb
+SHA256: d182393a08d9fcef447b11e6b60c5d674993ae0d324167758eb85ce1c549e183
+SHA512: 4e07319c05f6bc9ab4e1b1fd56d91a27aaf6178b7453ab5cd91c6f685dd9f508376e361e00690f519e5f742d1aa8ea06a4dc1af8b7bc4a8152085c58e378f968
+Description: Transition package from old adaptation-droidian-vayu
+ to new adaptation-xiaomi-vayu
+
 Package: postmarketos-tweaks
 Architecture: arm64
 Version: 0.13.2+git20240617234445.d87f523.trixie
