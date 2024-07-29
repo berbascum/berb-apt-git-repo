@@ -1,0 +1,96 @@
+Package: bbl-general-lib
+Architecture: all
+Version: 1.0.0.1+git20240613231557.537083b.testing
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 30
+Depends: awk, wget
+Filename: pool/testing/main/binary-all/bbl-general-lib_1.0.0.1+git20240613231557.537083b.testing_all.deb
+Size: 7584
+MD5sum: 73bfb93d32537007f6f52c14af34861f
+SHA1: c0d472fdb8364ec54a3a48e5b98a6f0813def36d
+SHA256: 28014ce78ee6b97303cd6c5f472476ec99040026ebb0691beb72946737d7b56e
+SHA512: bf4d22f0b3a5241c06a46f2710628d77f0626fa0a67b00505e851382dfc5ba9a187304a6941a5b11aad90f91f8e248582c01d4adf993f83a64d926471f9f29d2
+Description: berbascum's bash general-functions
+
+Package: bbl-general-lib
+Architecture: all
+Version: 1.1.0.1+git20240616192245.90cd50e.testing
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 30
+Depends: awk, wget
+Filename: pool/testing/main/binary-all/bbl-general-lib_1.1.0.1+git20240616192245.90cd50e.testing_all.deb
+Size: 7808
+MD5sum: 93a4038671f5d72298a89648d7c10f5f
+SHA1: f274d983e37773fef57f3e711e90ee7dad5aa669
+SHA256: 3e29c4d922ffe56b1cbe2ea95a70e1d0c246c68ece9b704d3184dc3d983c51de
+SHA512: 6bd383c4e47f5bffabf48de9f81ae9e53c31b81740b763be1f1ad741254236183c56abe7b3225756035ff42117cfc31b0642bbf809afec15861dcb53eed5a40d
+Description: berbascum's bash general-functions
+
+Package: bbl-git-lib
+Architecture: all
+Version: 1.0.0.1+git20240613230535.3694f60.testing
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 21
+Depends: awk, wget, git
+Filename: pool/testing/main/binary-all/bbl-git-lib_1.0.0.1+git20240613230535.3694f60.testing_all.deb
+Size: 5772
+MD5sum: aa24814c38841135de0158baa47c42f2
+SHA1: a529bcd2ba40518a2c03766494b3f85a960a13da
+SHA256: 82ab8d248d9f8a62086f9effa722e3792f63f10b87d4491a41026a76fe4a40f3
+SHA512: d62f4e02dfc312c57b3bbf654e426a33b13bc60dfb4f8b5e4e3cc2591d36fcecf5a2400b76e08b18441e4a7b61618d7f2e11f855750615d1df7f9b06d2ff8070
+Description: berbascum's bash git functions
+
+Package: bbl-git-lib
+Architecture: all
+Version: 1.1.0.1+git20240616184913.534815e.testing
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 24
+Depends: awk, wget, git
+Filename: pool/testing/main/binary-all/bbl-git-lib_1.1.0.1+git20240616184913.534815e.testing_all.deb
+Size: 6908
+MD5sum: 580773343bfeab97eeb31c11bacd46e4
+SHA1: 5560ce57c923a40d757d3c12c0d23f8cc25df49b
+SHA256: f7598ca63471120a47b815eabc36804857e33046fea8cedf92b45ce5bc09d685
+SHA512: 7b553ae797fb5a01c4ebe57a3c4e7c90330979ddd79c7d92cdf29a48c10a0c6f30fbcb80a009108e5c8e91692b6a2c0945349bf4e9ca2aa89129946ab222120d
+Description: berbascum's bash git functions
+
+Package: bbl-net-lib
+Architecture: all
+Version: 1.0.0.1+git20240613232055.08619a7.testing
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 15
+Depends: awk, wget, net-tools
+Filename: pool/testing/main/binary-all/bbl-net-lib_1.0.0.1+git20240613232055.08619a7.testing_all.deb
+Size: 3828
+MD5sum: b2065773e7f5bc84c409ffb605c66a88
+SHA1: 52d23172abbbe4a48e211a6cc5decea3536878ae
+SHA256: f6be44ed718857727b7e9b716d2d1724abb2653f89433f8a63ff69b04a6c5a0e
+SHA512: 8c8cbcff65e2fd3e4e1bb17daae11cebfc66013f0f14e8e0479a4f3beeb6a5765cef70e3d472ce03f94f7f5e92b6c5a3c4d293d1f022f9389fa0f08fdbec2282
+Description: berbascum's bash net functions
+
+Package: berb-docker-mgr
+Architecture: all
+Version: 2.4.1.2+git20240619024335.a93c7bf.testing
+Priority: optional
+Section: utils
+Maintainer: berbascum
+Installed-Size: 95
+Depends: docker.io, wget, bbl-net-lib (>= 1.0.0.1), bbl-general-lib (>= 1.1.0.1), bbl-git-lib (>= 1.1.0.1)
+Filename: pool/testing/main/binary-all/berb-docker-mgr_2.4.1.2+git20240619024335.a93c7bf.testing_all.deb
+Size: 16600
+MD5sum: 2b7a73faa0ab95eb0cd6fb13ebf85f60
+SHA1: 9450ec2ce949d3bc8812d0a70fc8dd4e4823e48e
+SHA256: 02976e87f5d286e90f6c138d4e816a3a3f0bf88459ec6c3a6f488536c85ac1e0
+SHA512: 2fdb28dbd9c1ac789221e38c886e463d1177c691070ade735314e10a3fba6509b01130d689a7e0533b6129eef981c4426c0948ea059756841ce6390f6de43dcd
+Description: Bash script to manage docker containers with multiple plugins
+

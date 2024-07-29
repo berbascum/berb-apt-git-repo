@@ -65,3 +65,20 @@ SHA256: 2c02e462a5c42e2ff9a11cfc636f9f407f46ec27d9f0e3eaa59d29a2e4cc6893
 SHA512: 73e26f523b64ccf670503e026e6b25134b9f720d59bf899f5b3a37f4839e5900956e241a21e0dc7b2674326d742d3cf53702d36513f92eea6d01133f17fc91a2
 Description: Bash script to manage a local apt repo
 
+Package: vayu-apt-config
+Architecture: all
+Version: 0.0.2+git20240714183520.a0f48c6.stable
+Priority: optional
+Section: misc
+Maintainer: droidian-vayu Organization
+Installed-Size: 25
+Pre-Depends: apt
+Depends: ca-certificates
+Filename: pool/stable/main/binary-all/vayu-apt-config_0.0.2+git20240714183520.a0f48c6.stable_all.deb
+Size: 4120
+MD5sum: bb429dcbb4cca2b5662ad9fe008f884b
+SHA1: defb08f911d417275e3a5a4c8942ee08b2bbc6ab
+SHA256: 4e9298a06cb5d0f79f94715e75ff7e66f675abca7d0f4beb13bb17d11129d472
+SHA512: 89463dd96b619b3bde67b7a6391e248bd413f676d8395715f54ac97cbad757a941d220ac39eab521fd8712250f16cfdc0a9800470abeb4ce0835c4fb18534235
+Description: APT Droidian configs for xiaomi vayu
+
