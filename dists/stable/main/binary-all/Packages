@@ -1,0 +1,67 @@
+Package: berb-apt-config-stable
+Architecture: all
+Version: 0.0.1+git20240728121546.db8f51c.stable
+Priority: optional
+Section: misc
+Maintainer: berbascum <berbascum@ticv.cat>
+Installed-Size: 20
+Pre-Depends: apt
+Depends: ca-certificates, berb-apt-keyrings
+Filename: pool/stable/main/binary-all/berb-apt-config-stable_0.0.1+git20240728121546.db8f51c.stable_all.deb
+Size: 2632
+MD5sum: 2a78e51878b0f6c64197ec2df8355f4e
+SHA1: 399dc1a4e9658375009dea423e1661b31c8c5781
+SHA256: 92863b156affbbc1872c7ba094beca4c2ffec567e1147403159f5a6ed6707699
+SHA512: 16da3c06f6ecae4815b891ac2f471b1205cb0f14ab4f585b01a5c0dbb227f8664ffffe9cdd355cb0abe5205d8e43a9f527d8877b5e0610c967c5f6e9c0dd3b88
+Description: APT configs for Berbascum's github stable apt repo
+
+Package: berb-apt-config-testing
+Architecture: all
+Version: 0.0.1+git20240728121903.50170e8.stable
+Priority: optional
+Section: misc
+Maintainer: berbascum <berbascum@ticv.cat>
+Installed-Size: 20
+Pre-Depends: apt
+Depends: ca-certificates, berb-apt-keyrings
+Filename: pool/stable/main/binary-all/berb-apt-config-testing_0.0.1+git20240728121903.50170e8.stable_all.deb
+Size: 2640
+MD5sum: 5b64e285c2083f6decfb94dae3a94e6b
+SHA1: 32a982939d67d218aadb86842c90b41ce4a5010b
+SHA256: ddb8ade3b818bd60d783fc7b88afab721052c1568e7bed0eb937463eb0b05d80
+SHA512: 97c72796df97abac23de175341a36d7a6532dd3d99469b013b5eb2a0214ca2009d0e3d9dfbbfc62fa1f33cc922ca354bd1b6e40c0cd111575eb40fd65ccc9ff0
+Description: APT configs for Berbascum's github testing apt repo
+
+Package: berb-apt-keyrings
+Architecture: all
+Version: 0.0.2+git20240728134014.3dd5875.stable
+Priority: optional
+Section: misc
+Maintainer: berbascum <berbascum@ticv.cat>
+Installed-Size: 16
+Pre-Depends: apt
+Depends: ca-certificates
+Filename: pool/stable/main/binary-all/berb-apt-keyrings_0.0.2+git20240728134014.3dd5875.stable_all.deb
+Size: 3608
+MD5sum: 860ef816c26a0a86ed7b6c9e842cf4bc
+SHA1: 3c63db6a0a353dd2769d39673b804eeac83a9639
+SHA256: ba798ad2e90c6946dc6af2359278521b33f08453e766b215f28efc84addab255
+SHA512: e12a1c14cad7f39bcff3fccf46e9a7e7d7d32213c0e2c6d93e8aa4f6794c1cc03a2835a55c5b7cf79a84146e291d91ce5b35bf76b88fce1682b6a4e28f53640e
+Description: APT keyrings for Berbascum's github apt repo
+
+Package: berb-apt-mgr
+Architecture: all
+Version: 2.0.2.1+git20240728192704.38410ea.stable
+Priority: optional
+Section: utils
+Maintainer: berbascum
+Installed-Size: 35
+Depends: wget, git, curl, apt-utils, dpkg-dev, gnupg, bbl-general-lib (>= 1.1.0.1)
+Filename: pool/stable/main/binary-all/berb-apt-mgr_2.0.2.1+git20240728192704.38410ea.stable_all.deb
+Size: 6344
+MD5sum: 70308dc8c98243a55cfb00cee9a9c8f1
+SHA1: dd5d0b07cd128f32a269d1fdc774207344bcf9fc
+SHA256: 2c02e462a5c42e2ff9a11cfc636f9f407f46ec27d9f0e3eaa59d29a2e4cc6893
+SHA512: 73e26f523b64ccf670503e026e6b25134b9f720d59bf899f5b3a37f4839e5900956e241a21e0dc7b2674326d742d3cf53702d36513f92eea6d01133f17fc91a2
+Description: Bash script to manage a local apt repo
+
