@@ -1,0 +1,5 @@
+BinDirectory "dists/testing/main/binary-all" {
+  Packages "dists/testing/main/binary-all/Packages";
+  Contents "dists/testing/Contents-all";
+};
+
