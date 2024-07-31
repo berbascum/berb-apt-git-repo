@@ -120,18 +120,18 @@ Description: APT Droidian configs for xiaomi vayu
 
 Package: vayu-apt-keyrings
 Architecture: all
-Version: 1+git20240731224340.634a617.trixie
+Version: 2+git20240731225409.75be64d.trixie
 Priority: optional
 Section: misc
 Maintainer: droidian-vayu Github Org
 Installed-Size: 17
 Pre-Depends: apt
 Depends: ca-certificates
-Filename: pool/stable/main/binary-all/vayu-apt-keyrings_1+git20240731224340.634a617.trixie_all.deb
-Size: 3816
-MD5sum: 8dd3f03a0c26ed5b638b541e194e250a
-SHA1: 1c047ba9532338d8e1e798bbcb8693d4318182be
-SHA256: 373164b9a385b47df7d0a7eeaf58dee8559bc740a42c16e41b70c48226b3c405
-SHA512: 6d0632dddf7bfe7ac31c0a0e3697f151fac4b3143e90286cc5eb4bf149c99096c25f5fea80837664d4e33f23eef1ec38affcc0b0d5ecc21eb150a7ebed0910ab
+Filename: pool/stable/main/binary-all/vayu-apt-keyrings_2+git20240731225409.75be64d.trixie_all.deb
+Size: 3896
+MD5sum: d82749b8a2b25e5a08e3a8735495dc0f
+SHA1: 83f78752a46a58c2da230cd07541a2532c575684
+SHA256: f6cb9e04af3b6483b49f5cdf1716da488880d341b6714f6a3b01f24f1df05b24
+SHA512: 0e41afe0f26c59ea0e68897a2b218c2777425995fbe34edfa1ccd3963cb4b89b25f8b2c06e9e564e46326a45f19b676641c88ddc3bafb70aa4ea5b113858558b
 Description: APT keyrings for droidian-vayu Github apt repo
 
