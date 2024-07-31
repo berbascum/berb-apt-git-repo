@@ -67,21 +67,21 @@ Description: Bash script to manage a local apt repo
 
 Package: vayu-apt-config-stable
 Architecture: all
-Version: 1+git20240731223328.75f744f.trixie
+Version: 2+git20240731231923.b4e3891.trixie
 Priority: optional
 Section: misc
 Maintainer: droidian-vayu Github Org
-Installed-Size: 24
+Installed-Size: 21
 Pre-Depends: apt
 Depends: ca-certificates, vayu-apt-keyrings
 Breaks: vayu-apt-config
 Replaces: vayu-apt-config
-Filename: pool/stable/main/binary-all/vayu-apt-config-stable_1+git20240731223328.75f744f.trixie_all.deb
-Size: 3012
-MD5sum: 0c1b323dfb41c772a224b3f253539cb5
-SHA1: 5de84dbcbdc102f34430983f06f966e7121eec24
-SHA256: be48204f1dd6ece1e413e05f293d7faedfbdc13dcd4f6a3b20c58502a246f3b0
-SHA512: 9894faa60281c3e866b6ac74e0c2aa925778c82e2fa21d1a10eb18f5daf205eacbe6e74da24f297be40be755107c35e5c8e8261d9132d52a8bb336a7c9f7f2ce
+Filename: pool/stable/main/binary-all/vayu-apt-config-stable_2+git20240731231923.b4e3891.trixie_all.deb
+Size: 3048
+MD5sum: 4bcfa902f7d4b4f751de7b9dd6418449
+SHA1: 86369bf3a0449eb823c17a4ab75ce4e400f40cc5
+SHA256: 144662f80c77a1d796fb92963d4f0412b900a43145a042e1d88e68fa87dd9ba8
+SHA512: dd477022bb79b17393cc16c9696facf06727d59699119109cd4f5be50d5bbfa6e7b3aa72d491522532cf7ea1ffb69727c85cc25d19e4590bb508d463a7cdcda6
 Description: APT configs for droidian-vayu github stable apt repo
 
 Package: vayu-apt-config-testing
