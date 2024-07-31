@@ -51,18 +51,18 @@ Description: APT keyrings for Berbascum's github apt repo
 
 Package: berb-apt-mgr
 Architecture: all
-Version: 2.0.3.1+git20240729202651.780c538.stable
+Version: 2.0.4.1+git20240731191115.a50b1d5.stable
 Priority: optional
 Section: utils
 Maintainer: berbascum
-Installed-Size: 35
+Installed-Size: 37
 Depends: wget, git, curl, apt-utils, dpkg-dev, gnupg, bbl-general-lib (>= 1.1.0.1)
-Filename: pool/stable/main/binary-all/berb-apt-mgr_2.0.3.1+git20240729202651.780c538.stable_all.deb
-Size: 6124
-MD5sum: f76ca9515da0cde5156e608b264910af
-SHA1: cee89ae56486d970f09bd6bb4df0296ebd40c332
-SHA256: 8fdaf130dae4ccfc78126bc16058c30e9d5cdf4d16e8ea0d42115e26ec9df831
-SHA512: 55830a742aed28e1e51b179ff4797ff7d3c72d2ce9bebfab5d50dabaa1f33119041cadcc166faed92d507cf740398e3d8a7e6f4a7ba3af966bb459a7f88ae390
+Filename: pool/stable/main/binary-all/berb-apt-mgr_2.0.4.1+git20240731191115.a50b1d5.stable_all.deb
+Size: 7628
+MD5sum: a94af74b7f4b8f76446f7f88941c9124
+SHA1: 271a367299894fcf94801760b4aae36819bdfe74
+SHA256: 8f8816ee90440d986cf55b562d93ff07c14ec6ee3d19949acfbbcdb7b05c19e3
+SHA512: 836cdd982bf22d0b261c5595fd7bcc9992f8a20ae7428064ee6b32837fa03a8c54ce6db5b9e344966870f6400265de695679a5055c6db5f78aab3f0fab8f3748
 Description: Bash script to manage a local apt repo
 
 Package: vayu-apt-config
