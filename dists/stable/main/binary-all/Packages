@@ -86,19 +86,19 @@ Description: APT configs for droidian-vayu github stable apt repo
 
 Package: vayu-apt-config-testing
 Architecture: all
-Version: 1+git20240731222959.80a93ab.trixie
+Version: 2+git20240731234057.fb95517.trixie
 Priority: optional
 Section: misc
 Maintainer: droidian-vayu Github Org
-Installed-Size: 23
+Installed-Size: 20
 Pre-Depends: apt
 Depends: ca-certificates, vayu-apt-keyrings
-Filename: pool/stable/main/binary-all/vayu-apt-config-testing_1+git20240731222959.80a93ab.trixie_all.deb
-Size: 2660
-MD5sum: 9af099245723b4c8fbb8a733a151d570
-SHA1: fd8888a23a63c2c44b03a8102e7b1ebb70c68929
-SHA256: 8b40d2b3d4735b12aaa1099e86db628823d4d6387f374352afc17f1ac6d6cf29
-SHA512: 23b85065f26159e52b21f8f6524d1aa871c32d147016deb0330eaa429ef4aae8589b49ff72f122d24ea4b8b24dc5ff5b4322790b1448333a01d6788e9305abfa
+Filename: pool/stable/main/binary-all/vayu-apt-config-testing_2+git20240731234057.fb95517.trixie_all.deb
+Size: 2684
+MD5sum: 41dcdd2a5a09dfaeccd8cdc42a4c00e0
+SHA1: e0eb2739025efc8ef6718c4d5e8f5aabbdba5659
+SHA256: 79c3a6b9e43cfe98cde886f158d546118c24d47b1ee4579b7f4868fafa2a6e7b
+SHA512: e0a2dde3862937072b96bdfd5f88f775114c0436d572cdb39143c8abf782ddfdc1cbb4162f7a2126301808d1f0fbc6ae809a30e60efbc68eccca7aac4678e496
 Description: APT configs for droidian-vayu github testing apt repo
 
 Package: vayu-apt-config
