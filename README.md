@@ -9,12 +9,13 @@
 - Wait a minuts for dns updates.
 
 ## How to add berbascum's apt repo:
+* Download the last version of the berb-apt-config-stable and berb-apt-keyrings packages [from this url](https://github.com/berbascum/berb-apt-git-repo/tree/main/pool/stable/main/binary-all)
+
+* Install the downloaded packages 
 ```
-sudo wget -O /usr/share/keyrings/berb-apt.gpg https://raw.githubusercontent.com/berbascum/berb-apt-git-repo/main/berb-apt.gpg
+sudo dpkg -i berb-apt-config-stable<last_version> and berb-apt-keyrings<last_version>
 ```
-```
-sudo wget -O /etc/apt/sources.list.d/berb-apt.list https://raw.githubusercontent.com/berbascum/berb-apt-git-repo/main/berb-apt.list
-```
+* Update the apt archive
 ```
 sudo apt-get update
 ```
