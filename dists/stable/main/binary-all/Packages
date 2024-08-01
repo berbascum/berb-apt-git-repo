@@ -1,3 +1,19 @@
+Package: bbl-general-lib
+Architecture: all
+Version: 1.1.0.1+git20240616192245.90cd50e.testing
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 30
+Depends: awk, wget
+Filename: pool/stable/main/binary-all/bbl-general-lib_1.1.0.1+git20240616192245.90cd50e.testing_all.deb
+Size: 7808
+MD5sum: 93a4038671f5d72298a89648d7c10f5f
+SHA1: f274d983e37773fef57f3e711e90ee7dad5aa669
+SHA256: 3e29c4d922ffe56b1cbe2ea95a70e1d0c246c68ece9b704d3184dc3d983c51de
+SHA512: 6bd383c4e47f5bffabf48de9f81ae9e53c31b81740b763be1f1ad741254236183c56abe7b3225756035ff42117cfc31b0642bbf809afec15861dcb53eed5a40d
+Description: berbascum's bash general-functions
+
 Package: berb-apt-config-stable
 Architecture: all
 Version: 0.0.1+git20240728121546.db8f51c.stable
