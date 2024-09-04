@@ -1,7 +1,7 @@
 Architectures: all arm64 amd64
 Codename: stable
 Components: main
-Date: Thu, 01 Aug 2024 20:56:15 +0000
+Date: Wed, 04 Sep 2024 10:26:58 +0000
 Description: Berbascum's apt repo for release stable
 Label: berbascum
 Origin: berbascum
@@ -13,7 +13,7 @@ MD5Sum:
  e62ff0123a74adfc6903d59a449cbdb0               40 Contents-amd64.gz
  0902e5a0182062319472ac442793db1b               28 Contents-arm64.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 Contents-arm64.gz
- 579b0b224b4da7677e35f4f4107d7be5              205 Release
+ f977236dfbbd3c6bc666d77eff8bc602              205 Release
  7a40c40eaa100ce5f47e57fcdabd9d4e              587 main/Contents-all.bz2
  d403d40c11f5066fee41ded1177e0da8              565 main/Contents-all.gz
  0902e5a0182062319472ac442793db1b               28 main/Contents-amd64.bz2
@@ -36,7 +36,7 @@ SHA1:
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 Contents-amd64.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 Contents-arm64.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 Contents-arm64.gz
- 91d88f5bb485fd23b33c64397d15590cf465c866              205 Release
+ 90c0f22fc9d3c6fddd52eb175a347b2e29e49e2e              205 Release
  4658167ba63bf6f867fec3d6f5710282b474c5df              587 main/Contents-all.bz2
  c3ab5439a4fb98c4239dc0c7366c060e6e5eb5dd              565 main/Contents-all.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 main/Contents-amd64.bz2
@@ -59,7 +59,7 @@ SHA256:
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 Contents-amd64.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 Contents-arm64.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 Contents-arm64.gz
- 7500f94789b45ee52a2407054a3eab6233fd0df9513e091ea7511a2bf86a0d5f              205 Release
+ 1210d53289430dd7084fb0d6d5621109f9a1c1a6504939041a34bdc560cabfb1              205 Release
  499d736716277c79553f2eb921cab94e229041c6e49146e9c24040ab3572b250              587 main/Contents-all.bz2
  209158e96177d88febd76a7ecc444dad8eb4245d3798f0fc13aa237636279772              565 main/Contents-all.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 main/Contents-amd64.bz2
@@ -82,7 +82,7 @@ SHA512:
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 Contents-amd64.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 Contents-arm64.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 Contents-arm64.gz
- b5ad949ae5c9ace0cbd5e4c7632972134c52d48f70284088181efeaad0dfe87307718ac94a688ad7aefd8d904f828650c815d5c7135046943d88bf917cc7e59c              205 Release
+ 1a7d23a6e384fb67fa9b07041b6a0d53cc55beecbef0d506b2a53ece92fbbc1dca2d321b15989759c2532c9190b02650b25fbec9308837c2711229e29533db42              205 Release
  d4e3f884b3366f16e43b3c27460ea7943692598cd0d37183505ae6e3620227a538371d3eaa81f41553be044bac1e929e684ebb9ea16accd0367a9aa44856bb56              587 main/Contents-all.bz2
  0df54fd470631617d7b2d3e26de5506fc9cf9e1ba0ad3ed4c3ad61f07f43da54aa96b71ec30f84fab7325a5aa1fe3d2b7b5b68314045faa0e07b7df4c53fba0c              565 main/Contents-all.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 main/Contents-amd64.bz2
