@@ -1,0 +1,16 @@
+Package: droidian-restart-services-gtk3
+Architecture: arm64
+Version: 0.0.2+git20240714153432.7d34771.testing
+Priority: optional
+Section: utils
+Maintainer: berbascum
+Installed-Size: 30
+Depends: python3-full
+Filename: pool/stable/main/binary-arm64/droidian-restart-services-gtk3_0.0.2+git20240714153432.7d34771.testing_arm64.deb
+Size: 9100
+MD5sum: aec9d2dcf17f107b2110c2fb0e548f7d
+SHA1: abc873c79d4d546d33c5ed5d5f9d81fa835d0fe3
+SHA256: 778bb12de6c6fe336affa865e1e8ef9b954290041a94512cf1ce08d6cfada21b
+SHA512: c011138a37194a4f96d460497b62ca2941393d7411cc3b8da362dee2e707a4f448fda01e660e712b2520916b7c2f30d2ef85637845aa264ab33521a80aba04bf
+Description: Simple gtk3 tool to restart systemd services from a list
+
