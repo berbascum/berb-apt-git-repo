@@ -14,3 +14,19 @@ SHA256: 778bb12de6c6fe336affa865e1e8ef9b954290041a94512cf1ce08d6cfada21b
 SHA512: c011138a37194a4f96d460497b62ca2941393d7411cc3b8da362dee2e707a4f448fda01e660e712b2520916b7c2f30d2ef85637845aa264ab33521a80aba04bf
 Description: Simple gtk3 tool to restart systemd services from a list
 
+Package: python3.9
+Architecture: arm64
+Version: 3.9.20.trixie.unofficial-1
+Priority: extra
+Section: interpreters
+Maintainer: root@PocoX3Pro
+Installed-Size: 185236
+Provides: python3.9
+Filename: pool/stable/main/binary-arm64/python3.9_3.9.20.trixie.unofficial-1_arm64.deb
+Size: 24287228
+MD5sum: b33b1a3d33c5561586e52e57c98c91e6
+SHA1: e83dafa60db489437eded9ea08db0e6b5f1e4baa
+SHA256: e348e3b7cd3716b82bd0342592f5b15d2e30f70c54d93840f656ef15adfc31a5
+SHA512: a43e6bb82b126dd7fabc6c2cc246206689576badf26e14c5a488aaa0565e1ad2d2b799055cbcc93d36b808d033e35b8fa940a91d698e875707dcb1010d3eba57
+Description: Package created with checkinstall 1.6.3
+
