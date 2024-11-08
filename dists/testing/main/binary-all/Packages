@@ -110,3 +110,19 @@ SHA256: 02976e87f5d286e90f6c138d4e816a3a3f0bf88459ec6c3a6f488536c85ac1e0
 SHA512: 2fdb28dbd9c1ac789221e38c886e463d1177c691070ade735314e10a3fba6509b01130d689a7e0533b6129eef981c4426c0948ea059756841ce6390f6de43dcd
 Description: Bash script to manage docker containers with multiple plugins
 
+Package: berb-docker-mgr
+Architecture: all
+Version: 2.6.1.1+git20241109000004.7bbc691.testing
+Priority: optional
+Section: utils
+Maintainer: berbascum
+Installed-Size: 110
+Depends: docker.io, docker-cli, fzf, wget, bbl-net-lib (>= 1.0.0.1), bbl-general-lib (>= 1.1.0.1), bbl-git-lib (>= 1.1.0.1)
+Filename: pool/testing/main/binary-all/berb-docker-mgr_2.6.1.1+git20241109000004.7bbc691.testing_all.deb
+Size: 19344
+MD5sum: b5674287fc6f2c179d0a66ee9702fde8
+SHA1: 95d8d3d7fdc195a150bc84e386ea94608b9b0266
+SHA256: 0ed13db04eb5d7714444e59bcb579fa98cd7f684d698673c5ecf394a7c7e59fd
+SHA512: 375fe352019c98a42e89b00268829405ec318d6f1bf36d97f4f73452a565253258a5ea635c64c9c5f8420778f8206eb670c319983f06c1739bf57078e4bc016d
+Description: Bash script to manage docker containers with multiple plugins
+
