@@ -32,50 +32,18 @@ Description: berbascum's bash general-functions
 
 Package: bbl-git-lib
 Architecture: all
-Version: 1.0.0.1+git20240613230535.3694f60.testing
-Priority: optional
-Section: libs
-Maintainer: berbascum
-Installed-Size: 21
-Depends: awk, wget, git
-Filename: pool/testing/main/binary-all/bbl-git-lib_1.0.0.1+git20240613230535.3694f60.testing_all.deb
-Size: 5772
-MD5sum: aa24814c38841135de0158baa47c42f2
-SHA1: a529bcd2ba40518a2c03766494b3f85a960a13da
-SHA256: 82ab8d248d9f8a62086f9effa722e3792f63f10b87d4491a41026a76fe4a40f3
-SHA512: d62f4e02dfc312c57b3bbf654e426a33b13bc60dfb4f8b5e4e3cc2591d36fcecf5a2400b76e08b18441e4a7b61618d7f2e11f855750615d1df7f9b06d2ff8070
-Description: berbascum's bash git functions
-
-Package: bbl-git-lib
-Architecture: all
-Version: 1.1.0.1+git20240616184913.534815e.testing
+Version: 1.2.2.1+git20241109042332.0d3363f.testing
 Priority: optional
 Section: libs
 Maintainer: berbascum
 Installed-Size: 24
 Depends: awk, wget, git
-Filename: pool/testing/main/binary-all/bbl-git-lib_1.1.0.1+git20240616184913.534815e.testing_all.deb
-Size: 6908
-MD5sum: 580773343bfeab97eeb31c11bacd46e4
-SHA1: 5560ce57c923a40d757d3c12c0d23f8cc25df49b
-SHA256: f7598ca63471120a47b815eabc36804857e33046fea8cedf92b45ce5bc09d685
-SHA512: 7b553ae797fb5a01c4ebe57a3c4e7c90330979ddd79c7d92cdf29a48c10a0c6f30fbcb80a009108e5c8e91692b6a2c0945349bf4e9ca2aa89129946ab222120d
-Description: berbascum's bash git functions
-
-Package: bbl-git-lib
-Architecture: all
-Version: 1.1.1.1+git20241108223142.5c04335.testing
-Priority: optional
-Section: libs
-Maintainer: berbascum
-Installed-Size: 24
-Depends: awk, wget, git
-Filename: pool/testing/main/binary-all/bbl-git-lib_1.1.1.1+git20241108223142.5c04335.testing_all.deb
-Size: 6000
-MD5sum: 21aa26be55b488b7b74049372ca57826
-SHA1: d6a80fd534b15ffa568cce739b868e6a1c7dd688
-SHA256: 0285c880862163020d6829618d0183809007f300ad1b071f6b9a39ba26194058
-SHA512: a231bf1567428874bff5853ed3007e4e365390089bd83a972b54f8ff081297440742dfa2e742d7eefe8fbc38b8350ec2b17136dc5cc7593ee92fba11df14e7f2
+Filename: pool/testing/main/binary-all/bbl-git-lib_1.2.2.1+git20241109042332.0d3363f.testing_all.deb
+Size: 5740
+MD5sum: 1493bd23d10f8e76616a69042b21d007
+SHA1: 1165b30fc863f18eddff31784d3bda131439fcc9
+SHA256: 96bfc3dd29a98da79b8f5ac02c31de4755920b7155ce8e21f0907af51b32084f
+SHA512: 07fcf92a511b7b81fc39f4c110b2264bb428e14392661956c447b66266f1899aad68d14b8d782d547b3352da45bada24ada7ad0640d9251e2bdb39f7076e1a0e
 Description: berbascum's bash git functions
 
 Package: bbl-net-lib
@@ -96,33 +64,17 @@ Description: berbascum's bash net functions
 
 Package: berb-docker-mgr
 Architecture: all
-Version: 2.4.1.2+git20240619024335.a93c7bf.testing
-Priority: optional
-Section: utils
-Maintainer: berbascum
-Installed-Size: 95
-Depends: docker.io, wget, bbl-net-lib (>= 1.0.0.1), bbl-general-lib (>= 1.1.0.1), bbl-git-lib (>= 1.1.0.1)
-Filename: pool/testing/main/binary-all/berb-docker-mgr_2.4.1.2+git20240619024335.a93c7bf.testing_all.deb
-Size: 16600
-MD5sum: 2b7a73faa0ab95eb0cd6fb13ebf85f60
-SHA1: 9450ec2ce949d3bc8812d0a70fc8dd4e4823e48e
-SHA256: 02976e87f5d286e90f6c138d4e816a3a3f0bf88459ec6c3a6f488536c85ac1e0
-SHA512: 2fdb28dbd9c1ac789221e38c886e463d1177c691070ade735314e10a3fba6509b01130d689a7e0533b6129eef981c4426c0948ea059756841ce6390f6de43dcd
-Description: Bash script to manage docker containers with multiple plugins
-
-Package: berb-docker-mgr
-Architecture: all
-Version: 2.6.1.1+git20241109000004.7bbc691.testing
+Version: 2.6.2.1+git20241109040604.b3330db.testing
 Priority: optional
 Section: utils
 Maintainer: berbascum
 Installed-Size: 110
-Depends: docker.io, docker-cli, fzf, wget, bbl-net-lib (>= 1.0.0.1), bbl-general-lib (>= 1.1.0.1), bbl-git-lib (>= 1.1.0.1)
-Filename: pool/testing/main/binary-all/berb-docker-mgr_2.6.1.1+git20241109000004.7bbc691.testing_all.deb
-Size: 19344
-MD5sum: b5674287fc6f2c179d0a66ee9702fde8
-SHA1: 95d8d3d7fdc195a150bc84e386ea94608b9b0266
-SHA256: 0ed13db04eb5d7714444e59bcb579fa98cd7f684d698673c5ecf394a7c7e59fd
-SHA512: 375fe352019c98a42e89b00268829405ec318d6f1bf36d97f4f73452a565253258a5ea635c64c9c5f8420778f8206eb670c319983f06c1739bf57078e4bc016d
+Depends: docker.io, docker-cli, fzf, wget, bbl-net-lib (>= 1.0.0.1), bbl-general-lib (>= 1.1.0.1), bbl-git-lib (>= 1.2.2.1)
+Filename: pool/testing/main/binary-all/berb-docker-mgr_2.6.2.1+git20241109040604.b3330db.testing_all.deb
+Size: 18732
+MD5sum: 298e70baefb595f74fe0903f34d50884
+SHA1: 244168c38cd074e4473028fb244f4d1a79385e19
+SHA256: 923e6dea1fc712485c4f551d170376268cef4ef15b48532f5d15893abc219f8e
+SHA512: 1834c9c4a6b38bb183e5e0a8d37233709e71e5844d603de2ebcbf74684ba87ca84bdd6d63bc967150a76c662ee1dffa029a71929b0f2a695a7f3784d7d26e483
 Description: Bash script to manage docker containers with multiple plugins
 
