@@ -51,82 +51,18 @@ Description: APT keyrings for Berbascum's github apt repo
 
 Package: berb-apt-mgr
 Architecture: all
-Version: 2.0.4.1+git20240731191115.a50b1d5.stable
-Priority: optional
-Section: utils
-Maintainer: berbascum
-Installed-Size: 37
-Depends: wget, git, curl, apt-utils, dpkg-dev, gnupg, bbl-general-lib (>= 1.1.0.1)
-Filename: pool/stable/main/binary-all/berb-apt-mgr_2.0.4.1+git20240731191115.a50b1d5.stable_all.deb
-Size: 7628
-MD5sum: a94af74b7f4b8f76446f7f88941c9124
-SHA1: 271a367299894fcf94801760b4aae36819bdfe74
-SHA256: 8f8816ee90440d986cf55b562d93ff07c14ec6ee3d19949acfbbcdb7b05c19e3
-SHA512: 836cdd982bf22d0b261c5595fd7bcc9992f8a20ae7428064ee6b32837fa03a8c54ce6db5b9e344966870f6400265de695679a5055c6db5f78aab3f0fab8f3748
-Description: Bash script to manage a local apt repo
-
-Package: berb-apt-mgr
-Architecture: all
-Version: 2.0.7.1+git20241109041647.cf3757c.stable
+Version: 2.0.9.3+git20241127081900.8954134.stable
 Priority: optional
 Section: utils
 Maintainer: berbascum
 Installed-Size: 37
 Depends: wget, git, curl, apt-utils, dpkg-dev, gnupg, bbl-general-lib (>= 1.1.0.1), bbl-git-lib (>= 1.2.2.1)
-Filename: pool/stable/main/binary-all/berb-apt-mgr_2.0.7.1+git20241109041647.cf3757c.stable_all.deb
-Size: 6768
-MD5sum: 94f5d22e9e89cc829c3d7c3bac81da42
-SHA1: a6b5f6aae532667146ba8b4b60eeb1bbea7d3f8a
-SHA256: fe973a958016252f058440907fe63ef847ce3a6084ccd75e2285bef87be850dc
-SHA512: de6d1af87c6c92c1182262cce434de2a0196cc4d0708d504abb5236db89b65867a0bf4e0a021841b703c0a3e70e19cec8a57f2dee51ae1c6b294203654e54f8d
-Description: Bash script to manage a local apt repo
-
-Package: berb-apt-mgr
-Architecture: all
-Version: 2.0.8.1+git20241126174200.944bde1.stable
-Priority: optional
-Section: utils
-Maintainer: berbascum
-Installed-Size: 37
-Depends: wget, git, curl, apt-utils, dpkg-dev, gnupg, bbl-general-lib (>= 1.1.0.1), bbl-git-lib (>= 1.2.2.1)
-Filename: pool/stable/main/binary-all/berb-apt-mgr_2.0.8.1+git20241126174200.944bde1.stable_all.deb
-Size: 6940
-MD5sum: c45441c737eb6cdce989e9f106e5b66f
-SHA1: 5e112e13290f10ebe080c3a73df61aa1460d291a
-SHA256: 5ee502ed626724229119205686035efea6013edcd554cc46ae911aa58a83eca4
-SHA512: f9c2f1b5c29db971e28cf5070c08a9a3bdb2e38bfbf16b7d6cda53b047f3c2a1955421bf9698c9f1fbf20ef7b776372c34f45ef318522cfd802ac993878ae51a
-Description: Bash script to manage a local apt repo
-
-Package: berb-apt-mgr
-Architecture: all
-Version: 2.0.9.1+git20241126204432.e410cb6.stable
-Priority: optional
-Section: utils
-Maintainer: berbascum
-Installed-Size: 37
-Depends: wget, git, curl, apt-utils, dpkg-dev, gnupg, bbl-general-lib (>= 1.1.0.1), bbl-git-lib (>= 1.2.2.1)
-Filename: pool/stable/main/binary-all/berb-apt-mgr_2.0.9.1+git20241126204432.e410cb6.stable_all.deb
-Size: 6940
-MD5sum: 196eec9faa58c92d90d9cda8cbcbd985
-SHA1: 72a32eff53ab7a587682a5bdbef7b0a5ca03c3de
-SHA256: 3291268bfa898b2ff4b7e6e21ba219adec17e09905c94f7c56265e8f74f4a08d
-SHA512: 66d65742b3d28d96a41df7dbe4b985bf263d95d182ddfb7d4e3449f2f3595f8321c8b46904adcc90e837ef720d71706db9747537dc2826f28e66668986f919ae
-Description: Bash script to manage a local apt repo
-
-Package: berb-apt-mgr
-Architecture: all
-Version: 2.0.9.2+git20241126205645.1999bcf.stable
-Priority: optional
-Section: utils
-Maintainer: berbascum
-Installed-Size: 37
-Depends: wget, git, curl, apt-utils, dpkg-dev, gnupg, bbl-general-lib (>= 1.1.0.1), bbl-git-lib (>= 1.2.2.1)
-Filename: pool/stable/main/binary-all/berb-apt-mgr_2.0.9.2+git20241126205645.1999bcf.stable_all.deb
-Size: 6896
-MD5sum: 349a53bf2809b6429cd59a5c07ccd59a
-SHA1: 936e323ccc15d78c0d2f6d2d9af3abb608fb98b3
-SHA256: f44ee51ef2062979f63fd2ef55aba56db9432a8f92dd0608bfc5ed864a949467
-SHA512: 602ebe1ac0ae08d63c98241f65e81741693895e97bb8edd3d5ccb01fd96fb11a635e66a047c86c725993b86554bf2d63124c857209b303921a92c1e659ec5621
+Filename: pool/stable/main/binary-all/berb-apt-mgr_2.0.9.3+git20241127081900.8954134.stable_all.deb
+Size: 7316
+MD5sum: 9e357d655a745f86312d4d30698c7cbb
+SHA1: 2aa0c7ae53bfe47b2de1d67ae69b25c987cce2db
+SHA256: d1b1e0563c9f3b96801b731ece6d31d80fd3fcacb2bda3c6c3fdd1d1a711fa24
+SHA512: 7bf5f40722a795dcfc5df31370b013645802edc19cac58175828f8ffb7d9084d9001bf5d7dde9073c3f9c681aa5c599e9fb7e38a060da6e37aa31c413b86cf54
 Description: Bash script to manage a local apt repo
 
 Package: vayu-apt-config-stable
