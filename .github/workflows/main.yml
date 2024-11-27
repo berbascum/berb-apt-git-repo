@@ -20,7 +20,7 @@ jobs:
         run: |
           apt-get update
           apt-get install -y berb-apt-mgr
-          wget -O /usr/bin/berb-apt-mgr https://raw.githubusercontent.com/berbascum/berb-apt-mgr/refs/heads/sid/berb-apt-mgr-bin-main.sh
+          # wget -O /usr/bin/berb-apt-mgr https://raw.githubusercontent.com/berbascum/berb-apt-mgr/refs/heads/sid/berb-apt-mgr-bin-main.sh
 
       - name: Import GPG key and setup gpg
         env:
