@@ -49,6 +49,23 @@ SHA256: ba798ad2e90c6946dc6af2359278521b33f08453e766b215f28efc84addab255
 SHA512: e12a1c14cad7f39bcff3fccf46e9a7e7d7d32213c0e2c6d93e8aa4f6794c1cc03a2835a55c5b7cf79a84146e291d91ce5b35bf76b88fce1682b6a4e28f53640e
 Description: APT keyrings for Berbascum's github apt repo
 
+Package: berb-apt-keyrings
+Architecture: all
+Version: 0.0.3+git20241127085109.5361767.stable
+Priority: optional
+Section: misc
+Maintainer: berbascum <berbascum@ticv.cat>
+Installed-Size: 16
+Pre-Depends: apt
+Depends: ca-certificates
+Filename: pool/stable/main/binary-all/berb-apt-keyrings_0.0.3+git20241127085109.5361767.stable_all.deb
+Size: 3584
+MD5sum: 4c32a37b6320fcac69adb9d255ba08bd
+SHA1: 58fb53432a2170a97230e5c16b46844c424bed8c
+SHA256: 06b02c64450b1eb7ebdc4303db2f816f0f586d5f72effb08856eb26b5c07c196
+SHA512: f22c6b3eebb6fc8dcdc5975fe4a9f51dea1ac35d388979b41f837ba60caff53caad7bfb6bcb5e9b607d2971b279da1d240d2e3478bf4f468a9049f8103c197fa
+Description: APT keyrings for Berbascum's github apt repo
+
 Package: berb-apt-mgr
 Architecture: all
 Version: 2.0.9.3+git20241127081900.8954134.stable
