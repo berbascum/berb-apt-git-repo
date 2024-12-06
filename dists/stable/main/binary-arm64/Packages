@@ -1,3 +1,22 @@
+Package: apt-transport-droidian
+Architecture: arm64
+Version: 1.0+git20240608211719.923e6ca.next.production
+Priority: optional
+Section: libs
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 80
+Depends: libapt-pkg6.0t64 (>= 1.7.0~alpha3~), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Filename: pool/stable/main/binary-arm64/apt-transport-droidian_1.0+git20240608211719.923e6ca.next.production_arm64.deb
+Size: 9780
+MD5sum: 804d5fc171ca6b8f748a4535b110e8de
+SHA1: 9d687fa5aa3c8106a41df17a359b8bf33d0c1c9f
+SHA256: ef66b1ec88600fffba613f0af50ac9b91d8eeecd8aeedbd16174aec7be77fbf6
+SHA512: 6bea668ad3e0e03525d1c34f0e9c4de28b692493cb49e1ac3ae7e7552a362c92e495e08040596146f209ca5d06630208fd4a28e78acfd11fed464bcca62091c3
+Homepage: https://gitlab.com/droidian/apt-transport-droidian
+Description: APT transport for Droidian snapshots
+ This package provides the droidian+http and droidian+https APT
+ transports.
+
 Package: droidian-restart-services-gtk3
 Architecture: arm64
 Version: 0.0.2+git20240714153432.7d34771.testing
