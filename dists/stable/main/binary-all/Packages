@@ -1,53 +1,36 @@
 Package: berb-apt-config-stable
 Architecture: all
-Version: 0.0.1+git20240728121546.db8f51c.stable
+Version: 0.0.2+git20241229232059.1cbbacf.stable
 Priority: optional
 Section: misc
 Maintainer: berbascum <berbascum@ticv.cat>
 Installed-Size: 20
 Pre-Depends: apt
 Depends: ca-certificates, berb-apt-keyrings
-Filename: pool/stable/main/binary-all/berb-apt-config-stable_0.0.1+git20240728121546.db8f51c.stable_all.deb
-Size: 2632
-MD5sum: 2a78e51878b0f6c64197ec2df8355f4e
-SHA1: 399dc1a4e9658375009dea423e1661b31c8c5781
-SHA256: 92863b156affbbc1872c7ba094beca4c2ffec567e1147403159f5a6ed6707699
-SHA512: 16da3c06f6ecae4815b891ac2f471b1205cb0f14ab4f585b01a5c0dbb227f8664ffffe9cdd355cb0abe5205d8e43a9f527d8877b5e0610c967c5f6e9c0dd3b88
+Filename: pool/stable/main/binary-all/berb-apt-config-stable_0.0.2+git20241229232059.1cbbacf.stable_all.deb
+Size: 2756
+MD5sum: 47d216d514dcb816c1cac8f7ca98eb16
+SHA1: b9473f44833c6afc21f3d05e601f50dfae33c425
+SHA256: 653fa9a6f4108d28a9145f8c1688140aa7e282304ca92ee3038188546d0da3c8
+SHA512: ce3d3a76161699166e6ad42e35f5fa09c55cb89f6fbb8b83f14caf5743c10e57eb1ad489f5a48505b1b2eacd261cc8d045e7cdcda888e9aaad92b7d2d5772718
 Description: APT configs for Berbascum's github stable apt repo
 
 Package: berb-apt-config-testing
 Architecture: all
-Version: 0.0.1+git20240728121903.50170e8.stable
+Version: 0.0.2+git20241229232639.c3eca6c.stable
 Priority: optional
 Section: misc
 Maintainer: berbascum <berbascum@ticv.cat>
 Installed-Size: 20
 Pre-Depends: apt
 Depends: ca-certificates, berb-apt-keyrings
-Filename: pool/stable/main/binary-all/berb-apt-config-testing_0.0.1+git20240728121903.50170e8.stable_all.deb
-Size: 2640
-MD5sum: 5b64e285c2083f6decfb94dae3a94e6b
-SHA1: 32a982939d67d218aadb86842c90b41ce4a5010b
-SHA256: ddb8ade3b818bd60d783fc7b88afab721052c1568e7bed0eb937463eb0b05d80
-SHA512: 97c72796df97abac23de175341a36d7a6532dd3d99469b013b5eb2a0214ca2009d0e3d9dfbbfc62fa1f33cc922ca354bd1b6e40c0cd111575eb40fd65ccc9ff0
+Filename: pool/stable/main/binary-all/berb-apt-config-testing_0.0.2+git20241229232639.c3eca6c.stable_all.deb
+Size: 2768
+MD5sum: 384a32c2baed773fa7eebdb2d7bf598f
+SHA1: 6846df6b53e88036415f34b5b075efdc4b2e7d66
+SHA256: 9d8bc02ff21016a462d9edaed599ddc4c144146b94862cce25d35613fe6067b4
+SHA512: bb62529ce660315b1d8713dd3364f74bd3db8128e2bafb4f0ff1f5d97c94cdb0a7d94e3cdf0e83b506f3d510b230c100a95d8418840040653ccb1820a537a010
 Description: APT configs for Berbascum's github testing apt repo
-
-Package: berb-apt-keyrings
-Architecture: all
-Version: 0.0.2+git20240728134014.3dd5875.stable
-Priority: optional
-Section: misc
-Maintainer: berbascum <berbascum@ticv.cat>
-Installed-Size: 16
-Pre-Depends: apt
-Depends: ca-certificates
-Filename: pool/stable/main/binary-all/berb-apt-keyrings_0.0.2+git20240728134014.3dd5875.stable_all.deb
-Size: 3608
-MD5sum: 860ef816c26a0a86ed7b6c9e842cf4bc
-SHA1: 3c63db6a0a353dd2769d39673b804eeac83a9639
-SHA256: ba798ad2e90c6946dc6af2359278521b33f08453e766b215f28efc84addab255
-SHA512: e12a1c14cad7f39bcff3fccf46e9a7e7d7d32213c0e2c6d93e8aa4f6794c1cc03a2835a55c5b7cf79a84146e291d91ce5b35bf76b88fce1682b6a4e28f53640e
-Description: APT keyrings for Berbascum's github apt repo
 
 Package: berb-apt-keyrings
 Architecture: all
