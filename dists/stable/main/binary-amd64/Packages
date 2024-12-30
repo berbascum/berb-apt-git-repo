@@ -1,0 +1,20 @@
+Package: apt-transport-droidian
+Architecture: amd64
+Version: 1.1.0+git20241215204431.7b458fb.next.production
+Priority: optional
+Section: libs
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 44
+Depends: libapt-pkg6.0t64 (>= 1.7.0~alpha3~), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Filename: pool/stable/main/binary-amd64/apt-transport-droidian_1.1.0+git20241215204431.7b458fb.next.production_amd64.deb
+Size: 11944
+MD5sum: f12478cb84c40b3ed982735e1ea83327
+SHA1: ae8401e396fd3ce5d3c1202e74db663acf85fbe1
+SHA256: 0acb04692b9873113fd1c274b8a043fa17be19bf4163e7b779c3944ffb53f824
+SHA512: 21f8047edb4bb35c7a50725e0d3d97901ec3c88383fbb6cbee4e8e4e656ce2e058c144df4f4c73e12f3acd0bff65255d11878ea648a89dd60065bde58a00edc6
+Homepage: https://gitlab.com/droidian/apt-transport-droidian
+Description: APT transport for Droidian snapshots
+ This package provides the droidian+http and droidian+https APT
+ transports.
+X-Droidian-Vcs-Revision: 7b458fb0414829501206d9bebc46bf89bd371b61
+
