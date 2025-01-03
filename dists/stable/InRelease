@@ -4,7 +4,7 @@ Hash: SHA512
 Architectures: all arm64 amd64
 Codename: stable
 Components: main
-Date: Mon, 30 Dec 2024 04:18:39 +0000
+Date: Fri, 03 Jan 2025 01:39:04 +0000
 Description: Berbascum's apt repo for release stable
 Label: berbascum
 Origin: berbascum
@@ -16,7 +16,7 @@ MD5Sum:
  9f7889f2893f46cacff19ae604c55b77              135 Contents-amd64.gz
  882fcf3c614e46c8ad0d9432a9bb6647            33602 Contents-arm64.bz2
  1185a81b110f8b0bf1e83cc2412bc11a            45974 Contents-arm64.gz
- e7bafac5841bafdc94f332b0599a0ed8              205 Release
+ 53507c6a813bfc40968058ed4ca8b2bc              205 Release
  cdea0b749c8c47bb532fa942f47625a5              536 main/Contents-all.bz2
  e3e45f83c4e2a4ab31e8b15862576783              520 main/Contents-all.gz
  c8795b59f36fdb6b6d8bf391f6047139              159 main/Contents-amd64.bz2
@@ -39,7 +39,7 @@ SHA1:
  421a70b7002ea9d21035b4f8434bae093c729966              135 Contents-amd64.gz
  db12aa4d2439ac6e90da47344929807a8ea204f1            33602 Contents-arm64.bz2
  24a2b257b2dc25445d51d2384814d73f6a6108d4            45974 Contents-arm64.gz
- d92c25440ebd6d1fd829bed1cf6c0187f1b72097              205 Release
+ fa58b8d66ff1c2aa57fe8666065c37cd659d1bd6              205 Release
  2d222d7734ee22646dfd9c356949c9f15f8baced              536 main/Contents-all.bz2
  f638688479945a76981323b0a2202ba37da2675d              520 main/Contents-all.gz
  06db0b3b33fd1014d4e4103c95095e1f7ced01b6              159 main/Contents-amd64.bz2
@@ -62,7 +62,7 @@ SHA256:
  274de83489feb2b38121f5cefacc08d97ff2bbb2d705601b8ddadc58ddb72890              135 Contents-amd64.gz
  5aeb7de44ab6df3d5f90ba4c60077f9eea055814057736ec2b49de421212379d            33602 Contents-arm64.bz2
  5dd7373611d8d8ef8a29acbb756f7f96d2387e898259972e1c03a1df9b224fe5            45974 Contents-arm64.gz
- c3dcc1a1c89dfc45a71d1bca35360a4dd26598817b6e83172ee5728c8b018b32              205 Release
+ 639ff87b62e26b6a572cd6d7752a730b8fc94e9e979d5e294f82869af37c131f              205 Release
  5fdef41e73adc35f0aedf84fcfddd29a03b8a3e54965849653afdd7f094daf95              536 main/Contents-all.bz2
  05547df2638b5fde4c3eb3cae05bffa2eeb11e6ab009b129000c2e354b4f4b2d              520 main/Contents-all.gz
  7635ee4d7303e684380adb9b4ca5e7e03528d27ec2afdf8a8c060d6363b8821d              159 main/Contents-amd64.bz2
@@ -85,7 +85,7 @@ SHA512:
  49cd2bfc6bcf2fd5e396bf55b8ed1be221e3b557bd32bb29a9d2cfaea38f0f2ed4c2b3974992b1f7e6a4f0ffa1c3c46c5f539fd1cbc00b58028beb995c5fc27d              135 Contents-amd64.gz
  42c7d47aff4edbc8bc56720a4910b51f6787c0879560e448caf181529effb979b43b40b5245fb4e80b810a0e8b5e18f6bf53c81ddbfa8e194cc4153ff16b6554            33602 Contents-arm64.bz2
  5ab39783452817697fc57ae1c3dc7b6170f9bfc13edbe65934a7663a3da5e4b01d1393d9587378138e6880c7595c538b1060a6fc0f472b8dc6908463334e7902            45974 Contents-arm64.gz
- 79c10f3ba7dad06a835fac01bb8d1542d19536e556b50674e9f405dbc292b685eee991f9884e43f355e68ee4a4f50b0fc680f2021e4b248cae717a96cf5f11f4              205 Release
+ a0ff02898256ec3e4f2c8a4e0d11e9938e39c560ba4d023cc78bb2b7d8c6ec828b6f744acb12c47c30d02f047a7b84c2cbbc0a161a3b2826dbcc226a5bfabc45              205 Release
  2b46d3d340044cb2f21af34f42b2b83131b052f39c86d2fe94a0963f298a775d6a1a538f4044085ae839f00ebb5cfdabb1bbc0012c4ed926d44ac1f600ecbba0              536 main/Contents-all.bz2
  5a6d66ecca375aa4eba5568e91ec9bb085bc5a32c488e7df12bad135d866491378f3350873801b754e47e36c43bcce5d5866a01f1b85e6f933d625896ebc9a18              520 main/Contents-all.gz
  2a6a55457bbf6bf5897524a2e7f65261dd03b1ce1a71ae588b6b6598243dddb1d2a44c455822e8699aed23379e6a01c425c9d0561dc81d06c38e8a6bf0c6fc81              159 main/Contents-amd64.bz2
@@ -103,17 +103,17 @@ SHA512:
  91825ebe98208bc9054bacf7a70aec7cb824ef7a91e0d4d3803b3a0a8aafefa85bcb934dfa14786f8a587aa0e72dc514c0c9fb5cf3207fe12c858348eb8b6cf6             1245 main/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEJ/A1DHVp5kqOROC+6z8ZnJEyG4sFAmdyHyAACgkQ6z8ZnJEy
-G4t3Lw/7BntU7MkzUCrBLdrTDjYTiVlf2fbLWzBZznzX2oKzSFGkYsFfwLb3p3ai
-2uKeyNEExVAV3k2XuIQ7Nkgr3saDJZwKuSZAqKP8RjT/lMORDBpdzfI8NeGaK+Kg
-QpoUAigONoM6CDm6pVGLKJ2NgHef3JFvk8Oi1Vyo65szMX8L8PEau0UkI4KdczLf
-RSpIJwVX2LxofglU30p0PMa7+IgVPzfZtz91n1K062h4nJUzYGPHDvJzX2cISHhs
-4Xa6aKF10Bamis/mYzQ0TjXmuc6E9nPkvDpidzs1ORzAC2nVft5RKBDQyDXnc+NH
-re8l42MLK0F7TocT1S+a/xZPOQ2MlqbpWHY0E+4BfnutY+UeEnWAS0kR4tuHMszh
-/gTTysa3i1/03iGjWora2jiFvPRNIbvXkRKJ0cWU3utOOAES8xCPrLJbkLu+fPA+
-9On6mgtscYc+hEvWD8C1wqHmZV8UdQ8RrZCZwDZwKRNR0+zEGgRZ7GXJ+IaTNG7R
-g/xF0DqElmhnws4nxKvHDpvXhADZ/Gsekj7fwU+dwbIl3FjHAQBs7lHzrM/25lDj
-KcWcGOlQWfwqW6XvZFKrLoX66xRVR7LbP5x8CEzB/FCxj5/x23fXjUH4jvfj7dvS
-8+j4xAZMK+Qh37QMX43sAzDWZXrbCuI8h4Umxd+K3u9lFZQdbbg=
-=Ghgi
+iQIzBAEBCgAdFiEEJ/A1DHVp5kqOROC+6z8ZnJEyG4sFAmd3P7kACgkQ6z8ZnJEy
+G4tf7Q//QeqN+4nByyxRFXzLuKzMIDujjH3igib0i5zlnCC2oLYZfGza04QxwBeN
+96w/TnmtgbLUfhOJuAriZl2Sl40lp/98orsgKtrBVeZ8j5fSvr2ac4mm6tZqqSRV
+zRPzznG9qEMeVHpTEuQ4cNx3EOqqOMTXXu/T0lLw3cVdxoQ8Fgx/xWEi6jY7bqA3
+L5kTYthiC1dcEOeVG9BQKmlQxxqERldO3F2HP2yeLyGJkzjIvsFg/P61pFMAn5XX
+6tonbj8X/9AhxWgHu41Bz7Qdk0GhsuvCjyeegSNca5PqiVpp+U3E7lI6rBuu42wP
+9ts2DCnIiF8Nzb1nmLqzPQD+cQcNSSe1KbBQt6sczZT2buNqZ6mUkjvDPSxK2iym
+qF7NVn+srCKwQGd3V3SWyWf91dTaNsUHMGVh06OrDoTSnHH+BAQ7GLI0cTWfBRmq
+9FpCUmWm0B+Eni64N3n6x7vv2dh4e7jkxCxvfb3RVQBukhL6lJR7LtPtMY4nPDpS
+3ZcdwJ3dJrcBKdPXR+7QTmuWzeeZW8eWiSWKYx+C3SKc+DWO+0fYT2l4kSn5w9L8
+0A4wW2SLbhRRbd3R1NDHAKb8uecFwFR7rFZfRc5ODXCf8JjwXAYp5l7knpaIyY/f
+ZX7u8Y3esXYobNgVEe5G/+WTRlhu6Q2+DUJg8B0HpAne94Tlrc4=
+=YA75
 -----END PGP SIGNATURE-----
