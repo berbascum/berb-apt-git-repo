@@ -1,5 +1,0 @@
-BinDirectory "dists/testing/main/binary-amd64" {
-  Packages "dists/testing/main/binary-amd64/Packages";
-  Contents "dists/testing/Contents-amd64";
-};
-

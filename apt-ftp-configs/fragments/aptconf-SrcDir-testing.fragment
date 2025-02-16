@@ -1,4 +1,0 @@
-SrcDirectory "dists/testing/main/source" {
-  Sources "dists/testing/main/source/Sources";
-};
-

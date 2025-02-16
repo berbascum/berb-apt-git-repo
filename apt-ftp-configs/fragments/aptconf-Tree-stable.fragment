@@ -1,5 +1,0 @@
-Tree "dists/stable" {
-  Sections "main";
-  Architectures "all" "arm64" "amd64";
-};
-
