@@ -1,7 +1,7 @@
 Architectures: all arm64 amd64
 Codename: bookworm
 Components: main
-Date: Mon, 17 Feb 2025 01:21:34 +0000
+Date: Mon, 17 Feb 2025 01:48:00 +0000
 Description: Berbascum's apt repo for release bookworm
 Label: berbascum
 Origin: berbascum
@@ -13,7 +13,7 @@ MD5Sum:
  e62ff0123a74adfc6903d59a449cbdb0               40 Contents-amd64.gz
  165c3eb775810917e3611de571e0ecf2            25283 Contents-arm64.bz2
  8ef654d1b4b8cf9e785c4e033e599bad            31044 Contents-arm64.gz
- dd4f8fb2578bd6cf39febccd1c32eead              211 Release
+ 680d894d6c343eb9422dbaf52a3320b0              211 Release
  0902e5a0182062319472ac442793db1b               28 main/Contents-all.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 main/Contents-all.gz
  0902e5a0182062319472ac442793db1b               28 main/Contents-amd64.bz2
@@ -36,7 +36,7 @@ SHA1:
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 Contents-amd64.gz
  3662f5bff4cd0f677c7b5c691bf5f3b302edd50d            25283 Contents-arm64.bz2
  b320a0180b42e38726fca24a0c4efb46ea336700            31044 Contents-arm64.gz
- c36c52751341da62da2f142d9ec0c34447947c3d              211 Release
+ e0d70d914fa54fe626e954e3da2142d74790557f              211 Release
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 main/Contents-all.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 main/Contents-all.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 main/Contents-amd64.bz2
@@ -59,7 +59,7 @@ SHA256:
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 Contents-amd64.gz
  2488413ca806dd1bd35293eadf5de7090f679cd848bfba8c2c0775a224442061            25283 Contents-arm64.bz2
  b2d54fce7229f4fb906d259a52889b4f586cbb22544dd082f2081b56e7644736            31044 Contents-arm64.gz
- fae8cbe5203c0457c110bc051f7752d9f4721a65988b0724d60f7b44c244715f              211 Release
+ 99ccb743aed6f25750149fe2e79bcf0e12fd816e2abe5302ce2bc4105d15d4f7              211 Release
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 main/Contents-all.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 main/Contents-all.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 main/Contents-amd64.bz2
@@ -82,7 +82,7 @@ SHA512:
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 Contents-amd64.gz
  f782f45eb3f275b2d88bf9166ae6f9c0b8ce20ade327b97a882202c46af0f8a7f0dcdd603e4d285601f7c5759a262486312929808697d5f434bc8b7b5ba7e3a4            25283 Contents-arm64.bz2
  bb77f19b7fad18020f54fa0ebec6423c4438de7762525169b80a9d2776d2c7a3fba7391f1594648af1953a2f241a8aa9e2ac3e0ff595ef9ca979a9ada83a343a            31044 Contents-arm64.gz
- 1786c489e8c6e2c833821222d5f8e38a26a1929a517bdcd458eb5febc6b7f33c70adb8aae7ee88edb7ca3ea420a4173692cfcd231b865c29cd163ea18b0439f0              211 Release
+ 8c213fe4d86095e0792edbbe083cef43c2c78e2f0dfed5c8f8d73944393ec063991ed6b66275af8c276a9002c007424bc87bfad809f4c882ccdebbd9a61eae3f              211 Release
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 main/Contents-all.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 main/Contents-all.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 main/Contents-amd64.bz2
