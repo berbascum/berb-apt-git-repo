@@ -206,6 +206,27 @@ Description: Modular compiler and toolchain technologies, runtime library
  .
  This package contains the LLVM runtime library.
 
+Package: lld-13
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Priority: optional
+Section: devel
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 5132
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libllvm13 (= 1:13.0.1-11+b2), libstdc++6 (>= 12)
+Filename: pool/bookworm/main/binary-arm64/lld-13_1%3a13.0.1-11+b2_arm64.deb
+Size: 1185492
+MD5sum: 1a4039e9ebd4a35391962a0394bbad5e
+SHA1: a10ce3315360af50680db5ccc6202b3979bcefbf
+SHA256: cb3820f13fa0f3b386678794356c44f93bb47479213101d2972d207c657aec7a
+SHA512: 6b9e3a1934413b54a9990fd0179809193b7268685b4b19bcfd5e2b67efcd145af4310f71230761f5406b8d32b2294ab3061075352d30581b31b8f7d4e64529f1
+Homepage: https://www.llvm.org/
+Description: LLVM-based linker
+ LLD is a new, high-performance linker. It is built as a set of reusable
+ components which highly leverage existing libraries in the larger LLVM
+ Project.
+
 Package: llvm-13-dev
 Architecture: arm64
 Version: 1:13.0.1-11+b2
