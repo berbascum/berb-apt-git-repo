@@ -1,0 +1,65 @@
+Package: android-sdk-ufdt-tests-dbgsym
+Architecture: arm64
+Version: 13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: android-platform-system-libufdt
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 54
+Depends: android-sdk-ufdt-tests (= 13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production)
+Filename: pool/stable/droidian/binary-arm64/android-sdk-ufdt-tests-dbgsym_13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production_arm64.deb
+Size: 35996
+MD5sum: 2d7478840d511da8f6f044fb45f77bb2
+SHA1: 72d3f83d2c837683ea0e07ec0641ede0d8c14289
+SHA256: 8da06e4182f9446f6e19972ebbbe4bc921a734788ac6ee6a014e3fd117cfc4d5
+SHA512: d79b0f5f7b485dfc6ffbb48e4aa797202167df11dde43a18eb1f41d5ee22aa4d8e970f6c04d42b28da69b2c8ea1d1ff05bdc12854c09c96ba88445ad9a05cf9f
+Description: debug symbols for android-sdk-ufdt-tests
+Build-Ids: d749109399064ce26e7139e3a712249d33ccca29
+
+Package: android-sdk-ufdt-tests
+Architecture: arm64
+Version: 13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production
+Priority: optional
+Section: utils
+Source: android-platform-system-libufdt
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 84
+Depends: libc6 (>= 2.34), libfdt1 (>= 1.6.1)
+Filename: pool/stable/droidian/binary-arm64/android-sdk-ufdt-tests_13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production_arm64.deb
+Size: 18208
+MD5sum: 90660bdab6a1265001d05e525dc794b0
+SHA1: 07d43f0eb08e7e978f8a0c0bc9a045f737ce6b7f
+SHA256: 07f42b9c50383730ac75505b1fba38d64a54bbd0206a3b996fcaf6dc0f1698eb
+SHA512: 6fc867451d0e9c57082d18f7a953d3159abc8fef31c2e1b4e78e3c6e68c022fe38bae81f3fd3c9edf9b9d00fe219d913508659c5b71f611f5474d663d4457433
+Homepage: https://android.googlesource.com/platform/system/libufdt
+Description: Android ufdt tests binaries
+ This package contains packaged tests for Android platform's
+ libufdt.
+ .
+ Currently the only binary shipped is ufdt_apply_overlay.
+
+Package: linux-initramfs-halium-generic
+Architecture: arm64
+Version: 2024.09.07.1+git20240907214647.f99f7a0.next.production
+Multi-Arch: same
+Priority: optional
+Section: utils
+Source: initramfs-tools-halium
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Original-Maintainer: Halium developers <admin@halium.org>
+Installed-Size: 74376
+Filename: pool/stable/droidian/binary-arm64/linux-initramfs-halium-generic_2024.09.07.1+git20240907214647.f99f7a0.next.production_arm64.deb
+Size: 64426752
+MD5sum: 0517f0a475dcbda66d6434da66e0339d
+SHA1: 7de7608bbb1869b1e0fe53489a5d0dcf106b10d8
+SHA256: 078b92a9ef226323d2c6e948dd6a5b6fc878e2f463d2035f8d4643e9cb58a350
+SHA512: 4f80849d3a748d2b604c10d6a7ca1eab7f8ca14f87ca38cbfb63eeca4f6da95e2678b73c5bc470c226ed85ded8c91d2f9402b3c5715e021c855ba105e22bbde5
+Description: pre-built generic initramfs image for halium ports
+ This package contains a pre-built initramfs image for halium
+ ports.
+ .
+ Note: this package will only put the initramfs image in-place,
+ it's the responsibility of build systems to do something meaningful
+ with it.
+
