@@ -1,0 +1,52 @@
+Package: apt-transport-droidian
+Architecture: arm64
+Version: 1.1.0+git20241215204431.7b458fb.next.production
+Priority: optional
+Section: libs
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 80
+Depends: libapt-pkg6.0t64 (>= 1.7.0~alpha3~), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Filename: pool/stable/main/binary-arm64/apt-transport-droidian_1.1.0+git20241215204431.7b458fb.next.production_arm64.deb
+Size: 10744
+MD5sum: 2c03b92fac6175d99b4accc1f3a600ca
+SHA1: 00498bc875cdc5fe6977b977b4991d1ab8da93d1
+SHA256: 43fad77d353a7ad977c0d1848149c880a83382d574df0e7454d0f34dee920a04
+SHA512: 8978b3556dd6d830c131d603605fd17c8bf38a3533e65e321ac01eca3f79f9b662ea3f83e9a62ed0931fc52850e41adf332787df05820bd1828c72def6db2cad
+Homepage: https://gitlab.com/droidian/apt-transport-droidian
+Description: APT transport for Droidian snapshots
+ This package provides the droidian+http and droidian+https APT
+ transports.
+X-Droidian-Vcs-Revision: 7b458fb0414829501206d9bebc46bf89bd371b61
+
+Package: droidian-restart-services-gtk3
+Architecture: arm64
+Version: 0.0.2+git20240714153432.7d34771.testing
+Priority: optional
+Section: utils
+Maintainer: berbascum
+Installed-Size: 30
+Depends: python3-full
+Filename: pool/stable/main/binary-arm64/droidian-restart-services-gtk3_0.0.2+git20240714153432.7d34771.testing_arm64.deb
+Size: 9100
+MD5sum: aec9d2dcf17f107b2110c2fb0e548f7d
+SHA1: abc873c79d4d546d33c5ed5d5f9d81fa835d0fe3
+SHA256: 778bb12de6c6fe336affa865e1e8ef9b954290041a94512cf1ce08d6cfada21b
+SHA512: c011138a37194a4f96d460497b62ca2941393d7411cc3b8da362dee2e707a4f448fda01e660e712b2520916b7c2f30d2ef85637845aa264ab33521a80aba04bf
+Description: Simple gtk3 tool to restart systemd services from a list
+
+Package: python3.9
+Architecture: arm64
+Version: 3.9.20.trixie.unofficial-1
+Priority: extra
+Section: interpreters
+Maintainer: root@PocoX3Pro
+Installed-Size: 185236
+Provides: python3.9
+Filename: pool/stable/main/binary-arm64/python3.9_3.9.20.trixie.unofficial-1_arm64.deb
+Size: 24287228
+MD5sum: b33b1a3d33c5561586e52e57c98c91e6
+SHA1: e83dafa60db489437eded9ea08db0e6b5f1e4baa
+SHA256: e348e3b7cd3716b82bd0342592f5b15d2e30f70c54d93840f656ef15adfc31a5
+SHA512: a43e6bb82b126dd7fabc6c2cc246206689576badf26e14c5a488aaa0565e1ad2d2b799055cbcc93d36b808d033e35b8fa940a91d698e875707dcb1010d3eba57
+Description: Package created with checkinstall 1.6.3
+
