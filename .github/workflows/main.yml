@@ -64,5 +64,5 @@ jobs:
           git config --global --add safe.directory "/__w/$REPO/$REPO"
           cd ../
           git add -A
-          git commit -S -m "Rebuild repository"
+          git commit -S -m "(apt) rebuild: full repository metadata regeneration and sign"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$USER/$REPO.git HEAD:$BRANCH
