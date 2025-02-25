@@ -1,13 +1,13 @@
 Architectures: all arm64 amd64
 Codename: stable
 Components: amd64 debian droidian droidian-xiaomi-vayu mobian
-Date: Mon, 24 Feb 2025 21:19:09 +0000
+Date: Tue, 25 Feb 2025 00:52:59 +0000
 Description: Berbascum's apt repo for release stable
 Label: berbascum
 Origin: berbascum
 Suite: stable
 MD5Sum:
- 4f2687ae5951c3fbd6e34270a407756f              250 Release
+ 4685d9fdf713ad745295a1e9d68c5744              250 Release
  0902e5a0182062319472ac442793db1b               28 debian/Contents-all.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 debian/Contents-all.gz
  0902e5a0182062319472ac442793db1b               28 debian/Contents-amd64.bz2
@@ -59,9 +59,9 @@ MD5Sum:
  9f7889f2893f46cacff19ae604c55b77              135 main/Contents-amd64.gz
  882fcf3c614e46c8ad0d9432a9bb6647            33602 main/Contents-arm64.bz2
  1185a81b110f8b0bf1e83cc2412bc11a            45974 main/Contents-arm64.gz
- 2f5b53c3f0b16fbd44ebbde241cb45cb             8137 main/binary-all/Packages
- c34b53678a62b6c257f0c2c0164e930c             2890 main/binary-all/Packages.bz2
- 01ecd76f379f4998e5a747242b669ce0             2824 main/binary-all/Packages.gz
+ 8f9a458aa41b09ca1781a7857a9833bd             8807 main/binary-all/Packages
+ 5106bc725093c8c823aa2c8a8880da40             3062 main/binary-all/Packages.bz2
+ b7ddc84f8b91a82a94748f7b8855e37e             3017 main/binary-all/Packages.gz
  8c97566ef1a700da3cbbc74676641dbf             1011 main/binary-amd64/Packages
  ad083b082b5f6e91515c7e9ff71b3728              706 main/binary-amd64/Packages.bz2
  fd1e3e5f6e84fb8401c9465599e3265f              656 main/binary-amd64/Packages.gz
@@ -84,7 +84,7 @@ MD5Sum:
  0902e5a0182062319472ac442793db1b               28 mobian/binary-arm64/Packages.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 mobian/binary-arm64/Packages.gz
 SHA1:
- 45619ab718676631ee26ccaf99cb27fc7ca46dfd              250 Release
+ 540922068d22f260af0ca54fc3aae27e93ff82dc              250 Release
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/Contents-all.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 debian/Contents-all.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/Contents-amd64.bz2
@@ -136,9 +136,9 @@ SHA1:
  421a70b7002ea9d21035b4f8434bae093c729966              135 main/Contents-amd64.gz
  db12aa4d2439ac6e90da47344929807a8ea204f1            33602 main/Contents-arm64.bz2
  24a2b257b2dc25445d51d2384814d73f6a6108d4            45974 main/Contents-arm64.gz
- 2b9bc2bf6c71f6cec85a0ec08446096c10480957             8137 main/binary-all/Packages
- 94893eb6237ba77ec395b5f44c4032991a6b6c2f             2890 main/binary-all/Packages.bz2
- 805296e5233e651b8829a9826b635cb790f435cd             2824 main/binary-all/Packages.gz
+ d908e4c179184e120531d9712a41c23c96661e9c             8807 main/binary-all/Packages
+ 860e66e0fd78b17dbeee65ca8719ee20520595c8             3062 main/binary-all/Packages.bz2
+ 0dcff9983000f7fbbaa13375ce187ac333d45ea4             3017 main/binary-all/Packages.gz
  0373b37937995b126643c1ad92317c5f97f0a102             1011 main/binary-amd64/Packages
  ff990211b24c22dce9079d2470b21c0a9ab671fc              706 main/binary-amd64/Packages.bz2
  28e35aca037fdfbe2f67e9fb0af97ecf7b4a97c3              656 main/binary-amd64/Packages.gz
@@ -161,7 +161,7 @@ SHA1:
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 mobian/binary-arm64/Packages.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 mobian/binary-arm64/Packages.gz
 SHA256:
- 5c039395f9d9fdcfa30549fe8106dda249cc64e9bc459cd33b1c984301e22a71              250 Release
+ 3c94fb47f5c62ea50dd550515dc8fef12c024c7187fd7f1c4526b5b381098ef0              250 Release
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/Contents-all.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 debian/Contents-all.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/Contents-amd64.bz2
@@ -213,9 +213,9 @@ SHA256:
  274de83489feb2b38121f5cefacc08d97ff2bbb2d705601b8ddadc58ddb72890              135 main/Contents-amd64.gz
  5aeb7de44ab6df3d5f90ba4c60077f9eea055814057736ec2b49de421212379d            33602 main/Contents-arm64.bz2
  5dd7373611d8d8ef8a29acbb756f7f96d2387e898259972e1c03a1df9b224fe5            45974 main/Contents-arm64.gz
- 9e8990238a5861129587b269d3bcb671c2390d9c8c5b0f0180e86e1736ec7731             8137 main/binary-all/Packages
- e52217aa059bc407e620153d9f842ac7c998346252637ccdf97c17acf6b1ff7e             2890 main/binary-all/Packages.bz2
- 770f731d5edcef8346366f7c135ce457c8e9c6bfa34c07534fc3cef9029c17b3             2824 main/binary-all/Packages.gz
+ cb36924cdc017af6d4f9928ecaca44ffa2ac8ef2926c411618ac840d75e45ce8             8807 main/binary-all/Packages
+ 3fbbcd14a21f005e1dbe88613fa2ddc572cc4be3b819025399b849b5eb5359bc             3062 main/binary-all/Packages.bz2
+ 74c5f6b3761c613054070ce927d33bfe4a69775b0d0d6503a43206d68a9440db             3017 main/binary-all/Packages.gz
  cf8edf5c8cc690aefcfc5f8912d989bf54e5b1933b085e2ee621706193d9b8ff             1011 main/binary-amd64/Packages
  a0c5fd995b476ed543fb644ebed72327f260d844202a374ac47b78788ed17c0f              706 main/binary-amd64/Packages.bz2
  22af7fc78fc89ab0ca5ce67f72c5e9d7eaefbf1e7075fefa4832dbcf1f3ffe44              656 main/binary-amd64/Packages.gz
@@ -238,7 +238,7 @@ SHA256:
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 mobian/binary-arm64/Packages.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 mobian/binary-arm64/Packages.gz
 SHA512:
- 7a834de5e35aca895797c6cb685c125c814f1f4647039d1a61b3c40d5939864c3088e0391b744d3dcdea33eaf409e190e653eb13220bdedb677a568c20c8298a              250 Release
+ a31f4a7e250a7b16fbaa0b96fe9a0291ea42a9d1bb11c775c0a3e96ba661e688d6a8342d54dc6aa6360e051653260da3b6d33a1909dc62f044b064e336f4f0ef              250 Release
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/Contents-all.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 debian/Contents-all.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/Contents-amd64.bz2
@@ -290,9 +290,9 @@ SHA512:
  49cd2bfc6bcf2fd5e396bf55b8ed1be221e3b557bd32bb29a9d2cfaea38f0f2ed4c2b3974992b1f7e6a4f0ffa1c3c46c5f539fd1cbc00b58028beb995c5fc27d              135 main/Contents-amd64.gz
  42c7d47aff4edbc8bc56720a4910b51f6787c0879560e448caf181529effb979b43b40b5245fb4e80b810a0e8b5e18f6bf53c81ddbfa8e194cc4153ff16b6554            33602 main/Contents-arm64.bz2
  5ab39783452817697fc57ae1c3dc7b6170f9bfc13edbe65934a7663a3da5e4b01d1393d9587378138e6880c7595c538b1060a6fc0f472b8dc6908463334e7902            45974 main/Contents-arm64.gz
- e8e2de80f337e37d4f2662cad4002ec85f28ce2e6c25d59136fcc426652b19a879a85640540a9dc6d6786c6688a773d5c1e0bf07d37bd510a9073038364a8d08             8137 main/binary-all/Packages
- d3c68616baafbd1900cc9e78c2bb7c28f13d3f54e6a7124c4d70a910b1489f5d7f194e930408dd8db4e2136a8018d2c4f6bf036573b066d2dc8edac3c7349c5d             2890 main/binary-all/Packages.bz2
- ec347ec9aee7a85d568462170cc6338529af483099bb6baf4f705b73abc891c56f1178bceff97442889ca45d6a4addf9ad9cea2173dc93153bd0a14ae311cd15             2824 main/binary-all/Packages.gz
+ bb20410f66b432305a9d8d4bdfc345e22f34c0a8e4e5c96f6fba90441f686bb40dc3ac52a26c813ab4a69ef5e26d743218e44fe3aea1779dab798cf7165b122b             8807 main/binary-all/Packages
+ 78d0cb384d9a7d9f67458f2d45d96178363a3fcc1e82b188402d8a296d42b2ba8e4b56d27a4eab70001379d035612dec9798ef1edd1f473932a71f51a99d6187             3062 main/binary-all/Packages.bz2
+ 530c063301779ff65d0524af7df7357140285ac335b75ac109f7b6aa78d104d1bf1389c5e2b7cec72c50db86702e90b866569f73c531a459cc2e9bc6bb19e75b             3017 main/binary-all/Packages.gz
  29531ac11dcc86b4dac7a6432a27355b1b191a1efd788738ea08356294a4b17808b0de355f8fa291fa4a84633a587701bb7d97537720e0d3b73247d8b19555f6             1011 main/binary-amd64/Packages
  1079f7b821531e50c4b7c0768bf2f3727a5080724ef1c1ffbc650b063e9d3f8dc402c6973f1edabb39a4790c35e592e9051484fc619b996950223b1f544a4fdf              706 main/binary-amd64/Packages.bz2
  f8100df1243811731701af000c70c306aae919cb902a478c007acad6c02a3bfeef39efdc6a6041b5f5cbb497665ad72dbf2f415a289d33197f88c75bc31bca69              656 main/binary-amd64/Packages.gz
