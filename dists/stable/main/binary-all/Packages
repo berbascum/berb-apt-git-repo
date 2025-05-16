@@ -100,6 +100,86 @@ SHA256: 1e7b20974bf14ce3a46a737cc3a8a4dc9140f700177a933742e039420807e850
 SHA512: 804282ac92b5bad6360cf1eab83d9012c2b614574aef5aa2d930dc9676f280ba6e0937e62387f3ef34acd71975475e3e7a7749730f6b8380ad57b02d4173b7af
 Description: APT keyrings for Berbascum's github apt repo
 
+Package: bbl-general-lib
+Architecture: all
+Version: 1.0.0.1+git20240613231557.537083b.testing
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 30
+Depends: awk, wget
+Filename: pool/stable/main/binary-all/bbl-general-lib_1.0.0.1+git20240613231557.537083b.testing_all.deb
+Size: 7584
+MD5sum: 73bfb93d32537007f6f52c14af34861f
+SHA1: c0d472fdb8364ec54a3a48e5b98a6f0813def36d
+SHA256: 28014ce78ee6b97303cd6c5f472476ec99040026ebb0691beb72946737d7b56e
+SHA512: bf4d22f0b3a5241c06a46f2710628d77f0626fa0a67b00505e851382dfc5ba9a187304a6941a5b11aad90f91f8e248582c01d4adf993f83a64d926471f9f29d2
+Description: berbascum's bash general-functions
+
+Package: bbl-general-lib
+Architecture: all
+Version: 1.1.0.1+git20240616192245.90cd50e.testing
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 30
+Depends: awk, wget
+Filename: pool/stable/main/binary-all/bbl-general-lib_1.1.0.1+git20240616192245.90cd50e.testing_all.deb
+Size: 7808
+MD5sum: 93a4038671f5d72298a89648d7c10f5f
+SHA1: f274d983e37773fef57f3e711e90ee7dad5aa669
+SHA256: 3e29c4d922ffe56b1cbe2ea95a70e1d0c246c68ece9b704d3184dc3d983c51de
+SHA512: 6bd383c4e47f5bffabf48de9f81ae9e53c31b81740b763be1f1ad741254236183c56abe7b3225756035ff42117cfc31b0642bbf809afec15861dcb53eed5a40d
+Description: berbascum's bash general-functions
+
+Package: bbl-git-lib
+Architecture: all
+Version: 1.2.2.1+git20241109042332.0d3363f.testing
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 24
+Depends: awk, wget, git
+Filename: pool/stable/main/binary-all/bbl-git-lib_1.2.2.1+git20241109042332.0d3363f.testing_all.deb
+Size: 5740
+MD5sum: 1493bd23d10f8e76616a69042b21d007
+SHA1: 1165b30fc863f18eddff31784d3bda131439fcc9
+SHA256: 96bfc3dd29a98da79b8f5ac02c31de4755920b7155ce8e21f0907af51b32084f
+SHA512: 07fcf92a511b7b81fc39f4c110b2264bb428e14392661956c447b66266f1899aad68d14b8d782d547b3352da45bada24ada7ad0640d9251e2bdb39f7076e1a0e
+Description: berbascum's bash git functions
+
+Package: bbl-git-lib
+Architecture: all
+Version: 1.2.3.1+git20250103015602.aa32fee.testing
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 24
+Depends: awk, wget, git
+Filename: pool/stable/main/binary-all/bbl-git-lib_1.2.3.1+git20250103015602.aa32fee.testing_all.deb
+Size: 5900
+MD5sum: 5a5c9c2b580d7dcb5810717c32c823b9
+SHA1: 61b6046910a3fa823cdca4caa6598f439b1f75b2
+SHA256: 676aeb85c3f442906844be5314e6d89855ea88158377e5824cd25672abce238e
+SHA512: 90d6f01ef0179e40f385b70adf9e59e356c221db728b2c76f53948ac41f6407ca8bcc392daa0ad0de67a9c6aaa291d506c13e0219a37581a51f74bfa9dd011e3
+Description: berbascum's bash git functions
+
+Package: bbl-net-lib
+Architecture: all
+Version: 1.0.0.1+git20240613232055.08619a7.testing
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 15
+Depends: awk, wget, net-tools
+Filename: pool/stable/main/binary-all/bbl-net-lib_1.0.0.1+git20240613232055.08619a7.testing_all.deb
+Size: 3828
+MD5sum: b2065773e7f5bc84c409ffb605c66a88
+SHA1: 52d23172abbbe4a48e211a6cc5decea3536878ae
+SHA256: f6be44ed718857727b7e9b716d2d1724abb2653f89433f8a63ff69b04a6c5a0e
+SHA512: 8c8cbcff65e2fd3e4e1bb17daae11cebfc66013f0f14e8e0479a4f3beeb6a5765cef70e3d472ce03f94f7f5e92b6c5a3c4d293d1f022f9389fa0f08fdbec2282
+Description: berbascum's bash net functions
+
 Package: berb-apt-mgr
 Architecture: all
 Version: 2.0.9.4+git20250103025749.d284a13.stable
@@ -131,74 +211,4 @@ SHA1: 1b7d9b5a8a5a1bafc36f309157cdcf8b5d516389
 SHA256: aa9a29752ddaa18fe68d37a7650c839f72f984f78cf9597cdf319bd9e994591b
 SHA512: 0da12a82d608a994e2c3c04a3d3772bc5662994eeaad567dd752ac21ab755b99f46363ab1cd05d9b4495a52cb1114fd6b4d521656038a38d1ea487a6c8d34d1e
 Description: Bash script to manage a local apt repo
-
-Package: vayu-apt-config-stable
-Architecture: all
-Version: 3+git20240731232958.d4a5441.trixie
-Priority: optional
-Section: misc
-Maintainer: droidian-vayu Github Org
-Installed-Size: 21
-Pre-Depends: apt
-Depends: ca-certificates, vayu-apt-keyrings
-Breaks: vayu-apt-config
-Replaces: vayu-apt-config
-Filename: pool/stable/main/binary-all/vayu-apt-config-stable_3+git20240731232958.d4a5441.trixie_all.deb
-Size: 2988
-MD5sum: e7c79fdc9948c63ee59861386d723606
-SHA1: d9cf8e3716fd3e5b6449940d5eee8f54606fa1d9
-SHA256: ed3ffddc25dffcbe6874deebe0fe685dad718f9c22c939cf98e976d44b5de894
-SHA512: 5bdf25abc8bc0c0121508a877da2b2f3f35da4a32f29b67c0d9fb38dc221f156959c472d81b55b28d3600b5f0bea6f2b23879a32e19f761052613268b66878b2
-Description: APT configs for droidian-vayu github stable apt repo
-
-Package: vayu-apt-config-testing
-Architecture: all
-Version: 2+git20240731234057.fb95517.trixie
-Priority: optional
-Section: misc
-Maintainer: droidian-vayu Github Org
-Installed-Size: 20
-Pre-Depends: apt
-Depends: ca-certificates, vayu-apt-keyrings
-Filename: pool/stable/main/binary-all/vayu-apt-config-testing_2+git20240731234057.fb95517.trixie_all.deb
-Size: 2684
-MD5sum: 41dcdd2a5a09dfaeccd8cdc42a4c00e0
-SHA1: e0eb2739025efc8ef6718c4d5e8f5aabbdba5659
-SHA256: 79c3a6b9e43cfe98cde886f158d546118c24d47b1ee4579b7f4868fafa2a6e7b
-SHA512: e0a2dde3862937072b96bdfd5f88f775114c0436d572cdb39143c8abf782ddfdc1cbb4162f7a2126301808d1f0fbc6ae809a30e60efbc68eccca7aac4678e496
-Description: APT configs for droidian-vayu github testing apt repo
-
-Package: vayu-apt-config
-Architecture: all
-Version: 0.0.2+git20240714183520.a0f48c6.stable
-Priority: optional
-Section: misc
-Maintainer: droidian-vayu Organization
-Installed-Size: 25
-Pre-Depends: apt
-Depends: ca-certificates
-Filename: pool/stable/main/binary-all/vayu-apt-config_0.0.2+git20240714183520.a0f48c6.stable_all.deb
-Size: 4120
-MD5sum: bb429dcbb4cca2b5662ad9fe008f884b
-SHA1: defb08f911d417275e3a5a4c8942ee08b2bbc6ab
-SHA256: 4e9298a06cb5d0f79f94715e75ff7e66f675abca7d0f4beb13bb17d11129d472
-SHA512: 89463dd96b619b3bde67b7a6391e248bd413f676d8395715f54ac97cbad757a941d220ac39eab521fd8712250f16cfdc0a9800470abeb4ce0835c4fb18534235
-Description: APT Droidian configs for xiaomi vayu
-
-Package: vayu-apt-keyrings
-Architecture: all
-Version: 2+git20240731225409.75be64d.trixie
-Priority: optional
-Section: misc
-Maintainer: droidian-vayu Github Org
-Installed-Size: 17
-Pre-Depends: apt
-Depends: ca-certificates
-Filename: pool/stable/main/binary-all/vayu-apt-keyrings_2+git20240731225409.75be64d.trixie_all.deb
-Size: 3896
-MD5sum: d82749b8a2b25e5a08e3a8735495dc0f
-SHA1: 83f78752a46a58c2da230cd07541a2532c575684
-SHA256: f6cb9e04af3b6483b49f5cdf1716da488880d341b6714f6a3b01f24f1df05b24
-SHA512: 0e41afe0f26c59ea0e68897a2b218c2777425995fbe34edfa1ccd3963cb4b89b25f8b2c06e9e564e46326a45f19b676641c88ddc3bafb70aa4ea5b113858558b
-Description: APT keyrings for droidian-vayu Github apt repo
 
