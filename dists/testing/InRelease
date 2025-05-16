@@ -4,13 +4,13 @@ Hash: SHA512
 Architectures: all arm64 amd64
 Codename: testing
 Components: amd64 debian droidian droidian-xiaomi-vayu mobian
-Date: Fri, 16 May 2025 17:23:21 +0000
+Date: Fri, 16 May 2025 21:02:04 +0000
 Description: Berbascum's apt repo for release testing
 Label: berbascum
 Origin: berbascum
 Suite: testing
 MD5Sum:
- 3b9656a9f8391d5c50526b25cf974fe0              253 Release
+ 2f777f3900de79cedc0e434cace8ed42              253 Release
  0902e5a0182062319472ac442793db1b               28 debian/Contents-all.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 debian/Contents-all.gz
  0902e5a0182062319472ac442793db1b               28 debian/Contents-amd64.bz2
@@ -87,7 +87,7 @@ MD5Sum:
  0902e5a0182062319472ac442793db1b               28 mobian/binary-arm64/Packages.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 mobian/binary-arm64/Packages.gz
 SHA1:
- 0d30c4d5802e056c30d12f3b95872c49dbd8398e              253 Release
+ 8faed3afe387c721e5fdbaa1a2d7d3bd4e91f567              253 Release
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/Contents-all.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 debian/Contents-all.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/Contents-amd64.bz2
@@ -164,7 +164,7 @@ SHA1:
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 mobian/binary-arm64/Packages.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 mobian/binary-arm64/Packages.gz
 SHA256:
- 99fcad77987609d2cc66370726fb043cd5fa0a71624c70d8cda0bebd5868489c              253 Release
+ 5d4f57c0265c741884a45ea766a0963bcfe54c2ef4b05c38268bfe54fdae5945              253 Release
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/Contents-all.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 debian/Contents-all.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/Contents-amd64.bz2
@@ -241,7 +241,7 @@ SHA256:
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 mobian/binary-arm64/Packages.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 mobian/binary-arm64/Packages.gz
 SHA512:
- 822edd171b093ee7944afa2e35df172a0d6195ff1e3bbbde0950c3932ca5d5e944b220fe96e4dd517cf2ad71aea4301cc6811e96a346a9084d358a6ed3a07924              253 Release
+ 7294d685f66774c0711722f9f7238744fdecb9afb5f27fcaf53504cb211cd64c7ab4f86ee87069e2f064db0eac69b5326be6cdf0a9ca257d8866cc87ec2fae9d              253 Release
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/Contents-all.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 debian/Contents-all.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/Contents-amd64.bz2
@@ -319,17 +319,17 @@ SHA512:
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 mobian/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEJ/A1DHVp5kqOROC+6z8ZnJEyG4sFAmgndIsACgkQ6z8ZnJEy
-G4v+kBAAreFLasSfsuEIk/As6cSRFl7BldLhbwu49INd0N7sOh64BEMP58pkyf8Y
-VRwiYa6Slj3Uv2nfXfAYQ7VP+wFds/1v17aib3HEQu5508N2qxLim2DHM+YqtFl+
-12Hzv0UgiVPN8gifpzkNwKZH28NyIx4qBLQ//nijnnLiYik9nRyumULG7iE2E8HA
-s3TOMRpfflH7QbxXkyubm9j8TAa3mBjQkcD/kdMubPeoCguoW7ywzw35FsjyZOfd
-ZRv/zCXd4Ct3mCyM9e2tBbvui+4+2zzF+snDXzinh9YDvbc93tf1mAv6rr61NFAU
-MpJ7A0Lj9oFtF+LxsrQlv8dZU+aG/c64raFSszN6vaGH3mSnJCdOzl0l2ZkrqUMb
-gVqBKzX9yTPkd3xb6bCkUeJufNyJcVuxJ+1L/cxqn0XhPr+jLxYMqbzSpa1NksVx
-rJD9r3/p80iFh/65oS9xdOmYeGf7uczmOcZwy/Rm8MqfoZD4k5yviTdpoxgRqYWA
-2VGiZtCnlrdHo1GWxaX+GPbtLdpj4V86gonDbOKRK0fvaaH1lcQ2nNyZIhyakOWN
-+NyseDd8wzJWOMo6mPyBrV9yPcffbIclWgGmfrLGWD9X9y/+ra9WeiKRwbaX40xt
-6pBv9HXCMn+OPDLt7Bx481K1OKCTJqTWOIX5wc7o+JV99vPyvu4=
-=ZZjT
+iQIzBAEBCgAdFiEEJ/A1DHVp5kqOROC+6z8ZnJEyG4sFAmgnp80ACgkQ6z8ZnJEy
+G4urBg/7BM32qMheeNqkzhtrzU7ZLJ4b6qd5CTB6Q5M91i5TzcIbDM0+giUBH/3a
+/XXJ4fDXcV5JHHKLbVSSeJPI6egoSGYoS+ZF6HV/pKNQp+NvGb2vbUkH7JtOIXeV
+vldHgmCBPx1Zz1avBD+JYy4eI7A+zPXZmxXJ1D0yX222O9WhU37OEOwx2l+kfmXI
+kYE4NXlOHEX0nv1i0aFkNqjGt5icmzgV95ELQYbqJ9C5u/zeIlND9oiP6lkxp+rg
+YdgEq5ue1qp9lNrq6wUHbalXHsdyNqipYHlkESsZC+bphVUun/nRGMpEN4ui3RqA
+wy2MxNLiZMFtIyszZsYXYXZuWCc41LSATGROTMa3iwWdvVH5ZYzI/32gHrgEKkvb
+Zwo7sw+wwqAl1DMc6533jspsRjEa2t9Xv0QSv0hudw+Mbj3D5XP1Ld2NUTsOgOOz
+aFZPtfg/anWdufQqkuTxQfmIY0ChhxGvJGCpeoMm17oITkCQAWnBzYx6AHkkYM1k
+NaG2ukSXayTr3lIJv181+wJIU6Pg5vjPZindj7l7PBYvuuw1UVrJSDZ2O19j6uW/
+1YCge6fVR82sz+x4O6zmTW0MK/hknIr+NL4aRcA7BRUogzONh+4V0ZeoAebrRk+y
+mYL1n7XP8PZd9/SUIKfx0dqjRQBg50qfN5RVli023frTViXyQFU=
+=h6MO
 -----END PGP SIGNATURE-----
