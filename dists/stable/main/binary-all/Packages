@@ -49,22 +49,22 @@ SHA256: 9f09d43a89fae2763561060c5983044eed14a2022c40a7c78b271ee0116fef43
 SHA512: 19ac3d94567aed56523c87625e65752b94acac4b87032414da41d618e4f4c8b6f8882280bf80f187f8763693cc8a0b10bd649dd8caf682d84d590d8eaf18ff4c
 Description: APT configs for Berbascum's github stable-main apt repo
 
-Package: apt-config-berbascum-testing
+Package: apt-config-berbascum-testing-main
 Architecture: all
-Version: 0.0.3+git20250216234025.376ff07.main.stable
+Version: 0.0.4+git.f822f29.main.stable
 Priority: optional
 Section: misc
 Maintainer: berbascum <berbascum@ticv.cat>
 Installed-Size: 20
 Pre-Depends: apt
 Depends: ca-certificates, apt-keyrings-berbascum
-Filename: pool/stable/main/binary-all/apt-config-berbascum-testing_0.0.3+git20250216234025.376ff07.main.stable_all.deb
-Size: 2700
-MD5sum: 02bcf8cf0ad1bf583bfed302575353cd
-SHA1: 528c20cc7297828b54983bccffe5582f3c3e46b0
-SHA256: 087b4db5bc3a9c8583d3b3c9ab79d01409abc7cf6fc6c09fef9bc8296e51fb21
-SHA512: 18ba654ecadfd29f5eeafbda45ba3bf8d94dfc5904e00883729e860d8c1178014e50d961f5cbebefe1312af02ce04879a654ca62cdeff5532a9dee069e515a06
-Description: APT configs for Berbascum's github testing apt repo
+Filename: pool/stable/main/binary-all/apt-config-berbascum-testing-main_0.0.4+git.f822f29.main.stable_all.deb
+Size: 2804
+MD5sum: f085487676f9f1c6db053366972c0c1c
+SHA1: 0603cc31fd4aabd0e03a3c792c6b00b3f7cc7253
+SHA256: 3f425b6cec5a81b905aa341220ecf4393490438c4e8369363bda450f9dd8339f
+SHA512: 5d57e9928c007974c6d228e85632a8e01ac861a92d1d74d4e8065a596f96052733c08a7a33814f29433b947744fcd39ee2d4e16c46148c75a78b6763663aa0ec
+Description: APT configs for Berbascum's github testing-main apt repo
 
 Package: apt-config-berbascum-trixie
 Architecture: all
