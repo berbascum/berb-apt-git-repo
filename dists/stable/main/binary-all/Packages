@@ -1,3 +1,20 @@
+Package: apt-config-berbascum-bookworm-debian
+Architecture: all
+Version: 0.0.2+git.d66aceb.main.stable
+Priority: optional
+Section: misc
+Maintainer: berbascum <berbascum@ticv.cat>
+Installed-Size: 20
+Pre-Depends: apt
+Depends: ca-certificates, apt-keyrings-berbascum
+Filename: pool/stable/main/binary-all/apt-config-berbascum-bookworm-debian_0.0.2+git.d66aceb.main.stable_all.deb
+Size: 2732
+MD5sum: 622008f8daeb0f4a119eb84e6abaeef7
+SHA1: 33150e2e02ffd9cbbb845cb73f994fd6249ae6df
+SHA256: 6512e516fcff6087b343409d03a4a33867c87578a93176488076c8a8f33c1ddb
+SHA512: 52ff548e54cb60041dd94eb80d36097944ab9c980dd0f9cbdbcb05d09ddfc92a5e826d9e21ec9579278c22221dbd09e1cf80b47c89844ddbe8f6820d441fb90d
+Description: APT configs for Berbascum's github bookworm-debian apt repo
+
 Package: apt-config-berbascum-stable-main
 Architecture: all
 Version: 0.0.4+git.f28f6c6.main.stable
