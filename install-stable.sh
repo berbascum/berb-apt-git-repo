@@ -60,13 +60,13 @@ apt_url_search_pkg_str="apt-keyrings-berbascum"
 fn_git_search_apt_deb_pkg
 URL_DEB_APT_KEYRING="${url_raw_full}"
 ## Search for apt config deb
-apt_url_search_pkg_str="apt-config-berbascum-${apt_pool_name}-${apt_component_name}"
+apt_url_search_pkg_str="apt-config-berbascum-${apt_pool_name}"
 fn_git_search_apt_deb_pkg
 URL_DEB_APT_CONFIG="${url_raw_full}"
 
 ## Add berbascum apt stable repo
 curl -o /tmp/apt-keyrings-last.deb ${URL_DEB_APT_KEYRING}
-curl -o /tmp/apt-config-${apt_pool_name}-${apt_component_name}-last.deb ${URL_DEB_APT_CONFIG}
+curl -o /tmp/apt-config-stable-last.deb ${URL_DEB_APT_CONFIG}
 echo && echo "sudo password required to install the packages..."
-sudo dpkg -i /tmp/apt-keyrings-latest.deb
-sudo dpkg -i /tmp/apt-config-${apt_pool_name}-${apt_component_name}-latest.deb
+sudo dpkg -i /tmp/apt-keyrings-last.deb
+sudo dpkg -i /tmp/apt-config-stable-last.deb
