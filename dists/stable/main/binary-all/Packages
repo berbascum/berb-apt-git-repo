@@ -32,6 +32,23 @@ SHA256: 9f09d43a89fae2763561060c5983044eed14a2022c40a7c78b271ee0116fef43
 SHA512: 19ac3d94567aed56523c87625e65752b94acac4b87032414da41d618e4f4c8b6f8882280bf80f187f8763693cc8a0b10bd649dd8caf682d84d590d8eaf18ff4c
 Description: APT configs for Berbascum's github stable-main apt repo
 
+Package: apt-config-berbascum-testing-droidian-xiaomi-vayu
+Architecture: all
+Version: 0.0.1+git.0274a5f.main.stable
+Priority: optional
+Section: misc
+Maintainer: berbascum <berbascum@ticv.cat>
+Installed-Size: 20
+Pre-Depends: apt
+Depends: ca-certificates, apt-keyrings-berbascum
+Filename: pool/stable/main/binary-all/apt-config-berbascum-testing-droidian-xiaomi-vayu_0.0.1+git.0274a5f.main.stable_all.deb
+Size: 2720
+MD5sum: 8ef02f7774af85f79a0e05a4917522d6
+SHA1: 9d79b366d7dd04b4c92f5b1e23b45ae6a1470ab8
+SHA256: c0e4b86cd7e005cac38db9bba03efc641e8796da855af1f1faf91c2fde523ef1
+SHA512: 301c7e5c3c3e257fbcad37c17f6aaaedfc0e667084a0a573a35d0ac498f1d5bdac53d45d5bb28c574ada8a6f2e4020e73902910da524d87d3a648ab2422247fb
+Description: APT configs for Berbascum's github testing droidian-xiaomi-vayu apt repo
+
 Package: apt-config-berbascum-testing-main
 Architecture: all
 Version: 0.0.4+git.f822f29.main.stable
