@@ -3,14 +3,14 @@ Hash: SHA512
 
 Architectures: all arm64 amd64
 Codename: testing
-Components: amd64 debian droidian droidian-xiaomi-vayu mobian
-Date: Fri, 16 May 2025 23:15:23 +0000
+Components: amd64 debian droidian droidian-xiaomi-vayu droidian-build-kernel mobian
+Date: Sat, 17 May 2025 09:06:14 +0000
 Description: Berbascum's apt repo for release testing
 Label: berbascum
 Origin: berbascum
 Suite: testing
 MD5Sum:
- 2d716ab5b7fb8bba1161cc691da2b29f              253 Release
+ 184e74bb1a831ddf50b815ac59c9e513              275 Release
  0902e5a0182062319472ac442793db1b               28 debian/Contents-all.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 debian/Contents-all.gz
  0902e5a0182062319472ac442793db1b               28 debian/Contents-amd64.bz2
@@ -26,6 +26,21 @@ MD5Sum:
  d41d8cd98f00b204e9800998ecf8427e                0 debian/binary-arm64/Packages
  0902e5a0182062319472ac442793db1b               28 debian/binary-arm64/Packages.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 debian/binary-arm64/Packages.gz
+ 0902e5a0182062319472ac442793db1b               28 droidian-build-kernel/Contents-all.bz2
+ e62ff0123a74adfc6903d59a449cbdb0               40 droidian-build-kernel/Contents-all.gz
+ 0902e5a0182062319472ac442793db1b               28 droidian-build-kernel/Contents-amd64.bz2
+ e62ff0123a74adfc6903d59a449cbdb0               40 droidian-build-kernel/Contents-amd64.gz
+ 0902e5a0182062319472ac442793db1b               28 droidian-build-kernel/Contents-arm64.bz2
+ e62ff0123a74adfc6903d59a449cbdb0               40 droidian-build-kernel/Contents-arm64.gz
+ d41d8cd98f00b204e9800998ecf8427e                0 droidian-build-kernel/binary-all/Packages
+ 0902e5a0182062319472ac442793db1b               28 droidian-build-kernel/binary-all/Packages.bz2
+ e62ff0123a74adfc6903d59a449cbdb0               40 droidian-build-kernel/binary-all/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e                0 droidian-build-kernel/binary-amd64/Packages
+ 0902e5a0182062319472ac442793db1b               28 droidian-build-kernel/binary-amd64/Packages.bz2
+ e62ff0123a74adfc6903d59a449cbdb0               40 droidian-build-kernel/binary-amd64/Packages.gz
+ d41d8cd98f00b204e9800998ecf8427e                0 droidian-build-kernel/binary-arm64/Packages
+ 0902e5a0182062319472ac442793db1b               28 droidian-build-kernel/binary-arm64/Packages.bz2
+ e62ff0123a74adfc6903d59a449cbdb0               40 droidian-build-kernel/binary-arm64/Packages.gz
  0902e5a0182062319472ac442793db1b               28 droidian-xiaomi-vayu/Contents-all.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 droidian-xiaomi-vayu/Contents-all.gz
  0902e5a0182062319472ac442793db1b               28 droidian-xiaomi-vayu/Contents-amd64.bz2
@@ -87,7 +102,7 @@ MD5Sum:
  0902e5a0182062319472ac442793db1b               28 mobian/binary-arm64/Packages.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 mobian/binary-arm64/Packages.gz
 SHA1:
- 2becba14264da88016fc8652c86f1de838cf6478              253 Release
+ cccc40c05f9f67285569e49f0aff9b21b1c2cabe              275 Release
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/Contents-all.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 debian/Contents-all.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/Contents-amd64.bz2
@@ -103,6 +118,21 @@ SHA1:
  da39a3ee5e6b4b0d3255bfef95601890afd80709                0 debian/binary-arm64/Packages
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/binary-arm64/Packages.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 debian/binary-arm64/Packages.gz
+ dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-build-kernel/Contents-all.bz2
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-build-kernel/Contents-all.gz
+ dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-build-kernel/Contents-amd64.bz2
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-build-kernel/Contents-amd64.gz
+ dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-build-kernel/Contents-arm64.bz2
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-build-kernel/Contents-arm64.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 droidian-build-kernel/binary-all/Packages
+ dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-build-kernel/binary-all/Packages.bz2
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-build-kernel/binary-all/Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 droidian-build-kernel/binary-amd64/Packages
+ dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-build-kernel/binary-amd64/Packages.bz2
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-build-kernel/binary-amd64/Packages.gz
+ da39a3ee5e6b4b0d3255bfef95601890afd80709                0 droidian-build-kernel/binary-arm64/Packages
+ dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-build-kernel/binary-arm64/Packages.bz2
+ e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-build-kernel/binary-arm64/Packages.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-xiaomi-vayu/Contents-all.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-xiaomi-vayu/Contents-all.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-xiaomi-vayu/Contents-amd64.bz2
@@ -164,7 +194,7 @@ SHA1:
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 mobian/binary-arm64/Packages.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 mobian/binary-arm64/Packages.gz
 SHA256:
- 9b552047df5f4c5428f1b2b0b4109d45a1e34e53233bd286891b77edf93b25db              253 Release
+ 35d01aa11d5064c4d69c5b77fc1915ab040f651b8a352e6735fe5f52796f7e32              275 Release
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/Contents-all.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 debian/Contents-all.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/Contents-amd64.bz2
@@ -180,6 +210,21 @@ SHA256:
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 debian/binary-arm64/Packages
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/binary-arm64/Packages.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 debian/binary-arm64/Packages.gz
+ f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-build-kernel/Contents-all.bz2
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-build-kernel/Contents-all.gz
+ f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-build-kernel/Contents-amd64.bz2
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-build-kernel/Contents-amd64.gz
+ f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-build-kernel/Contents-arm64.bz2
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-build-kernel/Contents-arm64.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 droidian-build-kernel/binary-all/Packages
+ f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-build-kernel/binary-all/Packages.bz2
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-build-kernel/binary-all/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 droidian-build-kernel/binary-amd64/Packages
+ f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-build-kernel/binary-amd64/Packages.bz2
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-build-kernel/binary-amd64/Packages.gz
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 droidian-build-kernel/binary-arm64/Packages
+ f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-build-kernel/binary-arm64/Packages.bz2
+ e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-build-kernel/binary-arm64/Packages.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-xiaomi-vayu/Contents-all.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-xiaomi-vayu/Contents-all.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-xiaomi-vayu/Contents-amd64.bz2
@@ -241,7 +286,7 @@ SHA256:
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 mobian/binary-arm64/Packages.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 mobian/binary-arm64/Packages.gz
 SHA512:
- 083344b1865375665b51608435ccff609d43efed4b091b50e3e3635c57a76bc31e43ea6457d9dd97b5216689898bd6a7ff7cf6423f8c76cedb2ce9c78bdb27d1              253 Release
+ e2c3f50c1b5eb21bb68a5b248ee3784ccd58cdd684e9c75212544474907a1478a2afe0cb7411983288323dca168ff14b430acf051721ec28dfbebf1ff1134fdf              275 Release
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/Contents-all.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 debian/Contents-all.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/Contents-amd64.bz2
@@ -257,6 +302,21 @@ SHA512:
  cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 debian/binary-arm64/Packages
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/binary-arm64/Packages.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 debian/binary-arm64/Packages.gz
+ 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-build-kernel/Contents-all.bz2
+ 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-build-kernel/Contents-all.gz
+ 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-build-kernel/Contents-amd64.bz2
+ 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-build-kernel/Contents-amd64.gz
+ 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-build-kernel/Contents-arm64.bz2
+ 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-build-kernel/Contents-arm64.gz
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 droidian-build-kernel/binary-all/Packages
+ 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-build-kernel/binary-all/Packages.bz2
+ 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-build-kernel/binary-all/Packages.gz
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 droidian-build-kernel/binary-amd64/Packages
+ 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-build-kernel/binary-amd64/Packages.bz2
+ 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-build-kernel/binary-amd64/Packages.gz
+ cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 droidian-build-kernel/binary-arm64/Packages
+ 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-build-kernel/binary-arm64/Packages.bz2
+ 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-build-kernel/binary-arm64/Packages.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-xiaomi-vayu/Contents-all.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-xiaomi-vayu/Contents-all.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-xiaomi-vayu/Contents-amd64.bz2
@@ -319,17 +379,17 @@ SHA512:
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 mobian/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEJ/A1DHVp5kqOROC+6z8ZnJEyG4sFAmgnxw0ACgkQ6z8ZnJEy
-G4sT3w/+OqCNOwVmW03YaxJ4YmNNZv6MC5GHWhSykmAY6NoyOWT3MaOynN3BotBI
-Eznto+9sPL+mpDHXXsxCvx4eG6pxHZPUK9PKrZdIW8GXxNYQ7GcGMQqDaKqf070H
-G4ZgPNtzPZy2Nl7ak34GDPKpyjN0KITa5DaNC6ptJhSVQ0KQyqoZaHvZ+eDOrOP8
-g6xaSjZwQp7M+yJp2J3Tgiz7hT4T1BRf5eX0y9Gz88XvnWm6cJMs+95anqDE4DVg
-jNtJUzawg5CAzqCcVqNdkCtU1r8lJF7Mx5HWzBm6TlfoGIG4biKw42Fkjhjt1YKr
-FChES1HdUH4z4IzBYV7OcF0EkH23zMfEExvNBZNmPsN7076fFJyYqDz91I81tPdg
-1uuSVA/Rk3bCGqSZ+3PDrCTsRvz0UJoTjBvob6JYSKIZKriJfPWRozulx7AdcM2z
-PEUxSaUhMGdDv9D8BBuWO2rGmOmyTipq2ITgpQr86nxPjWvppDDOXdSHummjgntd
-BrYbS49sL5sabp6vojdsFlQ5OEPUE2nLsOqpv/M8dmpG+2SpTkFdSXknO1Jz0a0m
-BTAB8bVFwy6L6+gI68AfxdMParkOKFblEhYGZ6vbZaqhon2D/Nb4jbb5Z1P/CeGF
-zpl1o5g30aELjTfpoKQM5jYfkawYcvaZUnD8pT1j2iw3AtkBxy4=
-=Qqt7
+iQIzBAEBCgAdFiEEJ/A1DHVp5kqOROC+6z8ZnJEyG4sFAmgoUYgACgkQ6z8ZnJEy
+G4tItA/7B+3shb/+2NEiXG33aHFcXMx6MNe9eguNi0tQj7ZLlT243BuPgSURpcRB
+xtsXAWMdeP95IYSR2gbp7WAXtw2bVJuP9vxQwtnile9ejvkUM8f2sGYUFzmV/41W
+Dgj4Uyeg/avvtNS8m5BqwwI+Wlv+G0edWFpA4sv5iCP7vLhU9Kbz34C4Tj2Ud3i6
+Io1BjrmHht2IuFfxbZ6TlrQu60eWfnwkAT/t5z167RoKKOlDL52Nhocng0QGq//C
+P8L0FhKBmCgJBY8idd7xY31HQgC7zuOPvuhGELSHbAi6XOd7j+cAEwpkuNcihnk9
+kw23XKwxzPVxja6mTNCA/RhmAoOPyRFTnfcBzXGmBWEYfKhAqxkv1EMRvlkA5ne9
+iEvKOx6tRTzMf0+zpai3d+uKSEMT7OliPPsLhaDkAkFEoZanVygQ5ROrajis8gYo
+I37/CXJux9aluXwG389PXJ9kZSnICwIW/D+KCtRNgKa6HKg7Y71m8qhj6Fsu4QhR
+ljrAdNzvLAsl2d+lYMKyKQTCHAzZ+Mi3Q8R1Tx6WHAp6sA2e5CnqCIzvMR4WdarJ
+TTlKbi0lt7G4m9TBpw2P/3QYm8LHafqkH1YnjbCJvumJAqnkSlk7ztWSyXe/Oz3u
+FGjeJXxSliKKvGTDbZtmT/OZaZU6ilvlY5OG4FXYGR2nYoir7C0=
+=QAay
 -----END PGP SIGNATURE-----

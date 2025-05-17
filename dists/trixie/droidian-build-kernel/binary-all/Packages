@@ -1,0 +1,80 @@
+Package: avbtool
+Architecture: all
+Version: 9.0.0+r61-4+git20221221042241.f384be3.bookworm.production
+Priority: optional
+Section: utils
+Source: android-platform-external-avb
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 178
+Depends: python3
+Filename: pool/trixie/droidian-build-kernel/binary-all/avbtool_9.0.0+r61-4+git20221221042241.f384be3.bookworm.production_all.deb
+Size: 36012
+MD5sum: 58f3d8fa53e67f7eb7cd99d94dbb3bff
+SHA1: 485a01930f46d748938406a0f2a1f65dfc5e0f3e
+SHA256: 7376dd5a948e94e0f14f6bf8d0d79cd241ae281b982c8af44361482c2ad02849
+SHA512: 5a08d1f1271659ccb110e939f15fe7bdfb93d2457a7eee3ea84b3e9cd5c35f61979320989e3abf7276e705c9bfe378737fcc4ad4493db444041bbb5e9249e0fc
+Homepage: https://android.googlesource.com/platform/external/avb
+Description: Command-line tool for working with Android Verified Boot images
+ avbtool is a command-line tool for working with Android Verified Boot images,
+ also known as "vbmeta.img".
+
+Package: linux-packaging-snippets
+Architecture: all
+Version: 1+git20250102024528.f579ca8.unofficial.berb.sid
+Priority: optional
+Section: kernel
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 59
+Filename: pool/trixie/droidian-build-kernel/binary-all/linux-packaging-snippets_1+git20250102024528.f579ca8.unofficial.berb.sid_all.deb
+Size: 13180
+MD5sum: 42d0877af8b03599e764f125d77d3985
+SHA1: 30512eaac58fba2dc18e08c0585e02d5dcbf01e2
+SHA256: 4bf336f26b71fe04c2f57bd1febd5d17a82794dece6d84a36e52690aca5ec8ef
+SHA512: e2b839f166bf75680a4a7b1627104bde424e824fb0a2396487b45b2c353e431686f8b2651f86bae7f4c99a8cca2a43d1b28634a0db4a7cb390bcc7226b7cbbe5
+Description: Linux kernel packaging snippets for Droidian
+ This package contains various snippets for packaging Droidian
+ kernels.
+X-Droidian-Vcs-Revision: f579ca810a7f90c38918a92bc26765b2592f0e8f
+X-Droidian-Vcs-Url: git@github.com:droidian-berb/linux-packaging-snippets
+
+Package: mkdtboimg
+Architecture: all
+Version: 13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production
+Priority: optional
+Section: utils
+Source: android-platform-system-libufdt
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 66
+Depends: python3:any, python3 (>= 3.8)
+Filename: pool/trixie/droidian-build-kernel/binary-all/mkdtboimg_13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production_all.deb
+Size: 16504
+MD5sum: 83d70dab66071ecb087399b4acdc25d7
+SHA1: e0f3c5c33fadc5f327cea42869679e4ed43099ca
+SHA256: 2cce9b087dddfe4761af49e90c479652628279e88068194be267fa90a978136d
+SHA512: 0ed6fc0f22b45627cb9734e929fcd87df049335822320d47a24f4366cbefd78643beabb0fcf99327e3c200cc67795fe88031f727ee7ccd2e889ab0d98fbc607e
+Homepage: https://android.googlesource.com/platform/system/libufdt
+Description: Tool for packing multiple DTB/DTBO files into a single image
+ This package contains mkdtboimg, a tool for packing multiple
+ DTB/DTBO files into a single image.
+
+Package: releng-tools
+Architecture: all
+Version: 4+git20250103174613.7ca405c.unofficial.berb.sid
+Priority: optional
+Section: misc
+Maintainer: Berbascum <berbascum@ticv.cat>
+Installed-Size: 56
+Depends: python3:any, python3-git, git, git-lfs, findutils, equivs
+Recommends: devscripts
+Filename: pool/trixie/droidian-build-kernel/binary-all/releng-tools_4+git20250103174613.7ca405c.unofficial.berb.sid_all.deb
+Size: 14800
+MD5sum: b557b706a4df185742f5882417dc8be5
+SHA1: 48c485ba79a8236a422d8c5747e26af5ba0009ba
+SHA256: 6c953399430f918b75575b39d1ffc4f9d814be587cb6a2f485e59aa68073cd6c
+SHA512: 5f021add116c2911ba5f984dc37fe87869752e37e19af9c2e35039a8d92bc7929ef0df480d840ca50a8320ecff7936a0e8dd1a94a6afc7191e0b61f50008fdce
+Description: Release engineering tools for droidian
+ This package contains various tools related to droidian's
+ release engineering processes.
+X-Droidian-Vcs-Revision: 7ca405cf8849c6c255179d7091bee863dffb3ffc
+X-Droidian-Vcs-Url: git@github.com:droidian-berb/releng-tools
+

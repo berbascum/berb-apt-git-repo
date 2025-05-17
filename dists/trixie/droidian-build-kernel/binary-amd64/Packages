@@ -1,0 +1,87 @@
+Package: android-platform-prebuilts-python-linux-x86-2.7.5
+Architecture: amd64
+Version: 2.7.5+android10.0.0+r12-1+git20230226162403.048eca4.bookworm.production
+Priority: optional
+Section: python
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 56053
+Depends: libc6:i386
+Filename: pool/trixie/droidian-build-kernel/binary-amd64/android-platform-prebuilts-python-linux-x86-2.7.5_2.7.5+android10.0.0+r12-1+git20230226162403.048eca4.bookworm.production_amd64.deb
+Size: 9254932
+MD5sum: 28a486412f562c457cb27529909c8ee7
+SHA1: 647972e495ea551b3ae580ea60af7d0e3e3858ee
+SHA256: 2bbb92db8f11013d487b78214ef79feced13ed1fb2f11fe5ad68171e9908113b
+SHA512: 99f2b104efee0847b2539bb4ec676b656e4b3e89fd4d382c48dcc171e79acfc1181f3247daf3bf1a66bdbe7225d9ef3eefed2c4afe7b55651de233837ca80d80
+Description: interactive high-level object-oriented language (legacy python2)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package ships a pre-built, static version of Python 2.7 as provided
+ by Google for usage in the Android toolchain.
+
+Package: android-sdk-ufdt-tests-dbgsym
+Architecture: amd64
+Version: 13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: android-platform-system-libufdt
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 53
+Depends: android-sdk-ufdt-tests (= 13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production)
+Filename: pool/trixie/droidian-build-kernel/binary-amd64/android-sdk-ufdt-tests-dbgsym_13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production_amd64.deb
+Size: 36260
+MD5sum: e9eeef4e5b5f740d0d9f511b7da6a60f
+SHA1: b515c89f41c24b95ea748bbdb248bd356393b177
+SHA256: c143038274bded837f1b5dd1b99e9c84f25fa2e61de87de4bef985a5764467ab
+SHA512: 9b07bcb051f7962cb97eb368479490b9b473f5114d319edb1405c9cb04c841470eac19b941ebb57cc942a26cb6d722dbd12c6884c206e48a91672684605f8249
+Description: debug symbols for android-sdk-ufdt-tests
+Build-Ids: 075d8080d07d77c61b5c7f251a9880210df57fdb
+
+Package: android-sdk-ufdt-tests
+Architecture: amd64
+Version: 13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production
+Priority: optional
+Section: utils
+Source: android-platform-system-libufdt
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 48
+Depends: libc6 (>= 2.34), libfdt1 (>= 1.6.1)
+Filename: pool/trixie/droidian-build-kernel/binary-amd64/android-sdk-ufdt-tests_13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production_amd64.deb
+Size: 18292
+MD5sum: b9b2816299c24f6dea846e440537227a
+SHA1: 66f0e380b8d05529046aee46a52819da6e2476ec
+SHA256: a7b8bb2035a10be3382c7c4af9ea87ab12fe386b20625230923337133fef46bf
+SHA512: 5a04248d8175de88ae03627746de17cf9dce69e66b8c6460e2968af3ae306e2ab4fe3d8a8e9e141b777793df46b97a27fd94c5203269b1afa6ea1ec702330d5a
+Homepage: https://android.googlesource.com/platform/system/libufdt
+Description: Android ufdt tests binaries
+ This package contains packaged tests for Android platform's
+ libufdt.
+ .
+ Currently the only binary shipped is ufdt_apply_overlay.
+
+Package: linux-initramfs-halium-generic
+Architecture: amd64
+Version: 2024.09.07.1+git20240907214647.f99f7a0.next.production
+Multi-Arch: same
+Priority: optional
+Section: utils
+Source: initramfs-tools-halium
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Original-Maintainer: Halium developers <admin@halium.org>
+Installed-Size: 81769
+Filename: pool/trixie/droidian-build-kernel/binary-amd64/linux-initramfs-halium-generic_2024.09.07.1+git20240907214647.f99f7a0.next.production_amd64.deb
+Size: 71271984
+MD5sum: a0023ab7005155ee64576ea782191f31
+SHA1: 4c032056276db30cb4d84ae0fc1cd2fb97016f83
+SHA256: 6b4a8edb95e5828929034dd5b42e61fb28fab2aa519fc7c4565d3779cc37e0df
+SHA512: 84e7223695f0079072bf4b52fd181376e40d1355bc0dd58271daf8395097ccc073fd8481794d0a2d4fa3cf5f2d9ec58c01598fcefaaa2e21ed00783568ce7f88
+Description: pre-built generic initramfs image for halium ports
+ This package contains a pre-built initramfs image for halium
+ ports.
+ .
+ Note: this package will only put the initramfs image in-place,
+ it's the responsibility of build systems to do something meaningful
+ with it.
+
