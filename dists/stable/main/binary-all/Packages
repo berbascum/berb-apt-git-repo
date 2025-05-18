@@ -66,6 +66,23 @@ SHA256: 3f425b6cec5a81b905aa341220ecf4393490438c4e8369363bda450f9dd8339f
 SHA512: 5d57e9928c007974c6d228e85632a8e01ac861a92d1d74d4e8065a596f96052733c08a7a33814f29433b947744fcd39ee2d4e16c46148c75a78b6763663aa0ec
 Description: APT configs for Berbascum's github testing-main apt repo
 
+Package: apt-config-berbascum-trixie-droidian-build-kernel
+Architecture: all
+Version: 0.0.1+git.8e67930.main.stable
+Priority: optional
+Section: misc
+Maintainer: berbascum <berbascum@ticv.cat>
+Installed-Size: 20
+Pre-Depends: apt
+Depends: ca-certificates, apt-keyrings-berbascum
+Filename: pool/stable/main/binary-all/apt-config-berbascum-trixie-droidian-build-kernel_0.0.1+git.8e67930.main.stable_all.deb
+Size: 2716
+MD5sum: 84d1398d387ed16cca18644b93baa7de
+SHA1: 15bc24e793712855ae36d4475e9fcf4aaf39f696
+SHA256: ac06f899e5ecadc990f9be18511cf599eb08d6842f05fdad93e6868a4a712173
+SHA512: 5c2d61be648480e8e7e96c827cd34adc4ff09d1039b40527926111b5073839f08265764587a37865481bb3990ef03044a26ed9b1d555f1ad8440cd269ba36e38
+Description: APT configs for Berbascum's github trixie droidian-build-kernel apt repo
+
 Package: apt-config-berbascum-trixie-droidian-xiaomi-vayu
 Architecture: all
 Version: 0.0.1+git.8ffb359.main.stable
