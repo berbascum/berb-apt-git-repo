@@ -61,6 +61,119 @@ Description: Android ufdt tests binaries
  .
  Currently the only binary shipped is ufdt_apply_overlay.
 
+Package: binutils-gcc4.9-aarch64-linux-android
+Architecture: amd64
+Version: 9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production
+Priority: optional
+Section: devel
+Source: android-platform-prebuilts-gcc-aarch64-linux-android-4.9
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 42387
+Provides: android-platform-prebuilts-binutils-aarch64-linux-android
+Depends: libc6 (>= 2.34)
+Filename: pool/trixie/droidian-build-kernel/binary-amd64/binutils-gcc4.9-aarch64-linux-android_9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production_amd64.deb
+Size: 5530324
+MD5sum: 0ea3d6d175e16af947cce7cd990309e3
+SHA1: a9e14300d777dd35bcf6cadc363adf94799b8537
+SHA256: d1a15c44fc942eb18482fcfcbcf7ce8c910e2aff3d4ceceecabc0e6bbc06ad05
+SHA512: f883badcfd30dc76c0e57cbba288953ef57af0005efd917201d1cf104644863bc6c4d79f952bbf3cd6fd6d595f514cc78c2071e7519585d2c3f9ad0c4cb6b3de
+Description: GNU assembler, linker and binary utilities - Android prebuilt
+ The programs in this package are used to assemble, link and manipulate binary and
+ object files. They may be used in conjunction with a compiler and various
+ libraries to build programs.
+ .
+ This package contains the prebuilt applications as taken from the Android source
+ tree (gcc 4.9).
+
+Package: cpp-4.9-aarch64-linux-android
+Architecture: amd64
+Version: 9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production
+Priority: optional
+Section: devel
+Source: android-platform-prebuilts-gcc-aarch64-linux-android-4.9
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 14527
+Depends: libc6 (>= 2.34)
+Filename: pool/trixie/droidian-build-kernel/binary-amd64/cpp-4.9-aarch64-linux-android_9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production_amd64.deb
+Size: 4888924
+MD5sum: dd18620d6a6839b8da88f06ebf0fb6e5
+SHA1: a952088fdfb0e014bf07f4fd2276b303169d4157
+SHA256: 810e9a75c11c05b13452471da7939b88c2965250df66a3dcb5e44cb5ecec602c
+SHA512: 43949c2430ec45c174167b29a2b525c4c096284f704ef7242dbc321ce75bba424dc7ae70150adfa337abaf91652aa060e192364a7683f26cbc38079b1eab39ca
+Description: GNU C preprocessor - Android prebuilt
+ A macro processor that is used automatically by the GNU C compiler to
+ transform programs before actual compilation.
+ .
+ This package has been separated from gcc for the benefit of those who
+ require the preprocessor but not the compiler.
+ .
+ This package contains preprocessor configured for arm64 architecture, as
+ taken from the Android source tree.
+
+Package: g++-4.9-aarch64-linux-android
+Architecture: amd64
+Version: 9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production
+Priority: optional
+Section: devel
+Source: android-platform-prebuilts-gcc-aarch64-linux-android-4.9
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 15639
+Depends: libc6 (>= 2.34), gcc-4.9-aarch64-linux-android (= 9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production)
+Filename: pool/trixie/droidian-build-kernel/binary-amd64/g++-4.9-aarch64-linux-android_9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production_amd64.deb
+Size: 5316828
+MD5sum: fe66088e5963431ac2d8f802c487c159
+SHA1: 33db60be004bf0115a71e29e26bf0a489e0ff028
+SHA256: a80105a9876222e9e4744861d55fb38e19a50e3a2c0d0302631ad30852c14191
+SHA512: b809fef95edb245c434da0fddd00ae2981c84a6fae35910129ae396c3267b0faadc01f06bc3bda656448cc77918292bfe41668a239dfc8b418f6a7aae4dab8f7
+Description: GNU C++ compiler (cross compiler for arm64 architecture) - Android prebuilt
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This package contains C++ cross-compiler for arm64 architecture, as taken
+ from the Android source tree.
+
+Package: gcc-4.9-aarch64-linux-android
+Architecture: amd64
+Version: 9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production
+Priority: optional
+Section: devel
+Source: android-platform-prebuilts-gcc-aarch64-linux-android-4.9
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 16087
+Depends: libc6 (>= 2.34), binutils-gcc4.9-aarch64-linux-android (= 9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production), cpp-4.9-aarch64-linux-android (= 9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production)
+Filename: pool/trixie/droidian-build-kernel/binary-amd64/gcc-4.9-aarch64-linux-android_9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production_amd64.deb
+Size: 4890884
+MD5sum: cc98b29d4bfc57cae38518e4ac0b42a5
+SHA1: e4c8cd43289368c40860ab8b1f4f67bac3f86862
+SHA256: 405a02e843d608cf2317b86819f7a9cbce044956b70253fc0a281347b5ad6474
+SHA512: cd2a044036a34c3468b2405d989e92caf7a64cc41f62aa19d9497253c86c75854ce83610fa85742985745c5317bafa5f223a5dc47c7cfaf40a008d772334b7f7
+Description: GNU C compiler (cross compiler for arm64 architecture) - Android prebuilt
+ This is the GNU C compiler, a fairly portable optimizing compiler for C.
+ .
+ This package contains C cross-compiler for arm64 architecture, as taken
+ from the Android source tree.
+
+Package: libgcc-4.9-dev-aarch64-linux-android-cross
+Architecture: amd64
+Version: 9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production
+Priority: optional
+Section: devel
+Source: android-platform-prebuilts-gcc-aarch64-linux-android-4.9
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 2366
+Depends: gcc-4.9-aarch64-linux-android (= 9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production)
+Filename: pool/trixie/droidian-build-kernel/binary-amd64/libgcc-4.9-dev-aarch64-linux-android-cross_9.0.0+r61-2+git20221220102210.277a2a7.bookworm.production_amd64.deb
+Size: 272948
+MD5sum: 778a81d94c362ddd8dd9db0c4a12dfe3
+SHA1: d0db7fe0c1dc0403d351fd5d9f796431e671032d
+SHA256: bd98249f3592c3cda28b257b1bffa3435dba32fedefe36b5b20786285f1d4a15
+SHA512: da92d816931b56e2716bb14751dddd04cf904cf1c638065bb649680661a6d1456f5e959553fb8f83547d11829975a43f4dfe37545f67eaf25273fc3ef8a5a3a3
+Description: GCC support library (development files) - Android prebuilt
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+ .
+ This package contains the development files as taken from the Android source
+ tree (gcc 4.9).
+
 Package: linux-initramfs-halium-generic
 Architecture: amd64
 Version: 2024.09.07.1+git20240907214647.f99f7a0.next.production
