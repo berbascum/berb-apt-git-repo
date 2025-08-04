@@ -1,0 +1,767 @@
+Package: binfmt-support
+Architecture: arm64
+Version: 2.2.2-7+b1
+Multi-Arch: foreign
+Priority: optional
+Section: admin
+Source: binfmt-support (2.2.2-7)
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 318
+Pre-Depends: init-system-helpers (>= 1.54~)
+Depends: libc6 (>= 2.38), libpipeline1 (>= 1.0.0)
+Filename: pool/bullseye/debian/binary-arm64/binfmt-support_2.2.2-7+b1_arm64.deb
+Size: 68200
+MD5sum: 82ab4d87c1b205d1af82a9e509ab3f3b
+SHA1: 65ef39f338bbbd2f71c98feb8d0f06ae4ceb41c0
+SHA256: 25315b70f30c153b13f7cadb3e48424c4595fb4604f7e61b9d707c3ed32097d4
+SHA512: 8877e68e8e8649fb82c42802c95cd32c105c12272d2fc39e1c6d1bf04e47acca5318aa67a65d08140cfacc2781fe844074e0b18dec5fdebb3a99632e17196a76
+Homepage: https://nongnu.org/binfmt-support/
+Description: Support for extra binary formats
+ The binfmt_misc kernel module, contained in versions 2.1.43 and later of the
+ Linux kernel, allows system administrators to register interpreters for
+ various binary formats based on a magic number or their file extension, and
+ cause the appropriate interpreter to be invoked whenever a matching file is
+ executed. Think of it as a more flexible version of the #! executable
+ interpreter mechanism.
+ .
+ This package provides an 'update-binfmts' script with which package
+ maintainers can register interpreters to be used with this module without
+ having to worry about writing their own init.d scripts, and which sysadmins
+ can use for a slightly higher-level interface to this module.
+
+Package: clang-11
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: devel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 340
+Provides: c++-compiler, c-compiler, objc-compiler
+Depends: libc6 (>= 2.17), libclang-cpp11 (>= 1:11.0.1), libgcc-s1 (>= 3.0), libllvm11 (>= 1:9~svn298832-1~), libstdc++6 (>= 5.2), libstdc++-10-dev, libgcc-10-dev, libobjc-10-dev, libclang-common-11-dev (= 1:11.0.1-2), libclang1-11 (= 1:11.0.1-2), libc6-dev, binutils
+Recommends: llvm-11-dev, python3, libomp-11-dev
+Suggests: clang-11-doc
+Filename: pool/bullseye/debian/binary-arm64/clang-11_1%3a11.0.1-2_arm64.deb
+Size: 104512
+MD5sum: 94c30e809a2520c9b31f6e298abb7808
+SHA1: 0c0e93ff67526f92a2c700d3d7825cd398d9c8a9
+SHA256: f65e84f6301bbb19971e3024d8e560587abb1e395a99f0fd0eaf1ad71d6419ec
+SHA512: 0e80e26d0c9d721fa53ffc610f006db561466af38ac0f7c4fe9fe9c4249745e07f0829bf242fe9e4769b2a784b2625ef2655aceb0792a0d0b5d1d47564cd6792
+Homepage: https://www.llvm.org/
+Description: C, C++ and Objective-C compiler
+ Clang project is a C, C++, Objective C and Objective C++ front-end
+ based on the LLVM compiler. Its goal is to offer a replacement to the
+ GNU Compiler Collection (GCC).
+ .
+ Clang implements all of the ISO C++ 1998, 11, 14 and 17 standards and also
+ provides most of the support of C++20.
+
+Package: gcc-10-base
+Architecture: arm64
+Version: 10.2.1-6
+Multi-Arch: same
+Priority: required
+Section: libs
+Source: gcc-10
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 261
+Breaks: gnat (<< 7)
+Filename: pool/bullseye/debian/binary-arm64/gcc-10-base_10.2.1-6_arm64.deb
+Size: 201340
+MD5sum: 1651a8d1c55cb889294b2ec49c9b0d0a
+SHA1: d85e005b3ed4a7058025fd95e4ed1665454eb5ae
+SHA256: 7d782bece7b4a36bed045a7e17d17244cb8f7e4732466091b01412ebf215defb
+SHA512: aeb38fa75080c20aa3eb3c26d9bc952060d7820b107683f9706e40a50a1779cf1d250e115fb0600eaf10f32d23f55b2b2119970275c04332911d20eb6dd26991
+Homepage: http://gcc.gnu.org/
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+
+Package: libasan6
+Architecture: arm64
+Version: 10.2.1-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-10
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 9701
+Depends: gcc-10-base (= 10.2.1-6), libc6 (>= 2.23), libgcc-s1 (>= 3.3)
+Filename: pool/bullseye/debian/binary-arm64/libasan6_10.2.1-6_arm64.deb
+Size: 2001636
+MD5sum: 50a19b374720ac48802dd855830b37fc
+SHA1: b36e5a62a034f06807ec75b645b560250935b63e
+SHA256: a31acf1c1087caf54e3296c5aead6ec0a19141cb14319fa358b35fd305db1d5e
+SHA512: d9a30b7eae9e46cb621091858da0c6bfdaf1427ccdcaf4a83229a054c300ef8d3fe2d0f8a18464b24ad4cc0fe99903d4424df1106d25bef79d206a2002fd0bbc
+Homepage: http://gcc.gnu.org/
+Description: AddressSanitizer -- a fast memory error detector
+ AddressSanitizer (ASan) is a fast memory error detector.  It finds
+ use-after-free and {heap,stack,global}-buffer overflow bugs in C/C++ programs.
+
+Package: libclang-11-dev
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 166086
+Depends: libstdc++-10-dev, libgcc-10-dev, libobjc-10-dev, libclang1-11 (= 1:11.0.1-2), libclang-common-11-dev (= 1:11.0.1-2)
+Filename: pool/bullseye/debian/binary-arm64/libclang-11-dev_1%3a11.0.1-2_arm64.deb
+Size: 16650172
+MD5sum: 760bd660e3a84120f292bb23ac5697f3
+SHA1: 2392dea5eaa1ac5ea3990d01ba8b7bcae6dc752e
+SHA256: 317b7de15547ff21184873ad52c86e233833de41e8d876da7b3f83ce5ec14d47
+SHA512: a2e8eb88c912b515bf4747d6c68e68386e65daa571e6d379fbae9ad6770929109cad8cd04bfb8a7be4fcca00d7395cb2bf9a9707740c02d6e12b1e565bdfa2d6
+Homepage: https://www.llvm.org/
+Description: Clang library - Development package
+ Clang project is a C, C++, Objective C and Objective C++ front-end
+ based on the LLVM compiler. Its goal is to offer a replacement to the
+ GNU Compiler Collection (GCC).
+ .
+ Clang implements all of the ISO C++ 1998, 11, 14 and 17 standards and also
+ provides most of the support of C++20.
+ .
+ This package contains the Clang headers to develop extensions over
+ libclang1-11.
+
+Package: libclang-common-11-dev
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 47001
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.3), libstdc++6 (>= 4.1.1), libllvm11 (= 1:11.0.1-2)
+Filename: pool/bullseye/debian/binary-arm64/libclang-common-11-dev_1%3a11.0.1-2_arm64.deb
+Size: 3470268
+MD5sum: f333882517a71c1e77cae7b791de8d27
+SHA1: bfca6395fa8812832f71e877dfc492be33c8d036
+SHA256: d1f4de3a486e5d1c1190f05396694be408ef9f5746289bf959186ed37ed8de87
+SHA512: 4e61b755e1b5e8110e659cdb998494d6b2f2815728ac79bea5e198ea8b52baeeca35dff65ceb30817e2c08001b39c39ffcaff8211aadc27bfce4b3912f17ffe2
+Homepage: https://www.llvm.org/
+Description: Clang library - Common development package
+ Clang project is a C, C++, Objective C and Objective C++ front-end
+ based on the LLVM compiler. Its goal is to offer a replacement to the
+ GNU Compiler Collection (GCC).
+ .
+ Clang implements all of the ISO C++ 1998, 11, 14 and 17 standards and also
+ provides most of the support of C++20.
+ .
+ This package contains the Clang generic headers and some libraries
+ (profiling, etc).
+
+Package: libclang-cpp11-dev
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 60
+Depends: libstdc++-10-dev, libgcc-10-dev, libclang-cpp11 (= 1:11.0.1-2)
+Breaks: libclang-11-dev (<< 1:11~++20200124010400+805c157e8ae-1~exp1)
+Replaces: libclang-11-dev (<< 1:11~++20200124010400+805c157e8ae-1~exp1)
+Filename: pool/bullseye/debian/binary-arm64/libclang-cpp11-dev_1%3a11.0.1-2_arm64.deb
+Size: 44460
+MD5sum: 5fd505febd6dd2aa587bd391f911bc9d
+SHA1: b91be04a8f87869e23f380734fa9d9e9eac6c8d7
+SHA256: 5c3c28ca2631d5a4ba9f47c1018da61ac993c6dbf7e79d6cbfe48593878279c7
+SHA512: b99dacf77154dd8f93d9b9f138428a43a356f2816521f2367a08f2fcd081facf2c9e6d1d89c52309dc4463ca159f16f4bd3b4fd015e51c50c3c0c2593bdc507e
+Homepage: https://www.llvm.org/
+Description: C++ interface to the Clang library
+ Clang project is a C, C++, Objective C and Objective C++ front-end
+ based on the LLVM compiler. Its goal is to offer a replacement to the
+ GNU Compiler Collection (GCC).
+ .
+ Clang implements all of the ISO C++ 1998, 11, 14 and 17 standards and also
+ provides most of the support of C++20.
+ .
+ This package contains the Clang C++ library.
+ .
+ The C++ Interface to Clang provides an API that exposes
+ facilities for parsing source code into an abstract syntax tree (AST),
+ loading already-parsed ASTs, traversing the AST, associating physical source
+ locations with elements within the AST, and other facilities that support
+ Clang-based development tools.
+ .
+ This package contains symlinks without a version number, which needed by
+ linker at build time.
+
+Package: libclang-cpp11
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: libs
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 39833
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libllvm11 (= 1:11.0.1-2), libstdc++6 (>= 9)
+Filename: pool/bullseye/debian/binary-arm64/libclang-cpp11_1%3a11.0.1-2_arm64.deb
+Size: 7956728
+MD5sum: 478f8396f51e8be9dc0d6e5a84106f22
+SHA1: 2f8a69e62bf5eaa494ac7fd3490e5f7744312efe
+SHA256: 6548d2d927b026d13142e17ad570e6a78f34daa9c0c4f5d188e7e51041198455
+SHA512: ed7454078914ff0d890f413d1efb79e63b0fddc45724c337e5d4d40d25fbd8d5e04ea9ee86788b3956939b4923a5b01e855779d52860524c884813b6c0e22d8b
+Homepage: https://www.llvm.org/
+Description: C++ interface to the Clang library
+ Clang project is a C, C++, Objective C and Objective C++ front-end
+ based on the LLVM compiler. Its goal is to offer a replacement to the
+ GNU Compiler Collection (GCC).
+ .
+ Clang implements all of the ISO C++ 1998, 11, 14 and 17 standards and also
+ provides most of the support of C++20.
+ .
+ This package contains the Clang C++ library.
+ .
+ The C++ Interface to Clang provides an API that exposes
+ facilities for parsing source code into an abstract syntax tree (AST),
+ loading already-parsed ASTs, traversing the AST, associating physical source
+ locations with elements within the AST, and other facilities that support
+ Clang-based development tools.
+
+Package: libclang1-11
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: libs
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 22000
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libllvm11 (>= 1:9~svn298832-1~), libstdc++6 (>= 9)
+Filename: pool/bullseye/debian/binary-arm64/libclang1-11_1%3a11.0.1-2_arm64.deb
+Size: 4553228
+MD5sum: 9ec57002fc610056ca4aea26d378c12d
+SHA1: a457a5cb4dcf9c198680e5eeb6b18e0e7e5ef8be
+SHA256: 957e84b05c1eb795a08d79517a92e9aab565e14b48a81eb8130c5086da6338ae
+SHA512: 9c0ef68287bfe49339e12b559b684d0e5a2254993488a28ccd0d4613815e423eb415780decd37052e57571cf803220a4a2c5c536113f9d5c76a92fd4d352c7cc
+Homepage: https://www.llvm.org/
+Description: C interface to the Clang library
+ Clang project is a C, C++, Objective C and Objective C++ front-end
+ based on the LLVM compiler. Its goal is to offer a replacement to the
+ GNU Compiler Collection (GCC).
+ .
+ Clang implements all of the ISO C++ 1998, 11, 14 and 17 standards and also
+ provides most of the support of C++20.
+ .
+ This package contains the Clang library.
+ .
+ The C Interface to Clang provides a relatively small API that exposes
+ facilities for parsing source code into an abstract syntax tree (AST),
+ loading already-parsed ASTs, traversing the AST, associating physical source
+ locations with elements within the AST, and other facilities that support
+ Clang-based development tools.
+
+Package: libffi-dev
+Architecture: arm64
+Version: 3.4.8-2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libffi
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 294
+Depends: libffi8 (= 3.4.8-2)
+Conflicts: libffi4-dev
+Filename: pool/bullseye/debian/binary-arm64/libffi-dev_3.4.8-2_arm64.deb
+Size: 57192
+MD5sum: 9faf84424702b5423729deef141d1cb5
+SHA1: 29050f133f12cd42e68264240cb4c4215c948ec5
+SHA256: 55f6d389cc954407cdba6e4ba5e7039dd2042d2ca8929d6f5eb49d6b97ba92de
+SHA512: 2a41ccb860bd8fbbd08cf704033cf1b2cacfb3d729b337dcabfc61a90890a92ef17d16274a29a0ac963f27db88eb1bf4103803e5d0805cd2a7c3922fb627b496
+Homepage: https://sourceware.org/libffi/
+Description: Foreign Function Interface library (development files)
+ This package contains the headers and static library files necessary for
+ building programs which use libffi.
+ .
+ A foreign function interface is the popular name for the interface that
+ allows code written in one language to call code written in another
+ language.
+
+Package: libffi7
+Architecture: arm64
+Version: 3.3-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libffi
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 58
+Depends: libc6 (>= 2.17)
+Filename: pool/bullseye/debian/binary-arm64/libffi7_3.3-6_arm64.deb
+Size: 20648
+MD5sum: 3be28f211969d2f6e9f6bf4fc21a5f91
+SHA1: ec6e2ead8723cf8a05a3e2882f1dfb74fe44aa74
+SHA256: eb748e33ae4ed46f5a4c14b7a2a09792569f2029ede319d0979c373829ba1532
+SHA512: 3d9392e92c15b11ec7e108beb55f58ba50776705d621d6a08eef515a0a59a1ec2eacca68d14b22e873e63b66e1409bc79f1447525593a5afa646f0399a088ebf
+Homepage: https://sourceware.org/libffi/
+Description: Foreign Function Interface library runtime
+ A foreign function interface is the popular name for the interface that
+ allows code written in one language to call code written in another
+ language.
+
+Package: libgc1
+Architecture: arm64
+Version: 1:8.2.8-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libgc
+Maintainer: Christoph Egger <christoph@debian.org>
+Installed-Size: 521
+Depends: libc6 (>= 2.38), libstdc++6 (>= 4.1.1)
+Conflicts: libgc1c2
+Replaces: libgc1c2
+Filename: pool/bullseye/debian/binary-arm64/libgc1_1%3a8.2.8-1_arm64.deb
+Size: 241044
+MD5sum: ac428ed1186d11d09f720040b691875c
+SHA1: e0f899feefaabb033efdca11a052cdef9504b7fe
+SHA256: 58747952e7bd66396023aa8bf53f5039217fddd750b337dfa13352d4fc07f528
+SHA512: f81437c08cb880e474d7755e0d13f790123b6c4736c5eb0c7dd15ec9ff6ec44f018885c1afc5fa54165a9896fde7a658dffb122c31ce585a3cab197d0b623274
+Homepage: https://www.hboehm.info/gc/
+Description: conservative garbage collector for C and C++
+ Boehm-Demers-Weiser's GC is a garbage collecting storage allocator that is
+ intended to be used as a plug-in replacement for C's malloc or C++'s new().
+ .
+ It allows you to allocate memory basically as you normally would without
+ explicitly deallocating memory that is no longer useful. The collector
+ automatically recycles memory when it determines that it can no longer be
+ used.
+ .
+ This version of the collector is thread safe, has C++ support and uses the
+ defaults for everything else. However, it does not work as a drop-in malloc(3)
+ replacement.
+
+Package: libgcc-10-dev
+Architecture: arm64
+Version: 10.2.1-6
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-10
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 9640
+Depends: gcc-10-base (= 10.2.1-6), libgcc-s1 (>= 10.2.1-6), libgomp1 (>= 10.2.1-6), libitm1 (>= 10.2.1-6), libatomic1 (>= 10.2.1-6), libasan6 (>= 10.2.1-6), liblsan0 (>= 10.2.1-6), libtsan0 (>= 10.2.1-6), libubsan1 (>= 10.2.1-6)
+Recommends: libc6-dev (>= 2.30-1~)
+Breaks: libgccjit-10-dev (<< 10-20200321-1)
+Replaces: libgccjit-10-dev (<< 10-20200321-1)
+Filename: pool/bullseye/debian/binary-arm64/libgcc-10-dev_10.2.1-6_arm64.deb
+Size: 876396
+MD5sum: d747e2a219b8a1ea0faf639093ba5ebe
+SHA1: a5934f8d021099350fedccfe0705b1f4af13acfc
+SHA256: 80fc73d339ada2e194175afe83cd89014565242153b6e3c2128849d8817da367
+SHA512: dda42f0e72998951ea7b715bbd0754fb4e32a11f68397c9e5bb3496495e034ab4a291bc2388dd3489f5c2329a866f2c8023085c242e363723a8106d3958a1f1b
+Homepage: http://gcc.gnu.org/
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+
+Package: libllvm11
+Architecture: arm64
+Version: 1:11.0.1-2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 72776
+Depends: libc6 (>= 2.29), libedit2 (>= 2.11-20080614-0), libffi7 (>= 3.3~20180313), libgcc-s1 (>= 4.2), libstdc++6 (>= 9), libtinfo6 (>= 6), libz3-4 (>= 4.8.9), zlib1g (>= 1:1.2.0)
+Filename: pool/bullseye/debian/binary-arm64/libllvm11_1%3a11.0.1-2_arm64.deb
+Size: 14711520
+MD5sum: f61295122a9a0903d4a6faf21f2c8758
+SHA1: faa14396002a8591eae6ee36040b35e7a1ea1b97
+SHA256: 0f4d1c3e259e203cc25ca5e07a4f88a018a775bdbf4376f33b06c8ffb7bb688b
+SHA512: 51428d8f737e5ca815d42738da4624ba0327bd2f0d3930396ce52f6517f7bfcd3f5f49ec296f3ee4131f01d16141d3e0a957525d107ce541db2c076210fe2799
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies, runtime library
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ This package contains the LLVM runtime library.
+
+Package: libobjc-10-dev
+Architecture: arm64
+Version: 10.2.1-6
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-10
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 1549
+Depends: gcc-10-base (= 10.2.1-6), libgcc-10-dev (= 10.2.1-6), libobjc4 (>= 10.2.1-6)
+Filename: pool/bullseye/debian/binary-arm64/libobjc-10-dev_10.2.1-6_arm64.deb
+Size: 164972
+MD5sum: 73ee161868f8c55f8e2d3c45e436014c
+SHA1: bf519501dd1d37fca3c1e298b717f3290e6cae20
+SHA256: b478a9f076ee9cf8cdf87dd4fca29f55d547b0e2320b722000c70201d5171d3c
+SHA512: 30e079039819ce550e97925a5d8fb3f1cc88decec6ed77fda18a8ca78af7d98039b1be8a430f05a531e5c51989ee3de5b8dddaef216c2ea97858079796717f80
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Objective-C applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU ObjC applications.
+
+Package: libobjc4
+Architecture: arm64
+Version: 14.2.0-19
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 293
+Depends: gcc-14-base (= 14.2.0-19), libc6 (>= 2.38), libgc1 (>= 1:7.2d), libgcc-s1 (>= 3.0)
+Filename: pool/bullseye/debian/binary-arm64/libobjc4_14.2.0-19_arm64.deb
+Size: 39376
+MD5sum: db01f4257c8f535d1701750900e49f50
+SHA1: 66f511f981db3d987cb54cd2aa57cb20a4cc862b
+SHA256: 2c402e31c3636f8c5be1f1c4a4716e9335e570862b7e393ade1e63bde9ff933c
+SHA512: ddf2e7c68355375e1b67b2e17a3f9b20bda09823f4525a275de49232ea1738368ff271c494b47eeeccf479c31ff9939512317c29fe044146566c6cb822dbc018
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Objective-C applications
+ Library needed for GNU ObjC applications linked against the shared library.
+
+Package: libomp-11-dev
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 366
+Provides: libomp-x.y-dev
+Depends: libomp5-11 (= 1:11.0.1-2), libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Suggests: libomp-11-doc
+Conflicts: libomp-x.y-dev
+Breaks: libiomp-dev (<< 3.7-1), libomp-dev (<< 44)
+Replaces: libomp-x.y-dev
+Filename: pool/bullseye/debian/binary-arm64/libomp-11-dev_1%3a11.0.1-2_arm64.deb
+Size: 90672
+MD5sum: 01054a2624bf4a72c00c82fa13ac6644
+SHA1: 11eb4123b0945df93dea09dd1f4ccf7f44e3e313
+SHA256: 44a536228c4a539b63d2bcecfdef49c54ebbac6a27f99baa42ae638123d40a2c
+SHA512: 8ae64f431dbef6764d188fbfb487388cdcd76a0c19e87032a8c4d2043f291af7adeb5c70c4d1e6f8c67802d144dd17d6d3ffc63bb7cba7df997a5eafd1930fb9
+Homepage: https://www.llvm.org/
+Description: LLVM OpenMP runtime - dev package
+ The runtime is the part of the OpenMP implementation that your code is
+ linked against, and that manages the multiple threads in an OpenMP program
+ while it is executing.
+
+Package: libomp5-11
+Architecture: arm64
+Version: 1:11.0.1-2
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 1808
+Provides: libomp-x.y
+Depends: libc6 (>= 2.17)
+Conflicts: libomp-x.y
+Breaks: libomp5 (<< 44)
+Replaces: libomp-x.y
+Filename: pool/bullseye/debian/binary-arm64/libomp5-11_1%3a11.0.1-2_arm64.deb
+Size: 275680
+MD5sum: d698c7eb47ca9b4e9519f741041404f7
+SHA1: a986ee4e692e6650478356a5ce1b4b746def1ddd
+SHA256: 814c35e1c5c96d0832126cbaf365befdd8e594ca6ad6fe6deb168d91352c7495
+SHA512: f1ac385ac3a0bee98436b2bf32a6af71d17f3d2f37587e4124073bc4a546447f1ef8f467c74f863fd9159aafe2dbafa6d966df670b36dc294445193d73e03515
+Homepage: https://www.llvm.org/
+Description: LLVM OpenMP runtime
+ The runtime is the part of the OpenMP implementation that your code is
+ linked against, and that manages the multiple threads in an OpenMP program
+ while it is executing.
+
+Package: libpfm4
+Architecture: arm64
+Version: 4.13.0+git99-gc5587f9-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Maintainer: Debian HPC Team <debian-hpc@lists.debian.org>
+Installed-Size: 587
+Depends: libc6 (>= 2.17)
+Breaks: libpapi5 (<< 5.5.1-2~), pcp (<< 3.11.10~)
+Filename: pool/bullseye/debian/binary-arm64/libpfm4_4.13.0+git99-gc5587f9-1_arm64.deb
+Size: 73080
+MD5sum: 98caa8ac7cdb438d3d1c1df2091ddfd7
+SHA1: a03e06925bb95a390066edfc9f666e1f34481d6c
+SHA256: 5041567ffd6bdb2f46756ee4249d0d21576ac95b059429dc1250a8d24b614e6d
+SHA512: f9faa586d8e8ea81c945865509459d305f8ffaf74062689ebc495c399317de98258a87f0df98c3b828828aa3a845260d0f6df8b864373bdc8f58cc6c7735f171
+Homepage: https://perfmon2.sourceforge.net/
+Description: Library to program the performance monitoring events
+ Libpfm4 helps convert from an event name, expressed as a string, to
+ the event encoding. The encoding can then be used with specific OS
+ interfaces. Libpfm4 also provides OS-specific interfaces to directly
+ setup OS-specific data structures to be passed to the kernel. The
+ current libpfm4, for instance, provides support for the perf_events
+ interface which was introduced in Linux v2.6.31.
+ .
+ This package provides the shared library.
+
+Package: libstdc++-10-dev
+Architecture: arm64
+Version: 10.2.1-6
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-10
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 17852
+Provides: libstdc++-dev
+Depends: gcc-10-base (= 10.2.1-6), libgcc-10-dev (= 10.2.1-6), libstdc++6 (>= 10.2.1-6), libc6-dev (>= 2.30-1~)
+Suggests: libstdc++-10-doc
+Conflicts: libg++2.8-dev, libg++27-dev, libg++272-dev (<< 2.7.2.8-1), libstdc++2.10-dev (<< 1:2.95.3-2), libstdc++2.8-dev, libstdc++2.9-dev, libstdc++2.9-glibc2.1-dev, libstdc++3.0-dev
+Filename: pool/bullseye/debian/binary-arm64/libstdc++-10-dev_10.2.1-6_arm64.deb
+Size: 1703864
+MD5sum: 206c8b0da55306d073cdbdb8abcfc9f6
+SHA1: 0d12b4d0f27a047768e914e37c33893343680e42
+SHA256: cee7ca63613b50a8a51cc670db385c7e6d1181b72c94148fc8b7992e4570782d
+SHA512: ef5da1b871dcd718894102c74b5c93b6bfacf012b6652ff1c1c8283441800c277209838729b23094cba0402816d4375987bba91bc7967c526f07e29ee10bf3e0
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (development files)
+ This package contains the headers and static library files necessary for
+ building C++ programs which use libstdc++.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+
+Package: libtsan0
+Architecture: arm64
+Version: 10.2.1-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-10
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 9029
+Depends: gcc-10-base (= 10.2.1-6), libc6 (>= 2.23), libgcc-s1 (>= 3.3)
+Filename: pool/bullseye/debian/binary-arm64/libtsan0_10.2.1-6_arm64.deb
+Size: 1957408
+MD5sum: 765b844621a35738d1c6cd5e80a4a7bf
+SHA1: b19d922f2f226dc4f468821c2812777ca9a0e692
+SHA256: bb5ec0dfdcac7b2e93d161f7092a9a098d1001591cd016093e7f41fda6864b3c
+SHA512: 4e8728cade71729a6d3833a11c93afc793f1063906e6ab3cc27029ca233fe88a5615f00a45f16630adee74a32c4bce5839de76182e3129013759dfdcf0f6c64a
+Homepage: http://gcc.gnu.org/
+Description: ThreadSanitizer -- a Valgrind-based detector of data races (runtime)
+ ThreadSanitizer (Tsan) is a data race detector for C/C++ programs.
+ The Linux and Mac versions are based on Valgrind.
+
+Package: libz3-4
+Architecture: arm64
+Version: 4.13.3-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: z3
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 26286
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), libstdc++6 (>= 14)
+Breaks: libz3-dev (<< 4.4.1)
+Replaces: libz3-dev (<< 4.4.1)
+Filename: pool/bullseye/debian/binary-arm64/libz3-4_4.13.3-1_arm64.deb
+Size: 7506868
+MD5sum: 484bf18daaeb4fab0c8a1d7d53d6714f
+SHA1: 9e2f9ad127db834d80df467507c52424db02eee8
+SHA256: 29a7b924a5a38c9ac4e2a64aa11586a9c54f26b579b18e4f75adf8f7c1106e45
+SHA512: 5a03d0bfaa939dcdb60cdeb56754426c5c6f87feb4f9aef046dc3eb84135f5964ef6109757bf287da31127a79fe083c2b9de3fe5c2acf8fa8b729395aaa65bfb
+Homepage: https://github.com/Z3Prover/z3
+Description: theorem prover from Microsoft Research - runtime libraries
+ Z3 is a state-of-the-art theorem prover from Microsoft Research. It can be
+ used to check the satisfiability of logical formulas over one or more
+ theories. Z3 offers a compelling match for software analysis and verification
+ tools, since several common software constructs map directly into supported
+ theories.
+ .
+ This package contains runtime libraries. You shouldn't have to install it
+ manually.
+
+Package: libz3-dev
+Architecture: arm64
+Version: 4.13.3-1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: z3
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 602
+Depends: libz3-4 (= 4.13.3-1)
+Filename: pool/bullseye/debian/binary-arm64/libz3-dev_4.13.3-1_arm64.deb
+Size: 106528
+MD5sum: b252dd38c2e8dcd9f1a5ab754d1ba021
+SHA1: acf11564200118350181ef63833a02541adf57af
+SHA256: e35389f0b02e020d6714c5ef349eef4a1f514d0293c05fd28bb90c1fe4f3f2b7
+SHA512: fa2c1fa0c98c159cf5ba2ff0070cf9d8325d624fb7120515ca364e96afb96770036cd9b65361de6ebee14282031be68cb3eb8459505229b8ccd9fb9ab5532d46
+Homepage: https://github.com/Z3Prover/z3
+Description: theorem prover from Microsoft Research - development files
+ Z3 is a state-of-the-art theorem prover from Microsoft Research. It can be
+ used to check the satisfiability of logical formulas over one or more
+ theories. Z3 offers a compelling match for software analysis and verification
+ tools, since several common software constructs map directly into supported
+ theories.
+ .
+ This package can be used to invoke Z3 via its C++ API.
+
+Package: llvm-11-dev
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: devel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 194099
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libllvm11 (= 1:11.0.1-2), libstdc++6 (>= 9), libffi-dev, llvm-11 (= 1:11.0.1-2), libtinfo-dev, llvm-11-tools (= 1:11.0.1-2), libclang-cpp11 (= 1:11.0.1-2), libz3-dev
+Filename: pool/bullseye/debian/binary-arm64/llvm-11-dev_1%3a11.0.1-2_arm64.deb
+Size: 24753476
+MD5sum: 7015dc3b33ee036fafde153bffbc1689
+SHA1: 72ef088c553e5ccd75925b9f4d34ba7376c7a0b1
+SHA256: 7a5047993e5fc77727cf27e4a1b8695547a180f9a07b78e2760718bd19023683
+SHA512: 277072e2e3424f5fb26b28f5ac7fcb8814d5c0828dc1b2c2d544607c2aff90709d260478f992b6dbea4a8404de08e4b55e148c6abbd58c4152b9b37aea1665a7
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies, libraries and headers
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ LLVM uses a single, language-independent virtual instruction set both
+ as an offline code representation (to communicate code between
+ compiler phases and to run-time systems) and as the compiler internal
+ representation (to analyze and transform programs). This persistent
+ code representation allows a common set of sophisticated compiler
+ techniques to be applied at compile-time, link-time, install-time,
+ run-time, or "idle-time" (between program runs).
+ .
+ This package provides the libraries and headers to develop applications
+ using llvm.
+
+Package: llvm-11-runtime
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: devel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 598
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 4.2), libllvm11 (>= 1:9~svn298832-1~), libstdc++6 (>= 9), libtinfo6 (>= 6), libz3-4 (>= 4.8.9), zlib1g (>= 1:1.1.4)
+Recommends: binfmt-support
+Filename: pool/bullseye/debian/binary-arm64/llvm-11-runtime_1%3a11.0.1-2_arm64.deb
+Size: 182600
+MD5sum: 419bb9c1c384447946ad051e94a14f68
+SHA1: d7aa7154f249018ecb1710a8a1e28b276c6f5e62
+SHA256: cd8c3440991424ef802d4f05328d1ddce01f6fdcd383d8c8d5e61c4c776e4aea
+SHA512: ecdff6c1948c8dde77b82e7b4e462d387520dc7e8ec8b8596cdad929411305ab078ddb4c5315844d486b43d6f23b9fd0c5ab5d0222db77e94550a77d253acec8
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies, IR interpreter
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ LLVM uses a single, language-independent virtual instruction set both
+ as an offline code representation (to communicate code between
+ compiler phases and to run-time systems) and as the compiler internal
+ representation (to analyze and transform programs). This persistent
+ code representation allows a common set of sophisticated compiler
+ techniques to be applied at compile-time, link-time, install-time,
+ run-time, or "idle-time" (between program runs).
+ .
+ This package provides the minimal required to execute programs in LLVM
+ format.
+
+Package: llvm-11-tools
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: devel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 1651
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.3), libstdc++6 (>= 5.2), libtinfo6 (>= 6), libz3-4 (>= 4.8.9), zlib1g (>= 1:1.1.4), python3, python3-pygments, python3-yaml
+Filename: pool/bullseye/debian/binary-arm64/llvm-11-tools_1%3a11.0.1-2_arm64.deb
+Size: 330008
+MD5sum: 7ae6ac6e7f06925ff7cc87d85ad4c893
+SHA1: a86384ca87666d597586649e0be54de32d03e07e
+SHA256: 83268210434b68130001b2dbbad84a69f72a5c9d2b144a2c66f6bff0dab53a4a
+SHA512: c5d3930d27ffcdbb5fe06302cf0ee32d00a9a0fffefedfff3b7c204b62f75cc8793b69b98129af82676a25652e8f26b4c4a2517bbd88adcf1e4e42f8251d2823
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies, tools
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ LLVM uses a single, language-independent virtual instruction set both
+ as an offline code representation (to communicate code between
+ compiler phases and to run-time systems) and as the compiler internal
+ representation (to analyze and transform programs). This persistent
+ code representation allows a common set of sophisticated compiler
+ techniques to be applied at compile-time, link-time, install-time,
+ run-time, or "idle-time" (between program runs).
+ .
+ This package provides tools for testing.
+
+Package: llvm-11
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: devel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 27172
+Depends: llvm-11-runtime (= 1:11.0.1-2), libc6 (>= 2.29), libgcc-s1 (>= 4.2), libllvm11 (>= 1:9~svn298832-1~), libpfm4, libstdc++6 (>= 9), libtinfo6 (>= 6), libz3-4 (>= 4.8.9), zlib1g (>= 1:1.2.0)
+Recommends: llvm-11-dev
+Suggests: llvm-11-doc
+Filename: pool/bullseye/debian/binary-arm64/llvm-11_1%3a11.0.1-2_arm64.deb
+Size: 6449784
+MD5sum: 826bf7b87314e8f4b301a37c60e1eb99
+SHA1: 1e495194297cd0aea9124bc1cf263eee4ef7b8ce
+SHA256: cf167a44cb28f71dc80fcc6e8dcc428a548e3b710fc11b693342ea751a4b1800
+SHA512: 8ae02271c109e8026252ed4f35a3b041d64d74474dcfbdeae6f7443011ed38e6673e373580f4ebfbb80ec9d7c43d8461994e5abb61eb957107e99a2ec6a50a95
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ LLVM uses a single, language-independent virtual instruction set both
+ as an offline code representation (to communicate code between
+ compiler phases and to run-time systems) and as the compiler internal
+ representation (to analyze and transform programs). This persistent
+ code representation allows a common set of sophisticated compiler
+ techniques to be applied at compile-time, link-time, install-time,
+ run-time, or "idle-time" (between program runs).
+ .
+ The strengths of the LLVM infrastructure are its extremely
+ simple design (which makes it easy to understand and use),
+ source-language independence, powerful mid-level optimizer, automated
+ compiler debugging support, extensibility, and its stability and
+ reliability. LLVM is currently being used to host a wide variety of
+ academic research projects and commercial projects. LLVM includes C
+ and C++ front-ends, a front-end for a Forth-like language (Stacker),
+ a young scheme front-end, and Java support is in development. LLVM can
+ generate code for X96, SparcV10, PowerPC or many other architectures.
+
+Package: python3-yaml
+Architecture: arm64
+Version: 6.0.2-1+b2
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: pyyaml (6.0.2-1)
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 552
+Depends: python3 (<< 3.14), python3 (>= 3.13~), python3:any, libc6 (>= 2.17), libyaml-0-2
+Filename: pool/bullseye/debian/binary-arm64/python3-yaml_6.0.2-1+b2_arm64.deb
+Size: 121812
+MD5sum: c9384ba5d38338a2f6126c17b2c462b2
+SHA1: aa06b96edf82d8a8f5159020e1f1efd1a4f4d571
+SHA256: b83a9ccdc2d1d1f2e36c7c333d36b0151cc89f1d45568e28bcab1f00c72a3498
+SHA512: 5247d526bc817aaa33c4ef175803c8bb395ab8545cfe93c7e579c353dacf6b7a7c55414fff3929d4cd5d802b5c17789297310c663ce4071b8d32cb093b0233ce
+Homepage: https://github.com/yaml/pyyaml
+Description: YAML parser and emitter for Python3
+ Python3-yaml is a complete YAML 1.1 parser and emitter for Python3.  It can
+ parse all examples from the specification. The parsing algorithm is simple
+ enough to be a reference for YAML parser implementors. A simple extension API
+ is also provided.  The package is built using libyaml for improved speed.
+
