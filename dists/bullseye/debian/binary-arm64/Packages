@@ -357,6 +357,52 @@ Description: GCC support library (development files)
  This package contains the headers and static library files necessary for
  building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
 
+Package: liblld-11-dev
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 220
+Depends: lld-11 (= 1:11.0.1-2), liblld-11 (= 1:11.0.1-2)
+Filename: pool/bullseye/debian/binary-arm64/liblld-11-dev_1%3a11.0.1-2_arm64.deb
+Size: 76508
+MD5sum: bca5754840e54faf67291300320dc339
+SHA1: 274191931f72bd145b328c318c064f2493e33967
+SHA256: 6c50e2c16112dd39196cd2136fcc990c66d8a1c2832b6098ad068542a9adeeb7
+SHA512: fc695918ba675424eadb41da7ef9a73bdb6c0cc1999b5ec51c51a170bd57726e27ca78c698be5da084a36cb2eaaf476cbd621dc3499492b89fc86166cb114229
+Homepage: https://www.llvm.org/
+Description: LLVM-based linker, header files
+ LLD is a new, high-performance linker. It is built as a set of reusable
+ components which highly leverage existing libraries in the larger LLVM
+ Project.
+ .
+ This package provides the header files to build extension over lld.
+
+Package: liblld-11
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: libs
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 13434
+Depends: libllvm11 (= 1:11.0.1-2)
+Filename: pool/bullseye/debian/binary-arm64/liblld-11_1%3a11.0.1-2_arm64.deb
+Size: 1388696
+MD5sum: 7b7d59e56e1c75b1b670518ccc0b2976
+SHA1: 468f8b97edfdf2fd3a2e75d20a9d77dbb9e21d59
+SHA256: 447dcc230dc0efa9582743634be7d5df58c3fdcbc2fac6cff9370dcc1a884fd0
+SHA512: 5b665f537b646e51b3beb320d3a052bffa5cf85457a102181efb00a08146e88c408e5b1829737d6c7a18f406ff67ab1be5352f5375a69c17dbca6d025f5521a6
+Homepage: https://www.llvm.org/
+Description: LLVM-based linker, library
+ LLD is a new, high-performance linker. It is built as a set of reusable
+ components which highly leverage existing libraries in the larger LLVM
+ Project.
+ .
+ This package contains the LLD runtime library.
+
 Package: libllvm11
 Architecture: arm64
 Version: 1:11.0.1-2
@@ -604,6 +650,27 @@ Description: theorem prover from Microsoft Research - development files
  theories.
  .
  This package can be used to invoke Z3 via its C++ API.
+
+Package: lld-11
+Architecture: arm64
+Version: 1:11.0.1-2
+Priority: optional
+Section: devel
+Source: llvm-toolchain-11
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 4053
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libllvm11 (= 1:11.0.1-2), libstdc++6 (>= 6)
+Filename: pool/bullseye/debian/binary-arm64/lld-11_1%3a11.0.1-2_arm64.deb
+Size: 948208
+MD5sum: 3376a8c906a2149c8c47fb1f327f28fc
+SHA1: 9f9aa354d360ba241e21b18e61cb849cac753cd7
+SHA256: e6ba6150ae61b29352a873a1796e1bd7d336ce2ec76ea684a9f37d1af9add6c2
+SHA512: e06d6ddd99ab1d8743bda5d90bee84d3036b549f420c794eb35c2a1cc1c120d5eb8d830a473e2b548a79f70c817cad1534009af1290f822dd7c2300b840a9890
+Homepage: https://www.llvm.org/
+Description: LLVM-based linker
+ LLD is a new, high-performance linker. It is built as a set of reusable
+ components which highly leverage existing libraries in the larger LLVM
+ Project.
 
 Package: llvm-11-dev
 Architecture: arm64
