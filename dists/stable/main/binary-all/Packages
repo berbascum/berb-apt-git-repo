@@ -15,6 +15,23 @@ SHA256: 6512e516fcff6087b343409d03a4a33867c87578a93176488076c8a8f33c1ddb
 SHA512: 52ff548e54cb60041dd94eb80d36097944ab9c980dd0f9cbdbcb05d09ddfc92a5e826d9e21ec9579278c22221dbd09e1cf80b47c89844ddbe8f6820d441fb90d
 Description: APT configs for Berbascum's github bookworm-debian apt repo
 
+Package: apt-config-berbascum-bookworm-debian
+Architecture: all
+Version: 0.0.3+git.1bb6f80.main.stable
+Priority: optional
+Section: misc
+Maintainer: berbascum <berbascum@ticv.cat>
+Installed-Size: 20
+Pre-Depends: apt
+Depends: ca-certificates, apt-keyrings-berbascum
+Filename: pool/stable/main/binary-all/apt-config-berbascum-bookworm-debian_0.0.3+git.1bb6f80.main.stable_all.deb
+Size: 2780
+MD5sum: 1618fe15b005643a53b2aee42ffe1324
+SHA1: 079a7d480e6fd9c9ce3e83fc59b04822cfdfad13
+SHA256: f9a8e2e3b1239f7f02f47fafe6d85b52b120840ff540fa739360ca7c3673adb4
+SHA512: 109a2ac3df4a5063a4f7217313673d0c8f0ac62c844cf651dcaed6e0ce61a76cad92090e0aac89789ac64e000e77f790092673fb1781f97a9e84ae1906bfee16
+Description: APT configs for Berbascum's github bookworm-debian apt repo
+
 Package: apt-config-berbascum-bullseye-debian
 Architecture: all
 Version: 0.0.1+git.df60314.main.stable
@@ -30,6 +47,23 @@ MD5sum: 287ee66e4664a09de54db40758db0429
 SHA1: d1890ac96b4e7d34c7a381d78235ce55039c1f10
 SHA256: fee7d3b5ff77205aa78291d1559fe1c595b521c1ae4b4376b491838888ac98f1
 SHA512: 6c5c8a999c7db59630868123d687cbaae0dbd523b472bc778a02a6bca1e4f28a12fd5acb3cb70424171537dbb6163fc4adc9b9c4efebbf9470ecaf8197c9110c
+Description: APT configs for Berbascum's github bullseye-debian apt repo
+
+Package: apt-config-berbascum-bullseye-debian
+Architecture: all
+Version: 0.0.2+git.50e884f.main.stable
+Priority: optional
+Section: misc
+Maintainer: berbascum <berbascum@ticv.cat>
+Installed-Size: 20
+Pre-Depends: apt
+Depends: ca-certificates, apt-keyrings-berbascum
+Filename: pool/stable/main/binary-all/apt-config-berbascum-bullseye-debian_0.0.2+git.50e884f.main.stable_all.deb
+Size: 2732
+MD5sum: 11cd1250dd8116ccbc2fd66148c971db
+SHA1: 9442385b629d1d0acdae4250ec7e57c8b6b711ea
+SHA256: 88a1330d4188366c48d4ddcc743430e1148ed3a6b38deaeb39d390298649fa48
+SHA512: ed2c4f7afa0a01850e0d26a94da9eae6493c0ddfff0082c86db3a5acc47a5ab1e51bd27739861f9a28c92424c2e5d4dd5e9be8afc2e04355320e353ae68469ea
 Description: APT configs for Berbascum's github bullseye-debian apt repo
 
 Package: apt-config-berbascum-stable-main
