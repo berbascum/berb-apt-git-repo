@@ -100,6 +100,23 @@ SHA256: efbdb9d1d34b04354cf1464ac98dd84fbd3af9831dec1482fd65c6be873ab3da
 SHA512: 18d5597606d2aeda84636100b700ad1a22ce07d49042302654de71a3e08951b33dbfe8bf85b05ace89968e68aae67f1e982a2b9acb9848ec1bc59f6b264aeb60
 Description: APT configs for Berbascum's github trixie droidian-xiaomi-vayu apt repo
 
+Package: apt-config-berbascum-trixie-droidian
+Architecture: all
+Version: 0.0.1+git.106deae.main.stable
+Priority: optional
+Section: misc
+Maintainer: berbascum <berbascum@ticv.cat>
+Installed-Size: 20
+Pre-Depends: apt
+Depends: ca-certificates, apt-keyrings-berbascum
+Filename: pool/stable/main/binary-all/apt-config-berbascum-trixie-droidian_0.0.1+git.106deae.main.stable_all.deb
+Size: 2696
+MD5sum: c4e6a082d473955b902289c86b06eb2b
+SHA1: 2e3356c1a8872bcd409638b490dac46bc5c66eed
+SHA256: f06102ddfb8f1e10b265bb6bc5ddf95f144f4e21a28caa1acd5d63ea104e1542
+SHA512: 20de78791da102edadca6b05dda5cc8ee23085e217ed7046718c3e381b6bbe801a36a786945c5b5179d95ba46e24a15f23160bda97f54eaa588340437f115969
+Description: APT configs for Berbascum's github trixie droidian General apt repo
+
 Package: apt-keyrings-berbascum
 Architecture: all
 Version: 0.0.4+git20250216135046.56cc939.main.stable
