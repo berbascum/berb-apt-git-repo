@@ -1,0 +1,190 @@
+Package: libc-ares2
+Architecture: all
+Version: 1.34.5-1
+Priority: optional
+Section: oldlibs
+Source: c-ares
+Maintainer: Gregor Jasny <gjasny@googlemail.com>
+Installed-Size: 32
+Depends: libcares2
+Filename: pool/bookworm/debian/binary-arm64/libc-ares2_1.34.5-1_all.deb
+Size: 8768
+MD5sum: ae7641ac3e7320caad7381be2729b569
+SHA1: 6a3650dd881022768b67f32abf4f8c295f139dd4
+SHA256: f9f30a4c49315c9f4c3fcf9b71d4f966e0d6602cfb051c8fc64ebb66e79ca0f3
+SHA512: 6ba1c95869b518488bd9c763903fb096c0dbcc67f247a03c3e035b4cfdc86680abb88ed8a4577ed5908626a17cab21f6c78c97d481d70f78c97bcf9afabef257
+Homepage: https://c-ares.org/
+Description: transitional package
+ This is a transitional package. It can safely be removed.
+
+Package: libjs-jquery
+Architecture: all
+Version: 3.6.1+dfsg+~3.5.14-1
+Multi-Arch: foreign
+Priority: optional
+Section: javascript
+Source: node-jquery
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Installed-Size: 705
+Recommends: javascript-common
+Filename: pool/bookworm/debian/binary-arm64/libjs-jquery_3.6.1+dfsg+~3.5.14-1_all.deb
+Size: 326128
+MD5sum: ee5dba0e9fb36a1dfbc6a8e224961d5e
+SHA1: 6fb072562e42ea9ef62ac543a26149a80c567451
+SHA256: a58c9ff6afe96c769cb6535754c909410760e4efa1e1540236194e489adcfb25
+SHA512: eeaef36aad5a53c5274aaa53fa300b71efea8939a66a6e6b4853e4330d2b2de2d3d3283eeb911442d7bbe0cdfbde3bd4eab7499e2918672adf4e7e654636c93e
+Homepage: https://jquery.com/
+Description: JavaScript library for dynamic web applications
+ jQuery is a fast, concise, JavaScript Library
+ that simplifies how you traverse HTML documents, handle events,
+ perform animations, and add Ajax interactions to your web pages.
+ jQuery is designed to change the way that you write JavaScript.
+
+Package: libjs-mathjax
+Architecture: all
+Version: 2.7.9+dfsg-1
+Multi-Arch: foreign
+Priority: optional
+Section: javascript
+Source: mathjax
+Maintainer: Dmitry Shachnev <mitya57@debian.org>
+Installed-Size: 41463
+Depends: fonts-mathjax (>= 2.6.0~)
+Suggests: fonts-mathjax-extras, fonts-stix, libjs-mathjax-doc
+Filename: pool/bookworm/debian/binary-arm64/libjs-mathjax_2.7.9+dfsg-1_all.deb
+Size: 5666572
+MD5sum: 915234850f781dd01df15b222ef4bbdd
+SHA1: 94709b37ef5b3ac7db3da850cba36a49b7d61ad9
+SHA256: bc709a68e532f82460fc31f6678cc8f95bbb7c357e2ac938808eeb5c9c156988
+SHA512: a982c6cae2122cb53301a4f856c1600298619a62f3e9b7173e89a5a475ba98e8b71ab56ff287fbc100c4dcc64dfb80cb442c0c4d3062e814acc134d3e4a8d699
+Homepage: https://www.mathjax.org
+Description: JavaScript display engine for LaTeX and MathML
+ MathJax was designed with the goal of consolidating the recent advances in web
+ technologies into a single, definitive, math-on-the-web platform supporting
+ the major browsers and operating systems.
+ .
+ It requires no setup on the part of the user (no plugins to download or
+ software to install), so the page author can write web documents that include
+ mathematics and be confident that users will be able to view it naturally and
+ easily. Simply include MathJax and some mathematics in a web page, and MathJax
+ will do the rest.
+
+Package: libjs-underscore
+Architecture: all
+Version: 1.13.4~dfsg+~1.11.4-3
+Multi-Arch: foreign
+Priority: optional
+Section: javascript
+Source: underscore
+Maintainer: Debian Javascript Maintainers <pkg-javascript-devel@lists.alioth.debian.org>
+Installed-Size: 349
+Recommends: javascript-common, libjs-jquery
+Filename: pool/bookworm/debian/binary-arm64/libjs-underscore_1.13.4~dfsg+~1.11.4-3_all.deb
+Size: 115632
+MD5sum: ab489f52a05cb6f576a7f31bbb51ac3b
+SHA1: c6d238a61fe0cc68c6ff58c7c9afbbdb4c3ebbe8
+SHA256: 4a0fbc90e7f62ea50c4ac7453352721fa60bb5eac87e9f39a027908faff29015
+SHA512: 183fd8051ac6402e5f24ed75b5f195df0ea9106c65e6ef65bafe10019ac1da547fb5b28781ff67a29c5a1803be850b79b31e792a8aed652227283a03f509cb77
+Homepage: https://underscorejs.org/
+Description: JavaScript's functional programming helper library
+ Underscore is a utility-belt library for JavaScript that provides a lot
+ of the functional programming support that you would expect in
+ Prototype.js (or Ruby), but without extending any of the built-in
+ JavaScript objects.  It's the tie to go along with jQuery's tux.
+ .
+ Underscore provides 60-odd functions that support both the usual
+ functional suspects: map, select, invoke - as well as more specialized
+ helpers: function binding, javascript templating, deep equality
+ testing, and so on.  It delegates to built-in functions, if present, so
+ modern browsers will use the native implementations of forEach, map,
+ reduce, filter, every, some and indexOf.
+
+Package: libtirpc-common
+Architecture: all
+Version: 1.3.6+ds-1
+Multi-Arch: foreign
+Priority: optional
+Section: libs
+Source: libtirpc
+Maintainer: Josue Ortega <josue@debian.org>
+Installed-Size: 32
+Breaks: libtirpc1, libtirpc3t64 (<< 1.1.4-0.1~)
+Replaces: libtirpc1, libtirpc3t64 (<< 1.1.4-0.1~)
+Filename: pool/bookworm/debian/binary-arm64/libtirpc-common_1.3.6+ds-1_all.deb
+Size: 11004
+MD5sum: d536fb98a02d3d13a7b1a29e3a038131
+SHA1: 703a8577b17b52095c1af5c01842e1b18e7aedb5
+SHA256: 300f582e2c9151a8d329568c705cadc76252c417147312fe331c4560d2c7a6c3
+SHA512: 960e4b66f35282142ad180e75be9f26d8e4a270c7d7d7884c707fe3af702f5ff3664df08654993b4d1ed2954312ca3f792759c2c4565da55d3ec8e45183e49e4
+Homepage: http://sourceforge.net/projects/libtirpc
+Description: transport-independent RPC library - common files
+ This package contains a port of Sun's transport-independent RPC library to
+ Linux. The library is intended as a replacement for the RPC code in the GNU C
+ library, providing among others support for RPC (and in turn, NFS) over IPv6.
+ .
+ This package contains the netconfig configuration file as well as the
+ associated manpage.
+
+Package: llvm-13-doc
+Architecture: all
+Version: 1:13.0.1-11
+Priority: optional
+Section: doc
+Source: llvm-toolchain-13
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 37021
+Depends: libjs-jquery, libjs-underscore
+Filename: pool/bookworm/debian/binary-arm64/llvm-13-doc_1%3a13.0.1-11_all.deb
+Size: 4621508
+MD5sum: 8df28d431605a3f251e84e542dc2de75
+SHA1: d4f85645ef88c798e0902699d4b344cd7ca195c1
+SHA256: b01bcec104899d0e2283d7f5b43f8c369db671010a58a6bf3c1cb779c75b4e3f
+SHA512: 768fe4279ca274c0c9912f377d0b845ecf7bf73c62144a977e91e3be27ce96d460ae7c13df083c83e2471971d92f874b19ca6045d7f25a017a56d100437ae77d
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies, documentation
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ LLVM uses a single, language-independent virtual instruction set both
+ as an offline code representation (to communicate code between
+ compiler phases and to run-time systems) and as the compiler internal
+ representation (to analyze and transform programs). This persistent
+ code representation allows a common set of sophisticated compiler
+ techniques to be applied at compile-time, link-time, install-time,
+ run-time, or "idle-time" (between program runs).
+ .
+ This package contains all documentation (extensive).
+
+Package: llvm-13-examples
+Architecture: all
+Version: 1:13.0.1-11
+Priority: optional
+Section: doc
+Source: llvm-toolchain-13
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 457
+Depends: llvm-13-dev (>= 1:13.0.1-11), llvm-13-dev (<< 1:13.0.1-11+c~)
+Filename: pool/bookworm/debian/binary-arm64/llvm-13-examples_1%3a13.0.1-11_all.deb
+Size: 266132
+MD5sum: a0111467ad1da39289e3fd0e520b36cc
+SHA1: 038dcc3f7882f27893c874fe901b84e1c2c053a5
+SHA256: 36be76f0d04f9404992c45a82c5f9c070777c4ff01d02497509835b5859e0543
+SHA512: 95478f89fe4f9356a6a241740ad9c2b0659869d59a6ff99cd6de30cdc2a1555df5f56b3ce6b1d679e70c446d283cfa9b867903a7e1897b721490e21d909a92dc
+Homepage: https://www.llvm.org/
+Description: Modular compiler and toolchain technologies, examples
+ LLVM is a collection of libraries and tools that make it easy to build
+ compilers, optimizers, just-in-time code generators, and many other
+ compiler-related programs.
+ .
+ LLVM uses a single, language-independent virtual instruction set both
+ as an offline code representation (to communicate code between
+ compiler phases and to run-time systems) and as the compiler internal
+ representation (to analyze and transform programs). This persistent
+ code representation allows a common set of sophisticated compiler
+ techniques to be applied at compile-time, link-time, install-time,
+ run-time, or "idle-time" (between program runs).
+ .
+ This package contains examples for using LLVM, both in developing
+ extensions to LLVM and in using it to compile code.
+

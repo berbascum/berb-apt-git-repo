@@ -1,28 +1,28 @@
 Architectures: all arm64 amd64
 Codename: bookworm
 Components: amd64 debian droidian droidian-xiaomi-vayu droidian-build-kernel mobian
-Date: Mon, 04 Aug 2025 18:23:05 +0000
+Date: Tue, 05 Aug 2025 02:00:08 +0000
 Description: Berbascum's apt repo for release bookworm
 Label: berbascum
 Origin: berbascum
 Suite: bookworm
 MD5Sum:
- e08f8c14d5a9c8fb944e66239405a8ad              278 Release
- 0902e5a0182062319472ac442793db1b               28 debian/Contents-all.bz2
- e62ff0123a74adfc6903d59a449cbdb0               40 debian/Contents-all.gz
+ be19ebe89747ba914332c63e8eae538d              278 Release
+ 07e074015bc8ae15f1f8f67f40ffa775            14722 debian/Contents-all.bz2
+ a09f64442f239313f6392c3e0fb18c87            23394 debian/Contents-all.gz
  0902e5a0182062319472ac442793db1b               28 debian/Contents-amd64.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 debian/Contents-amd64.gz
- 60bcfc55f76cebbadf22c690dc936672            25191 debian/Contents-arm64.bz2
- c745bc46b3383a2aaf0cfed99b9ebe85            30925 debian/Contents-arm64.gz
- d41d8cd98f00b204e9800998ecf8427e                0 debian/binary-all/Packages
- 0902e5a0182062319472ac442793db1b               28 debian/binary-all/Packages.bz2
- e62ff0123a74adfc6903d59a449cbdb0               40 debian/binary-all/Packages.gz
+ a8e7d61cb8913ae5a3d7954a72a6fbc2            42283 debian/Contents-arm64.bz2
+ a818a40170d3e4ace27f9d686b32aa99            51700 debian/Contents-arm64.gz
+ dd53ddf441f4104d278133179c398da3             8611 debian/binary-all/Packages
+ f680706d904dc16c66c3c3818af4f031             3635 debian/binary-all/Packages.bz2
+ 963c0563f9c6a505cc3b8fc979f68384             3574 debian/binary-all/Packages.gz
  d41d8cd98f00b204e9800998ecf8427e                0 debian/binary-amd64/Packages
  0902e5a0182062319472ac442793db1b               28 debian/binary-amd64/Packages.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 debian/binary-amd64/Packages.gz
- 7152bc6449413bbdffcf61a732363a84            18020 debian/binary-arm64/Packages
- 10093dc2829b0454af4d30b54b19da44             4829 debian/binary-arm64/Packages.bz2
- a4522525094d3ef639272f9776102df7             4609 debian/binary-arm64/Packages.gz
+ 39d42c112d5f31e02c6d911d211bf12b            59599 debian/binary-arm64/Packages
+ cdf0cae7788b505f4f227efe5be7f20c            16062 debian/binary-arm64/Packages.bz2
+ cf0aae942a53153f9210a934435c756e            17365 debian/binary-arm64/Packages.gz
  0902e5a0182062319472ac442793db1b               28 droidian-build-kernel/Contents-all.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 droidian-build-kernel/Contents-all.gz
  0902e5a0182062319472ac442793db1b               28 droidian-build-kernel/Contents-amd64.bz2
@@ -99,22 +99,22 @@ MD5Sum:
  0902e5a0182062319472ac442793db1b               28 mobian/binary-arm64/Packages.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 mobian/binary-arm64/Packages.gz
 SHA1:
- db477defaa7cf145a163220d30953320cf7d5669              278 Release
- dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/Contents-all.bz2
- e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 debian/Contents-all.gz
+ 1dfc85477240329c08a0604e67f0f4268017ae7c              278 Release
+ dc63e261f340b956ebdeda6282d0dcbc4600f944            14722 debian/Contents-all.bz2
+ 6f66671758d597fe5f57379f313b26745eb6de00            23394 debian/Contents-all.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/Contents-amd64.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 debian/Contents-amd64.gz
- fde884e6ec5e2aed1cfd48f526a2060a388d236b            25191 debian/Contents-arm64.bz2
- fc9bd4007773b05b2c3e6ae64caedfc6e7acca01            30925 debian/Contents-arm64.gz
- da39a3ee5e6b4b0d3255bfef95601890afd80709                0 debian/binary-all/Packages
- dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/binary-all/Packages.bz2
- e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 debian/binary-all/Packages.gz
+ daa9ba86e4c8c8e833442df2cb19c2e876493629            42283 debian/Contents-arm64.bz2
+ bdb13000d65e667de9a82e676688da9ef6d9e6e5            51700 debian/Contents-arm64.gz
+ 346286ac6885054363c914a480a0f133f3de10a1             8611 debian/binary-all/Packages
+ a18e84b14e9b17778144ab9fc18d980b0c4567d1             3635 debian/binary-all/Packages.bz2
+ 66abe6a701beb35ed811a67a1c150cc5a6188268             3574 debian/binary-all/Packages.gz
  da39a3ee5e6b4b0d3255bfef95601890afd80709                0 debian/binary-amd64/Packages
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/binary-amd64/Packages.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 debian/binary-amd64/Packages.gz
- 960ab01367c2eab6d3a1612205f7e6908312da5b            18020 debian/binary-arm64/Packages
- 7441cfc1896e164cec93d7f46eb266b343dd6372             4829 debian/binary-arm64/Packages.bz2
- 93c7516909d3f0035eede71c0418e7ab28870da6             4609 debian/binary-arm64/Packages.gz
+ caf86121529ad544ab6230cfd08bb28e71532e51            59599 debian/binary-arm64/Packages
+ 78997cedb41b9c1b694d4b9205064c63435a6d3d            16062 debian/binary-arm64/Packages.bz2
+ 84c09793498ae3cbf7c35594274d11058c22b0a4            17365 debian/binary-arm64/Packages.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-build-kernel/Contents-all.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-build-kernel/Contents-all.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-build-kernel/Contents-amd64.bz2
@@ -191,22 +191,22 @@ SHA1:
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 mobian/binary-arm64/Packages.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 mobian/binary-arm64/Packages.gz
 SHA256:
- 83ece9a1af3b4cb00cc6f7e373b6b1c67c4935989c55a0c359f2462e61ee361b              278 Release
- f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/Contents-all.bz2
- e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 debian/Contents-all.gz
+ 5ef5d1c4f5583a8d3ec928438c84206985792f9d6b1912cbcfe84dcaab22502b              278 Release
+ dd98563a6a603b5e795c748bebeea31f832c392e91c1e4d4ebf1a2e2b514335c            14722 debian/Contents-all.bz2
+ e34e3958b5131b6f9ebd9a0e9ccfc9d6c0f5ae74b0c1bf437fb56a7aa9386858            23394 debian/Contents-all.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/Contents-amd64.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 debian/Contents-amd64.gz
- 372b26c60781fdcec8dfdcf083b2ad7e74e71f1167b395dd6f1faefba98c5e64            25191 debian/Contents-arm64.bz2
- 6357c69318599319934d438ae5e4bc13fa0f5066c0782e4230c9a7fc31e27449            30925 debian/Contents-arm64.gz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 debian/binary-all/Packages
- f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/binary-all/Packages.bz2
- e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 debian/binary-all/Packages.gz
+ 130c2c9228773160cc1ad41cf15fb4430bd5473403417931702e7a1c02fa1cc2            42283 debian/Contents-arm64.bz2
+ e2462c1d9eac90729e086ca21241c839b8d4c0adc8769df23c723c5ebbf5df45            51700 debian/Contents-arm64.gz
+ 69e5f56757bf990426853a61fd67000ea9da2fe1e743104062d4540fb9dd308b             8611 debian/binary-all/Packages
+ 42e918f961eb2d55aad576edbe4dc7d59e3bccaeb1ef60a616b529274ad25e46             3635 debian/binary-all/Packages.bz2
+ c43699dae179dc4fac2856327e4c4c2be60ab84d8b3030dc9bd15c32c519a7ea             3574 debian/binary-all/Packages.gz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 debian/binary-amd64/Packages
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/binary-amd64/Packages.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 debian/binary-amd64/Packages.gz
- 5ef2c440b83840121deb69a488277adcb622722981b30224783f0910511ad5c9            18020 debian/binary-arm64/Packages
- bb5ace55572bf670e08c386f1e8b32b3ef0ad09545b3ffca4c691efb6c203ce5             4829 debian/binary-arm64/Packages.bz2
- 1ff697bd5771fd0624440912a8ec7928d416fbdddae430ed1001a29c5b5fa522             4609 debian/binary-arm64/Packages.gz
+ 4ccaf89550486a0450fe55836b042aa6e8b6c92817a06bb613456a0fdccd8dad            59599 debian/binary-arm64/Packages
+ 2110b54be76a1adf735904ff37ddf7c31de42d9ce0bbe59216e79698dbf3fca0            16062 debian/binary-arm64/Packages.bz2
+ 459bab9c3ecc35a3e0a28d0b424e5b342061393c89de9d9c6928216948f45611            17365 debian/binary-arm64/Packages.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-build-kernel/Contents-all.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-build-kernel/Contents-all.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-build-kernel/Contents-amd64.bz2
@@ -283,22 +283,22 @@ SHA256:
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 mobian/binary-arm64/Packages.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 mobian/binary-arm64/Packages.gz
 SHA512:
- 6d275c5bc589e36b20f0d306e6a9dda5115046c9e9b6e3e2ba581f7dc58e41626b19b3d1ba06b66e8c8edc995cf3b5177d17354f82d817b3557b5bfcd1fe6045              278 Release
- 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/Contents-all.bz2
- 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 debian/Contents-all.gz
+ 11a3c4d0594d10eae85a803aa1ee578ba4ebb0923095f3e382b7804dd156bc32beea772081bc29f54a62b107b7895df8b8dd3ff9eceb85204aa715c2b6e7cba7              278 Release
+ bfb3a420c72e1bb4185078f4e2d8585db235c7cf12eb35cf1d31bc5caad7eb3d742ce626099af91d94beee8e37169dfe5624158c31cf7d25f1bb381d8da70ae6            14722 debian/Contents-all.bz2
+ 153642ca574a1d8f0c6ad9ec130d3a887e06c2d7108e11b670883faed791ee445efebbbdc7140f6483ed12ea843151946728c9aa00df46349b5ff9de6a2ef9f5            23394 debian/Contents-all.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/Contents-amd64.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 debian/Contents-amd64.gz
- 517e2a80720c595988b1b59b75c8a037948bb3265d1f6e235dc2ba38674abbe660a5637c15127fa4df96e4182e0541dcea92c125cf81de50ed5200954387406e            25191 debian/Contents-arm64.bz2
- 11d36358d89fb8e9f6ac6bb428c17ae9675fdb54310fb11e699b824f8fc501c80659bc46d95f6a5a6480f09b722db29e34160f5d86fa8130d2716139d5dc9399            30925 debian/Contents-arm64.gz
- cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 debian/binary-all/Packages
- 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/binary-all/Packages.bz2
- 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 debian/binary-all/Packages.gz
+ 337c2e5c0e1c011df3fe92229df3baa0e6e7a52a2f9eeb036481d9c4b0f2b2245076e7fa690001ab19de67db21b709436d19c008c2437bf366fabf5ec930caae            42283 debian/Contents-arm64.bz2
+ 41a8bb972d8fa2afd62450d4b609784161f0db2d550f1493ec11338ade19ef4a1ecadbfa83a170b1762b2189b64cf0c57e59a166dfb1fdd5367828a50cee2c3e            51700 debian/Contents-arm64.gz
+ 10ee346b785851868a380aadc379314f3a2234a66550046aeaa2df07b9d6c43c186b65a3ca41f30fa6bb8e9af868e194929a6150306ef457ed177426b473b84d             8611 debian/binary-all/Packages
+ d1409faf928ca37dc22ebf3fe1353e972e69ce061eb59d6bef09cf59cdfd869e867fb78e4e6e8707039a015b1c540beb39e3f3a6564e3c74a5fbbe5caa4ed9d8             3635 debian/binary-all/Packages.bz2
+ 46d6e25f3faec67d252bd8d6462e8af66a526860d43a759712fcacba04d87a7ceeccfeb7cc96c79b8fff5ca400f1bb496a400274c3266291f6f9d975d41314da             3574 debian/binary-all/Packages.gz
  cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 debian/binary-amd64/Packages
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/binary-amd64/Packages.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 debian/binary-amd64/Packages.gz
- 9090ec202ce01465ba5cd1fc2b72c3e3fae327cdb38d04eb554f472f4ae4e46293d08c8fc5d9d4d0f65e4e9052a4b0d038670ca3955a711390dc076ee7f3de96            18020 debian/binary-arm64/Packages
- 7b73fcb12a61eea1b3b4adf17442750d66e708630486ec353a9148f5ccad2a443f7088b5ba5602150688957fecf2636f66a1ab95e05476eb7c4a7001d00d8888             4829 debian/binary-arm64/Packages.bz2
- 673a5f3e3d705c948ee1de422d47a0b26865de4a91d9c231dc93d5f559b6183ae016d913269e99502222174a69cb53133daf91d5c08e85b8e598536d77f93186             4609 debian/binary-arm64/Packages.gz
+ 70cb5bbf7a7c954508f77fb687123ab249363d5f43e98e3182beb239af96b8cd59cbf537bc43479def60cafed322255a5b2803678be039808de56fca387621da            59599 debian/binary-arm64/Packages
+ c9746cd4e30b7b97a858eda8eb5d790b32d4311687606c80f5629c49c20745de3fbd5cd3831e68e92b2b419a76d2faa835704db6fab54e39bf5c5dd8221a6788            16062 debian/binary-arm64/Packages.bz2
+ d58c72d83669f4547dbc2bbc428a71eb49378d96fc98cc02371d67d64838eb65e6a113ed6ee4b5a112d8621c51ef2c3ab8ce1d00a6e0265cfb9e3a4ae201066e            17365 debian/binary-arm64/Packages.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-build-kernel/Contents-all.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-build-kernel/Contents-all.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-build-kernel/Contents-amd64.bz2

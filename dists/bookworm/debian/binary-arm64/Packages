@@ -1,31 +1,188 @@
-Package: clang-13
+Package: libabsl20220623
+Architecture: arm64
+Version: 20220623.1-1+deb12u2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: abseil
+Maintainer: Benjamin Barenblat <bbaren@debian.org>
+Installed-Size: 4676
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 4.5), libstdc++6 (>= 11)
+Filename: pool/bookworm/debian/binary-arm64/libabsl20220623_20220623.1-1+deb12u2_arm64.deb
+Size: 363108
+MD5sum: 7ea992726e2e41857786ed132fbb8bc8
+SHA1: a268ba03b24a0de966ee7e96a05589b9af8d25a3
+SHA256: 55758749095c758b9c39e1e2a4decb1b67dad70ba790447cf12fb4cccbe03f63
+SHA512: ff1c4ec05b2211f5cbfe12fccd30a3c803c8daedead9e6e8a2affe206814be0815e7c46346684f4cc3b263a0b100395aaf56aa4ae9a30298445b6e8e5f414259
+Homepage: https://abseil.io/
+Description: extensions to the C++ standard library
+ Abseil is an open-source collection of C++ library code designed to augment the
+ C++ standard library. The Abseil library code is collected from Google's C++
+ codebase and has been extensively tested and used in production. In some cases,
+ Abseil provides pieces missing from the C++ standard; in others, Abseil
+ provides alternatives to the standard for special needs.
+ .
+ This package contains Abseil's shared libraries.
+
+Package: libc++-13-dev
 Architecture: arm64
 Version: 1:13.0.1-11+b2
+Multi-Arch: same
 Priority: optional
-Section: devel
+Section: libdevel
 Source: llvm-toolchain-13 (1:13.0.1-11)
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 341
-Provides: c++-compiler, c-compiler, objc-compiler
-Depends: libc6 (>= 2.34), libclang-cpp13 (>= 1:13.0.1), libgcc-s1 (>= 3.0), libllvm13, libstdc++6 (>= 11), libstdc++-12-dev, libgcc-12-dev, libobjc-12-dev, libclang-common-13-dev (= 1:13.0.1-11+b2), llvm-13-linker-tools (= 1:13.0.1-11+b2), libclang1-13 (= 1:13.0.1-11+b2), libc6-dev, binutils
-Recommends: llvm-13-dev, python3
-Suggests: clang-13-doc
-Breaks: llvm-13-dev (<< 1:13~++20210129063721)
-Replaces: llvm-13-dev (<< 1:13~++20210129063721)
-Filename: pool/bookworm/debian/binary-arm64/clang-13_1%3a13.0.1-11+b2_arm64.deb
-Size: 92296
-MD5sum: 396c8ff9825ac612a87c117aea8b32d4
-SHA1: aa401de8057d1250b49efe1fab824f93f38b2ae5
-SHA256: b5da8d9d3e09babf40cc86c0863c80173418777eba3ce7cc15a0586b634bd9c5
-SHA512: 1279ab20f34c24733537be521b5ba45de4428bc1835cee38b96f681d7e5acf297127e22552dea4818506bf4087c71e7b97fa7a43d8bad7c4af22e92ece4ce777
+Installed-Size: 8157
+Provides: libc++-x.y-dev
+Depends: libc++1-13 (= 1:13.0.1-11+b2), libunwind-13-dev
+Conflicts: libc++-x.y-dev
+Breaks: libc++-dev (<< 44)
+Replaces: libc++-x.y-dev
+Filename: pool/bookworm/debian/binary-arm64/libc++-13-dev_1%3a13.0.1-11+b2_arm64.deb
+Size: 798104
+MD5sum: d90b5a2bb85751be3d4c684484c72bbc
+SHA1: 5c1e85dfd4d3fbab4e077b066379adfc46948233
+SHA256: f920919881e6ac69abae6495201b5c6add52ef73da09c1665381ce331a24d115
+SHA512: 5e4d4ad01f88087c070f11d33f8b7b908beba3285b114bbed89f0354e4bd4a7dab4826aad2d49de0ce16b6f1e153d32237219bf9ca30525ffb97263e753462de
 Homepage: https://www.llvm.org/
-Description: C, C++ and Objective-C compiler
- Clang project is a C, C++, Objective C and Objective C++ front-end
- based on the LLVM compiler. Its goal is to offer a replacement to the
- GNU Compiler Collection (GCC).
+Description: LLVM C++ Standard library (development files)
+ libc++ is another implementation of the C++ standard library
  .
- Clang implements all of the ISO C++ 1998, 11, 14 and 17 standards and also
- provides most of the support of C++20.
+ Features and Goals
+ .
+   * Correctness as defined by the C++ standards.
+   * Fast execution.
+   * Minimal memory use.
+   * Fast compile times.
+   * ABI compatibility with gcc's libstdc++ for some low-level features such
+     as exception objects, rtti and memory allocation.
+   * Extensive unit tests.
+
+Package: libc++1-13
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 891
+Provides: libc++-x.y
+Depends: libc++abi1-13 (>= 1:13.0.1), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libunwind-13 (>= 1:13.0.1)
+Suggests: clang
+Conflicts: libc++-x.y
+Breaks: libc++1 (<< 44)
+Replaces: libc++-x.y
+Filename: pool/bookworm/debian/binary-arm64/libc++1-13_1%3a13.0.1-11+b2_arm64.deb
+Size: 204400
+MD5sum: 9b7e43117baa3b41ba1fd8e3c4c89dbe
+SHA1: 444abe23d5a1adaf24a7b49ce28aed6bd0ed6ecc
+SHA256: 105f8d92b64a11cfd8df8ab2fd056cd7b713ebe6646a54de73f8212e01482004
+SHA512: 7b979fec3324f1367f1aadbe2f23c5a664da459c187aa98ef7937b37093d852aa5796e7525c290e843ede4a0c129a821702e02d5936ddb57ba0d788b10242a1c
+Homepage: https://www.llvm.org/
+Description: LLVM C++ Standard library
+ libc++ is another implementation of the C++ standard library.
+ .
+ Features and Goals
+ .
+   * Correctness as defined by the C++ standards.
+   * Fast execution.
+   * Minimal memory use.
+   * Fast compile times.
+   * ABI compatibility with gcc's libstdc++ for some low-level features such
+     as exception objects, rtti and memory allocation.
+   * Extensive unit tests.
+
+Package: libc++abi-13-dev
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 676
+Provides: libc++abi-x.y-dev
+Depends: libc++abi1-13 (= 1:13.0.1-11+b2)
+Conflicts: libc++abi-x.y-dev
+Breaks: libc++abi-dev (<= 44)
+Replaces: libc++abi-x.y-dev
+Filename: pool/bookworm/debian/binary-arm64/libc++abi-13-dev_1%3a13.0.1-11+b2_arm64.deb
+Size: 104188
+MD5sum: 121768fef377e9190728659b290d2b4d
+SHA1: 906f82eb41b6820d26cdbf814bb3494d2dbac7e1
+SHA256: dfdfb0e6c92aad9b98240c0e37b8653e16a98008214df733c7dc76f329987d7e
+SHA512: 955c46ca6c445f229a1a74eab1a590a21847a54b1a448b086b321a1eca85f6f9ea6042437e66889457a147b732fe760b4d0e5e5512042d8ad5ff6ef1a739fed2
+Homepage: https://www.llvm.org/
+Description: LLVM low level support for a standard C++ library (development files)
+ libc++abi is another implementation of low level support for a standard C++
+ library.
+ .
+ Features and Goals
+ .
+   * Correctness as defined by the C++ standards.
+   * Provide a portable sublayer to ease the porting of libc++
+
+Package: libc++abi1-13
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 309
+Provides: libc++abi-x.y
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libunwind-13 (>= 1:13.0.1)
+Conflicts: libc++abi-x.y
+Breaks: libc++abi1 (<< 44)
+Replaces: libc++abi-x.y
+Filename: pool/bookworm/debian/binary-arm64/libc++abi1-13_1%3a13.0.1-11+b2_arm64.deb
+Size: 78744
+MD5sum: 4d932b19ab6b0df00b92a26296cb8a44
+SHA1: 5de678733000adec5e9e8af1e18cc7c9903585a3
+SHA256: a9adf1326deca9a7d9f0e1dc5e78d7e7581d9da030fb512179abae94f1c57ebe
+SHA512: fe84871b36361d055e44c6f23f31bff08262ef79ffd7062b16f43960d1c321bd3181844fa812d4872a4d2425a84b80c2469528f53239459175a907428dbb5b28
+Homepage: https://www.llvm.org/
+Description: LLVM low level support for a standard C++ library
+ libc++abi is another implementation of low level support for a standard C++
+ library.
+ .
+ Features and Goals
+ .
+   * Correctness as defined by the C++ standards.
+   * Provide a portable sublayer to ease the porting of libc++
+
+Package: libcares2
+Architecture: arm64
+Version: 1.34.5-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: c-ares
+Maintainer: Gregor Jasny <gjasny@googlemail.com>
+Installed-Size: 306
+Provides: libc-ares2 (= 1.34.5-1)
+Depends: libc6 (>= 2.38)
+Breaks: libc-ares2 (<< 1.34.5-1)
+Replaces: libc-ares1, libc-ares2
+Filename: pool/bookworm/debian/binary-arm64/libcares2_1.34.5-1_arm64.deb
+Size: 92732
+MD5sum: 686c9c1c11db1c6f9d85bfefef7ed6be
+SHA1: d2cb9e76ef0d7daa45eebadba645c31c64fbbc0e
+SHA256: e7700e2f213e5ee3c356559092cf6bf057aeeb0de47cc54207123b4c217dd2d6
+SHA512: e7eb73e5d11dec7e4334df6ec6d5ae160d097d7e70749a6cd464b08b32e14ae09c58f438e3a5a1110f56efd53f849f88f84abdc152950c0d36ece9d92780c22f
+Homepage: https://c-ares.org/
+Description: asynchronous name resolver
+ c-ares is a C library that performs DNS requests and name resolution
+ asynchronously.
+ .
+ It is a fork of the library named "ares", with additional features:
+  * IPv6 support;
+  * extended cross-platform portability;
+  * 64-bit clean sources.
+ .
+ This package provides the shared libraries.
 
 Package: libclang-13-dev
 Architecture: arm64
@@ -182,6 +339,230 @@ Description: C interface to the Clang library
  locations with elements within the AST, and other facilities that support
  Clang-based development tools.
 
+Package: libffi-dev
+Architecture: arm64
+Version: 3.4.8-2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libffi
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 294
+Depends: libffi8 (= 3.4.8-2)
+Conflicts: libffi4-dev
+Filename: pool/bookworm/debian/binary-arm64/libffi-dev_3.4.8-2_arm64.deb
+Size: 57192
+MD5sum: 9faf84424702b5423729deef141d1cb5
+SHA1: 29050f133f12cd42e68264240cb4c4215c948ec5
+SHA256: 55f6d389cc954407cdba6e4ba5e7039dd2042d2ca8929d6f5eb49d6b97ba92de
+SHA512: 2a41ccb860bd8fbbd08cf704033cf1b2cacfb3d729b337dcabfc61a90890a92ef17d16274a29a0ac963f27db88eb1bf4103803e5d0805cd2a7c3922fb627b496
+Homepage: https://sourceware.org/libffi/
+Description: Foreign Function Interface library (development files)
+ This package contains the headers and static library files necessary for
+ building programs which use libffi.
+ .
+ A foreign function interface is the popular name for the interface that
+ allows code written in one language to call code written in another
+ language.
+
+Package: libgc1
+Architecture: arm64
+Version: 1:8.2.8-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libgc
+Maintainer: Christoph Egger <christoph@debian.org>
+Installed-Size: 521
+Depends: libc6 (>= 2.38), libstdc++6 (>= 4.1.1)
+Conflicts: libgc1c2
+Replaces: libgc1c2
+Filename: pool/bookworm/debian/binary-arm64/libgc1_1%3a8.2.8-1_arm64.deb
+Size: 241044
+MD5sum: ac428ed1186d11d09f720040b691875c
+SHA1: e0f899feefaabb033efdca11a052cdef9504b7fe
+SHA256: 58747952e7bd66396023aa8bf53f5039217fddd750b337dfa13352d4fc07f528
+SHA512: f81437c08cb880e474d7755e0d13f790123b6c4736c5eb0c7dd15ec9ff6ec44f018885c1afc5fa54165a9896fde7a658dffb122c31ce585a3cab197d0b623274
+Homepage: https://www.hboehm.info/gc/
+Description: conservative garbage collector for C and C++
+ Boehm-Demers-Weiser's GC is a garbage collecting storage allocator that is
+ intended to be used as a plug-in replacement for C's malloc or C++'s new().
+ .
+ It allows you to allocate memory basically as you normally would without
+ explicitly deallocating memory that is no longer useful. The collector
+ automatically recycles memory when it determines that it can no longer be
+ used.
+ .
+ This version of the collector is thread safe, has C++ support and uses the
+ defaults for everything else. However, it does not work as a drop-in malloc(3)
+ replacement.
+
+Package: libgcc-12-dev
+Architecture: arm64
+Version: 12.4.0-5
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 10839
+Depends: gcc-12-base (= 12.4.0-5), libgcc-s1 (>= 12.4.0-5), libgomp1 (>= 12.4.0-5), libitm1 (>= 12.4.0-5), libatomic1 (>= 12.4.0-5), libasan8 (>= 12.4.0-5), liblsan0 (>= 12.4.0-5), libtsan2 (>= 12.4.0-5), libubsan1 (>= 12.4.0-5), libhwasan0 (>= 12.4.0-5)
+Recommends: libc6-dev (>= 2.23-1~)
+Breaks: libtsan2 (<< 12-20211113-2~)
+Replaces: libtsan2 (<< 12-20211113-2~)
+Filename: pool/bookworm/debian/binary-arm64/libgcc-12-dev_12.4.0-5_arm64.deb
+Size: 957768
+MD5sum: 1a1548bc9ae5202a684b7fa2e5a85fbf
+SHA1: c773f84c287f37cca5a9f642b5054a1ef6a3d0d0
+SHA256: 940f51c52af780a5d0bc6f33c4e2aaca47c3d35d427fea88583f713898468328
+SHA512: 084e4fa833eb5f5476e4ce3e57c74a4d027301234f5a8a2fe75d117eceb7072ccf84127621264fd76e78608d9cf3449c5c4af102c3cd8af88129a26f7f62e95a
+Homepage: http://gcc.gnu.org/
+Description: GCC support library (development files)
+ This package contains the headers and static library files necessary for
+ building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
+
+Package: libgrpc++1.51
+Architecture: arm64
+Version: 1.51.1-3+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: grpc (1.51.1-3)
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 2493
+Depends: libabsl20220623 (>= 0~20220623.0-1), libc6 (>= 2.32), libgcc-s1 (>= 3.0), libgrpc29 (>= 1.51.1), libprotobuf32 (>= 3.21.12), libstdc++6 (>= 11)
+Filename: pool/bookworm/debian/binary-arm64/libgrpc++1.51_1.51.1-3+b1_arm64.deb
+Size: 428688
+MD5sum: 704d90763a4d2756168f4d801b53fc8f
+SHA1: 69e69b34a3b7681473aa175eb6b42ebd9a55b083
+SHA256: 9fb366b5bed048a5309aec8d2bc6ed74a978527c788526c25d197d46288919fc
+SHA512: f765f6d5e00b4fb0de739a3e457bab07baa063f11c0af234abc9df595d727705efcb6a68ce9fce622ec7a48d287454d4f3c5ab2e854e47c387fdfbbdfdd2df26
+Homepage: https://www.grpc.io/
+Description: high performance general RPC framework
+ A modern, open source remote procedure call (RPC) framework that can
+ run anywhere. It enables client and server applications to communicate
+ transparently, and makes it easier to build connected systems.
+ .
+ This package provides the gRPC C++ bindings.
+
+Package: libgrpc29
+Architecture: arm64
+Version: 1.51.1-3+b1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: grpc (1.51.1-3)
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 11389
+Depends: libabsl20220623 (>= 0~20220623.0-1), libc-ares2 (>= 1.11.0~rc1), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libprotobuf32 (>= 3.21.12), libprotoc32 (>= 3.21.12), libre2-9 (>= 20150701+dfsg), libssl3 (>= 3.0.0), libstdc++6 (>= 11), zlib1g (>= 1:1.1.4)
+Breaks: libgrpc10, libgrpc28, libgrpc9
+Replaces: libgrpc10, libgrpc28, libgrpc9
+Filename: pool/bookworm/debian/binary-arm64/libgrpc29_1.51.1-3+b1_arm64.deb
+Size: 2426644
+MD5sum: 216d36f2192bf6e5f62dae91b7655939
+SHA1: 4808f0e508a22790808abfd69c642ffae8a7668a
+SHA256: de70de87c4dd623d5bf40eb7a93d91012cbb812fc4eb13919ac7b4b630dffa28
+SHA512: ae0f3817e4a65f6ae2aeed6d875ac344987b8e40dedd25bee5ffe7f1edb9a00b41c1c4f6a1fcad107853b784f1ba49c1cdc7cd8c600a884969939afbdfb1c456
+Homepage: https://www.grpc.io/
+Description: high performance general RPC framework
+ A modern, open source remote procedure call (RPC) framework that can
+ run anywhere. It enables client and server applications to communicate
+ transparently, and makes it easier to build connected systems.
+ .
+ This package provides the gRPC C bindings.
+
+Package: liblld-13-dev
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 205
+Depends: lld-13 (= 1:13.0.1-11+b2), liblld-13 (= 1:13.0.1-11+b2)
+Filename: pool/bookworm/debian/binary-arm64/liblld-13-dev_1%3a13.0.1-11+b2_arm64.deb
+Size: 59836
+MD5sum: 93cc342e2014d129452ef134f69c7ddf
+SHA1: 5e724b2c9fa450bd24912151421c669c14eaab19
+SHA256: 280baff09c0da2f383a71a923ac11ff9360514c1986b4a532d57c755b54d9ed6
+SHA512: 3453921cb95e04c79403abb2c2f53d8fc02881a41c292fc986078a05dcbecaeed431bcc0f0d7e884fb0ab0a4be6ececec8b53b2409a83c4e94424c14b7560433
+Homepage: https://www.llvm.org/
+Description: LLVM-based linker, header files
+ LLD is a new, high-performance linker. It is built as a set of reusable
+ components which highly leverage existing libraries in the larger LLVM
+ Project.
+ .
+ This package provides the header files to build extension over lld.
+
+Package: liblld-13
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Priority: optional
+Section: libs
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 17152
+Depends: libllvm13 (= 1:13.0.1-11+b2)
+Filename: pool/bookworm/debian/binary-arm64/liblld-13_1%3a13.0.1-11+b2_arm64.deb
+Size: 1767284
+MD5sum: dfcbcc2bd4bd926cd22d9e5867b2af43
+SHA1: 9a8778f2d663ca1aa2ffbc440c2abdc2b9ca20a5
+SHA256: 9196bc99206937dc9a1674f1a21b3ed4c5c6de6dea3081819b1e680dd5a2313d
+SHA512: 3cdd40620172ef57aa502e2d03d920ec7f79c88c7a1b8b6d7e6c8cc38e2f3894f724e544712b80f07646b978ea763d17196456a936c0612995cc2b80bef64450
+Homepage: https://www.llvm.org/
+Description: LLVM-based linker, library
+ LLD is a new, high-performance linker. It is built as a set of reusable
+ components which highly leverage existing libraries in the larger LLVM
+ Project.
+ .
+ This package contains the LLD runtime library.
+
+Package: liblldb-13-dev
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 3217
+Depends: lldb-13 (= 1:13.0.1-11+b2)
+Filename: pool/bookworm/debian/binary-arm64/liblldb-13-dev_1%3a13.0.1-11+b2_arm64.deb
+Size: 501084
+MD5sum: 94ec2674cf091c2dc12cddd3f92adccf
+SHA1: 8e8dd24cae79c6a40ee07e9ae28d0b32f44850c2
+SHA256: 1571da49404564f69715d7a3c977c65c1c4e999a71923cd64f091c0e05c787ba
+SHA512: 0cb726bc42194be283e200088d7cc4c6dfd3ec5cc2c13bee5c10e701606769ec9710c5faff35fbd1fc326324d238088d72e0d35dce17d3f0d6c8289ad6a18439
+Homepage: https://www.llvm.org/
+Description: Next generation, high-performance debugger, header files
+ LLDB is a next generation, high-performance debugger. It is built as a set of
+ reusable components which highly leverage existing libraries in the larger LLVM
+ Project, such as the Clang expression parser and LLVM disassembler.
+ .
+ This package provides the header files to build extension over lldb.
+
+Package: liblldb-13
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Priority: optional
+Section: libs
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 16759
+Depends: libc6 (>= 2.34), libclang-cpp13 (>= 1:13.0.1), libedit2 (>= 3.1-20140620-0), libgcc-s1 (>= 4.5), libllvm13 (= 1:13.0.1-11+b2), libncurses6 (>= 6), libpython3.11 (>= 3.11.0), libstdc++6 (>= 12), libtinfo6 (>= 6), libxml2 (>= 2.7.4)
+Filename: pool/bookworm/debian/binary-arm64/liblldb-13_1%3a13.0.1-11+b2_arm64.deb
+Size: 3480864
+MD5sum: e80eff16d9eaa10dee1062921129d5a9
+SHA1: 8a501e38e8a9874255a2a7eceb68b68371dd00dd
+SHA256: 7a75834231d0398fb35742c8de715541e427bb6cd37f66c8d7847996bc604430
+SHA512: 14f435332f48c43abb9ab968225ef53b4fde4cc5b5896a2d67ec2e8d6869eda377214f70858a00c4d2fb3b5b8c92dc365fe3181087222f7332e3821d89f20cdc
+Homepage: https://www.llvm.org/
+Description: Next generation, high-performance debugger, library
+ LLDB is a next generation, high-performance debugger. It is built as a set of
+ reusable components which highly leverage existing libraries in the larger LLVM
+ Project, such as the Clang expression parser and LLVM disassembler.
+ .
+ This package contains the LLDB runtime library.
+
 Package: libllvm13
 Architecture: arm64
 Version: 1:13.0.1-11+b2
@@ -205,6 +586,579 @@ Description: Modular compiler and toolchain technologies, runtime library
  compiler-related programs.
  .
  This package contains the LLVM runtime library.
+
+Package: libnsl2
+Architecture: arm64
+Version: 1.3.0-3+b3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libnsl (1.3.0-3)
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 164
+Depends: libc6 (>= 2.38), libtirpc3t64 (>= 1.0.2)
+Filename: pool/bookworm/debian/binary-arm64/libnsl2_1.3.0-3+b3_arm64.deb
+Size: 37864
+MD5sum: 01fbbc249947a5a025bcb93bf487eb57
+SHA1: 9bb342c406460e09a053e478306d560bb8cbeb3b
+SHA256: 9d7f225630711e67d0159f7f05763e76e752fa7b36b39f59d72204a59940d3ca
+SHA512: 430f75afb0c3cb9973aa1379ef7e0645f7413375938f1419befa33fd53f0ce06d4376ec6b6d295a2d507848f85620c1e4346a3f3ef89fb7e4e25e32eb3257c1b
+Homepage: https://github.com/thkukuk/libnsl
+Description: Public client interface for NIS(YP) and NIS+
+ This package contains the libnsl library, which contains the public client
+ interface for NIS(YP) and NIS+. This code was formerly part of glibc, but is
+ now standalone to be able to link against TI-RPC for IPv6 support.
+
+Package: libobjc-12-dev
+Architecture: arm64
+Version: 12.4.0-5
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 1401
+Depends: gcc-12-base (= 12.4.0-5), libgcc-12-dev (= 12.4.0-5), libobjc4 (>= 12.4.0-5)
+Filename: pool/bookworm/debian/binary-arm64/libobjc-12-dev_12.4.0-5_arm64.deb
+Size: 165696
+MD5sum: f4310a7f0df51147754d4454e2a9fdd3
+SHA1: 4effd9a23c30aa1dc7ecd3bf8e0b20eebf54352b
+SHA256: f8ad3596d8305ad68d79c7d3d31a7dd8390c023fae037cc681416cd0178f8f75
+SHA512: 27e1f3dca0a019a083854d6ff5f4a2087442f56af70dce7552a7f18ec9469c628759af80a1408dccdc1455c02b4f2e833bb04486c06c3eb0b8e8b5d47d8a097c
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Objective-C applications (development files)
+ This package contains the headers and static library files needed to build
+ GNU ObjC applications.
+
+Package: libobjc4
+Architecture: arm64
+Version: 14.2.0-19
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-14
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 293
+Depends: gcc-14-base (= 14.2.0-19), libc6 (>= 2.38), libgc1 (>= 1:7.2d), libgcc-s1 (>= 3.0)
+Filename: pool/bookworm/debian/binary-arm64/libobjc4_14.2.0-19_arm64.deb
+Size: 39376
+MD5sum: db01f4257c8f535d1701750900e49f50
+SHA1: 66f511f981db3d987cb54cd2aa57cb20a4cc862b
+SHA256: 2c402e31c3636f8c5be1f1c4a4716e9335e570862b7e393ade1e63bde9ff933c
+SHA512: ddf2e7c68355375e1b67b2e17a3f9b20bda09823f4525a275de49232ea1738368ff271c494b47eeeccf479c31ff9939512317c29fe044146566c6cb822dbc018
+Homepage: http://gcc.gnu.org/
+Description: Runtime library for GNU Objective-C applications
+ Library needed for GNU ObjC applications linked against the shared library.
+
+Package: libomp-13-dev
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 2287
+Provides: libomp-x.y-dev
+Depends: libomp5-13 (= 1:13.0.1-11+b2), libc6 (>= 2.36), libelf1 (>= 0.144), libffi8 (>= 3.4), libgcc-s1 (>= 3.3), libllvm13, libstdc++6 (>= 11), libtinfo6 (>= 6), libz3-4 (>= 4.8.12), zlib1g (>= 1:1.1.4)
+Suggests: libomp-13-doc
+Conflicts: libomp-x.y-dev
+Breaks: libiomp-dev (<< 3.7-1), libomp-dev (<< 44), llvm-13 (<< 1:13.0.0-4)
+Replaces: libomp-x.y-dev, llvm-13 (<< 1:13.0.0-4)
+Filename: pool/bookworm/debian/binary-arm64/libomp-13-dev_1%3a13.0.1-11+b2_arm64.deb
+Size: 457952
+MD5sum: 520abe641a3bc467d48661091001a791
+SHA1: cf8816fcd982c2aa80a40dbbd7dd15c117fbb8fb
+SHA256: 0c5408b8c64bdb9ab0c0eaf749e197265926dbe2245a847f2e747137d2b334d2
+SHA512: 1bbe21f68af61aeaf99a5bbc53ae3eb9af578bce493cd1e955ecdfa08ed741667255bb612fa9c73948253b7ec05a98644fdc294278c384e24a9106fe52ff51d3
+Homepage: https://www.llvm.org/
+Description: LLVM OpenMP runtime - dev package
+ The runtime is the part of the OpenMP implementation that your code is
+ linked against, and that manages the multiple threads in an OpenMP program
+ while it is executing.
+
+Package: libomp-13-doc
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Priority: optional
+Section: doc
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 13110
+Depends: libjs-jquery
+Breaks: libiomp-x.y-doc
+Replaces: libiomp-x.y-doc
+Filename: pool/bookworm/debian/binary-arm64/libomp-13-doc_1%3a13.0.1-11+b2_arm64.deb
+Size: 930816
+MD5sum: e4a153acf7a21b5e5b6fb42a5cadc7c1
+SHA1: 83a7d82eb17cba5097c9c8f45a5a82904332896b
+SHA256: 2c6b56771e5600d2e00f69b421e49d22d150091217bd5554c5d8431f2ebb0063
+SHA512: 038776471141096ac886029fb1a3f6cc8a664c60e11f0b068291fcdd58f3b9d2456c19eeaa33a02e500d8cac06f648d2ae70a593088988e3c2be09923ff13718
+Homepage: https://www.llvm.org/
+Description: LLVM OpenMP runtime - Documentation
+ The runtime is the part of the OpenMP implementation that your code is
+ linked against, and that manages the multiple threads in an OpenMP program
+ while it is executing.
+ .
+ This package contains the documentation of this package.
+
+Package: libomp5-13
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 2180
+Provides: libomp-x.y
+Depends: libc6 (>= 2.34)
+Conflicts: libomp-x.y
+Breaks: libomp5 (<< 44)
+Replaces: libomp-x.y
+Filename: pool/bookworm/debian/binary-arm64/libomp5-13_1%3a13.0.1-11+b2_arm64.deb
+Size: 300156
+MD5sum: 3f9cc724cbb11a61e2c573d3c68ee1b5
+SHA1: d2ae28d6c997a993079a8fde9e28eed7925c40aa
+SHA256: 155c304e841eb22db6b0283956c14ac2b042b72592aa13dc78228b05474050db
+SHA512: 116e9c7fbcc665aea881e908f6a56d95766b051542089edf764276c17e920c1fea32d47bbd99a9abab3fde56e33a4db48d05a037f0d9c68d025c127ffd048abf
+Homepage: https://www.llvm.org/
+Description: LLVM OpenMP runtime
+ The runtime is the part of the OpenMP implementation that your code is
+ linked against, and that manages the multiple threads in an OpenMP program
+ while it is executing.
+
+Package: libpfm4
+Architecture: arm64
+Version: 4.13.0+git99-gc5587f9-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Maintainer: Debian HPC Team <debian-hpc@lists.debian.org>
+Installed-Size: 587
+Depends: libc6 (>= 2.17)
+Breaks: libpapi5 (<< 5.5.1-2~), pcp (<< 3.11.10~)
+Filename: pool/bookworm/debian/binary-arm64/libpfm4_4.13.0+git99-gc5587f9-1_arm64.deb
+Size: 73080
+MD5sum: 98caa8ac7cdb438d3d1c1df2091ddfd7
+SHA1: a03e06925bb95a390066edfc9f666e1f34481d6c
+SHA256: 5041567ffd6bdb2f46756ee4249d0d21576ac95b059429dc1250a8d24b614e6d
+SHA512: f9faa586d8e8ea81c945865509459d305f8ffaf74062689ebc495c399317de98258a87f0df98c3b828828aa3a845260d0f6df8b864373bdc8f58cc6c7735f171
+Homepage: https://perfmon2.sourceforge.net/
+Description: Library to program the performance monitoring events
+ Libpfm4 helps convert from an event name, expressed as a string, to
+ the event encoding. The encoding can then be used with specific OS
+ interfaces. Libpfm4 also provides OS-specific interfaces to directly
+ setup OS-specific data structures to be passed to the kernel. The
+ current libpfm4, for instance, provides support for the perf_events
+ interface which was introduced in Linux v2.6.31.
+ .
+ This package provides the shared library.
+
+Package: libprotobuf32
+Architecture: arm64
+Version: 3.21.12-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: protobuf
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 3236
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11), zlib1g (>= 1:1.1.4)
+Breaks: cura-engine (<< 1:3.3.0-2.1+b1), libarcus3 (<< 3.3.0-2)
+Filename: pool/bookworm/debian/binary-arm64/libprotobuf32_3.21.12-3_arm64.deb
+Size: 821084
+MD5sum: 8b519f141cbf857e58336af6612c6b0c
+SHA1: 3a2abf4326099633f1f05d6e3f33c095d545c5ac
+SHA256: 1870f6b47ee2cc45f8160adc70aeea29e318097fa95fddd8b639fe37ecd768b1
+SHA512: 9980ad4a023ef08bc95103b61b70884c3577d649583305920f63977aee6013106484f2f162875c372209cf5c4ab59c4a4e81b89332377abdab49ec1f011a6c1e
+Homepage: https://github.com/google/protobuf/
+Description: protocol buffers C++ library
+ Protocol buffers are a flexible, efficient, automated mechanism for
+ serializing structured data - similar to XML, but smaller, faster, and
+ simpler. You define how you want your data to be structured once, then you can
+ use special generated source code to easily write and read your structured
+ data to and from a variety of data streams and using a variety of languages.
+ You can even update your data structure without breaking deployed programs
+ that are compiled against the "old" format.
+ .
+ Google uses Protocol Buffers for almost all of its internal RPC protocols and
+ file formats.
+ .
+ This package contains the runtime library needed for C++ applications.
+
+Package: libprotoc32
+Architecture: arm64
+Version: 3.21.12-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: protobuf
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 2713
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libprotobuf32 (>= 3.21.12), libstdc++6 (>= 11)
+Filename: pool/bookworm/debian/binary-arm64/libprotoc32_3.21.12-3_arm64.deb
+Size: 718468
+MD5sum: e79a507a0afd9594394302fb85d5d41b
+SHA1: 914c52c142bb8aaa672d92f1d459f6d6f71dc1e6
+SHA256: e5e29e096af7ae68ed7cd7d07888eac3379d7e76e352263aa090cb93d8e521a7
+SHA512: e00959fd951aba44eabce1ed28945bca85620a4c4ebd7c92fa8a98575fb8a6f088ac268f6726d59824d29c3344c03e41390a40784137098f67629f2d976b1b4f
+Homepage: https://github.com/google/protobuf/
+Description: protocol buffers compiler library
+ Protocol buffers are a flexible, efficient, automated mechanism for
+ serializing structured data - similar to XML, but smaller, faster, and
+ simpler. You define how you want your data to be structured once, then you can
+ use special generated source code to easily write and read your structured
+ data to and from a variety of data streams and using a variety of languages.
+ You can even update your data structure without breaking deployed programs
+ that are compiled against the "old" format.
+ .
+ Google uses Protocol Buffers for almost all of its internal RPC protocols and
+ file formats.
+ .
+ This package contains the runtime library needed for the protocol buffer
+ compiler.
+
+Package: libpython3.11-minimal
+Architecture: arm64
+Version: 3.11.2-6+deb12u6
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.11
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 5239
+Depends: libc6 (>= 2.17), libssl3 (>= 3.0.0)
+Recommends: libpython3.11-stdlib
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: pool/bookworm/debian/binary-arm64/libpython3.11-minimal_3.11.2-6+deb12u6_arm64.deb
+Size: 809632
+MD5sum: 14bfd8fed9bb185c980f24c93b69d70b
+SHA1: 72dc74a45a540d7c37d8cfab0fa6db6c0ed2194c
+SHA256: c75c613fd294230221b05c4a65daecb9ccdb4da0076682b6a1ce67bdee9ad0fd
+SHA512: ec8245bdf7d98014e5af61faf7e065b406b7b0470f382eb8e7d20c980ad3a3433b2b37507959f2e0ef45540df1bc8dcf7296c4146b79331c03ecdd5934599b21
+Description: Minimal subset of the Python language (version 3.11)
+ This package contains some essential modules. It is normally not
+ used on it's own, but as a dependency of python3.11-minimal.
+
+Package: libpython3.11-stdlib
+Architecture: arm64
+Version: 3.11.2-6+deb12u6
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.11
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 9870
+Depends: libpython3.11-minimal (= 3.11.2-6+deb12u6), media-types | mime-support, libbz2-1.0, libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libdb5.3, libffi8 (>= 3.4), liblzma5 (>= 5.1.1alpha+20120614), libncursesw6 (>= 6.1), libnsl2 (>= 1.0), libreadline8 (>= 7.0~beta), libsqlite3-0 (>= 3.36.0), libtinfo6 (>= 6), libtirpc3 (>= 1.0.2), libuuid1 (>= 2.20.1)
+Breaks: python3-gdbm (<< 3.9.9-1~)
+Replaces: python3-gdbm (<< 3.9.9-1~)
+Filename: pool/bookworm/debian/binary-arm64/libpython3.11-stdlib_3.11.2-6+deb12u6_arm64.deb
+Size: 1746304
+MD5sum: 4a94580575a38f51991162da9b681cf1
+SHA1: 5cf8e006e60876928f74e3147315f4200be56651
+SHA256: d9043f4957804cd4c7bc0af4784c80c4a5d08002a0e9b67407da20b3b47e3676
+SHA512: 7bfa9bbe670daf7d43186d1d7161dcefb2a243d8e825cc69e639bafe42279e1e1a082dea65b5a6f5d34057934f4dcf4d335874b0935a2bc538167a0e31aea279
+Description: Interactive high-level object-oriented language (standard library, version 3.11)
+ Python is a high-level, interactive, object-oriented language. Its 3.11 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains Python 3.11's standard library. It is normally not
+ used on its own, but as a dependency of python3.11.
+
+Package: libpython3.11
+Architecture: arm64
+Version: 3.11.2-6+deb12u6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: python3.11
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 7562
+Depends: libpython3.11-stdlib (= 3.11.2-6+deb12u6), libc6 (>= 2.35), libexpat1 (>= 2.1~beta3), zlib1g (>= 1:1.2.0)
+Filename: pool/bookworm/debian/binary-arm64/libpython3.11_3.11.2-6+deb12u6_arm64.deb
+Size: 1841228
+MD5sum: b060c10e180c37053c3d1cd2cfcd2144
+SHA1: 73363253233f9b8f5cce4c0873b8fa1471d7641b
+SHA256: 17df0aac143b71865574d10cecd525511b4636e83c21c2761ff87ccffa5a5fef
+SHA512: b1c57344a2d21cde7aa68ed56fff28f9cabf6c10f61eaa8e5dc62f9ca6baf13f3ae0119a271b3ad2aec2dea09bafa45244879cd009de12b9ca7360519fa610ac
+Description: Shared Python runtime library (version 3.11)
+ Python is a high-level, interactive, object-oriented language. Its 3.11 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains the shared runtime library, normally not needed
+ for programs using the statically linked interpreter.
+
+Package: libre2-9
+Architecture: arm64
+Version: 20220601+dfsg-1+b1
+Built-Using: unicode-data (= 15.0.0-1)
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: re2 (20220601+dfsg-1)
+Maintainer: Stefano Rivera <stefanor@debian.org>
+Installed-Size: 477
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 11)
+Breaks: libre2-dev (<< 20131024+dfsg-1~)
+Replaces: libre2-dev (<< 20131024+dfsg-1~)
+Filename: pool/bookworm/debian/binary-arm64/libre2-9_20220601+dfsg-1+b1_arm64.deb
+Size: 155500
+MD5sum: 5e04d5d401a60a964b64e6f3d98aa29f
+SHA1: 86ecc5e9e651e7e0ffd41636aab6d19d54a6509f
+SHA256: 4699062bba40ba4f8286061bfa8345a61686faa9544228c2004ed334ba5d2031
+SHA512: dd37fc2ebf0add046269da108f4fa907cc397a1e576d6b0927f797cc43ae7656c350f2ad303ba03cb4c6407a936e3117911eae2febd9e160da50f1b778f987fb
+Homepage: https://github.com/google/re2
+Description: efficient, principled regular expression library
+ RE2 is a fast, safe, thread-friendly alternative to backtracking regular
+ expression engines like those used in PCRE, Perl, and Python. It is a C++
+ library.
+ .
+ RE2 uses automata theory to guarantee that regular expression searches run in
+ time linear in the size of the input. RE2 implements memory limits, so that
+ searches can be constrained to a fixed amount of memory. RE2 is engineered to
+ use a small fixed C++ stack footprint no matter what inputs or regular
+ expressions it must process; thus RE2 is useful in multithreaded environments
+ where thread stacks cannot grow arbitrarily large.
+ .
+ On large inputs, RE2 is often much faster than backtracking engines; its use
+ of automata theory lets it apply optimizations that the others cannot.
+
+Package: libstdc++-12-dev
+Architecture: arm64
+Version: 12.4.0-5
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: gcc-12
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 19871
+Provides: libstdc++-dev
+Depends: gcc-12-base (= 12.4.0-5), libgcc-12-dev (= 12.4.0-5), libstdc++6 (>= 12.4.0-5), libc6-dev (>= 2.23-1~)
+Suggests: libstdc++-12-doc
+Filename: pool/bookworm/debian/binary-arm64/libstdc++-12-dev_12.4.0-5_arm64.deb
+Size: 2034848
+MD5sum: d7010f6fb068346d779ec294de718a75
+SHA1: 202e6848ffe807642447dc29e3866e670077a401
+SHA256: 7b7f13594b8c7094ea7b9c7f6739f0425a86cbaf0d6ef9080e95f4eda5d684bf
+SHA512: 6cfd42d8ba3737ef944c40871133a25ba75ce114fd6c880d26671ddc4a48ec7f99dc15afeee72eaf34c747f9941eecd7ace0d9ece38767f8cd229d92fca07616
+Homepage: http://gcc.gnu.org/
+Description: GNU Standard C++ Library v3 (development files)
+ This package contains the headers and static library files necessary for
+ building C++ programs which use libstdc++.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+
+Package: libtirpc3t64
+Architecture: arm64
+Version: 1.3.6+ds-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libtirpc
+Maintainer: Josue Ortega <josue@debian.org>
+Installed-Size: 304
+Provides: libtirpc3 (= 1.3.6+ds-1)
+Depends: libc6 (>= 2.38), libgssapi-krb5-2 (>= 1.17), libtirpc-common (>= 1.3.6+ds-1)
+Breaks: libtirpc3 (<< 1.3.6+ds-1), nfs-common (<< 1:1.2.8-7), nfs-kernel-server (<< 1:1.2.8-7)
+Replaces: libtirpc3
+Filename: pool/bookworm/debian/binary-arm64/libtirpc3t64_1.3.6+ds-1_arm64.deb
+Size: 79084
+MD5sum: 9b7e780ab6ed99d6cfc401ef47c2cfe9
+SHA1: 56b6e3056936fd87c30aa3caf47bb0233865f1fa
+SHA256: ae390ce96435829f0d5252305fb9b22001f5bcc85477e452373ddb2a4fa4dbc1
+SHA512: 3d0f0dd649b70408890e396773d4be9b9ae7234448afa21844095d350d7ff4639b791edd1e4d9ec47d824117d607bd01a38d60c6fd3fe10de64d21725decef5b
+Homepage: http://sourceforge.net/projects/libtirpc
+Description: transport-independent RPC library
+ This package contains a port of Sun's transport-independent RPC library to
+ Linux. The library is intended as a replacement for the RPC code in the GNU C
+ library, providing among others support for RPC (and in turn, NFS) over IPv6.
+
+Package: libunwind-13-dev
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 203
+Provides: libunwind-x.y-dev
+Depends: libunwind-13 (= 1:13.0.1-11+b2)
+Conflicts: libunwind-x.y-dev
+Breaks: libunwind-dev
+Replaces: libunwind-dev, libunwind-x.y-dev
+Filename: pool/bookworm/debian/binary-arm64/libunwind-13-dev_1%3a13.0.1-11+b2_arm64.deb
+Size: 54708
+MD5sum: ca0958204e38ba6a8a2637a80122661a
+SHA1: cccbfa60dba39345f7e76874d2bb16cd861fa00b
+SHA256: 082584a01259d2440f7999b255c28f7cbfbfc599022fb4e8a3440ef92b71b269
+SHA512: 45de720d2c3ad15d8028d22349e9067615d153120ad880caab51abaeefb81266c4fe9d821ef898a9af0a3f70e56827683dca7374ade93d45c302d9aa44c8b56b
+Homepage: https://www.llvm.org/
+Description: production-quality unwinder
+ libunwind is a production-quality unwinder, with platform support for DWARF
+ unwind info, SjLj, and ARM EHABI.
+ .
+ The low level libunwind API was designed to work either in-process (aka local)
+ or to operate on another process (aka remote), but only the local path has
+ been implemented. Remote unwinding remains as future work.
+
+Package: libunwind-13
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 116
+Provides: libunwind-x.y
+Depends: libc6 (>= 2.34)
+Conflicts: libunwind-x.y
+Replaces: libunwind-x.y
+Filename: pool/bookworm/debian/binary-arm64/libunwind-13_1%3a13.0.1-11+b2_arm64.deb
+Size: 38916
+MD5sum: c79c20ecaf1a0f423e63ac0f300f86a0
+SHA1: fdd0e3be7c1afe825a1b60bba54068f1951fd685
+SHA256: 2ff1d33d832d5b696c18874c44d5b0d6bddb07496ad178035c9e3e4ef3095ca8
+SHA512: 7ca950c5bf4ed75970d12f47546047b08e5117e17722da07bf13f91bd9893336cec38e47c050a4f4ca1eceea717da76aca3c3c16f35ce6e69f9b4a4ec4604252
+Homepage: https://www.llvm.org/
+Description: production-quality unwinder
+ libunwind is a production-quality unwinder, with platform support for DWARF
+ unwind info, SjLj, and ARM EHABI.
+ .
+ The low level libunwind API was designed to work either in-process (aka local)
+ or to operate on another process (aka remote), but only the local path has
+ been implemented. Remote unwinding remains as future work.
+
+Package: libxml2-dev
+Architecture: arm64
+Version: 2.12.7+dfsg+really2.9.14-2.1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libxml2
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 3420
+Depends: libxml2 (= 2.12.7+dfsg+really2.9.14-2.1)
+Suggests: pkg-config
+Filename: pool/bookworm/debian/binary-arm64/libxml2-dev_2.12.7+dfsg+really2.9.14-2.1_arm64.deb
+Size: 750044
+MD5sum: e7d19521d659c4376a6003b49c203fb3
+SHA1: 9a28697c16e7efd93149f39cc50c8566f21becc1
+SHA256: c5ed7ac67b6bca64aa6278153ee77d326fc3745574f050de86bee5abbc055384
+SHA512: ec5502c369531981c5c56fd7aeb00866e9807e67a5b048a1da77eb3ee491303a1842678420ace268609b76d236e3c06a7de7088593bf4dbfa3ddc31ecc71d723
+Homepage: http://xmlsoft.org
+Description: GNOME XML library - development files
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ Install this package if you wish to develop your own programs using
+ the GNOME XML library.
+
+Package: libz3-4
+Architecture: arm64
+Version: 4.13.3-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: z3
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 26286
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), libstdc++6 (>= 14)
+Breaks: libz3-dev (<< 4.4.1)
+Replaces: libz3-dev (<< 4.4.1)
+Filename: pool/bookworm/debian/binary-arm64/libz3-4_4.13.3-1_arm64.deb
+Size: 7506868
+MD5sum: 484bf18daaeb4fab0c8a1d7d53d6714f
+SHA1: 9e2f9ad127db834d80df467507c52424db02eee8
+SHA256: 29a7b924a5a38c9ac4e2a64aa11586a9c54f26b579b18e4f75adf8f7c1106e45
+SHA512: 5a03d0bfaa939dcdb60cdeb56754426c5c6f87feb4f9aef046dc3eb84135f5964ef6109757bf287da31127a79fe083c2b9de3fe5c2acf8fa8b729395aaa65bfb
+Homepage: https://github.com/Z3Prover/z3
+Description: theorem prover from Microsoft Research - runtime libraries
+ Z3 is a state-of-the-art theorem prover from Microsoft Research. It can be
+ used to check the satisfiability of logical formulas over one or more
+ theories. Z3 offers a compelling match for software analysis and verification
+ tools, since several common software constructs map directly into supported
+ theories.
+ .
+ This package contains runtime libraries. You shouldn't have to install it
+ manually.
+
+Package: libz3-dev
+Architecture: arm64
+Version: 4.13.3-1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: z3
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 602
+Depends: libz3-4 (= 4.13.3-1)
+Filename: pool/bookworm/debian/binary-arm64/libz3-dev_4.13.3-1_arm64.deb
+Size: 106528
+MD5sum: b252dd38c2e8dcd9f1a5ab754d1ba021
+SHA1: acf11564200118350181ef63833a02541adf57af
+SHA256: e35389f0b02e020d6714c5ef349eef4a1f514d0293c05fd28bb90c1fe4f3f2b7
+SHA512: fa2c1fa0c98c159cf5ba2ff0070cf9d8325d624fb7120515ca364e96afb96770036cd9b65361de6ebee14282031be68cb3eb8459505229b8ccd9fb9ab5532d46
+Homepage: https://github.com/Z3Prover/z3
+Description: theorem prover from Microsoft Research - development files
+ Z3 is a state-of-the-art theorem prover from Microsoft Research. It can be
+ used to check the satisfiability of logical formulas over one or more
+ theories. Z3 offers a compelling match for software analysis and verification
+ tools, since several common software constructs map directly into supported
+ theories.
+ .
+ This package can be used to invoke Z3 via its C++ API.
+
+Package: lld-13
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Priority: optional
+Section: devel
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 5132
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libllvm13 (= 1:13.0.1-11+b2), libstdc++6 (>= 12)
+Filename: pool/bookworm/debian/binary-arm64/lld-13_1%3a13.0.1-11+b2_arm64.deb
+Size: 1185492
+MD5sum: 1a4039e9ebd4a35391962a0394bbad5e
+SHA1: a10ce3315360af50680db5ccc6202b3979bcefbf
+SHA256: cb3820f13fa0f3b386678794356c44f93bb47479213101d2972d207c657aec7a
+SHA512: 6b9e3a1934413b54a9990fd0179809193b7268685b4b19bcfd5e2b67efcd145af4310f71230761f5406b8d32b2294ab3061075352d30581b31b8f7d4e64529f1
+Homepage: https://www.llvm.org/
+Description: LLVM-based linker
+ LLD is a new, high-performance linker. It is built as a set of reusable
+ components which highly leverage existing libraries in the larger LLVM
+ Project.
+
+Package: lldb-13
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Priority: optional
+Section: devel
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 3802
+Depends: libc6 (>= 2.34), libclang-cpp13 (>= 1:13.0.1), libedit2 (>= 3.1-20140620-0), libgcc-s1 (>= 4.5), liblldb-13, libllvm13 (= 1:13.0.1-11+b2), libncurses6 (>= 6), libstdc++6 (>= 12), libtinfo6 (>= 6), libxml2 (>= 2.6.27), llvm-13-dev, python3-lldb-13
+Filename: pool/bookworm/debian/binary-arm64/lldb-13_1%3a13.0.1-11+b2_arm64.deb
+Size: 968328
+MD5sum: 737e17a09af71a055f0c936eeac68610
+SHA1: 6e0149d79ad446b06b73649ca80a22d0033ed66e
+SHA256: 7878f9e48d2be72917b6836110b996d3556bd6cd8369c370651217235479a6c7
+SHA512: 39346a697f3cc32e1852c2b0a5941e3b626d14896d85f3203088302230238cd8d0b8640039fa34f977bbf5663da1f3a8ad126ad4fbc13bc1d9b24c9cdf91de1f
+Homepage: https://www.llvm.org/
+Description: Next generation, high-performance debugger
+ LLDB is a next generation, high-performance debugger. It is built as a set of
+ reusable components which highly leverage existing libraries in the larger LLVM
+ Project, such as the Clang expression parser and LLVM disassembler.
 
 Package: llvm-13-dev
 Architecture: arm64
