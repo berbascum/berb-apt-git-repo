@@ -1,3 +1,32 @@
+Package: clang-13
+Architecture: arm64
+Version: 1:13.0.1-11+b2
+Priority: optional
+Section: devel
+Source: llvm-toolchain-13 (1:13.0.1-11)
+Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
+Installed-Size: 341
+Provides: c++-compiler, c-compiler, objc-compiler
+Depends: libc6 (>= 2.34), libclang-cpp13 (>= 1:13.0.1), libgcc-s1 (>= 3.0), libllvm13, libstdc++6 (>= 11), libstdc++-12-dev, libgcc-12-dev, libobjc-12-dev, libclang-common-13-dev (= 1:13.0.1-11+b2), llvm-13-linker-tools (= 1:13.0.1-11+b2), libclang1-13 (= 1:13.0.1-11+b2), libc6-dev, binutils
+Recommends: llvm-13-dev, python3
+Suggests: clang-13-doc
+Breaks: llvm-13-dev (<< 1:13~++20210129063721)
+Replaces: llvm-13-dev (<< 1:13~++20210129063721)
+Filename: pool/bookworm/debian/binary-arm64/clang-13_1%3a13.0.1-11+b2_arm64.deb
+Size: 92296
+MD5sum: 396c8ff9825ac612a87c117aea8b32d4
+SHA1: aa401de8057d1250b49efe1fab824f93f38b2ae5
+SHA256: b5da8d9d3e09babf40cc86c0863c80173418777eba3ce7cc15a0586b634bd9c5
+SHA512: 1279ab20f34c24733537be521b5ba45de4428bc1835cee38b96f681d7e5acf297127e22552dea4818506bf4087c71e7b97fa7a43d8bad7c4af22e92ece4ce777
+Homepage: https://www.llvm.org/
+Description: C, C++ and Objective-C compiler
+ Clang project is a C, C++, Objective C and Objective C++ front-end
+ based on the LLVM compiler. Its goal is to offer a replacement to the
+ GNU Compiler Collection (GCC).
+ .
+ Clang implements all of the ISO C++ 1998, 11, 14 and 17 standards and also
+ provides most of the support of C++20.
+
 Package: libabsl20220623
 Architecture: arm64
 Version: 20220623.1-1+deb12u2

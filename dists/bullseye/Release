@@ -1,13 +1,13 @@
 Architectures: all arm64 amd64
 Codename: bullseye
 Components: amd64 debian droidian droidian-xiaomi-vayu droidian-build-kernel mobian
-Date: Tue, 05 Aug 2025 02:00:08 +0000
+Date: Tue, 05 Aug 2025 02:22:30 +0000
 Description: Berbascum's apt repo for release bullseye
 Label: berbascum
 Origin: berbascum
 Suite: bullseye
 MD5Sum:
- b3036866529aef2e038cbf8872f51a60              278 Release
+ ab572eb174683b77db1237ce35cc61f8              278 Release
  4426bd6e925fae0dd9f16e2224e9e64d             1936 debian/Contents-all.bz2
  bb03f3eb7717e748f0b1243d6da927b2             2037 debian/Contents-all.gz
  0902e5a0182062319472ac442793db1b               28 debian/Contents-amd64.bz2
@@ -99,7 +99,7 @@ MD5Sum:
  0902e5a0182062319472ac442793db1b               28 mobian/binary-arm64/Packages.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 mobian/binary-arm64/Packages.gz
 SHA1:
- a62a2b305bbd38dc1ee3e489e6b2ce89602ee93f              278 Release
+ c91d630c92e7b1c967f8e29d977b41a879a1216a              278 Release
  a0d4cd6f0ab8bd6468090ccb5902025b9791f1af             1936 debian/Contents-all.bz2
  dad32535de8ba2c70943a9d386adde1f8b6b5649             2037 debian/Contents-all.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/Contents-amd64.bz2
@@ -191,7 +191,7 @@ SHA1:
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 mobian/binary-arm64/Packages.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 mobian/binary-arm64/Packages.gz
 SHA256:
- ca59431fab63bbc955bab6154a5e73b864743e21e31b853186f8ad559d93165e              278 Release
+ a8accf273f0fb4b0fbe52d7ecf770b5d84ba3c7d8f100af2119ef7006622e0dd              278 Release
  0e22dde57b962bc8f6aa37b10e42c73b9bfae0a44f292df30a5e67c3584fa8af             1936 debian/Contents-all.bz2
  a533dc6c08620a7059248c7fc297729139055af19b612e0197f03f108ae9654a             2037 debian/Contents-all.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/Contents-amd64.bz2
@@ -283,7 +283,7 @@ SHA256:
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 mobian/binary-arm64/Packages.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 mobian/binary-arm64/Packages.gz
 SHA512:
- 7ce3db37c71b81bdd48943fccf0f393ea27eee69b80da2228ef166281b18b839effb1439505d12cdb1bde1dff16fed5355f9e7e445cf8a5f5d5ee67719118be8              278 Release
+ cc89f39002c1cab6f5a84bf96931490743ac2e680f19fed2e78bd2e0651479a67ffbb0bf24416cd2aae2477374ea9f7ab6dfa716699af8431a5941804a5fd45a              278 Release
  a29be6b7aa4f9f8a9548e2595b1b03bfbae79e5e0d31d62aacfd7972020e7891900772f2a07cd202c6a6cb653f86e9832dbf9181766bbd0051981627fe611fc0             1936 debian/Contents-all.bz2
  3d75a8b2ad2228a88e5f9d303a5711e977c12e2c86973d464ea77c41e36f53fa376487b1481233de644ed12e6fea7f22e5ad5ebb95d86854bfb3db810bac40b4             2037 debian/Contents-all.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/Contents-amd64.bz2
