@@ -1,20 +1,18 @@
 Package: binfmt-support
 Architecture: arm64
-Version: 2.2.2-7+b1
+Version: 2.2.1-1+deb11u1
 Multi-Arch: foreign
 Priority: optional
 Section: admin
-Source: binfmt-support (2.2.2-7)
 Maintainer: Colin Watson <cjwatson@debian.org>
-Installed-Size: 318
-Pre-Depends: init-system-helpers (>= 1.54~)
-Depends: libc6 (>= 2.38), libpipeline1 (>= 1.0.0)
-Filename: pool/bullseye/debian/binary-arm64/binfmt-support_2.2.2-7+b1_arm64.deb
-Size: 68200
-MD5sum: 82ab4d87c1b205d1af82a9e509ab3f3b
-SHA1: 65ef39f338bbbd2f71c98feb8d0f06ae4ceb41c0
-SHA256: 25315b70f30c153b13f7cadb3e48424c4595fb4604f7e61b9d707c3ed32097d4
-SHA512: 8877e68e8e8649fb82c42802c95cd32c105c12272d2fc39e1c6d1bf04e47acca5318aa67a65d08140cfacc2781fe844074e0b18dec5fdebb3a99632e17196a76
+Installed-Size: 203
+Depends: libc6 (>= 2.17), libpipeline1 (>= 1.0.0), lsb-base (>= 4.1+Debian3)
+Filename: pool/bullseye/debian/binary-arm64/binfmt-support_2.2.1-1+deb11u1_arm64.deb
+Size: 63756
+MD5sum: f221616b0d0c3270db8379e2266ad7b9
+SHA1: 5cc6e5af239dd7c0bbbf9de1cc6abf149a9a9533
+SHA256: cc413f4e9c1b7ba9c0b51296dc8d4c74fadfc6f081adf8d4492c9122fc814bed
+SHA512: 0f2a4ac3674c5c77add2753aaec05169cce847ec7824a62deb87d7a85188b16e12b08a2c9113dff90610cc4c59e09f2ba339cfdfdb6e28afccd2bc0e476bb555
 Homepage: https://nongnu.org/binfmt-support/
 Description: Support for extra binary formats
  The binfmt_misc kernel module, contained in versions 2.1.43 and later of the
@@ -28,6 +26,79 @@ Description: Support for extra binary formats
  maintainers can register interpreters to be used with this module without
  having to worry about writing their own init.d scripts, and which sysadmins
  can use for a slightly higher-level interface to this module.
+
+Package: binutils-aarch64-linux-gnu
+Architecture: arm64
+Version: 2.35.2-2
+Multi-Arch: allowed
+Priority: optional
+Section: devel
+Source: binutils
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 11829
+Depends: binutils-common (= 2.35.2-2), libbinutils (= 2.35.2-2), libc6 (>= 2.27), libctf-nobfd0 (>= 2.33.50), libctf0 (>= 2.33.50), libgcc-s1 (>= 4.2), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Suggests: binutils-doc (= 2.35.2-2)
+Breaks: binutils (<< 2.29-6)
+Replaces: binutils (<< 2.29-6)
+Filename: pool/bullseye/debian/binary-arm64/binutils-aarch64-linux-gnu_2.35.2-2_arm64.deb
+Size: 2471968
+MD5sum: ce1a686e2ae876cf2d4989867714cad1
+SHA1: f416d02c2fe4a5a9eaddb2d2c7ee5a56784db70f
+SHA256: 53e2714179d1334b66e3e6b046fb035c0f24d9e276e5606493ac26e5a4a84446
+SHA512: 72ce352b6f5d337fa2475b0878e3cc17640ef92828be3bbb2d74aa3d06c15673b983131e17d6b14a1d75b15e7976603b649460f8ab7d0a833d30aae11a11dc93
+Homepage: https://www.gnu.org/software/binutils/
+Description: GNU binary utilities, for aarch64-linux-gnu target
+ This package provides GNU assembler, linker and binary utilities
+ for the aarch64-linux-gnu target.
+ .
+ You don't need this package unless you plan to cross-compile programs
+ for aarch64-linux-gnu and aarch64-linux-gnu is not your native platform.
+
+Package: binutils-common
+Architecture: arm64
+Version: 2.35.2-2
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: binutils
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 13897
+Breaks: binutils (<< 2.29.1-3.1~)
+Replaces: binutils (<< 2.29.1-3.1~)
+Filename: pool/bullseye/debian/binary-arm64/binutils-common_2.35.2-2_arm64.deb
+Size: 2219548
+MD5sum: 72b46333bc9eb062a7761f87a2c7760f
+SHA1: 19da04e0bcda2712ced6287d31d9a0237f7a0a34
+SHA256: 89986c385cd6c0d3adc34d2a03e6c215369222413f556c2dca3a423d8027be8e
+SHA512: 9251882b78ae7605ab2acb2c0861567cbc697b24790fd20aba30b53aee6eb5492d3e2965bd6e5b583287e74c67b1021fe8d684c6dbb96e1bf22678e47c29cd9b
+Homepage: https://www.gnu.org/software/binutils/
+Description: Common files for the GNU assembler, linker and binary utilities
+ This package contains the localization files used by binutils packages for
+ various target architectures and parts of the binutils documentation. It is
+ not useful on its own.
+
+Package: binutils
+Architecture: arm64
+Version: 2.35.2-2
+Priority: optional
+Section: devel
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 97
+Provides: binutils-gold, elf-binutils
+Depends: binutils-common (= 2.35.2-2), libbinutils (= 2.35.2-2), binutils-aarch64-linux-gnu (= 2.35.2-2)
+Suggests: binutils-doc (>= 2.35.2-2)
+Conflicts: binutils-multiarch (<< 2.27-8), modutils (<< 2.4.19-1)
+Filename: pool/bullseye/debian/binary-arm64/binutils_2.35.2-2_arm64.deb
+Size: 61224
+MD5sum: e02d6b4d0f0733b1a8520bf8c3f071b5
+SHA1: 21f660d7f92dd85a9097afebeb96a67949837704
+SHA256: 0ba499b4ca7fbdcce3fcfce7a5c1fdbd1f7b7b691cf70cfed85e584a9af6ade1
+SHA512: 3280e4b17cb51601e6db7c77d7440ad86f52f26acaf44cc37896bf0c00eedcebb523da38836b5b085e828f42b8e5524257a52567ddd0b1e47bad89ff5282b517
+Homepage: https://www.gnu.org/software/binutils/
+Description: GNU assembler, linker and binary utilities
+ The programs in this package are used to assemble, link and manipulate
+ binary and object files.  They may be used in conjunction with a compiler
+ and various libraries to build programs.
 
 Package: clang-11
 Architecture: arm64
@@ -56,27 +127,6 @@ Description: C, C++ and Objective-C compiler
  Clang implements all of the ISO C++ 1998, 11, 14 and 17 standards and also
  provides most of the support of C++20.
 
-Package: gcc-10-base
-Architecture: arm64
-Version: 10.2.1-6
-Multi-Arch: same
-Priority: required
-Section: libs
-Source: gcc-10
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 261
-Breaks: gnat (<< 7)
-Filename: pool/bullseye/debian/binary-arm64/gcc-10-base_10.2.1-6_arm64.deb
-Size: 201340
-MD5sum: 1651a8d1c55cb889294b2ec49c9b0d0a
-SHA1: d85e005b3ed4a7058025fd95e4ed1665454eb5ae
-SHA256: 7d782bece7b4a36bed045a7e17d17244cb8f7e4732466091b01412ebf215defb
-SHA512: aeb38fa75080c20aa3eb3c26d9bc952060d7820b107683f9706e40a50a1779cf1d250e115fb0600eaf10f32d23f55b2b2119970275c04332911d20eb6dd26991
-Homepage: http://gcc.gnu.org/
-Description: GCC, the GNU Compiler Collection (base package)
- This package contains files common to all languages and libraries
- contained in the GNU Compiler Collection (GCC).
-
 Package: libasan6
 Architecture: arm64
 Version: 10.2.1-6
@@ -98,32 +148,127 @@ Description: AddressSanitizer -- a fast memory error detector
  AddressSanitizer (ASan) is a fast memory error detector.  It finds
  use-after-free and {heap,stack,global}-buffer overflow bugs in C/C++ programs.
 
-Package: libclang-11-dev
+Package: libatomic1
 Architecture: arm64
-Version: 1:11.0.1-2
+Version: 10.2.1-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-10
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 48
+Depends: gcc-10-base (= 10.2.1-6), libc6 (>= 2.17)
+Filename: pool/bullseye/debian/binary-arm64/libatomic1_10.2.1-6_arm64.deb
+Size: 9468
+MD5sum: 31365003369b61bcd78f042194e7657d
+SHA1: b4f1ec8afc37712dc4db90ba0405a6259aa59a2c
+SHA256: d0b8a02896479a6eac49019d71142da9561482759f40eb7aeb15cfdc7d3e39ec
+SHA512: b4ff7160bac036de37eaa68e6e5f10dfb8af1b3fd66b37b9ee4dbf4519f49df34364a6c19f6e4cf5f5693c89852e720d23d1770d3d1917e327256db6bd271857
+Homepage: http://gcc.gnu.org/
+Description: support library providing __atomic built-in functions
+ library providing __atomic built-in functions. When an atomic call cannot
+ be turned into lock-free instructions, GCC will make calls into this library.
+
+Package: libbinutils
+Architecture: arm64
+Version: 2.35.2-2
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: binutils
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 2269
+Depends: libc6 (>= 2.17), zlib1g (>= 1:1.2.0), binutils-common (= 2.35.2-2)
+Breaks: binutils (<< 2.29-6)
+Replaces: binutils (<< 2.29-6)
+Filename: pool/bullseye/debian/binary-arm64/libbinutils_2.35.2-2_arm64.deb
+Size: 599076
+MD5sum: 54c4336312a63d8f39dd03d80d7835ce
+SHA1: 883a6626b1a50f18a6c92f087329d4dbeaa63d61
+SHA256: 7305a9bb576a975ec0fdc69688dec98a3c102c2026d5ad18bb014e93f1b076aa
+SHA512: 98ca98757c8dad47231a15c6e110e7d3bb17fcecf986464ec1f84dc48f1ed833c87a537be716da6d1359dcd49c441c1a3a42098ae2be7d1752ac05283cdc15f6
+Homepage: https://www.gnu.org/software/binutils/
+Description: GNU binary utilities (private shared library)
+ This package includes the private shared libraries libbfd and libopcodes.
+
+Package: libc-dev-bin
+Architecture: arm64
+Version: 2.31-13+deb11u13
+Multi-Arch: foreign
 Priority: optional
 Section: libdevel
-Source: llvm-toolchain-11
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 166086
-Depends: libstdc++-10-dev, libgcc-10-dev, libobjc-10-dev, libclang1-11 (= 1:11.0.1-2), libclang-common-11-dev (= 1:11.0.1-2)
-Filename: pool/bullseye/debian/binary-arm64/libclang-11-dev_1%3a11.0.1-2_arm64.deb
-Size: 16650172
-MD5sum: 760bd660e3a84120f292bb23ac5697f3
-SHA1: 2392dea5eaa1ac5ea3990d01ba8b7bcae6dc752e
-SHA256: 317b7de15547ff21184873ad52c86e233833de41e8d876da7b3f83ce5ec14d47
-SHA512: a2e8eb88c912b515bf4747d6c68e68386e65daa571e6d379fbae9ad6770929109cad8cd04bfb8a7be4fcca00d7395cb2bf9a9707740c02d6e12b1e565bdfa2d6
-Homepage: https://www.llvm.org/
-Description: Clang library - Development package
- Clang project is a C, C++, Objective C and Objective C++ front-end
- based on the LLVM compiler. Its goal is to offer a replacement to the
- GNU Compiler Collection (GCC).
+Source: glibc
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 370
+Depends: libc6 (>> 2.31), libc6 (<< 2.32)
+Recommends: manpages, manpages-dev, libc-devtools (>> 2.31)
+Filename: pool/bullseye/debian/binary-arm64/libc-dev-bin_2.31-13+deb11u13_arm64.deb
+Size: 273192
+MD5sum: fd612d0055560e8c929bb2f178e9e83e
+SHA1: 06f5edd46551ac90b300e9ae27c8ac810a8af300
+SHA256: b9e2370b11ffdb3e468231135d34d8ab07f2459e9625c50c48b7216e01d29687
+SHA512: 89c307aa6dbd4f6fe1204d1ca24821ddc88c5196c9d219f9ee25b9416dba06573282ef50e9e64874af6c6bdb94d21d7c68f585b602ae4df17c60339a16037f81
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Development binaries
+ This package contains utility programs related to the GNU C Library
+ development package.
  .
- Clang implements all of the ISO C++ 1998, 11, 14 and 17 standards and also
- provides most of the support of C++20.
+  * gencat: generate message catalogs
+  * rpcgen: compile RPC protocols to C
+
+Package: libc-devtools
+Architecture: arm64
+Version: 2.31-13+deb11u13
+Multi-Arch: foreign
+Priority: optional
+Section: devel
+Source: glibc
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 315
+Depends: libc6 (>= 2.17), libgd3 (>= 2.1.0~alpha~)
+Recommends: manpages, manpages-dev
+Breaks: libc-dev-bin (<< 2.31-8)
+Replaces: libc-dev-bin (<< 2.31-8)
+Filename: pool/bullseye/debian/binary-arm64/libc-devtools_2.31-13+deb11u13_arm64.deb
+Size: 245676
+MD5sum: fbfbdb4b64b16e296339f5101f4113f1
+SHA1: 898349b3b9ab95eca2eb639b36be989765f940b2
+SHA256: b7cf704a5dfd3ef4086c2bf17a96aa25ffccc2de65e544bc52c482cb1019d28f
+SHA512: 77de4427af90705244d157e5ba53d96328ed708beba109a7852cc004eb1f2c29c9a81a73172ac392e8435e1d390c92e6d4a7df7693cc7467ce7dd48ca109403c
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Development tools
+ This package contains development tools shipped by the GNU C
+ Library.
  .
- This package contains the Clang headers to develop extensions over
- libclang1-11.
+  * memusage, memusagestat: profile a program's memory usage
+  * mtrace: interpret the malloc trace log
+  * sotruss: trace shared library calls
+  * sprof: display shared object profiling data
+
+Package: libc6-dev
+Architecture: arm64
+Version: 2.31-13+deb11u13
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: glibc
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 12363
+Provides: libc-dev
+Depends: libc6 (= 2.31-13+deb11u13), libc-dev-bin (= 2.31-13+deb11u13), linux-libc-dev, libcrypt-dev, libnsl-dev
+Suggests: glibc-doc, manpages-dev
+Conflicts: libc0.1-dev, libc0.3-dev, libc6.1-dev
+Breaks: libc6-dev-arm64-cross (<< 2.31~), libgcc-10-dev (<< 10-20200321-1~), libgcc-7-dev (<< 7.5.0-6~), libgcc-8-dev (<< 8.4.0-2~), libgcc-9-dev (<< 9.3.0-5~), libperl5.26 (<< 5.26.1-3), python3.7 (<< 3.7.7-1+b1), python3.8 (<< 3.8.2-1+b1)
+Filename: pool/bullseye/debian/binary-arm64/libc6-dev_2.31-13+deb11u13_arm64.deb
+Size: 2029464
+MD5sum: 77e3fd737ce770f690cd6f490d1d5f18
+SHA1: f2a9f91b1c6b9e0b751684f9959ff057ac5e5e66
+SHA256: a029f2556305509ba9649d90d335ceb5b0cac17e8715cc50163da91b75bf7870
+SHA512: 97bedb85fbeb73bb69ddad3e207506aebac443761a3776dc6bbfd500961ba6b191337e16abd61bf9cb681131d9138e3ae9bfdc1e9d72e23ee757dcf0a47710d6
+Homepage: https://www.gnu.org/software/libc/libc.html
+Description: GNU C Library: Development Libraries and Header Files
+ Contains the symlinks, headers, and object files needed to compile
+ and link programs which use the standard C library.
 
 Package: libclang-common-11-dev
 Architecture: arm64
@@ -151,43 +296,6 @@ Description: Clang library - Common development package
  .
  This package contains the Clang generic headers and some libraries
  (profiling, etc).
-
-Package: libclang-cpp11-dev
-Architecture: arm64
-Version: 1:11.0.1-2
-Priority: optional
-Section: libdevel
-Source: llvm-toolchain-11
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 60
-Depends: libstdc++-10-dev, libgcc-10-dev, libclang-cpp11 (= 1:11.0.1-2)
-Breaks: libclang-11-dev (<< 1:11~++20200124010400+805c157e8ae-1~exp1)
-Replaces: libclang-11-dev (<< 1:11~++20200124010400+805c157e8ae-1~exp1)
-Filename: pool/bullseye/debian/binary-arm64/libclang-cpp11-dev_1%3a11.0.1-2_arm64.deb
-Size: 44460
-MD5sum: 5fd505febd6dd2aa587bd391f911bc9d
-SHA1: b91be04a8f87869e23f380734fa9d9e9eac6c8d7
-SHA256: 5c3c28ca2631d5a4ba9f47c1018da61ac993c6dbf7e79d6cbfe48593878279c7
-SHA512: b99dacf77154dd8f93d9b9f138428a43a356f2816521f2367a08f2fcd081facf2c9e6d1d89c52309dc4463ca159f16f4bd3b4fd015e51c50c3c0c2593bdc507e
-Homepage: https://www.llvm.org/
-Description: C++ interface to the Clang library
- Clang project is a C, C++, Objective C and Objective C++ front-end
- based on the LLVM compiler. Its goal is to offer a replacement to the
- GNU Compiler Collection (GCC).
- .
- Clang implements all of the ISO C++ 1998, 11, 14 and 17 standards and also
- provides most of the support of C++20.
- .
- This package contains the Clang C++ library.
- .
- The C++ Interface to Clang provides an API that exposes
- facilities for parsing source code into an abstract syntax tree (AST),
- loading already-parsed ASTs, traversing the AST, associating physical source
- locations with elements within the AST, and other facilities that support
- Clang-based development tools.
- .
- This package contains symlinks without a version number, which needed by
- linker at build time.
 
 Package: libclang-cpp11
 Architecture: arm64
@@ -253,23 +361,119 @@ Description: C interface to the Clang library
  locations with elements within the AST, and other facilities that support
  Clang-based development tools.
 
+Package: libcrypt-dev
+Architecture: arm64
+Version: 1:4.4.18-4
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libxcrypt
+Maintainer: Marco d'Itri <md@linux.it>
+Installed-Size: 327
+Provides: libcrypt1-dev
+Depends: libcrypt1 (= 1:4.4.18-4)
+Conflicts: libcrypt1-dev, libcrypt2-dev
+Breaks: libc6-dev (<< 2.29-4), manpages-dev (<< 5.01-1)
+Replaces: libc6-dev (<< 2.29-4), libcrypt1-dev, libcrypt2-dev, manpages-dev (<< 5.01-1)
+Filename: pool/bullseye/debian/binary-arm64/libcrypt-dev_1%3a4.4.18-4_arm64.deb
+Size: 108344
+MD5sum: c8e894020cb13a42330851c5984e683c
+SHA1: 25aa7a4153ade4009553595b359a05afe40effa0
+SHA256: 5309fdf445acc72794b9d134e9625746ffad2b865c6432abcd08ef097587bde1
+SHA512: b45e20a88944d235590da95771fb5cb399c71bb3c80b2c3bd81c8351edb87dbf7ade33bbc785dd2a8df6d94d6f3543743c81bfedb144ef813fa53e152684cf52
+Description: libcrypt development files
+ This package contains the files needed for developing applications that
+ use libcrypt.
+
+Package: libctf-nobfd0
+Architecture: arm64
+Version: 2.35.2-2
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: binutils
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 187
+Depends: libc6 (>= 2.17), zlib1g (>= 1:1.2.0)
+Breaks: libbinutils (<< 2.33.50.20191128-1~)
+Replaces: libbinutils (<< 2.33.50.20191128-1~)
+Filename: pool/bullseye/debian/binary-arm64/libctf-nobfd0_2.35.2-2_arm64.deb
+Size: 108248
+MD5sum: d3ec40640c8cd7c2501f3c1eaeae7fcf
+SHA1: dc0da4eaf4664c145356d69d5ee7b9036f7f34ba
+SHA256: c5e96863d481de39e224fa9269e2e5716faf9e583f8fa93723dabd55b028b319
+SHA512: 627471c6611521cd1eb2e5ef635fcec38ab07137660aaece49bcb97830a5294c922d756f1787c545915ccda9ba727a194806a29ce8170879f15293b59f5abd1f
+Homepage: https://www.gnu.org/software/binutils/
+Description: Compact C Type Format library (runtime, no BFD dependency)
+ This package includes the libctf-nobfd shared library.  The Compact C Type
+ Format (CTF) is a way of representing information about a binary program
+
+Package: libctf0
+Architecture: arm64
+Version: 2.35.2-2
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: binutils
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 133
+Depends: libbinutils (= 2.35.2-2), libc6 (>= 2.17), zlib1g (>= 1:1.2.0)
+Filename: pool/bullseye/debian/binary-arm64/libctf0_2.35.2-2_arm64.deb
+Size: 51016
+MD5sum: d51da16c980a20cc5904b767c2b58090
+SHA1: 44e918990758ad312f536f188f7700fcca3122d1
+SHA256: 9f0b5320bde7069030d9dcded5cdc395c77fd2b8478cf8ccfcaf2d1bbe145105
+SHA512: bba0758d7b27146a1e142898c954df440ec25aa86d687257832dd070272121907a72135ab55b92daa3515bf086f9583eb4b786652bcb7f0a3f9927f9e09f5258
+Homepage: https://www.gnu.org/software/binutils/
+Description: Compact C Type Format library (runtime, BFD dependency)
+ This package includes the libctf-nobfd shared library.  The Compact C Type
+ Format (CTF) is a way of representing information about a binary program
+
+Package: libdeflate0
+Architecture: arm64
+Version: 1.7-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libdeflate
+Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
+Installed-Size: 93
+Depends: libc6 (>= 2.17)
+Filename: pool/bullseye/debian/binary-arm64/libdeflate0_1.7-1_arm64.deb
+Size: 47684
+MD5sum: 0124a58d04b82dc076f43a9e62b5696f
+SHA1: 726e5f03b42437d9af6119a08f33ba234913cb31
+SHA256: a1adc22600ea5e44e8ea715972ac2af7994cc7ff4d94bba8e8b01abb9ddbdfd0
+SHA512: 0f477728a4c0a063aa475ed4ab291a8740619cde7d205c52b2f5192f6d74163e8b21e81ee2338d889b905467e7eb4ee0ad62fb727defee87e3ed2d2812184050
+Homepage: https://github.com/ebiggers/libdeflate
+Description: fast, whole-buffer DEFLATE-based compression and decompression
+ The supported formats are:
+  * DEFLATE (raw)
+  * zlib (a.k.a. DEFLATE with a zlib wrapper)
+  * gzip (a.k.a. DEFLATE with a gzip wrapper)
+ .
+ libdeflate is heavily optimized. It is significantly faster than the zlib
+ library, both for compression and decompression, and especially on x86
+ processors. In addition, libdeflate provides optional high compression modes
+ that provide a better compression ratio than the zlib's "level 9".
+
 Package: libffi-dev
 Architecture: arm64
-Version: 3.4.8-2
+Version: 3.3-6
 Multi-Arch: same
 Priority: optional
 Section: libdevel
 Source: libffi
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 294
-Depends: libffi8 (= 3.4.8-2)
+Installed-Size: 270
+Depends: libffi7 (= 3.3-6)
 Conflicts: libffi4-dev
-Filename: pool/bullseye/debian/binary-arm64/libffi-dev_3.4.8-2_arm64.deb
-Size: 57192
-MD5sum: 9faf84424702b5423729deef141d1cb5
-SHA1: 29050f133f12cd42e68264240cb4c4215c948ec5
-SHA256: 55f6d389cc954407cdba6e4ba5e7039dd2042d2ca8929d6f5eb49d6b97ba92de
-SHA512: 2a41ccb860bd8fbbd08cf704033cf1b2cacfb3d729b337dcabfc61a90890a92ef17d16274a29a0ac963f27db88eb1bf4103803e5d0805cd2a7c3922fb627b496
+Filename: pool/bullseye/debian/binary-arm64/libffi-dev_3.3-6_arm64.deb
+Size: 53248
+MD5sum: 6d1455dde740d834d53f1945fb191d28
+SHA1: 714c6afc168349abd5da4237313b1a5a5ce0ce7f
+SHA256: 31166c3c814374c520e4c47cc779291888a2a7eca09fc93b5d2918bd7e2ed085
+SHA512: e20eca7f227591ea0b8308f9cc0befe0e915b4eff551bdedbd54cdf93d219f37dbaa5939f1d205435728e31bc9f3f2a2e8436cde7785b803a3486e634676651f
 Homepage: https://sourceware.org/libffi/
 Description: Foreign Function Interface library (development files)
  This package contains the headers and static library files necessary for
@@ -279,47 +483,98 @@ Description: Foreign Function Interface library (development files)
  allows code written in one language to call code written in another
  language.
 
-Package: libffi7
+Package: libfontconfig1
 Architecture: arm64
-Version: 3.3-6
+Version: 2.13.1-4.2
 Multi-Arch: same
 Priority: optional
 Section: libs
-Source: libffi
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 58
-Depends: libc6 (>= 2.17)
-Filename: pool/bullseye/debian/binary-arm64/libffi7_3.3-6_arm64.deb
-Size: 20648
-MD5sum: 3be28f211969d2f6e9f6bf4fc21a5f91
-SHA1: ec6e2ead8723cf8a05a3e2882f1dfb74fe44aa74
-SHA256: eb748e33ae4ed46f5a4c14b7a2a09792569f2029ede319d0979c373829ba1532
-SHA512: 3d9392e92c15b11ec7e108beb55f58ba50776705d621d6a08eef515a0a59a1ec2eacca68d14b22e873e63b66e1409bc79f1447525593a5afa646f0399a088ebf
-Homepage: https://sourceware.org/libffi/
-Description: Foreign Function Interface library runtime
- A foreign function interface is the popular name for the interface that
- allows code written in one language to call code written in another
- language.
+Source: fontconfig
+Maintainer: Debian freedesktop.org maintainers <pkg-freedesktop-maintainers@lists.alioth.debian.org>
+Installed-Size: 526
+Provides: libfontconfig
+Depends: libc6 (>= 2.17), libexpat1 (>= 2.0.1), libfreetype6 (>= 2.9.1), libuuid1 (>= 2.16), fontconfig-config (>= 2.13.1-4.2)
+Breaks: xpdf (<= 3.03-11)
+Filename: pool/bullseye/debian/binary-arm64/libfontconfig1_2.13.1-4.2_arm64.deb
+Size: 343668
+MD5sum: 470b24be7758f889ce77f234713a0eaf
+SHA1: 4cc29e756dd90151ac8e70ae8f23c4d650b32ec0
+SHA256: 18b13ef8a46e9d79ba6a6ba2db0c86e42583277b5d47f6942f3223e349c22641
+SHA512: 325d56e5407b52d122f056698aaecc1369c8c7712da992166595878f623a3f153269b638d866060961c56048a9a9c9bc88b5514f29149123885e9825099aaf3a
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+Description: generic font configuration library - runtime
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the runtime library needed to launch applications
+ using fontconfig.
+
+Package: libfreetype6
+Architecture: arm64
+Version: 2.10.4+dfsg-1+deb11u2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: freetype
+Maintainer: Hugh McMaster <hugh.mcmaster@outlook.com>
+Installed-Size: 845
+Depends: libbrotli1 (>= 0.6.0), libc6 (>= 2.17), libpng16-16 (>= 1.6.2-1), zlib1g (>= 1:1.1.4)
+Filename: pool/bullseye/debian/binary-arm64/libfreetype6_2.10.4+dfsg-1+deb11u2_arm64.deb
+Size: 393276
+MD5sum: 065f8f3174ca84effe502fcad60850e9
+SHA1: c8119e81e98a513ccaec2842ca902a3f4d6df79c
+SHA256: 0e8e39f26802a8e7695c058ac4fe704fbcc0b4e2c911bfdf2b53c31939e8c029
+SHA512: c0d1d4ea493490edcbb1c8623a9c6791a8082469e361597130fc5192f1a587168d5a233cf0b3f168a767eb089f48966e27bf6ae330ec577dcff2056a5a9acabc
+Homepage: https://www.freetype.org
+Description: FreeType 2 font engine, shared library files
+ The FreeType project is a team of volunteers who develop free,
+ portable and high-quality software solutions for digital typography.
+ They specifically target embedded systems and focus on providing small,
+ efficient and ubiquitous products.
+ .
+ The FreeType 2 library is their new software font engine.  It has been
+ designed to provide the following important features:
+  * A universal and simple API to manage font files
+  * Support for several font formats through loadable modules
+  * High-quality anti-aliasing
+  * High portability & performance
+ .
+ Supported font formats include:
+  * TrueType files (.ttf) and collections (.ttc)
+  * Type 1 font files both in ASCII (.pfa) or binary (.pfb) format
+  * Type 1 Multiple Master fonts.  The FreeType 2 API also provides
+    routines to manage design instances easily
+  * Type 1 CID-keyed fonts
+  * OpenType/CFF (.otf) fonts
+  * CFF/Type 2 fonts
+  * Adobe CEF fonts (.cef), used to embed fonts in SVG documents with
+    the Adobe SVG viewer plugin.
+  * Windows FNT/FON bitmap fonts
+ .
+ This package contains the files needed to run programs that use the
+ FreeType 2 library.
 
 Package: libgc1
 Architecture: arm64
-Version: 1:8.2.8-1
+Version: 1:8.0.4-3
 Multi-Arch: same
 Priority: optional
 Section: libs
 Source: libgc
 Maintainer: Christoph Egger <christoph@debian.org>
-Installed-Size: 521
-Depends: libc6 (>= 2.38), libstdc++6 (>= 4.1.1)
+Installed-Size: 399
+Depends: libc6 (>= 2.17), libstdc++6 (>= 4.1.1)
 Conflicts: libgc1c2
 Replaces: libgc1c2
-Filename: pool/bullseye/debian/binary-arm64/libgc1_1%3a8.2.8-1_arm64.deb
-Size: 241044
-MD5sum: ac428ed1186d11d09f720040b691875c
-SHA1: e0f899feefaabb033efdca11a052cdef9504b7fe
-SHA256: 58747952e7bd66396023aa8bf53f5039217fddd750b337dfa13352d4fc07f528
-SHA512: f81437c08cb880e474d7755e0d13f790123b6c4736c5eb0c7dd15ec9ff6ec44f018885c1afc5fa54165a9896fde7a658dffb122c31ce585a3cab197d0b623274
-Homepage: https://www.hboehm.info/gc/
+Filename: pool/bullseye/debian/binary-arm64/libgc1_1%3a8.0.4-3_arm64.deb
+Size: 231816
+MD5sum: 706a4c8bf1975e80c3bdf9449e04d7db
+SHA1: bc5e71ae630ca673496291612be0d6ea8af069b5
+SHA256: 75e1fb947599282507c0edfd207ab21fe416dfe48ecabc182282f36354f0f9ec
+SHA512: 88f2ff20dadb0414c3fedd0bbfdc363e241f335c545b5cb2eb0ea26501bbe53945c1df49cf13a7c5c5a857db4937d99d818ff80d249124fc8427c8eb03b9227c
+Homepage: http://www.hboehm.info/gc/
 Description: conservative garbage collector for C and C++
  Boehm-Demers-Weiser's GC is a garbage collecting storage allocator that is
  intended to be used as a plug-in replacement for C's malloc or C++'s new().
@@ -357,51 +612,130 @@ Description: GCC support library (development files)
  This package contains the headers and static library files necessary for
  building C programs which use libgcc, libgomp, libquadmath, libssp or libitm.
 
-Package: liblld-11-dev
+Package: libgd3
 Architecture: arm64
-Version: 1:11.0.1-2
-Priority: optional
-Section: libdevel
-Source: llvm-toolchain-11
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 220
-Depends: lld-11 (= 1:11.0.1-2), liblld-11 (= 1:11.0.1-2)
-Filename: pool/bullseye/debian/binary-arm64/liblld-11-dev_1%3a11.0.1-2_arm64.deb
-Size: 76508
-MD5sum: bca5754840e54faf67291300320dc339
-SHA1: 274191931f72bd145b328c318c064f2493e33967
-SHA256: 6c50e2c16112dd39196cd2136fcc990c66d8a1c2832b6098ad068542a9adeeb7
-SHA512: fc695918ba675424eadb41da7ef9a73bdb6c0cc1999b5ec51c51a170bd57726e27ca78c698be5da084a36cb2eaaf476cbd621dc3499492b89fc86166cb114229
-Homepage: https://www.llvm.org/
-Description: LLVM-based linker, header files
- LLD is a new, high-performance linker. It is built as a set of reusable
- components which highly leverage existing libraries in the larger LLVM
- Project.
- .
- This package provides the header files to build extension over lld.
-
-Package: liblld-11
-Architecture: arm64
-Version: 1:11.0.1-2
+Version: 2.3.0-2
+Multi-Arch: same
 Priority: optional
 Section: libs
-Source: llvm-toolchain-11
-Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 13434
-Depends: libllvm11 (= 1:11.0.1-2)
-Filename: pool/bullseye/debian/binary-arm64/liblld-11_1%3a11.0.1-2_arm64.deb
-Size: 1388696
-MD5sum: 7b7d59e56e1c75b1b670518ccc0b2976
-SHA1: 468f8b97edfdf2fd3a2e75d20a9d77dbb9e21d59
-SHA256: 447dcc230dc0efa9582743634be7d5df58c3fdcbc2fac6cff9370dcc1a884fd0
-SHA512: 5b665f537b646e51b3beb320d3a052bffa5cf85457a102181efb00a08146e88c408e5b1829737d6c7a18f406ff67ab1be5352f5375a69c17dbca6d025f5521a6
-Homepage: https://www.llvm.org/
-Description: LLVM-based linker, library
- LLD is a new, high-performance linker. It is built as a set of reusable
- components which highly leverage existing libraries in the larger LLVM
- Project.
+Source: libgd2
+Maintainer: GD Team <team+gd@tracker.debian.org>
+Installed-Size: 443
+Depends: libc6 (>= 2.29), libfontconfig1 (>= 2.12.6), libfreetype6 (>= 2.2.1), libjpeg62-turbo (>= 1.3.1), libpng16-16 (>= 1.6.2-1), libtiff5 (>= 4.0.3), libwebp6 (>= 0.5.1), libxpm4, zlib1g (>= 1:1.1.4)
+Suggests: libgd-tools
+Filename: pool/bullseye/debian/binary-arm64/libgd3_2.3.0-2_arm64.deb
+Size: 126904
+MD5sum: b60061c074b4cce80c243cbc9c168499
+SHA1: a1a51f73ede70d28404c9cd5ee5c8e7519cdb7dc
+SHA256: 1e6d6af0c90fe62193b3e51e45f69d075b86d7bde3fb4fd30b60da763aeca43f
+SHA512: 2643deb58c6fc5d88d5b0ccf97d455ec5940def520489bef40284f759c2c9c8b0bcca42d8a5f67f8abef4a7d732c1750b5c63f701a095e5333b3757b4d9d1aba
+Homepage: http://www.libgd.org/
+Description: GD Graphics Library
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
  .
- This package contains the LLD runtime library.
+ This is the runtime package of the library.
+
+Package: libgomp1
+Architecture: arm64
+Version: 10.2.1-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-10
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 270
+Depends: gcc-10-base (= 10.2.1-6), libc6 (>= 2.17)
+Breaks: gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
+Filename: pool/bullseye/debian/binary-arm64/libgomp1_10.2.1-6_arm64.deb
+Size: 91556
+MD5sum: f207c4a4e56d54f2d69670401092936a
+SHA1: 932a21ab21e4f7bf6eded7e036af30bc075f8979
+SHA256: 813af2e0b8ba0a7cea18c988cd843412ef6d0415700fc860d62816750e741670
+SHA512: 0b6b8927487b4aac6861dfa6a7c33e1f0f411da02ea756160f261562f2e698e52db931123ac9b074952c7a9adb3020ee9fd007ef3377e0da62ce271b3373036f
+Homepage: http://gcc.gnu.org/
+Description: GCC OpenMP (GOMP) support library
+ GOMP is an implementation of OpenMP for the C, C++, and Fortran compilers
+ in the GNU Compiler Collection.
+
+Package: libitm1
+Architecture: arm64
+Version: 10.2.1-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-10
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 110
+Depends: gcc-10-base (= 10.2.1-6), libc6 (>= 2.17)
+Filename: pool/bullseye/debian/binary-arm64/libitm1_10.2.1-6_arm64.deb
+Size: 23808
+MD5sum: 5d9c36e460456103bb32f1f100d80a8b
+SHA1: 1f74098a2d680f2e88f580501c03a6a294afd518
+SHA256: e77553b598b09a06b74c7603107cbac2d8dae6ae750cf6728035ead945003c60
+SHA512: 0f8522505995959280871623f370fd81f7ad7c73f29ad87101ca9d491666ce7ac18d0ba3aee6ff9eacaa51e5418985ee11854bafe35e1a1ebaa08450e4b65cbd
+Homepage: http://gcc.gnu.org/
+Description: GNU Transactional Memory Library
+ GNU Transactional Memory Library (libitm) provides transaction support for
+ accesses to the memory of a process, enabling easy-to-use synchronization of
+ accesses to shared memory by several threads.
+
+Package: libjbig0
+Architecture: arm64
+Version: 2.1-3.1+b2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: jbigkit (2.1-3.1)
+Maintainer: Michael van der Kolff <mvanderkolff@gmail.com>
+Installed-Size: 73
+Depends: libc6 (>= 2.17)
+Filename: pool/bullseye/debian/binary-arm64/libjbig0_2.1-3.1+b2_arm64.deb
+Size: 27756
+MD5sum: 930bd5607d3e94ec84263c41fefb00c9
+SHA1: fc32a389d9bb4003efb247a75588451c7d9594b6
+SHA256: b71b3e62e162f64cb24466bf7c6e40b05ce2a67ca7fed26d267d498f2896d549
+SHA512: f697df110b51bbf046172aa2b2de814fe1e5f5bd402861ae5141a5167e0d481d72d72c45cb322c9c28b28957bf2b8b52c347f5e16927e00ec1d91964ad486719
+Homepage: http://www.cl.cam.ac.uk/~mgk25/jbigkit/
+Description: JBIGkit libraries
+ JBIG-KIT provides a portable library of compression and decompression functions
+ with a documented interface that you can include very easily into your image or
+ document processing software.
+ .
+ This package contains the dynamically linked library.
+
+Package: libjpeg62-turbo
+Architecture: arm64
+Version: 1:2.0.6-4
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libjpeg-turbo
+Maintainer: Ondřej Surý <ondrej@debian.org>
+Installed-Size: 318
+Provides: libjpeg62 (= 1:2.0.6-4)
+Depends: libc6 (>= 2.17)
+Conflicts: libjpeg62
+Replaces: libjpeg62
+Filename: pool/bullseye/debian/binary-arm64/libjpeg62-turbo_1%3a2.0.6-4_arm64.deb
+Size: 133464
+MD5sum: cb881e3e5cf700350ac81124b5d380ae
+SHA1: 8a87dfb471b3aa102f3c93fab745901ea9ee6fcf
+SHA256: 8903394de23dc6ead5abfc80972c8fd44300c9903ad4589d0df926e71977d881
+SHA512: 56b7a55109fc7bdedda46edf0edc73b69f4909a30027783d91a9e050738371d7ba4e671c133e41f3df7b221abbe44f40488bd0a7329b5a2cfa83e48e6acac392
+Homepage: https://www.libjpeg-turbo.org/
+Description: libjpeg-turbo JPEG runtime library
+ The libjpeg-turbo JPEG library is a library for handling JPEG files.
+ .
+ libjpeg-turbo is a JPEG image codec that uses SIMD instructions (MMX,
+ SSE2, NEON) to accelerate baseline JPEG compression and decompression
+ on x86, x86-64, and ARM systems.  The libjpeg-turbo JPEG library is
+ an API/ABI compatible with the IJG JPEG library.
+ .
+ This package contains the shared runtime library.
 
 Package: libllvm11
 Architecture: arm64
@@ -427,6 +761,127 @@ Description: Modular compiler and toolchain technologies, runtime library
  .
  This package contains the LLVM runtime library.
 
+Package: liblsan0
+Architecture: arm64
+Version: 10.2.1-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-10
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 3181
+Depends: gcc-10-base (= 10.2.1-6), libc6 (>= 2.17), libgcc-s1 (>= 3.3)
+Filename: pool/bullseye/debian/binary-arm64/liblsan0_10.2.1-6_arm64.deb
+Size: 793828
+MD5sum: e520b659d0a93047c1a713a1d6c18307
+SHA1: a145276f0225128e88a8bd95fcc7fffad0baa14b
+SHA256: ef39e7a56aa2b6cbe47c926bba195f01755fda0bb0733717d7c803609b8c18e1
+SHA512: 3a1a8a0688a0eb1c97bd2a87ec2f2dbd0f6b75f6bc231a123e6cb2c887727c1d8240076e7c9147c56174d085dbb173cdc1832892450136b7dc0e3efc1acadc49
+Homepage: http://gcc.gnu.org/
+Description: LeakSanitizer -- a memory leak detector (runtime)
+ LeakSanitizer (Lsan) is a memory leak detector which is integrated
+ into AddressSanitizer.
+
+Package: libmpdec3
+Architecture: arm64
+Version: 2.5.1-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: mpdecimal
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 266
+Depends: libc6 (>= 2.17), libgcc-s1 (>= 3.0), libstdc++6 (>= 5.2)
+Breaks: libpython3.8-stdlib (<< 2.8.5-2)
+Filename: pool/bullseye/debian/binary-arm64/libmpdec3_2.5.1-1_arm64.deb
+Size: 84388
+MD5sum: c9822ac0f4fe67adb5b670066e48f952
+SHA1: 73e1ab762580190ff0f87028b51622763b75ef00
+SHA256: 171e2581970f36a39f65d1ca3c761e76b103844daae7903fcc07f7c3822a05bb
+SHA512: 30a83ea3ab86c57ab0446f70744bb298a41b9618d3da3de11d4775a9eade313e2e9ef449585a355e430c06854cab87fbf507a18aa59cdc0267dd2baa21f7de9a
+Homepage: https://www.bytereef.org/mpdecimal/index.html
+Description: library for decimal floating point arithmetic (runtime library)
+ mpdecimal is a package for correctly-rounded arbitrary precision decimal
+ floating point arithmetic.
+
+Package: libncurses-dev
+Architecture: arm64
+Version: 6.2+20201114-2+deb11u2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: ncurses
+Maintainer: Craig Small <csmall@debian.org>
+Installed-Size: 2414
+Provides: libncurses5-dev (= 6.2+20201114-2+deb11u2), libncursesw5-dev (= 6.2+20201114-2+deb11u2), libtinfo-dev (= 6.2+20201114-2+deb11u2), ncurses-dev
+Depends: libtinfo6 (= 6.2+20201114-2+deb11u2), libncurses6 (= 6.2+20201114-2+deb11u2), libncursesw6 (= 6.2+20201114-2+deb11u2), libc6-dev | libc-dev, ncurses-bin (>= 6.0+20151017)
+Suggests: ncurses-doc
+Conflicts: ncurses-dev
+Breaks: libncurses5-dev (<< 6.1+20180210), libncursesw5-dev (<< 6.1+20180210), libtinfo-dev (<< 6.1+20180210)
+Replaces: libncurses5-dev (<< 6.1+20180210), libncursesw5-dev (<< 6.1+20180210), libtinfo-dev (<< 6.1+20180210), ncurses-bin (<< 6.0+20151017), ncurses-dev
+Filename: pool/bullseye/debian/binary-arm64/libncurses-dev_6.2+20201114-2+deb11u2_arm64.deb
+Size: 335540
+MD5sum: b69b1f6d90a6855d1c1d6740d9a7eb59
+SHA1: ac46a32238451222789dd0c6ce849d4d86574b0e
+SHA256: 3893ab19f98544661b91a844f1b230f6c71afc6067d5354a12660492012bac47
+SHA512: 0be6ba01a37623c2b67c3c86fa7f72264a1e73843c0b3517bb6b899a45d4cb22539a9c42a0917b4f95c227685eb8622a09f85ef8f00aa0b3c8bd90ff07f84aef
+Homepage: https://invisible-island.net/ncurses/
+Description: developer's libraries for ncurses
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains the header files, static libraries
+ and symbolic links that developers using ncurses will need.
+
+Package: libncurses6
+Architecture: arm64
+Version: 6.2+20201114-2+deb11u2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: ncurses
+Maintainer: Craig Small <csmall@debian.org>
+Installed-Size: 315
+Depends: libtinfo6 (= 6.2+20201114-2+deb11u2), libc6 (>= 2.17)
+Recommends: libgpm2
+Breaks: cowdancer (<< 0.89~)
+Filename: pool/bullseye/debian/binary-arm64/libncurses6_6.2+20201114-2+deb11u2_arm64.deb
+Size: 93092
+MD5sum: bafe1fda20060c8dd8f77c3360a749e2
+SHA1: 7f92845796ff7ded4a6ad76cc13b6591f420428b
+SHA256: 039b71b8839538a92988003e13c29e7cf1149cdc6a77d3de882f1d386a5f3a5c
+SHA512: 98bd8815f1aeb87c5b691b7b3e36a0774298edf0be6d3ac08dacf4451c70eb205206dc26ab16a5d78fa87121cafab3d32c77f18181c92d6447d00681d4f19765
+Homepage: https://invisible-island.net/ncurses/
+Description: shared libraries for terminal handling
+ The ncurses library routines are a terminal-independent method of
+ updating character screens with reasonable optimization.
+ .
+ This package contains the shared libraries necessary to run programs
+ compiled with ncurses.
+
+Package: libnsl-dev
+Architecture: arm64
+Version: 1.3.0-2
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libnsl
+Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
+Installed-Size: 353
+Depends: libnsl2 (= 1.3.0-2), libtirpc-dev
+Breaks: libc6-dev (<< 2.31-4)
+Replaces: libc6-dev (<< 2.31-4)
+Filename: pool/bullseye/debian/binary-arm64/libnsl-dev_1.3.0-2_arm64.deb
+Size: 66132
+MD5sum: 3f75ddababd89cae452c9ab33e4e6f8c
+SHA1: 6eaf983b3a55ebbe5c3ced85c7b3478c419216a5
+SHA256: baf8a2ef1e9faec26dd84e62d0e8b653f54d2211a7a89c1b67965aee8a3da790
+SHA512: 93b4daeb25399aeab0f4f7b287cce678eb85d67c4711b157a5f7d0bd3dd369729471dd353fed4b4ba3d62e7020a4513d7bead969994084a3b407e4f178d1e3e5
+Homepage: https://github.com/thkukuk/libnsl
+Description: libnsl development files
+ This package contains the files needed for developing applications that
+ use libnsl.
+
 Package: libobjc-10-dev
 Architecture: arm64
 Version: 10.2.1-6
@@ -450,20 +905,20 @@ Description: Runtime library for GNU Objective-C applications (development files
 
 Package: libobjc4
 Architecture: arm64
-Version: 14.2.0-19
+Version: 10.2.1-6
 Multi-Arch: same
 Priority: optional
 Section: libs
-Source: gcc-14
+Source: gcc-10
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Installed-Size: 293
-Depends: gcc-14-base (= 14.2.0-19), libc6 (>= 2.38), libgc1 (>= 1:7.2d), libgcc-s1 (>= 3.0)
-Filename: pool/bullseye/debian/binary-arm64/libobjc4_14.2.0-19_arm64.deb
-Size: 39376
-MD5sum: db01f4257c8f535d1701750900e49f50
-SHA1: 66f511f981db3d987cb54cd2aa57cb20a4cc862b
-SHA256: 2c402e31c3636f8c5be1f1c4a4716e9335e570862b7e393ade1e63bde9ff933c
-SHA512: ddf2e7c68355375e1b67b2e17a3f9b20bda09823f4525a275de49232ea1738368ff271c494b47eeeccf479c31ff9939512317c29fe044146566c6cb822dbc018
+Installed-Size: 193
+Depends: gcc-10-base (= 10.2.1-6), libc6 (>= 2.17), libgc1 (>= 1:7.2d), libgcc-s1 (>= 3.0)
+Filename: pool/bullseye/debian/binary-arm64/libobjc4_10.2.1-6_arm64.deb
+Size: 38724
+MD5sum: 0be34a8482466e954aa176ed602f0cef
+SHA1: 7b1ff128b85a6d044e1f3ac9a3ca4b24e5157730
+SHA256: 2cc2318b8e15773944cec9b7a6a17f8db939e51d351e9180b0618e5963d672bf
+SHA512: 5b8779e985387048496421d2cd4f35a212fea1402947f64243be34e7ff7b7189d53d805a599221897fb64fa0a407134ab8d55e8fa98c41e44fa7006b83cf7931
 Homepage: http://gcc.gnu.org/
 Description: Runtime library for GNU Objective-C applications
  Library needed for GNU ObjC applications linked against the shared library.
@@ -522,21 +977,21 @@ Description: LLVM OpenMP runtime
 
 Package: libpfm4
 Architecture: arm64
-Version: 4.13.0+git99-gc5587f9-1
+Version: 4.11.1+git32-gd0b85fb-1
 Multi-Arch: same
 Priority: optional
 Section: libs
 Maintainer: Debian HPC Team <debian-hpc@lists.debian.org>
-Installed-Size: 587
+Installed-Size: 212
 Depends: libc6 (>= 2.17)
 Breaks: libpapi5 (<< 5.5.1-2~), pcp (<< 3.11.10~)
-Filename: pool/bullseye/debian/binary-arm64/libpfm4_4.13.0+git99-gc5587f9-1_arm64.deb
-Size: 73080
-MD5sum: 98caa8ac7cdb438d3d1c1df2091ddfd7
-SHA1: a03e06925bb95a390066edfc9f666e1f34481d6c
-SHA256: 5041567ffd6bdb2f46756ee4249d0d21576ac95b059429dc1250a8d24b614e6d
-SHA512: f9faa586d8e8ea81c945865509459d305f8ffaf74062689ebc495c399317de98258a87f0df98c3b828828aa3a845260d0f6df8b864373bdc8f58cc6c7735f171
-Homepage: https://perfmon2.sourceforge.net/
+Filename: pool/bullseye/debian/binary-arm64/libpfm4_4.11.1+git32-gd0b85fb-1_arm64.deb
+Size: 45388
+MD5sum: 8dabc8a35185945597bccc92c2074977
+SHA1: 3bb247fa761ee0ad02fa074cc3896c88afdb177f
+SHA256: 3929ab38f2f64632a2b86df223067f3ddde6ac03387db59122af3728e4f76283
+SHA512: 1513424e7b75a8e83a16e5d355828705b75c30cf9e055ab89d7ec7232cc397cf9d461c12f5a2b8cdb3585da85c9bdfeb3485ca279d75513ea08c54fd46d4b2b1
+Homepage: http://perfmon2.sourceforge.net/
 Description: Library to program the performance monitoring events
  Libpfm4 helps convert from an event name, expressed as a string, to
  the event encoding. The encoding can then be used with specific OS
@@ -546,6 +1001,125 @@ Description: Library to program the performance monitoring events
  interface which was introduced in Linux v2.6.31.
  .
  This package provides the shared library.
+
+Package: libpipeline1
+Architecture: arm64
+Version: 1.5.3-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libpipeline
+Maintainer: Colin Watson <cjwatson@debian.org>
+Installed-Size: 86
+Depends: libc6 (>= 2.17)
+Filename: pool/bullseye/debian/binary-arm64/libpipeline1_1.5.3-1_arm64.deb
+Size: 33004
+MD5sum: afdbbf5207cd33dac2ea5ea1ca3a663f
+SHA1: 449ffb19e397ccd85248a08d1eb1ac9a30b4ac10
+SHA256: f0e220a54f729afb13cc327ff9e3ca49dd1655897a89ed8d4218c671e9e207e1
+SHA512: ad443a52c5404249eba990f6a05e3b96e1728307c76d502386b7c6cd2ddd043d5640a04e804ce25ec4fb78b1b1fa17d4ffef70fb2be5befe8a55087c60811c73
+Homepage: https://nongnu.org/libpipeline/
+Description: Unix process pipeline manipulation library
+ This is a C library for setting up and running pipelines of processes,
+ without needing to involve shell command-line parsing which is often
+ error-prone and insecure.
+
+Package: libpng16-16
+Architecture: arm64
+Version: 1.6.37-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libpng1.6
+Maintainer: Maintainers of libpng1.6 packages <libpng1.6@packages.debian.org>
+Installed-Size: 436
+Depends: libc6 (>= 2.29), zlib1g (>= 1:1.2.11.dfsg)
+Filename: pool/bullseye/debian/binary-arm64/libpng16-16_1.6.37-3_arm64.deb
+Size: 288696
+MD5sum: 186928d4eb9b5046bb6635cfb2bf784f
+SHA1: 5936a8b49a5fd86b692f147bfaf8f9b2ff4a13cd
+SHA256: f5f61274aa5f71b9e44b077bd7b9fa9cd5ff71d8b8295f47dc1b2d45378aa73e
+SHA512: 8c20221336d2608d9046f8163978ee41ca2720aebcd8642d280ee15c5ab496c4d1a5321d68ea99750b6c40cfb9c9ffcad45e6f895ca625050adb86b9907948a9
+Homepage: http://libpng.org/pub/png/libpng.html
+Description: PNG library - runtime (version 1.6)
+ libpng is a library implementing an interface for reading and writing
+ PNG (Portable Network Graphics) format files.
+ .
+ This package contains the runtime library files needed to run software
+ using libpng.
+
+Package: libpython3-stdlib
+Architecture: arm64
+Version: 3.9.2-3
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3-defaults
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 38
+Depends: libpython3.9-stdlib (>= 3.9.2-0~)
+Filename: pool/bullseye/debian/binary-arm64/libpython3-stdlib_3.9.2-3_arm64.deb
+Size: 21400
+MD5sum: 25bcfa156ec09e1eddf31c5bc79294ef
+SHA1: 93bcb1deb52dc61cda24c82c16eab049e0902baa
+SHA256: 79ec02b6afc81938fd1418170c103cc90aabbc52e0e1738e2744c5a4ec69fde8
+SHA512: 727635b7b9a2e23f649cbe4de5efc780ddd7818ef038c3082a5e39b77c68a19e8a8eafbdfa1828b858b51ffda1c61d24c99273f119f3572351ff9841b363e814
+Homepage: https://www.python.org/
+Description: interactive high-level object-oriented language (default python3 version)
+ This package contains the majority of the standard library for the Python
+ language (default python3 version).
+ .
+ This package is a dependency package, which depends on Debian's default
+ Python 3 version's standard library (currently v3.9).
+
+Package: libpython3.9-minimal
+Architecture: arm64
+Version: 3.9.2-1+deb11u3
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.9
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 4967
+Depends: libc6 (>= 2.17), libssl1.1 (>= 1.1.1)
+Recommends: libpython3.9-stdlib
+Conflicts: binfmt-support (<< 1.1.2)
+Breaks: libpython3.9-stdlib (<< 3.9.0~rc1)
+Replaces: libpython3.9-stdlib (<< 3.9.0~rc1)
+Filename: pool/bullseye/debian/binary-arm64/libpython3.9-minimal_3.9.2-1+deb11u3_arm64.deb
+Size: 801412
+MD5sum: e65895607d20a77d162ed739155212c5
+SHA1: 218e17d210c9112a17e714394a683e9fea1c0c3c
+SHA256: be583468ea1e0f75d32b05c8a5a368d3ba5dfe3e75b1a4a78a0a8ecdebb49562
+SHA512: 81df59338fe02ae3c267a3b9468ad1e30722f43e97b256163b6e61dd1dbf508e9808673dac6ad809d767aa39a918262e8b15790e969d47675aec4aa1b19c33fa
+Description: Minimal subset of the Python language (version 3.9)
+ This package contains some essential modules. It is normally not
+ used on it's own, but as a dependency of python3.9-minimal.
+
+Package: libpython3.9-stdlib
+Architecture: arm64
+Version: 3.9.2-1+deb11u3
+Multi-Arch: same
+Priority: optional
+Section: python
+Source: python3.9
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 7687
+Depends: libpython3.9-minimal (= 3.9.2-1+deb11u3), media-types | mime-support, tzdata, libbz2-1.0, libc6 (>= 2.28), libcrypt1 (>= 1:4.1.0), libdb5.3, libffi7 (>= 3.3~20180313), liblzma5 (>= 5.1.1alpha+20120614), libmpdec3, libncursesw6 (>= 6), libnsl2 (>= 1.0), libreadline8 (>= 7.0~beta), libsqlite3-0 (>= 3.7.15), libtinfo6 (>= 6), libtirpc3 (>= 1.0.2), libuuid1 (>= 2.20.1)
+Recommends: ca-certificates
+Filename: pool/bullseye/debian/binary-arm64/libpython3.9-stdlib_3.9.2-1+deb11u3_arm64.deb
+Size: 1659692
+MD5sum: 67dd13eb1df2b4133d256fc4a5912d89
+SHA1: 97f4320e03f286480324fa71686adcfb5035b893
+SHA256: 47d92c4f77cfacfab4cf186795f8f4641ab3c2bdd60ed112c547b4393bdda362
+SHA512: e068a66558941b0ffb1262c4f518d860c9b47756793eecf5faeb7f929e0c283e4d904cbfab040327fb76a1b78458751bc07344a428554affee5993ceb625e65d
+Description: Interactive high-level object-oriented language (standard library, version 3.9)
+ Python is a high-level, interactive, object-oriented language. Its 3.9 version
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package contains Python 3.9's standard library. It is normally not
+ used on its own, but as a dependency of python3.9.
 
 Package: libstdc++-10-dev
 Architecture: arm64
@@ -575,6 +1149,72 @@ Description: GNU Standard C++ Library v3 (development files)
  was included up to g++-2.95. The first version of libstdc++-v3 appeared
  in g++-3.0.
 
+Package: libtiff5
+Architecture: arm64
+Version: 4.2.0-1+deb11u6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: tiff
+Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.org>
+Installed-Size: 657
+Depends: libc6 (>= 2.29), libdeflate0 (>= 1.0), libjbig0 (>= 2.0), libjpeg62-turbo (>= 1.3.1), liblzma5 (>= 5.1.1alpha+20120614), libwebp6 (>= 0.5.1), libzstd1 (>= 1.4.0), zlib1g (>= 1:1.1.4)
+Filename: pool/bullseye/debian/binary-arm64/libtiff5_4.2.0-1+deb11u6_arm64.deb
+Size: 277676
+MD5sum: b04e3db74c06439090d797df8f3a9930
+SHA1: d06111910725e975203ab4fdad1a694482badc63
+SHA256: c0d5505b01eb2f653df984def5903a6f455eaaf14dcbfb025b4aa83e060b5ef6
+SHA512: 50e372a688cbdcda8a6fda1db83555ab5f11c94bb0110a7868af1f2e35cd3974920b3c016b21b58d20b8d8af848ea8d2baa45ea9ab6e7c301201ad8fb92c41ff
+Homepage: https://libtiff.gitlab.io/libtiff/
+Description: Tag Image File Format (TIFF) library
+ libtiff is a library providing support for the Tag Image File Format
+ (TIFF), a widely used format for storing image data.  This package
+ includes the shared library.
+
+Package: libtinfo-dev
+Architecture: arm64
+Version: 6.2+20201114-2+deb11u2
+Multi-Arch: same
+Priority: optional
+Section: oldlibs
+Source: ncurses
+Maintainer: Craig Small <csmall@debian.org>
+Installed-Size: 6
+Depends: libtinfo6 (= 6.2+20201114-2+deb11u2), libncurses-dev (= 6.2+20201114-2+deb11u2)
+Filename: pool/bullseye/debian/binary-arm64/libtinfo-dev_6.2+20201114-2+deb11u2_arm64.deb
+Size: 940
+MD5sum: c2c89570b49672d248cf32ed16492593
+SHA1: dc0f8d78be442730f24ec9d42e91893953123a0b
+SHA256: bc2bf37d155c0c4766fc03ebb89b6a1c45c840124221b9175bdc9b3c99f7c745
+SHA512: 0ab1049e7d7c874181f100ed2308a3e815f496afe09d77fa8bca8d724dc1be747fa0106fd0b3e649ff442681b13bb3fb0b97c71987df4fabbdc6e38deb1eb9d4
+Homepage: https://invisible-island.net/ncurses/
+Description: transitional package for libncurses-dev
+ This is a transitional package that can safely be removed.
+
+Package: libtirpc-dev
+Architecture: arm64
+Version: 1.3.1-1+deb11u1
+Multi-Arch: same
+Priority: optional
+Section: libdevel
+Source: libtirpc
+Maintainer: Josue Ortega <josue@debian.org>
+Installed-Size: 757
+Depends: libtirpc3 (= 1.3.1-1+deb11u1)
+Filename: pool/bullseye/debian/binary-arm64/libtirpc-dev_1.3.1-1+deb11u1_arm64.deb
+Size: 193084
+MD5sum: db311e3fc4110e483573b8a7645068c9
+SHA1: 4c455e26c04f0eaf3aedc1063b7637464cf8283b
+SHA256: 8b30e69481d15fc1a311db8fc2a32413466d64451ec1317f4753eb70f7cc15d6
+SHA512: 29f3e76b7b71310098766986a1730b58a03b70122c501d376238f68cd6cfce562cf13bc17d4454934767faaaeb28697c265fe9e9f5d90395fac506c6382c6f26
+Homepage: http://sourceforge.net/projects/libtirpc
+Description: transport-independent RPC library - development files
+ This package contains a port of Sun's transport-independent RPC library to
+ Linux. The library is intended as a replacement for the RPC code in the GNU C
+ library, providing among others support for RPC (and in turn, NFS) over IPv6.
+ .
+ This package contains the files needed for development against libtirpc.
+
 Package: libtsan0
 Architecture: arm64
 Version: 10.2.1-6
@@ -596,27 +1236,231 @@ Description: ThreadSanitizer -- a Valgrind-based detector of data races (runtime
  ThreadSanitizer (Tsan) is a data race detector for C/C++ programs.
  The Linux and Mac versions are based on Valgrind.
 
+Package: libubsan1
+Architecture: arm64
+Version: 10.2.1-6
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: gcc-10
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Installed-Size: 3002
+Depends: gcc-10-base (= 10.2.1-6), libc6 (>= 2.17), libgcc-s1 (>= 3.3), libstdc++6 (>= 4.1.1)
+Filename: pool/bullseye/debian/binary-arm64/libubsan1_10.2.1-6_arm64.deb
+Size: 759252
+MD5sum: f455fc7b6de51175ba105b899cac84e7
+SHA1: 2217cc86baa8f9e6ae9fb812db4d3984b491f0ad
+SHA256: 14b4d134e2efc2d7afefce5affe89476117dd7a1894bdff158c7b5e0631052bc
+SHA512: 24b9c0130cf39b91b4c332817b0d98e9792b4bcae3e199aada15a2b49c1458519ac1e908be18153536606027fb7e3e2d34081a2bf3d52eaf16341295f0ee2dc2
+Homepage: http://gcc.gnu.org/
+Description: UBSan -- undefined behaviour sanitizer (runtime)
+ UndefinedBehaviorSanitizer can be enabled via -fsanitize=undefined.
+ Various computations will be instrumented to detect undefined behavior
+ at runtime. Available for C and C++.
+
+Package: libwebp6
+Architecture: arm64
+Version: 0.6.1-2.1+deb11u2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libwebp
+Maintainer: Jeff Breidenbach <jab@debian.org>
+Installed-Size: 411
+Depends: libc6 (>= 2.29)
+Filename: pool/bullseye/debian/binary-arm64/libwebp6_0.6.1-2.1+deb11u2_arm64.deb
+Size: 243732
+MD5sum: f7eb0777e15e9c0fb3cd7d0a3a2898d7
+SHA1: fa70c9938bcd3952754d7b262538c8c7706327cb
+SHA256: edeb260e528fecae77457a63a468e55837a98079fdd7f1e20e9813c358f8c755
+SHA512: 12081dd6de7b1d00efa8e34a9ffe9be2214127e42aca9fecbe1dab2073b61794c4fd5f097b385ef7c7aa10f1bb3af1b5100ac9f65b5ba5dee10e2937504d2b98
+Homepage: https://developers.google.com/speed/webp/
+Description: Lossy compression of digital photographic images.
+ Image Compression format, based on the VP8 codec.
+ WebP uses the modern VP8 compression format to deliver efficient
+ compression of images for the web. More than 30% extra gain over
+ optimized JPEG, for same quality, is not unusual.
+
+Package: libx11-6
+Architecture: arm64
+Version: 2:1.7.2-1+deb11u2
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libx11
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 1563
+Depends: libc6 (>= 2.26), libxcb1 (>= 1.11.1), libx11-data
+Breaks: libx11-xcb1 (<< 2:1.7.0-2)
+Filename: pool/bullseye/debian/binary-arm64/libx11-6_2%3a1.7.2-1+deb11u2_arm64.deb
+Size: 743576
+MD5sum: 1a6a569bfbad634039052d2683d2be37
+SHA1: 587ef0d322874c2e071543b6bc37fae03327503d
+SHA256: 1ddb1a4d3dbdaeac8fd8d0009a27e6453b15d97362fdd1d3efb1d5f577364f30
+SHA512: d2a93d99b15dabc2029c9f152cbbf583f9f3b34138f6492d90eb652822edb4c5e78765d884b08ea122aaf81fe40a3e7a6fbe82f6f9834c2bd25c74e2dc98ac08
+Description: X11 client-side library
+ This package provides a client interface to the X Window System, otherwise
+ known as 'Xlib'.  It provides a complete API for the basic functions of the
+ window system.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ https://gitlab.freedesktop.org/xorg/lib/libX11
+
+Package: libxau6
+Architecture: arm64
+Version: 1:1.0.9-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libxau
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 42
+Depends: libc6 (>= 2.17)
+Filename: pool/bullseye/debian/binary-arm64/libxau6_1%3a1.0.9-1_arm64.deb
+Size: 19696
+MD5sum: 0f366143e206a5709e68b099e7e2e336
+SHA1: c5016a574b9f8c87a9da93f6f67c2de56c4f4de5
+SHA256: 36c2bf400641a80521093771dc2562c903df4065f9eb03add50d90564337ea6c
+SHA512: 803036a7a8f10384362bc9370cd24922126043c8a7f5b202d06aa2c0756013bc907db2bc6e3632330b84ff15597b9aa75ffd5ba200e76830de2340adc6ea8cce
+Description: X11 authorisation library
+ This package provides the main interface to the X11 authorisation handling,
+ which controls authorisation for X connections, both client-side and
+ server-side.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ https://gitlab.freedesktop.org/xorg/lib/libxau
+
+Package: libxcb1
+Architecture: arm64
+Version: 1.14-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libxcb
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 288
+Depends: libc6 (>= 2.17), libxau6 (>= 1:1.0.9), libxdmcp6
+Breaks: alsa-utils (<< 1.0.24.2-5)
+Filename: pool/bullseye/debian/binary-arm64/libxcb1_1.14-3_arm64.deb
+Size: 138164
+MD5sum: d1026b8241c8ce54af24c6f1b32622b4
+SHA1: 9dae0d6eb2322029faf38398a9e06eaed6c2b135
+SHA256: 48f82b65c93adb7af7757961fdd2730928316459f008d767b7104a56bc20a8f1
+SHA512: d2ec7dd051aab987e7ed3899a144d4427813995f94d490dcc3f6a93cff464bf0225cb960a20e0cf532d684f28e17b0d0494ba24f90ebb7d2cd9f9a745ce8e2a7
+Homepage: https://xcb.freedesktop.org
+Description: X C Binding
+ This package contains the library files needed to run software using libxcb,
+ the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+
+Package: libxdmcp6
+Architecture: arm64
+Version: 1:1.1.2-3
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libxdmcp
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 53
+Depends: libbsd0 (>= 0.2.0), libc6 (>= 2.17)
+Filename: pool/bullseye/debian/binary-arm64/libxdmcp6_1%3a1.1.2-3_arm64.deb
+Size: 25358
+MD5sum: b32a670f5f39f12add9d270ca72b075e
+SHA1: 5b7aa017cb96f890b8b904ab44f65be37e507906
+SHA256: e92569ac33247261aa09adfadc34ced3994ac301cf8b58de415a2d5dbf15ccfc
+SHA512: e5b5e3b9b1ef3b2cceae22d6f8eb04d6c902f2bcc13ff02c08049085d8db8546ff0bc525920fb8ab4c26dbf66062e8edf0e1893deae1df50880b76089e30c4ab
+Description: X11 Display Manager Control Protocol library
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
+
+Package: libxpm4
+Architecture: arm64
+Version: 1:3.5.12-1.1+deb11u1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libxpm
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 101
+Depends: libc6 (>= 2.17), libx11-6
+Filename: pool/bullseye/debian/binary-arm64/libxpm4_1%3a3.5.12-1.1+deb11u1_arm64.deb
+Size: 47416
+MD5sum: 0076b444d94cb56ce3392cb891139aeb
+SHA1: b194e486b4b9df62890cf3157d217a9880138a17
+SHA256: 83ba23ecaaf3f7b700f1ec2c1e349b5a63f3c8cdceb43cc78eb353e16051427d
+SHA512: 7203e0c4b47d337bc56f81dcc890e44c15d3e446c8b89d4d7be5bb4bda3b9e6f1344bcd8ff9a4947731547dd54293c77eaa422ad5ee8f2a136e705bb4b2823c7
+Homepage: https://www.x.org
+Description: X11 pixmap library
+ The X PixMap image format is an extension of the monochrome X BitMap
+ format specified in the X protocol, and is commonly used in traditional
+ X applications.
+ .
+ This package provides runtime support for XPM format.
+
+Package: libyaml-0-2
+Architecture: arm64
+Version: 0.2.2-1
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: libyaml
+Maintainer: Anders Kaseorg <andersk@mit.edu>
+Installed-Size: 128
+Depends: libc6 (>= 2.17)
+Filename: pool/bullseye/debian/binary-arm64/libyaml-0-2_0.2.2-1_arm64.deb
+Size: 45056
+MD5sum: 7e2aa6eff36e838a25ee95fc5013bed4
+SHA1: 5b26160e55da2b798f9c6c0f642e9dd9e3ce081f
+SHA256: 84cb849b4475b7d0238d1f100ba3e3f29f7149258b273ba30b981aba2be03635
+SHA512: fd8b17e667061e8866f510d0773286779015e15896b6fddb82fc7ff6c3f9756c548031eb59ab6c3a15bccc6f89f589c4240c0b2b68e99b99680e5ed150a68d00
+Homepage: https://github.com/yaml/libyaml
+Description: Fast YAML 1.1 parser and emitter library
+ LibYAML is a C library for parsing and emitting data in YAML 1.1, a
+ human-readable data serialization format.
+
 Package: libz3-4
 Architecture: arm64
-Version: 4.13.3-1
+Version: 4.8.10-1
 Multi-Arch: same
 Priority: optional
 Section: libs
 Source: z3
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 26286
-Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), libstdc++6 (>= 14)
+Installed-Size: 21304
+Depends: libc6 (>= 2.30), libgcc-s1 (>= 3.0), libstdc++6 (>= 9)
 Breaks: libz3-dev (<< 4.4.1)
 Replaces: libz3-dev (<< 4.4.1)
-Filename: pool/bullseye/debian/binary-arm64/libz3-4_4.13.3-1_arm64.deb
-Size: 7506868
-MD5sum: 484bf18daaeb4fab0c8a1d7d53d6714f
-SHA1: 9e2f9ad127db834d80df467507c52424db02eee8
-SHA256: 29a7b924a5a38c9ac4e2a64aa11586a9c54f26b579b18e4f75adf8f7c1106e45
-SHA512: 5a03d0bfaa939dcdb60cdeb56754426c5c6f87feb4f9aef046dc3eb84135f5964ef6109757bf287da31127a79fe083c2b9de3fe5c2acf8fa8b729395aaa65bfb
+Filename: pool/bullseye/debian/binary-arm64/libz3-4_4.8.10-1_arm64.deb
+Size: 6116964
+MD5sum: 2d922b8fff981c544571b3e1b75d5bb4
+SHA1: b82482a9d3dc7c10c353ec80d0b08e201942b3ac
+SHA256: ae1ea58ecfdd4b5ec53d734e60ac2df37fddb11888b7730a19335f1a9b09f489
+SHA512: 8e1c7c8984f0c53993c9ae10f917be7c4b8714e05fcb28095b0d3795e10b413b69f4c31463be97d5b1235b5a4bce15982cad22b298c2d5016d01a385c803a3c4
 Homepage: https://github.com/Z3Prover/z3
 Description: theorem prover from Microsoft Research - runtime libraries
- Z3 is a state-of-the-art theorem prover from Microsoft Research. It can be
+ Z3 is a state-of-the art theorem prover from Microsoft Research. It can be
  used to check the satisfiability of logical formulas over one or more
  theories. Z3 offers a compelling match for software analysis and verification
  tools, since several common software constructs map directly into supported
@@ -627,29 +1471,50 @@ Description: theorem prover from Microsoft Research - runtime libraries
 
 Package: libz3-dev
 Architecture: arm64
-Version: 4.13.3-1
+Version: 4.8.10-1
 Multi-Arch: same
 Priority: optional
 Section: libdevel
 Source: z3
 Maintainer: LLVM Packaging Team <pkg-llvm-team@lists.alioth.debian.org>
-Installed-Size: 602
-Depends: libz3-4 (= 4.13.3-1)
-Filename: pool/bullseye/debian/binary-arm64/libz3-dev_4.13.3-1_arm64.deb
-Size: 106528
-MD5sum: b252dd38c2e8dcd9f1a5ab754d1ba021
-SHA1: acf11564200118350181ef63833a02541adf57af
-SHA256: e35389f0b02e020d6714c5ef349eef4a1f514d0293c05fd28bb90c1fe4f3f2b7
-SHA512: fa2c1fa0c98c159cf5ba2ff0070cf9d8325d624fb7120515ca364e96afb96770036cd9b65361de6ebee14282031be68cb3eb8459505229b8ccd9fb9ab5532d46
+Installed-Size: 526
+Depends: libz3-4 (= 4.8.10-1)
+Filename: pool/bullseye/debian/binary-arm64/libz3-dev_4.8.10-1_arm64.deb
+Size: 90832
+MD5sum: 884f80e1d9b082086b496b9e986c9beb
+SHA1: b87303546fe02b2ea9222f9e7a6e9067faf16a03
+SHA256: 4739e62c1f39c35f2382f15347b588245a71bd12c8628a8caa6639fdc1774b6c
+SHA512: ec6367ce0fc313af843740d2a4e11da16c369f06f672d08e2bcb6da20054a5190f85571e01c91a340b3b72fe882efe37624c23ef26a358cc17f7e191a037561f
 Homepage: https://github.com/Z3Prover/z3
 Description: theorem prover from Microsoft Research - development files
- Z3 is a state-of-the-art theorem prover from Microsoft Research. It can be
+ Z3 is a state-of-the art theorem prover from Microsoft Research. It can be
  used to check the satisfiability of logical formulas over one or more
  theories. Z3 offers a compelling match for software analysis and verification
  tools, since several common software constructs map directly into supported
  theories.
  .
  This package can be used to invoke Z3 via its C++ API.
+
+Package: linux-libc-dev
+Architecture: arm64
+Version: 5.10.237-1
+Multi-Arch: same
+Priority: optional
+Section: devel
+Source: linux
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 5965
+Filename: pool/bullseye/debian/binary-arm64/linux-libc-dev_5.10.237-1_arm64.deb
+Size: 1799704
+MD5sum: 4ce87fc9a37b1cfdcd5a56fd91fe99e9
+SHA1: e724f65c5a7b41836051a1b02da4e7a6332b9a98
+SHA256: c48ae7551b2d1eaee7e99a19a89967b4260e5108128aab1c967d4453928efd5b
+SHA512: 22f95f559e0e5761eee2c9997e6443d8ef71c8f60865d886792e6fab8093290b90f9f016cfe41bd5ec63ec2eadea4c29481fbbf20fbf08edad779e15eb47c4a0
+Homepage: https://www.kernel.org/
+Description: Linux support headers for userspace development
+ This package provides userspaces headers from the Linux kernel.  These
+ headers are used by the installed headers for GNU libc and other system
+ libraries.
 
 Package: lld-11
 Architecture: arm64
@@ -809,26 +1674,125 @@ Description: Modular compiler and toolchain technologies
  a young scheme front-end, and Java support is in development. LLVM can
  generate code for X96, SparcV10, PowerPC or many other architectures.
 
-Package: python3-yaml
+Package: python3-minimal
 Architecture: arm64
-Version: 6.0.2-1+b2
+Version: 3.9.2-3
 Multi-Arch: allowed
 Priority: optional
 Section: python
-Source: pyyaml (6.0.2-1)
+Source: python3-defaults
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 121
+Pre-Depends: python3.9-minimal (>= 3.9.2-0~)
+Depends: dpkg (>= 1.13.20)
+Filename: pool/bullseye/debian/binary-arm64/python3-minimal_3.9.2-3_arm64.deb
+Size: 38248
+MD5sum: fa9a356e20dac4be8d04e1d23a3f969f
+SHA1: e7aee8964b04c4beb93ace38f7de66681abfc9d1
+SHA256: 7c0e0e24c995d3419e3c80fa47407b8fef0b631c70dbadee75d1783e509c4783
+SHA512: 343e8b7ced901b14d3e64d3e9d026f403d58d0c681401076592b43e27bf81ea9cd452533fc75a374d2448b1afd5b314e0d6aea263e048315642c1e970debd188
+Homepage: https://www.python.org/
+Description: minimal subset of the Python language (default python3 version)
+ This package contains the interpreter and some essential modules.  It's used
+ in the boot process for some basic tasks.
+ See /usr/share/doc/python3.9-minimal/README.Debian for a list of the modules
+ contained in this package.
+
+Package: python3-yaml
+Architecture: arm64
+Version: 5.3.1-5
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: pyyaml
 Maintainer: Debian Python Team <team+python@tracker.debian.org>
-Installed-Size: 552
-Depends: python3 (<< 3.14), python3 (>= 3.13~), python3:any, libc6 (>= 2.17), libyaml-0-2
-Filename: pool/bullseye/debian/binary-arm64/python3-yaml_6.0.2-1+b2_arm64.deb
-Size: 121812
-MD5sum: c9384ba5d38338a2f6126c17b2c462b2
-SHA1: aa06b96edf82d8a8f5159020e1f1efd1a4f4d571
-SHA256: b83a9ccdc2d1d1f2e36c7c333d36b0151cc89f1d45568e28bcab1f00c72a3498
-SHA512: 5247d526bc817aaa33c4ef175803c8bb395ab8545cfe93c7e579c353dacf6b7a7c55414fff3929d4cd5d802b5c17789297310c663ce4071b8d32cb093b0233ce
+Installed-Size: 510
+Depends: python3 (<< 3.10), python3 (>= 3.9~), python3:any, libc6 (>= 2.17), libyaml-0-2
+Breaks: libpython-stdlib (<< 2.7.18), python (<< 2.7.18), python-minimal (<< 2.7.18), python-yaml (<< 5.3.1-2)
+Filename: pool/bullseye/debian/binary-arm64/python3-yaml_5.3.1-5_arm64.deb
+Size: 118240
+MD5sum: 2c8953c21552330565ac94d323d4d078
+SHA1: 9c49adb70dfc9338570399add3dfd899c7f92dfc
+SHA256: 1ca143d5fa90ebe1d9bf56f1b82c1ffb7c07af166a588537812636856df0d2c7
+SHA512: 49594666c0e772e50f5ecf39c995256251e52896d1778a86241ea8dcc5b03f1682855bf6c512f0bf8429c49aed71c049ab1177e517462f6012173476c5ca36eb
 Homepage: https://github.com/yaml/pyyaml
 Description: YAML parser and emitter for Python3
  Python3-yaml is a complete YAML 1.1 parser and emitter for Python3.  It can
  parse all examples from the specification. The parsing algorithm is simple
  enough to be a reference for YAML parser implementors. A simple extension API
  is also provided.  The package is built using libyaml for improved speed.
+
+Package: python3.9-minimal
+Architecture: arm64
+Version: 3.9.2-1+deb11u3
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3.9
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 5272
+Pre-Depends: libc6 (>= 2.29)
+Depends: libpython3.9-minimal (= 3.9.2-1+deb11u3), libexpat1 (>= 2.1~beta3), zlib1g (>= 1:1.2.0)
+Recommends: python3.9
+Suggests: binfmt-support
+Conflicts: binfmt-support (<< 1.1.2)
+Filename: pool/bullseye/debian/binary-arm64/python3.9-minimal_3.9.2-1+deb11u3_arm64.deb
+Size: 1886204
+MD5sum: 0f2f7ce972388bf7bcade0205d7cadd7
+SHA1: 689ae5a15d13497a52a1c1664e6e93283e7925cb
+SHA256: 57b947f6b8ba4acb31a012dbf9ee4a6f3fbc95f496786d04718ec861696b129f
+SHA512: 292cd499ba6a990cba774775e8dc721e9cae17066d16845ccbaf5d8026915d587efc5ddd59ceaf55d87ac8e098fc3ec91fc10813d4425371663c511a779de5cd
+Description: Minimal subset of the Python language (version 3.9)
+ This package contains the interpreter and some essential modules.  It can
+ be used in the boot process for some basic tasks.
+ See /usr/share/doc/python3.9-minimal/README.Debian for a list of the modules
+ contained in this package.
+Cnf-Visible-Pkgname: python3.9
+
+Package: python3.9
+Architecture: arm64
+Version: 3.9.20.trixie.unofficial-1
+Priority: extra
+Section: interpreters
+Maintainer: root@PocoX3Pro
+Installed-Size: 185236
+Provides: python3.9
+Filename: pool/bullseye/debian/binary-arm64/python3.9_3.9.20.trixie.unofficial-1_arm64.deb
+Size: 24287228
+MD5sum: b33b1a3d33c5561586e52e57c98c91e6
+SHA1: e83dafa60db489437eded9ea08db0e6b5f1e4baa
+SHA256: e348e3b7cd3716b82bd0342592f5b15d2e30f70c54d93840f656ef15adfc31a5
+SHA512: a43e6bb82b126dd7fabc6c2cc246206689576badf26e14c5a488aaa0565e1ad2d2b799055cbcc93d36b808d033e35b8fa940a91d698e875707dcb1010d3eba57
+Description: Package created with checkinstall 1.6.3
+
+Package: python3
+Architecture: arm64
+Version: 3.9.2-3
+Multi-Arch: allowed
+Priority: optional
+Section: python
+Source: python3-defaults
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 89
+Provides: python3-profiler
+Pre-Depends: python3-minimal (= 3.9.2-3)
+Depends: python3.9 (>= 3.9.2-0~), libpython3-stdlib (= 3.9.2-3)
+Suggests: python3-doc (>= 3.9.2-3), python3-tk (>= 3.9.2-0~), python3-venv (>= 3.9.2-3)
+Replaces: python3-minimal (<< 3.1.2-2)
+Filename: pool/bullseye/debian/binary-arm64/python3_3.9.2-3_arm64.deb
+Size: 37880
+MD5sum: 3cb918cd19c9186711e9c0395e668277
+SHA1: 0ab0dd89dda0c4f23f5c674068a97fae520b1b4a
+SHA256: 79197285d25e73a2a07667efe80af152dd932ac5ef3e13717f1ac824d111ea81
+SHA512: d18555b8a00837ca8e5a8c378621ddab332ec7656ab6c3e59097d2b0e73ce1f8f601dba1b52b5de707629c5d4a0d213e31a1cfae722fe1da31e333d8037b8903
+Homepage: https://www.python.org/
+Description: interactive high-level object-oriented language (default python3 version)
+ Python, the high-level, interactive object oriented language,
+ includes an extensive class library with lots of goodies for
+ network programming, system administration, sounds and graphics.
+ .
+ This package is a dependency package, which depends on Debian's default
+ Python 3 version (currently v3.9).
+Cnf-Extra-Commands: python
+Cnf-Priority-Bonus: 5
 

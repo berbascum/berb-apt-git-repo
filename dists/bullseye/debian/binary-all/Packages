@@ -1,23 +1,216 @@
+Package: fontconfig-config
+Architecture: all
+Version: 2.13.1-4.2
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Source: fontconfig
+Maintainer: Debian freedesktop.org maintainers <pkg-freedesktop-maintainers@lists.alioth.debian.org>
+Installed-Size: 442
+Depends: debconf (>= 0.5) | debconf-2.0, ucf (>= 0.29), fonts-dejavu-core | ttf-bitstream-vera | fonts-liberation | fonts-liberation2 | fonts-croscore | fonts-freefont-otf | fonts-freefont-ttf | fonts-urw-base35 | fonts-texgyre
+Breaks: libfontconfig1 (<< 2.13.0)
+Filename: pool/bullseye/debian/binary-arm64/fontconfig-config_2.13.1-4.2_all.deb
+Size: 280916
+MD5sum: fb0b6dfa88f20062c1e87131139a3af2
+SHA1: 8705895801f11a73cf84138f4f6b829949f3007f
+SHA256: 48afb6ad7d15e6104a343b789f73697301ad8bff77b69927bc998f5a409d8e90
+SHA512: 0bd53fe0985c7c49d61008a47fddee87fe79e1692fb4166b636ccd6c7f879afe1670cc2791ad88368b038cd7f284675557c804472124fb3079ad10b581dfb911
+Homepage: https://www.freedesktop.org/wiki/Software/fontconfig/
+Description: generic font configuration library - configuration
+ Fontconfig is a font configuration and customization library, which
+ does not depend on the X Window System. It is designed to locate
+ fonts within the system and select them according to requirements
+ specified by applications.
+ .
+ This package contains the configuration files and scripts for fontconfig.
+
+Package: fonts-dejavu-core
+Architecture: all
+Version: 2.37-2
+Multi-Arch: foreign
+Priority: optional
+Section: fonts
+Source: fonts-dejavu
+Maintainer: Debian Fonts Task Force <debian-fonts@lists.debian.org>
+Installed-Size: 2954
+Filename: pool/bullseye/debian/binary-arm64/fonts-dejavu-core_2.37-2_all.deb
+Size: 1068896
+MD5sum: 254a3f617d1e0a66718e2be8a469aad0
+SHA1: c2d0954c88e2bd5afd61449126be95b4127c1ae5
+SHA256: 1f67421437b6eb18669d2868e3e02cb88668683d635198142f48aacc5b397118
+SHA512: d717789e7afdc037569b4f96ec5ac890bee51772f5c3c9a696485c5aa818d223bf33b209241c0f2fdd01b75e44799449b3571ebae4edc74b5b166f8991da1f70
+Homepage: https://dejavu-fonts.github.io/
+Description: Vera font family derivate with additional characters
+ DejaVu provides an expanded version of the Vera font family aiming for
+ quality and broader Unicode coverage while retaining the original Vera
+ style. DejaVu currently works towards conformance with the Multilingual
+ European Standards (MES-1 and MES-2) for Unicode coverage. The DejaVu
+ fonts provide serif, sans and monospaced variants.
+ .
+ This package only contains the sans, sans-bold, serif, serif-bold,
+ mono and mono-bold variants. For additional variants, see the
+ fonts-dejavu-extra package.
+ .
+ DejaVu fonts are intended for use on low-resolution devices (mainly
+ computer screens) but can be used in printing as well.
+
+Package: libx11-data
+Architecture: all
+Version: 2:1.7.2-1+deb11u2
+Multi-Arch: foreign
+Priority: optional
+Section: x11
+Source: libx11
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Installed-Size: 1665
+Breaks: libx11-6 (<< 2:1.4.1)
+Filename: pool/bullseye/debian/binary-arm64/libx11-data_2%3a1.7.2-1+deb11u2_all.deb
+Size: 310852
+MD5sum: 8d9958895cda11fb6f27b3179de3da55
+SHA1: c4f098ce4ded3787ae4dcffd2270476a07697419
+SHA256: 9db24e1e7ed3cd738b503e7df5c1b9b52b1eadcb55019cd63b1409e578565d29
+SHA512: 17a0b525c40b8561cf43af7704e3aa13f1f948faf21f3a324146a756951f4812fcd684161747eb3f7150d12d2b244af3b99bc3e30d31b6b3966acdf2597cf125
+Description: X11 client-side library
+ This package provides the locale data files for libx11.
+ .
+ More information about X.Org can be found at:
+ <URL:https://www.X.org>
+ .
+ This module can be found at
+ https://gitlab.freedesktop.org/xorg/lib/libX11
+
+Package: manpages-dev
+Architecture: all
+Version: 5.10-1
+Multi-Arch: foreign
+Priority: optional
+Section: doc
+Source: manpages
+Maintainer: Dr. Tobias Quathamer <toddy@debian.org>
+Installed-Size: 3942
+Depends: manpages
+Suggests: man-browser
+Breaks: libattr1-dev (<< 1:2.4.47-3), libbsd-dev (<< 0.8.4-1), manpages (<< 5.09-2)
+Replaces: libattr1-dev (<< 1:2.4.47-3), libbsd-dev (<< 0.8.4-1)
+Filename: pool/bullseye/debian/binary-arm64/manpages-dev_5.10-1_all.deb
+Size: 2308736
+MD5sum: f160a862a813b76f41fc5d2510de871e
+SHA1: 7e635592cad0cb6b53cbf6ab45a2c540896a4ad2
+SHA256: 84a62717c2300ce6856bcc7404a6a0719d564ea648c6d4000031e7e9d502ce85
+SHA512: 8c303b6f2216157170c6736e54ae3b48fad593b3b778285809b1245312a706beec3498ff7864dd43277ce759cd46c02cd5ecf7b887157de19566d8a06ec39173
+Homepage: https://www.kernel.org/doc/man-pages/
+Description: Manual pages about using GNU/Linux for development
+ These man pages describe the Linux programming interface, including
+ these two sections:
+  2 = Linux system calls.
+  3 = Library calls (note that a more comprehensive source of information
+      may be found in the glibc-doc and glibc-doc-reference packages).
+
+Package: manpages
+Architecture: all
+Version: 5.10-1
+Multi-Arch: foreign
+Priority: standard
+Section: doc
+Maintainer: Dr. Tobias Quathamer <toddy@debian.org>
+Installed-Size: 1669
+Suggests: man-browser
+Breaks: attr (<< 1:2.4.47-3), keyutils (<< 1.6-1), manpages-dev (<< 5.09-2)
+Replaces: attr (<< 1:2.4.47-3), keyutils (<< 1.6-1), manpages-dev (<< 5.09-2)
+Filename: pool/bullseye/debian/binary-arm64/manpages_5.10-1_all.deb
+Size: 1412120
+MD5sum: b5b2d38f5b067cce3b144cdddd486a6d
+SHA1: 352a5936aa3d6da997fbd6c42fbcf9eaca07fff9
+SHA256: 546631cad44a4e3b02b3416db43d8c52cbbecc673f1f69bf37b9c3865d56ab5a
+SHA512: de223468ca302242ca37eeb5dd0ced0ea1b9488f971987e5ce08e151001990bfd47736eebeaf215cb7896b2c45fa22aeca1ccbbb14b65fa3adc57debdbab07a5
+Homepage: https://www.kernel.org/doc/man-pages/
+Description: Manual pages about using a GNU/Linux system
+ This package contains GNU/Linux manual pages for these sections:
+  4 = Devices (e.g. hd, sd).
+  5 = File formats and protocols, syntaxes of several system
+      files (e.g. wtmp, /etc/passwd, nfs).
+  7 = Conventions and standards, macro packages, etc.
+      (e.g. nroff, ascii).
+ .
+ Sections 1, 6 and 8 are provided by the respective applications. This
+ package only includes the intro man page describing the section.
+ .
+ The man pages describe syntaxes of several system files.
+
+Package: media-types
+Architecture: all
+Version: 4.0.0
+Multi-Arch: foreign
+Priority: standard
+Section: net
+Maintainer: Mime-Support Packagers <team+debian-mimesupport-packagers@tracker.debian.org>
+Installed-Size: 92
+Breaks: mime-support (<< 3.65)
+Replaces: mime-support (<< 3.65)
+Filename: pool/bullseye/debian/binary-arm64/media-types_4.0.0_all.deb
+Size: 30308
+MD5sum: 3ef02e31e2dc5bcbb20d981b49726c47
+SHA1: 4c14e9e649896b352ff060ef9b2455487bd4dbe5
+SHA256: f9835dcf3cdbaf163104d4e511c9c4e0f41a56822e147e57f28f749fcbf7d44c
+SHA512: 229cb52edf41c50b0e9ca8e3b488a2ddb72e4c54cc03b3c0d5908beadaadba473b057b3425034f07c9e09354de695d74c6b211c77e6ad5d9f7d580e0a9f82047
+Description: List of standard media types and their usual file extension
+ This package installs the configuration file /etc/mime.types, that lists
+ standard media types (originally known as "MIME" types) and their usual file
+ extension.  This provides a simple way for programs to have a first guess at a
+ file's content.  On standard Debian desktop systems, one will also find more
+ sophisticated tools, for instance provided by the "file" and "xdg-utils"
+ packages.
+ .
+ The /etc/mime.types file is compiled by hand using mostly information provided
+ by the Internet Assigned Numbers Authority (IANA).
+
+Package: python3-pkg-resources
+Architecture: all
+Version: 52.0.0-4+deb11u2
+Multi-Arch: foreign
+Priority: optional
+Section: python
+Source: setuptools
+Maintainer: Matthias Klose <doko@debian.org>
+Installed-Size: 569
+Depends: python3:any
+Suggests: python3-setuptools
+Filename: pool/bullseye/debian/binary-arm64/python3-pkg-resources_52.0.0-4+deb11u2_all.deb
+Size: 189896
+MD5sum: 7a91831cb68151d39731e8456aec7ec2
+SHA1: 8fc6cf7744d7ebf21b3cc2482c537dc106b99709
+SHA256: 02a86666b1e705e27eaaca2a379c1009c37a0d1f1db2f75ba4a4bde123f83d52
+SHA512: e64a8039f98d672d03bb9d890169b433f5d8681f1987e291fff2ba579bb979f1e9ef58a24b26686f0078533c34926eafb6419571f166e6828ec87be076f4614b
+Homepage: https://pypi.python.org/pypi/setuptools
+Description: Package Discovery and Resource Access using pkg_resources
+ The pkg_resources module provides an API for Python libraries to
+ access their resource files, and for extensible applications and
+ frameworks to automatically discover plugins.  It also provides
+ runtime support for using C extensions that are inside zipfile-format
+ eggs, support for merging packages that have separately-distributed
+ modules or subpackages, and APIs for managing Python's current
+ "working set" of active packages.
+
 Package: python3-pygments
 Architecture: all
-Version: 2.18.0+dfsg-2
+Version: 2.7.1+dfsg-2.1
 Multi-Arch: foreign
 Priority: optional
 Section: python
 Source: pygments
 Maintainer: Piotr Ożarowski <piotr@debian.org>
-Installed-Size: 4521
-Depends: python3:any
+Installed-Size: 3526
+Depends: python3-pkg-resources, python3:any
 Suggests: python-pygments-doc, ttf-bitstream-vera
 Breaks: python-pygments (<< 2.3.1+dfsg-4~)
 Replaces: python-pygments (<< 2.3.1+dfsg-4~)
-Filename: pool/bullseye/debian/binary-arm64/python3-pygments_2.18.0+dfsg-2_all.deb
-Size: 835724
-MD5sum: 494f5ab2dbca6a2ffd52c4f33da3c6ac
-SHA1: a167d8dcca55382c4ea201157425d4d24f18c1c0
-SHA256: 9cadaec984d0d923f81e20a2dd68974db643f67ad6adc8a593a7bbdaad8f8554
-SHA512: 4911639a4a774345676879178a9a579b06228601cba4b3452072a995bc7e1a51213582e82731aa9c82dfca00e44c09c33e66c479116cc2406455a0b2dd8a493e
-Homepage: https://pygments.org/
+Filename: pool/bullseye/debian/binary-arm64/python3-pygments_2.7.1+dfsg-2.1_all.deb
+Size: 656524
+MD5sum: 54982eeddf240e9cae943d0243897de7
+SHA1: faa1aeca8b4c5916fcd91e2f6f62362e030b5a30
+SHA256: dbc310a248747ff9e6e13d103d6b7fbdf4603cf2ea7ad149595584d0691a09eb
+SHA512: 8ea5996964a9f9f4c0321be19a95223442003381c77868a44030f306a330432af314373b4afcab2701b1bf196d117c3fb6e2b2c8c62ffedec84dba11195831c1
+Homepage: http://pygments.org/
 Description: syntax highlighting package written in Python 3
  Pygments aims to be a generic syntax highlighter for general use in all kinds
  of software such as forum systems, wikis or other applications that need to
@@ -29,4 +222,70 @@ Description: syntax highlighting package written in Python 3
    * support for new languages and formats are added easily
    * a number of output formats, presently HTML, LaTeX and ANSI sequences
    * it is usable as a command-line tool and as a library
+
+Package: sensible-utils
+Architecture: all
+Version: 0.0.14
+Multi-Arch: foreign
+Priority: required
+Section: utils
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Installed-Size: 44
+Replaces: debianutils (<= 2.32.3), manpages-pl (<= 20060617-3~)
+Filename: pool/bullseye/debian/binary-arm64/sensible-utils_0.0.14_all.deb
+Size: 14804
+MD5sum: d7a847bd5e8a92b8ed3b586d022cb071
+SHA1: 9b869693b81a693ff460677ae9709253be7eebe1
+SHA256: b9a447dc4ec8714196b037e20a2209e62cd669f5450222952f259bda4416b71f
+SHA512: 6a956b43ea90795e1f7324abc0b7167319c54f6af88525b6cd94bef3e374061e49ad42238fc68fac0f860342372905a03f21ad40182a2ab67e9b7b2ec2425fd9
+Description: Utilities for sensible alternative selection
+ This package provides a number of small utilities which are used
+ by programs to sensibly select and spawn an appropriate browser,
+ editor, or pager.
+ .
+ The specific utilities included are: sensible-browser sensible-editor
+ sensible-pager
+
+Package: ucf
+Architecture: all
+Version: 3.0043+deb11u2
+Multi-Arch: foreign
+Priority: standard
+Section: utils
+Maintainer: Manoj Srivastava <srivasta@debian.org>
+Installed-Size: 233
+Depends: debconf (>= 1.5.19), coreutils (>= 5.91), sensible-utils
+Filename: pool/bullseye/debian/binary-arm64/ucf_3.0043+deb11u2_all.deb
+Size: 74256
+MD5sum: 2a6ac66e1f1ba7e8b3c1e24ff6455efb
+SHA1: a86be671d30380ec0556987b028506e21fcfd2dc
+SHA256: 565bfefc94827598d237320136254a9a5d7e5ca595268553742a13561b468f67
+SHA512: 24af1014d18b03d60bc3cffffd1e8f5469df90c342a6bddedabd1501ef90286cf77f85dea2355bc742de535542a3cc337faa24f08f2c42f47830b23f40d32280
+Description: Update Configuration File(s): preserve user changes to config files
+ Debian policy mandates that user changes to configuration files must be
+ preserved during package upgrades. The easy way to achieve this behavior
+ is to make the configuration file a 'conffile', in which case dpkg
+ handles the file specially during upgrades, prompting the user as
+ needed.
+ .
+ This is appropriate only if it is possible to distribute a default
+ version that will work for most installations, although some system
+ administrators may choose to modify it. This implies that the
+ default version will be part of the package distribution, and must
+ not be modified by the maintainer scripts during installation (or at
+ any other time).
+ .
+ This script attempts to provide conffile-like handling for files that
+ may not be labelled conffiles, and are not shipped in a Debian package,
+ but handled by the postinst instead. This script allows one to
+ maintain files in /etc, preserving user changes and in general
+ offering the same facilities while upgrading that dpkg normally
+ provides for 'conffiles'.
+ .
+ Additionally, this script provides facilities for transitioning a
+ file that had not been provided with conffile-like protection to come
+ under this schema, and attempts to minimize questions asked at
+ installation time. Indeed, the transitioning facility is better than the
+ one offered by dpkg while transitioning a file from a non-conffile to
+ conffile status.
 
