@@ -78,6 +78,25 @@ Description: Release engineering tools for droidian
 X-Droidian-Vcs-Revision: 7ca405cf8849c6c255179d7091bee863dffb3ffc
 X-Droidian-Vcs-Url: git@github.com:droidian-berb/releng-tools
 
+Package: lxc-android
+Architecture: all
+Version: 1:39+git20250906140358.64f9b2f.next.production
+Priority: optional
+Section: libs
+Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
+Installed-Size: 69
+Depends: adduser, cpio, lxc, libc-bin, halium-wrappers (>= 5), parse-android-dynparts, dmsetup
+Filename: pool/trixie/droidian-build-kernel/binary-arm64/lxc-android_1%3a39+git20250906140358.64f9b2f.next.production_all.deb
+Size: 13036
+MD5sum: d4740bdc0c61daf5fafa7132d68231b6
+SHA1: 2bf1cc19d4a8e4ef237121fb205d09ca1120a35f
+SHA256: b1c4a018f79a31a4aa25832371a21433421b6c54c22cc7e9761c047e933459e5
+SHA512: 98c1e7183a40c568d06d399840083c20c786c7df32991b7dd170ebe1cea40321e35d2fc67c66b4b85f804a079b5dacf74dcd52039c89d617c5e9ea12fc223c10
+Homepage: https://github.com/Halium/lxc-android
+Description: lxc configuration for starting android
+ This package provides the configuration for starting android in lxc
+X-Droidian-Vcs-Revision: 64f9b2f4a305fee3ec7d3f0256a8e1d89835cd79
+
 Package: plymouth-theme-droidian
 Architecture: all
 Version: 2+upgrade12+git20211120224717.1925721.bookworm.production

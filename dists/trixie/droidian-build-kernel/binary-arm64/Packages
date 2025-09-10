@@ -57,6 +57,27 @@ Homepage: https://gitlab.com/droidian/droidian-encryption-service
 Description: Encryption service for Droidian devices
  This service handles dm-crypt/LUKS encryption for a Droidian installation.
 
+Package: halium-wrappers
+Architecture: arm64
+Version: 22+git20250120213942.b5ab6eb.next.production
+Multi-Arch: foreign
+Priority: optional
+Section: misc
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 105
+Depends: util-linux
+Filename: pool/trixie/droidian-build-kernel/binary-arm64/halium-wrappers_22+git20250120213942.b5ab6eb.next.production_arm64.deb
+Size: 8804
+MD5sum: d8304769ff4d660ed0da4416b1aef9dd
+SHA1: 2a52a3cd94a79f84d83e30b0645502b7f2815b99
+SHA256: 8c6e8b2e7da55ad2bfd5e87f5d666a7b9d6e1dc02d9862a73f52a19e18a9d343
+SHA512: 926e6cd57c716c9195439196b67f054759e5d8518ea797b1000e695b5d367c0a78c7f7b42aecbf3d20f7d742ec19f4e2d28433847026e8689cc7abd67b3016a4
+Description: Convenience wrappers to Android utilities
+ This package provides some convenience wrappers to
+ some utilities available from the Android system
+ image.
+X-Droidian-Vcs-Revision: b5ab6eba9b0de4e843481e57ac9fb25f8f7278b2
+
 Package: libminui0
 Architecture: arm64
 Version: 0.0.2-1+git20240516224923.b70e989.next.production
@@ -100,6 +121,26 @@ Description: pre-built generic initramfs image for halium ports
  Note: this package will only put the initramfs image in-place,
  it's the responsibility of build systems to do something meaningful
  with it.
+
+Package: parse-android-dynparts
+Architecture: arm64
+Version: 0.0.0+git20210414-5+z1+git20240101144557.b776ff2.next.production
+Priority: optional
+Section: binary
+Maintainer: TheKit <thekit@disroot.org>
+Installed-Size: 90
+Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libssl3t64 (>= 3.0.0), libstdc++6 (>= 13.1)
+Filename: pool/trixie/droidian-build-kernel/binary-arm64/parse-android-dynparts_0.0.0+git20210414-5+z1+git20240101144557.b776ff2.next.production_arm64.deb
+Size: 21532
+MD5sum: cab229179a1fd4d4a154bf8393bd90bc
+SHA1: cce83c0d794558a4b7760808cd2ac90eab36baf0
+SHA256: c2eee8bb5396032cd550824ade61282c1ac6f67878d4118875dcc587df3cd4f3
+SHA512: 38c66e3481e09e2fbfe45c93a71b56b384098d240defc1a9b9a1ccf1dd949a1427c98caba1598b3bc8d5c4a46ca4643af8b28b3180de96d1e3d096e3f8fa4177
+Description: A tool to parse Android super partition layout
+ parse-android-dynparts allows to mount super partition and image files with
+ a standard Linux userspace. It uses a modified version of Google's AOSP
+ code to parse the partition layout, then outputs that layout as a textual
+ device specification that can be passed to dmsetup.
 
 Package: unl0kr-dbgsym
 Architecture: arm64
