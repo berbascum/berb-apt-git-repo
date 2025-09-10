@@ -39,6 +39,44 @@ Description: Android ufdt tests binaries
  .
  Currently the only binary shipped is ufdt_apply_overlay.
 
+Package: droidian-encryption-service
+Architecture: arm64
+Version: 0.1.6+git20240519093113.be757da.next.production
+Priority: optional
+Section: libs
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 168
+Depends: libc6 (>= 2.34), libcryptsetup12 (>= 2:2.4), libdevmapper1.02.1 (>= 2:1.02.20), libglib2.0-0t64 (>= 2.79.0), libpolkit-gobject-1-0 (>= 121)
+Filename: pool/trixie/droidian-build-kernel/binary-arm64/droidian-encryption-service_0.1.6+git20240519093113.be757da.next.production_arm64.deb
+Size: 22812
+MD5sum: 0a30995200f72c4286a303fa340830b2
+SHA1: 21cc7d480e8a5ca3d25fa4ad7591eede59cfcdb7
+SHA256: 00c610e3f7574df48e5e88aaa4621b2632c487d22adbec983f2eb50c889aa214
+SHA512: 342895bd55a3213c5c8e7ca415895925e3d89ac9bba25024174840c287dfddebea27676924458505132f0a37c5cc2fac73479176452fc55ac3a4ec2185580f7f
+Homepage: https://gitlab.com/droidian/droidian-encryption-service
+Description: Encryption service for Droidian devices
+ This service handles dm-crypt/LUKS encryption for a Droidian installation.
+
+Package: libminui0
+Architecture: arm64
+Version: 0.0.2-1+git20240516224923.b70e989.next.production
+Multi-Arch: same
+Priority: optional
+Section: libs
+Source: android-minui
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 85
+Depends: libc6 (>= 2.17), libdrm2 (>= 2.4.30), libpng16-16t64 (>= 1.6.2)
+Filename: pool/trixie/droidian-build-kernel/binary-arm64/libminui0_0.0.2-1+git20240516224923.b70e989.next.production_arm64.deb
+Size: 16480
+MD5sum: 8eecf52f538281e6b96836e057980fa7
+SHA1: afe0456d5b22a56e33b3cd825b319c19a73a8414
+SHA256: e4b862b5463ab962520af4b1942857a739e2eaefed33e5e2fb1db4cdbc3dd30c
+SHA512: 35c367b7de189dd96cbad12c0e4f24975d66a4004909efb77ddf43b334fb7aa46983fe3ff3055529f4ff76300541cb5e5af393717087b26f73b462a2c033c273
+Homepage: https://github.com/droidian/android-minui
+Description: Android minui - shared library
+ This package contains the shared library.
+
 Package: linux-initramfs-halium-generic
 Architecture: arm64
 Version: 2024.09.07.1+git20240907214647.f99f7a0.next.production
@@ -62,4 +100,47 @@ Description: pre-built generic initramfs image for halium ports
  Note: this package will only put the initramfs image in-place,
  it's the responsibility of build systems to do something meaningful
  with it.
+
+Package: unl0kr-dbgsym
+Architecture: arm64
+Version: 0.3.0-1+droidian0+git20250906050844.e8c1a73.droidian
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: unl0kr
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 828
+Depends: unl0kr (= 0.3.0-1+droidian0+git20250906050844.e8c1a73.droidian)
+Filename: pool/trixie/droidian-build-kernel/binary-arm64/unl0kr-dbgsym_0.3.0-1+droidian0+git20250906050844.e8c1a73.droidian_arm64.deb
+Size: 743620
+MD5sum: 379e00e67fb3a70cda556795e06fed6c
+SHA1: 744f0dbbc55c95fde0e6d82e477f3d4c6e019df1
+SHA256: 5c8296f5222fb4f1614c85aa6eb88c2bb9b86754e8aadb05b534233445b43d85
+SHA512: c75f1fd7332154501d56b57dc9fd0060ec5471ab5a52ce2dc076ebd3b781286bcc4b2b679e7fb89eccf1ba82c09f533c53eac8d30c9733c7b4c1ad5bc4a983b8
+Description: debug symbols for unl0kr
+Build-Ids: 848b599bf3609fce2994b0301fb893789e93ee51
+X-Droidian-Vcs-Revision: e8c1a73d8cba96929c1ff155da9a6df86ac2ff3d
+X-Droidian-Vcs-Url: https://github.com/droidian/unl0kr
+
+Package: unl0kr
+Architecture: arm64
+Version: 0.3.0-1+droidian0+git20250906050844.e8c1a73.droidian
+Priority: optional
+Section: libs
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 664
+Depends: libc6 (>= 2.34), libinput10 (>= 0.15.0), libminui0, libxkbcommon0 (>= 0.5.0)
+Filename: pool/trixie/droidian-build-kernel/binary-arm64/unl0kr_0.3.0-1+droidian0+git20250906050844.e8c1a73.droidian_arm64.deb
+Size: 220776
+MD5sum: 54eb69f34b9d0d80051fd77f75028095
+SHA1: cfdba859006ad30fce3644eb8728a4c3440f988d
+SHA256: 21db6bc75df94b24cf4fe7bbb64f527fe32bb671c95c79c7f91a42df90dd0c9a
+SHA512: 693b26faaadc5270dcde885792d7d8762965325fb174f228ef2c8966335fbc656570383c935fbe3f60aea9ba44f0a89cd21fb29f937f1e9fe9245edbeca03d75
+Homepage: https://gitlab.com/cherrypicker/unl0kr
+Description: Disk unlocker for the initramfs based on LVGL
+ Unl0kr is an osk-sdl clone written in LVGL and rendering directly to the
+ Linux framebuffer. As a result, it doesn't depend on GPU hardware
+ acceleration.
+X-Droidian-Vcs-Revision: e8c1a73d8cba96929c1ff155da9a6df86ac2ff3d
+X-Droidian-Vcs-Url: https://github.com/droidian/unl0kr
 

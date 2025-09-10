@@ -78,3 +78,28 @@ Description: Release engineering tools for droidian
 X-Droidian-Vcs-Revision: 7ca405cf8849c6c255179d7091bee863dffb3ffc
 X-Droidian-Vcs-Url: git@github.com:droidian-berb/releng-tools
 
+Package: plymouth-theme-droidian
+Architecture: all
+Version: 2+upgrade12+git20211120224717.1925721.bookworm.production
+Priority: optional
+Section: misc
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 333
+Provides: plymouth-theme
+Depends: plymouth, plymouth-label
+Filename: pool/trixie/droidian-build-kernel/binary-arm64/plymouth-theme-droidian_2+upgrade12+git20211120224717.1925721.bookworm.production_all.deb
+Size: 308312
+MD5sum: 1a11cb0ca5e3b7b4de0c375b65cddf17
+SHA1: 5722b8256de720098f162bfcdcab1d99602e36d5
+SHA256: 80571fda9fcbc9cddb17a70af11905f004d83003b40d9b7c05d90c98b6dab314
+SHA512: 5f834b522ac34f1d3cda2c9704d05235aa1b087be5488eec02a0322a5da537f511d64083d405f676efbbc0000df6226d6a751bf636bdeabb7c62a038e9c42ead
+Description: boot animation, logger and I/O multiplexer - Droidian theme
+ Plymouth provides a boot-time I/O multiplexing framework - the most obvious
+ use for which is to provide an attractive graphical animation in place of
+ the text messages that normally get shown during boot. (The messages are
+ instead redirected to a logfile for later viewing.) However, in event-driven
+ boot systems Plymouth can also usefully handle user interaction such as
+ password prompts for encrypted file systems.
+ .
+ This package provides the default Droidian theme.
+
