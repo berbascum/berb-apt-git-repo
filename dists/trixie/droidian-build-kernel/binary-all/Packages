@@ -37,6 +37,24 @@ Description: Linux kernel packaging snippets for Droidian
 X-Droidian-Vcs-Revision: f579ca810a7f90c38918a92bc26765b2592f0e8f
 X-Droidian-Vcs-Url: git@github.com:droidian-berb/linux-packaging-snippets
 
+Package: mkbootimg
+Architecture: all
+Version: 2:20.0-3+git20230620150119.6a1c624.bookworm.production
+Priority: optional
+Section: devel
+Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
+Installed-Size: 164
+Depends: python3
+Filename: pool/trixie/droidian-build-kernel/binary-all/mkbootimg_2%3a20.0-3+git20230620150119.6a1c624.bookworm.production_all.deb
+Size: 37872
+MD5sum: 8796e5211cb3016cfd6286b6d40b83ba
+SHA1: 1398ffb918395818118089c339bd882f3f2cd2fa
+SHA256: 7aafea3768c5fa62132721b671de10103087d0ec96348f3f9d0222a07e1b922f
+SHA512: 5db6c37f7a12179f173aed941ea3b6e4c58907c05547975bfc8ceb8fcb0ad43097a337746225472c94a5a9b26270c96a1325540eff828fe76696d3b9c4f31bcb
+Homepage: https://github.com/LineageOS/android_system_tools_mkbootimg
+Description: Creates Android boot images that includes kernel image and ramdisk,
+             in a special format which can be used with fastboot.
+
 Package: mkdtboimg
 Architecture: all
 Version: 13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production
