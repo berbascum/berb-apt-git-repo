@@ -4,13 +4,13 @@ Hash: SHA512
 Architectures: all arm64 amd64
 Codename: trixie
 Components: amd64 debian droidian droidian-xiaomi-vayu droidian-build-kernel mobian
-Date: Sun, 16 Nov 2025 00:41:37 +0000
+Date: Sun, 21 Dec 2025 20:50:10 +0000
 Description: Berbascum's apt repo for release trixie
 Label: berbascum
 Origin: berbascum
 Suite: trixie
 MD5Sum:
- 93fe7310e8f3411d0a09f506d5ba48b2              272 Release
+ 919c9a88769bd8903ef0df7b1ea0acdd              272 Release
  0902e5a0182062319472ac442793db1b               28 debian/Contents-all.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 debian/Contents-all.gz
  0902e5a0182062319472ac442793db1b               28 debian/Contents-amd64.bz2
@@ -45,17 +45,17 @@ MD5Sum:
  e62ff0123a74adfc6903d59a449cbdb0               40 droidian-xiaomi-vayu/Contents-all.gz
  0902e5a0182062319472ac442793db1b               28 droidian-xiaomi-vayu/Contents-amd64.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 droidian-xiaomi-vayu/Contents-amd64.gz
- 0902e5a0182062319472ac442793db1b               28 droidian-xiaomi-vayu/Contents-arm64.bz2
- e62ff0123a74adfc6903d59a449cbdb0               40 droidian-xiaomi-vayu/Contents-arm64.gz
+ 472f8397c1edb0ecb0d6e56daaabbad3              283 droidian-xiaomi-vayu/Contents-arm64.bz2
+ 029f52bfeaa1d29173091352c78d9d0c              238 droidian-xiaomi-vayu/Contents-arm64.gz
  d41d8cd98f00b204e9800998ecf8427e                0 droidian-xiaomi-vayu/binary-all/Packages
  0902e5a0182062319472ac442793db1b               28 droidian-xiaomi-vayu/binary-all/Packages.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 droidian-xiaomi-vayu/binary-all/Packages.gz
  d41d8cd98f00b204e9800998ecf8427e                0 droidian-xiaomi-vayu/binary-amd64/Packages
  0902e5a0182062319472ac442793db1b               28 droidian-xiaomi-vayu/binary-amd64/Packages.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 droidian-xiaomi-vayu/binary-amd64/Packages.gz
- d41d8cd98f00b204e9800998ecf8427e                0 droidian-xiaomi-vayu/binary-arm64/Packages
- 0902e5a0182062319472ac442793db1b               28 droidian-xiaomi-vayu/binary-arm64/Packages.bz2
- e62ff0123a74adfc6903d59a449cbdb0               40 droidian-xiaomi-vayu/binary-arm64/Packages.gz
+ 79f6592a1d8b82ee000e39d7ddc88eb4             1940 droidian-xiaomi-vayu/binary-arm64/Packages
+ c9d7cdac1fc514befac67eaf48064b9d             1048 droidian-xiaomi-vayu/binary-arm64/Packages.bz2
+ 6ee8bdb7c5e7dd7e893942329fe6a72f              913 droidian-xiaomi-vayu/binary-arm64/Packages.gz
  f16393c53b1cd3ffebf112378fbeccec              302 droidian/Contents-all.bz2
  9c396b173350c1c90213785d142bfe9f              254 droidian/Contents-all.gz
  8d37cbe41b9e705517250915a314947d              244 droidian/Contents-amd64.bz2
@@ -102,7 +102,7 @@ MD5Sum:
  0902e5a0182062319472ac442793db1b               28 mobian/binary-arm64/Packages.bz2
  e62ff0123a74adfc6903d59a449cbdb0               40 mobian/binary-arm64/Packages.gz
 SHA1:
- 589ddc76770f76309696532f69e390497eef22c9              272 Release
+ e63b35f9a627b055e12b0542d9324ec4aa441715              272 Release
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/Contents-all.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 debian/Contents-all.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 debian/Contents-amd64.bz2
@@ -137,17 +137,17 @@ SHA1:
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-xiaomi-vayu/Contents-all.gz
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-xiaomi-vayu/Contents-amd64.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-xiaomi-vayu/Contents-amd64.gz
- dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-xiaomi-vayu/Contents-arm64.bz2
- e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-xiaomi-vayu/Contents-arm64.gz
+ e08dac8db812d4a8caf2fb5fca3dfe45ca08212a              283 droidian-xiaomi-vayu/Contents-arm64.bz2
+ a3f3e9a198257b76ca9919e5d2465c9949805962              238 droidian-xiaomi-vayu/Contents-arm64.gz
  da39a3ee5e6b4b0d3255bfef95601890afd80709                0 droidian-xiaomi-vayu/binary-all/Packages
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-xiaomi-vayu/binary-all/Packages.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-xiaomi-vayu/binary-all/Packages.gz
  da39a3ee5e6b4b0d3255bfef95601890afd80709                0 droidian-xiaomi-vayu/binary-amd64/Packages
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-xiaomi-vayu/binary-amd64/Packages.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-xiaomi-vayu/binary-amd64/Packages.gz
- da39a3ee5e6b4b0d3255bfef95601890afd80709                0 droidian-xiaomi-vayu/binary-arm64/Packages
- dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 droidian-xiaomi-vayu/binary-arm64/Packages.bz2
- e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 droidian-xiaomi-vayu/binary-arm64/Packages.gz
+ 077bff5eeadd798bee2f4b6ad5986bd8931d6e7f             1940 droidian-xiaomi-vayu/binary-arm64/Packages
+ 372da67cf3c94313fb3156162f816ba0dd95e592             1048 droidian-xiaomi-vayu/binary-arm64/Packages.bz2
+ 3f2d7bd62d39bc27cc094523d1f04f3a34c03e92              913 droidian-xiaomi-vayu/binary-arm64/Packages.gz
  d0dc497e808980b9d54bc8ef89ddf58a69fb65c4              302 droidian/Contents-all.bz2
  33c8ef92061149ea9f77b0508d81f730f98aaf78              254 droidian/Contents-all.gz
  e89b34b8161616b15c2bdda134581c3167cf3c86              244 droidian/Contents-amd64.bz2
@@ -194,7 +194,7 @@ SHA1:
  dcddcbc89128ee4d36fe584b2a982131e8f70d53               28 mobian/binary-arm64/Packages.bz2
  e3f4c61a216c2c9613cd3bdd1420dde095b296b3               40 mobian/binary-arm64/Packages.gz
 SHA256:
- 682d80e15dc717103e2d3ca3122460ae048f9d8faf33635d08997722a3866335              272 Release
+ ba506a65c323a2f80c50c4a7e134d8c78d790da58ac08479bbf9104d2cf390ea              272 Release
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/Contents-all.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 debian/Contents-all.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 debian/Contents-amd64.bz2
@@ -229,17 +229,17 @@ SHA256:
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-xiaomi-vayu/Contents-all.gz
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-xiaomi-vayu/Contents-amd64.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-xiaomi-vayu/Contents-amd64.gz
- f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-xiaomi-vayu/Contents-arm64.bz2
- e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-xiaomi-vayu/Contents-arm64.gz
+ 47c167c6402cb43a0df6c69c6e34f6564d6713748bc5b5c7619277c7ef867497              283 droidian-xiaomi-vayu/Contents-arm64.bz2
+ 83e03801f4cf28b31c8aad0fa198d22378644a33c8682a37dcacc53bcab94e76              238 droidian-xiaomi-vayu/Contents-arm64.gz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 droidian-xiaomi-vayu/binary-all/Packages
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-xiaomi-vayu/binary-all/Packages.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-xiaomi-vayu/binary-all/Packages.gz
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 droidian-xiaomi-vayu/binary-amd64/Packages
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-xiaomi-vayu/binary-amd64/Packages.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-xiaomi-vayu/binary-amd64/Packages.gz
- e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855                0 droidian-xiaomi-vayu/binary-arm64/Packages
- f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 droidian-xiaomi-vayu/binary-arm64/Packages.bz2
- e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 droidian-xiaomi-vayu/binary-arm64/Packages.gz
+ 566280673c71c69e3d0c70bc96d33e51ed18692a7759d32a258bc91b84683593             1940 droidian-xiaomi-vayu/binary-arm64/Packages
+ 3e416357b16c6710664c8502c1038b79d45ae74883a36aa9da3ae6d6eb999fd9             1048 droidian-xiaomi-vayu/binary-arm64/Packages.bz2
+ b02b98bbaca8ccc03e59a05f24e77446578da531b0f63a3077cb31c165e414fc              913 droidian-xiaomi-vayu/binary-arm64/Packages.gz
  366dc0a56d9232e7333d3d26a7a059f9e16961270f6930fe7f5b5c0b739250c3              302 droidian/Contents-all.bz2
  cee2dd67bce064e6142bac1dd5c1ae05c277cd395bbc516f1f9c620d83181125              254 droidian/Contents-all.gz
  f0af4842dbb1d555f1e91b9b8c0314951a53c2207007739c66db36b60d72dd7a              244 droidian/Contents-amd64.bz2
@@ -286,7 +286,7 @@ SHA256:
  f43ffa97e8272d81422a41aa2b1599c418bd3c361fe23ebdd391676379dfe771               28 mobian/binary-arm64/Packages.bz2
  e7ab72b8f37c7c9c9f6386fb8e3dfa40bf6fe4b67876703c5927e47cb8664ce4               40 mobian/binary-arm64/Packages.gz
 SHA512:
- e73199682a345f9188dc584bde1d3b8df2c87072b24d36a3086ed2ad76185ea655a453ad936ef5011bb55af1cc65f1adacf69d9c821bae694ec4da7ad5a83a7c              272 Release
+ 8c3ff394edd72d2f42ebe726184b01891c53bc043116efb3d43c33c680f1a0422bd740aecbe5520c6cac4ef0cbc90db3088a68afd3fec31d671930a45e4b2595              272 Release
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/Contents-all.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 debian/Contents-all.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 debian/Contents-amd64.bz2
@@ -321,17 +321,17 @@ SHA512:
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-xiaomi-vayu/Contents-all.gz
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-xiaomi-vayu/Contents-amd64.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-xiaomi-vayu/Contents-amd64.gz
- 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-xiaomi-vayu/Contents-arm64.bz2
- 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-xiaomi-vayu/Contents-arm64.gz
+ 0f245873a68cc00899d2a0b18c6039c04d10a19b4e1e2e4f75d5a96e6446a057029eb72292aeaa55302d271d557a864b186dfe0b4d42ac42499b2d57df3848f1              283 droidian-xiaomi-vayu/Contents-arm64.bz2
+ 5c235633faab6d0fc339b25c1e0594071080d5fd5088a56fbc22b726c941a8c5438d1649474b971797e87ed78fc3a1a16641e46c588c64799ceae897fc6eae46              238 droidian-xiaomi-vayu/Contents-arm64.gz
  cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 droidian-xiaomi-vayu/binary-all/Packages
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-xiaomi-vayu/binary-all/Packages.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-xiaomi-vayu/binary-all/Packages.gz
  cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 droidian-xiaomi-vayu/binary-amd64/Packages
  37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-xiaomi-vayu/binary-amd64/Packages.bz2
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-xiaomi-vayu/binary-amd64/Packages.gz
- cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e                0 droidian-xiaomi-vayu/binary-arm64/Packages
- 37a17e9952eed92a1dfa196475721d1f8a96a58aac1a17e46a5df6b466a26655f151cc0b3b3005e442cd01feadf28ca095df66df47b7582992e1ceacc2cc632f               28 droidian-xiaomi-vayu/binary-arm64/Packages.bz2
- 4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 droidian-xiaomi-vayu/binary-arm64/Packages.gz
+ 7629ceecb11c1da8d36f57cc85892350df0e8ff55a69328aace61d692fe086ccc432f4d81458559534c87022de7eb7054e48b504ce5bafbef6872fc45751ff8a             1940 droidian-xiaomi-vayu/binary-arm64/Packages
+ d4fdd1fde7ca9f12c1a419ec31392d3269682fff8a075c07fbd020027adbb2c94275bd0f49ee5664257203fcafba6a19d6dac1670f2c3a0c6bc92a04e096af28             1048 droidian-xiaomi-vayu/binary-arm64/Packages.bz2
+ bc295778f5b468dba9307f67c56223db27e60915fe619498beea430fdfdfc5ac150edf63beeb1d35364e2959da0ba32cf2fc5644d63352db5895c7365c1f05ee              913 droidian-xiaomi-vayu/binary-arm64/Packages.gz
  1ff4071b20ed7499b885ed61117f02c6fcb798be8a621928018279751e9d8753dc5edde93533e92857a47443c8c2ae2babc7e00c629cfb944aceffd87904ff2b              302 droidian/Contents-all.bz2
  9f1f15766978aeb03ad37f4dcfc80ebad40d4644ff2bee7ac806de0416b1cde015f80ffb3061e94f6a6a7ee2b5f53688ef2201a37a1cae46ec05bfaea1b7b8b5              254 droidian/Contents-all.gz
  7e5f595a06bea1fb9e2c44758f56ac49f0885f68f508876b0d9384ba7f49eb9747f44dfa01f44e405d54cfd677fd3dc6527e072991507131ec69a2e93082f8a4              244 droidian/Contents-amd64.bz2
@@ -379,17 +379,17 @@ SHA512:
  4837cb0c747b88cd66d2e8a7cb7fe2808a8fd9f967e467810a0dddfee9befdef8891f3be5c26e319d2ac8a869cb9e39d5ba1fb484db73231cec9fd66d1d5df33               40 mobian/binary-arm64/Packages.gz
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEJ/A1DHVp5kqOROC+6z8ZnJEyG4sFAmkZHcQACgkQ6z8ZnJEy
-G4v8oRAAksTKEvdrZNJpyYyrP96155x80dMW8vKt3onC/g0gNh/IMhYfIrfW9B3F
-62usw8NIbffABneJCY8++CB3Hsp6pWbGoUNna04ef870NkPnG5CKUBGY7tgvpqmr
-NweFscdTC+3qIUrdzLfPcKcLOlWMR2X2uNMzFMNebKF+gUVYejep/zT89w8TIpdU
-y4Rn0fOZ0raOHL7IOFXJOfxKE4eODz7gPIzW0s6iIjqFCCekqLB5rzN7dn8WPqTk
-6ncQRZpGsgxC5RbI3cBUdw5Nxuf7+XbsFiOgvZ5Q9AV1WIYa5glfDyuc+qOOV9GF
-sR2SiexCctdPU5+Fdk/KPTz83C7nY3kaFgNe2b/ERrq5FI9Ypd/8gy+CDUvzQtac
-GaAkEJ9TLFvUd21PPf/PqnIZyS/9JC2znOpfYhkvA6RdTYBJ85ju4IRH/TdZ9oCf
-ExqJPapiCOqnWhu63g1Q5LstEU/7dUqEFbkLolTSoFkN/XBAhGQe2RlwH6DipOao
-WGlX/Bc9w+CLm8UGVzBJrUjQV/ic94ioVyiK8ycSy30hkfbwMrZLk7R0MKqelaNA
-bx8L4VL9ibg0Aw3lXsyXJ9PL1fbtDejfgDNuY0zIqd5uZzB+YNR7eXPxRxndKDbQ
-7+ZGp1hy9n7VRJVW13/sE03HCnnLjSICimkyjuosKmrYb6P+n4k=
-=Tkyy
+iQIzBAEBCgAdFiEEJ/A1DHVp5kqOROC+6z8ZnJEyG4sFAmlIXYUACgkQ6z8ZnJEy
+G4vPuQ//X/PufZqbEHbQ8/1Df5z9RZ4kk41RK2CfdcmpvyK8Q3ya/pe2/1isIpyB
+55+ykuWVhBInFM/RlA1B6pRauBOW62mhui8CBVpwvf0EOuU1P9I4Owoc4f6pIPJX
+CyQ6JzBdym5mT2vDaYu9FtkyIR4wV2Yt3q8ZdxdrQVh9Hc9lQvqRcG3z+daLZ3tD
+DeF8HwHCY0aZw5aDxqXyMelpVdAX0SUQwRFlI1aIwP1pMjL612B+q1L0eFN7iwgr
+JRXZKIXo7TZqcEIJr79M3TCFawnVswliVklwCcp/VzQUUD1d1VXA+6HHLHawad4P
+GO05b7sD5sCWoyoo5Ebh76RSikaTVlbQ+/iZXx0ofwKKibCSMRgA+seWmrs3t6td
+nrGpwAIc97DOyVKe1lYVV098/64vS9PxU0fvQn4uaGysIRVoyR0fzMvXGuhCZ/8J
+0zEvvi/ejloZftpwKtT+bz5JiGiohFhgjHOdqscmqetKB14n8SdjeHmC01wMKuCt
+hR1F3c7PYIi4tIqfhD3fxnJCu3+kGVloVBbyKTKQJhM/g9fltj5myrAumPdqG6Zy
+UHr7t2CfQ7KP5/wnMsZpHSo1YbQkPq5cr0lboIvsBIJhFKTCOMEwBAC9GjhnBwTR
+/X7tMjc4QYQqV4aNYRDg+3S4juMUhcnuvWrIVoRAf18ozyc77g0=
+=YpAD
 -----END PGP SIGNATURE-----
