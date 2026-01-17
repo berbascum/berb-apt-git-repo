@@ -203,22 +203,6 @@ Description: berbascum's bash crypt-functions
 
 Package: bbl-general-lib
 Architecture: all
-Version: 1.1.0.1+git20240616192245.90cd50e.testing
-Priority: optional
-Section: libs
-Maintainer: berbascum
-Installed-Size: 30
-Depends: awk, wget
-Filename: pool/stable/main/binary-all/bbl-general-lib_1.1.0.1+git20240616192245.90cd50e.testing_all.deb
-Size: 7808
-MD5sum: 93a4038671f5d72298a89648d7c10f5f
-SHA1: f274d983e37773fef57f3e711e90ee7dad5aa669
-SHA256: 3e29c4d922ffe56b1cbe2ea95a70e1d0c246c68ece9b704d3184dc3d983c51de
-SHA512: 6bd383c4e47f5bffabf48de9f81ae9e53c31b81740b763be1f1ad741254236183c56abe7b3225756035ff42117cfc31b0642bbf809afec15861dcb53eed5a40d
-Description: berbascum's bash general-functions
-
-Package: bbl-general-lib
-Architecture: all
 Version: 1.1.1.1+git20250821072256.41688be.berb.develop.testing
 Priority: optional
 Section: libs
@@ -233,20 +217,35 @@ SHA256: fbb65990f8f316f19bae139af7b6d17696140e913071aa399f70254dc72132ef
 SHA512: 6910f120d90d0a9ab5cfb4c6ac52adf409a979212e5dbf2ebb67a1d3c920c5190626c8556a9d49887ad423922bf4cad684e0ae3fcfba636f1783c80987f41337
 Description: berbascum's bash general-functions
 
-Package: bbl-git-lib
+Package: bbl-general-lib
 Architecture: all
-Version: 1.3.1.1+git20250821094921.72a7cb5.berb.develop.sid
+Version: 1.1.2.1+git20260117162246.7c93681.berb.develop.testing
 Priority: optional
 Section: libs
 Maintainer: berbascum
-Installed-Size: 44
-Depends: awk, wget, git
-Filename: pool/stable/main/binary-all/bbl-git-lib_1.3.1.1+git20250821094921.72a7cb5.berb.develop.sid_all.deb
-Size: 11180
-MD5sum: 7f614f68dd26cab99ab5836a4765fa9e
-SHA1: 466a77079929cabdfe5e6669b7eabf682c7a27fc
-SHA256: bc88a25f640da7e10dd0066bf4b7122bcff41d88714c0a12d6d8a0ec433bb38a
-SHA512: 707834aa816713ab6d558d3b82f7996fccb5998852a9fbb54eed7f56f32766a1af71aaadea6acb046fc460cbeedb7b4db522282d54c2bf4ca98223bbbd867d88
+Installed-Size: 35
+Filename: pool/stable/main/binary-all/bbl-general-lib_1.1.2.1+git20260117162246.7c93681.berb.develop.testing_all.deb
+Size: 10020
+MD5sum: f01b3096899770b2ec50efb8b2d26b06
+SHA1: 6f52aa3a2aeea96425cecb18f950c30038c40a86
+SHA256: 2b346b33f307d26772081abadd11f90fd447650a4e6e8baf4d4428fd192a063c
+SHA512: 30fc5beac883be420477f96382cc5db9b95b3339d0088a898b8e84e1c09cee197adf5633faf11792659f5d14e149da78ce40668d665a119a32be83179b7d90dc
+Description: berbascum's bash general functions
+
+Package: bbl-git-lib
+Architecture: all
+Version: 1.3.1.1+git20260117164608.b109e17.develop.berb.sid
+Priority: optional
+Section: libs
+Maintainer: berbascum
+Installed-Size: 45
+Depends: awk, wget, git, bbl-general-lib (>= 1.1.2.1)
+Filename: pool/stable/main/binary-all/bbl-git-lib_1.3.1.1+git20260117164608.b109e17.develop.berb.sid_all.deb
+Size: 11576
+MD5sum: 98cbc32233effe74537345e4a5b832ee
+SHA1: f25b2d623b513639704742bcce27c22b6f03f0af
+SHA256: def3429b933f8fe18991037749a168f04b6182c528f2b4dd3202bea5a64bcb30
+SHA512: c5d1ce02857e3cfa9be677e013ce59ed1273d6eecfabaf80330d0a5a58ee63f833ba4703506e806a5a583076c5e70984ff5f16b419d8e6048156f964c79ec955
 Description: berbascum's bash git functions
 
 Package: bbl-net-lib
@@ -279,5 +278,21 @@ MD5sum: 521d1e5fdc0b8e5c0b2866c84cd951a0
 SHA1: 032db9184671f428a8832af38d6ab8275363446c
 SHA256: 169efc1ac613045091d3d79be1745ec80bff9c24b27ebaa1e570817bad43b99e
 SHA512: dbc9763046c44185c15345711ec82fffd08f2109ba0cc45b95faab5b9d2920a7277699c27af73f0cd5ac6328c6f51e796f7d73be310930dcff49fa8b37ffcefb
+Description: Bash script to manage a local apt repo
+
+Package: berb-apt-mgr
+Architecture: all
+Version: 2.1.1.2+git20260117190635.d6a189b.berb.develop.stable
+Priority: optional
+Section: utils
+Maintainer: berbascum
+Installed-Size: 40
+Depends: wget, git, curl, apt-utils, dpkg-dev, gnupg, bbl-general-lib (>= 1.1.2.1), bbl-git-lib (>= 1.3.1.1)
+Filename: pool/stable/main/binary-all/berb-apt-mgr_2.1.1.2+git20260117190635.d6a189b.berb.develop.stable_all.deb
+Size: 7936
+MD5sum: bd8fb42e62dc609965af390444ec9210
+SHA1: cada4913b13db3b594cc25e031c82720da47506a
+SHA256: 7206da784d8bbf9f6c05a7ff41a57da3cb63da81bd349ad45c5133d14b57476e
+SHA512: 470464d58dee923a7b8a83d093ac620aca5aee8a67d78dd3fca121115d28853f2b9507bb3fb9ba927fee52c0b32d277085c88cd7266ada93ba1726b36ee70960
 Description: Bash script to manage a local apt repo
 
