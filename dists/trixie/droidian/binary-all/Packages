@@ -1,0 +1,42 @@
+Package: droidian-apt-config
+Architecture: all
+Version: 69+git20240612100631.3a7582d.next.production
+Priority: optional
+Section: misc
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 25
+Pre-Depends: apt
+Depends: apt-transport-droidian
+Breaks: hybris-mobian-apt-config (<< 10+git20210324000000)
+Replaces: hybris-mobian-apt-config (<< 10+git20210324000000)
+Filename: pool/trixie/droidian/binary-all/droidian-apt-config_69+git20240612100631.3a7582d.next.production_all.deb
+Size: 5880
+MD5sum: 9403d098918b16a24884d3e38c2ca1e4
+SHA1: ff89c35751529e802d6bf08fdbd73b7b09407c1a
+SHA256: e3be65d3a762b258e417cc42b6a5548d74f3c09a6d62f2378fd30526c01c9452
+SHA512: 7fb6eadde06d561ac6459e65b5ad26fe45a5fd7a7b1584ad3b2558cb24721d6e61d064fa54907319abf6303a69f1fdf15638cc88190f7cb7eb70dded3569d83a
+Description: APT configurations for Droidian
+ This package contains various APT configurations and Pins
+ for Droidian.
+
+Package: droidian-archive-keyring
+Architecture: all
+Version: 2025.01.06+git20250106145953.b4c3a11.next.production
+Priority: important
+Section: misc
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 26
+Pre-Depends: apt
+Breaks: hybris-mobian-archive-keyring (<< 2020.09.20+git20210325000000)
+Replaces: hybris-mobian-archive-keyring (<< 2020.09.20+git20210325000000)
+Filename: pool/trixie/droidian/binary-all/droidian-archive-keyring_2025.01.06+git20250106145953.b4c3a11.next.production_all.deb
+Size: 13092
+MD5sum: 824353a975edfc92372cc17a9e8091ee
+SHA1: c5cad20fca4c3f0eadbb99dd94ad0a7fa5b7d74a
+SHA256: c0ecf8aa8ab0dc198fca30748d50e0ccea1671e22ffcd651cf925dd7e48993cf
+SHA512: 1f969fe4e2c0b7d8533c004d9cda179b127b7102c6e3ee1d963fab03eef191f3ab9d13c930db407c234ecf9a56342652800b06bc1ad38f526bf05c38d40d38bb
+Description: Archive keyring for Droidian repositories
+ This package contains the archive keyring for Droidian
+ repositories.
+X-Droidian-Vcs-Revision: b4c3a11b88d0aa5b11b92daedbb02e34df99ab02
+

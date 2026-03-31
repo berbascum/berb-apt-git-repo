@@ -1,0 +1,39 @@
+Package: flashlightd-dbgsym
+Architecture: arm64
+Version: 14+z10+git20251221073047.f282413.max.brightness.berb
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: flashlightd
+Maintainer: Giuseppe Corti <giuseppe.corti@pm.me>
+Installed-Size: 101
+Depends: flashlightd (= 14+z10+git20251221073047.f282413.max.brightness.berb)
+Filename: pool/trixie/droidian-xiaomi-vayu/binary-arm64/flashlightd-dbgsym_14+z10+git20251221073047.f282413.max.brightness.berb_arm64.deb
+Size: 52200
+MD5sum: c43b0b67c1dca9442bd34c89660501d7
+SHA1: 4ddb84fec323cfb6b3eb7597fc174b1f890d092f
+SHA256: 5fb698caaedec947c140356baeddd7f204dba28ece99ed39b52e43c2cf919f4b
+SHA512: 5fd0a3893de2941df580151b01df408aede4e8b57f7731086ade871476de1da06b2a2bf8d3309202dfca029ecb37def12e1a00b80c2b01a957978c3ab84db7a0
+Description: debug symbols for flashlightd
+Build-Ids: 576b4dbe6d6488b31327ddffd6d4fa9782004b43
+X-Droidian-Vcs-Revision: f282413f64bb806b978e483680d179a16a77813b
+X-Droidian-Vcs-Url: git@github.com:berbascum/flashlightd
+
+Package: flashlightd
+Architecture: arm64
+Version: 14+z10+git20251221073047.f282413.max.brightness.berb
+Priority: optional
+Section: misc
+Maintainer: Giuseppe Corti <giuseppe.corti@pm.me>
+Installed-Size: 83
+Depends: libc6 (>= 2.34), libglib2.0-0t64 (>= 2.38.0), libgstreamer1.0-0 (>= 1.0.0)
+Filename: pool/trixie/droidian-xiaomi-vayu/binary-arm64/flashlightd_14+z10+git20251221073047.f282413.max.brightness.berb_arm64.deb
+Size: 13292
+MD5sum: b930e11841335ad916b08d4d59dce92e
+SHA1: ba141eb5aec214d4e500b3c4119844e7004637d1
+SHA256: 1382435a9da25b0eda1008d65b9ace5f67e03ecf1b2a4dce1e549546c6a3ab2f
+SHA512: b29ce58218616ee0f6d44430c21f212f2b3d323e40733d164b42f93d4e0beb0a1e8be0d5d4a615ffab26d1f2b421270e4dd053f724f1061733f6df27bb93056d
+Description: simple daemon to manage camera flash light using gstreamer.
+X-Droidian-Vcs-Revision: f282413f64bb806b978e483680d179a16a77813b
+X-Droidian-Vcs-Url: git@github.com:berbascum/flashlightd
+

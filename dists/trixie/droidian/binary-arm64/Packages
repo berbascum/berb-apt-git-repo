@@ -1,0 +1,40 @@
+Package: apt-transport-droidian-dbgsym
+Architecture: arm64
+Version: 3.0.0+git20250427210415.0d0c12d.next.production
+Auto-Built-Package: debug-symbols
+Priority: optional
+Section: debug
+Source: apt-transport-droidian
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 165
+Depends: apt-transport-droidian (= 3.0.0+git20250427210415.0d0c12d.next.production)
+Filename: pool/trixie/droidian/binary-arm64/apt-transport-droidian-dbgsym_3.0.0+git20250427210415.0d0c12d.next.production_arm64.deb
+Size: 131996
+MD5sum: 0765977319b5268bbd3c7ce4fef7063c
+SHA1: 7acc9945fa65d5fcdeb3d06750750aa5179e8ba8
+SHA256: f5f7f97a5f6ac473cef5248f1828feb3e210304f868f543f179fa1ba9f659547
+SHA512: 22c428346c037b6da4fba9a207676c5e33610f7e5dbd1e910c5708831bb6d35cabebaf95aa3e9aae9976764177a895686315416b956af031e1c0fef49f7032f2
+Description: debug symbols for apt-transport-droidian
+Build-Ids: f762cf05d74751a9c3bb469107ca4c41f965d611
+X-Droidian-Vcs-Revision: "0d0c12de4fb0b00f75b762990a2fb332764017c2"
+
+Package: apt-transport-droidian
+Architecture: arm64
+Version: 3.0.0+git20250427210415.0d0c12d.next.production
+Priority: optional
+Section: libs
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 80
+Depends: libapt-pkg7.0 (>= 3.0.0), libc6 (>= 2.34), libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Filename: pool/trixie/droidian/binary-arm64/apt-transport-droidian_3.0.0+git20250427210415.0d0c12d.next.production_arm64.deb
+Size: 10664
+MD5sum: fa75300be770581b746f16d9e5d345e3
+SHA1: e0221263caf79eca5dbba87d5cf57504ebc9a367
+SHA256: f6c4e5c397b762771bfbd03f2b417791e5acc2f99df38af11827f3546d98f5ec
+SHA512: ad32acdbe9a5b102924b43087b7d64edacbbdfccdc3275dd78750922e81864f4bc2e471363907adc36425a44dc13b85974b03ae551a8e7b3bacda1374c19a419
+Homepage: https://gitlab.com/droidian/apt-transport-droidian
+Description: APT transport for Droidian snapshots
+ This package provides the droidian+http and droidian+https APT
+ transports.
+X-Droidian-Vcs-Revision: "0d0c12de4fb0b00f75b762990a2fb332764017c2"
+

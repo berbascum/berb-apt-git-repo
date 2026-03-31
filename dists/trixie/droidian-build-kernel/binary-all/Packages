@@ -1,0 +1,142 @@
+Package: avbtool
+Architecture: all
+Version: 9.0.0+r61-4+git20221221042241.f384be3.bookworm.production
+Priority: optional
+Section: utils
+Source: android-platform-external-avb
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 178
+Depends: python3
+Filename: pool/trixie/droidian-build-kernel/binary-all/avbtool_9.0.0+r61-4+git20221221042241.f384be3.bookworm.production_all.deb
+Size: 36012
+MD5sum: 58f3d8fa53e67f7eb7cd99d94dbb3bff
+SHA1: 485a01930f46d748938406a0f2a1f65dfc5e0f3e
+SHA256: 7376dd5a948e94e0f14f6bf8d0d79cd241ae281b982c8af44361482c2ad02849
+SHA512: 5a08d1f1271659ccb110e939f15fe7bdfb93d2457a7eee3ea84b3e9cd5c35f61979320989e3abf7276e705c9bfe378737fcc4ad4493db444041bbb5e9249e0fc
+Homepage: https://android.googlesource.com/platform/external/avb
+Description: Command-line tool for working with Android Verified Boot images
+ avbtool is a command-line tool for working with Android Verified Boot images,
+ also known as "vbmeta.img".
+
+Package: linux-packaging-snippets
+Architecture: all
+Version: 1+git20250102024528.f579ca8.unofficial.berb.sid
+Priority: optional
+Section: kernel
+Maintainer: Eugenio Paolantonio (g7) <eugenio@droidian.org>
+Installed-Size: 59
+Filename: pool/trixie/droidian-build-kernel/binary-all/linux-packaging-snippets_1+git20250102024528.f579ca8.unofficial.berb.sid_all.deb
+Size: 13180
+MD5sum: 42d0877af8b03599e764f125d77d3985
+SHA1: 30512eaac58fba2dc18e08c0585e02d5dcbf01e2
+SHA256: 4bf336f26b71fe04c2f57bd1febd5d17a82794dece6d84a36e52690aca5ec8ef
+SHA512: e2b839f166bf75680a4a7b1627104bde424e824fb0a2396487b45b2c353e431686f8b2651f86bae7f4c99a8cca2a43d1b28634a0db4a7cb390bcc7226b7cbbe5
+Description: Linux kernel packaging snippets for Droidian
+ This package contains various snippets for packaging Droidian
+ kernels.
+X-Droidian-Vcs-Revision: f579ca810a7f90c38918a92bc26765b2592f0e8f
+X-Droidian-Vcs-Url: git@github.com:droidian-berb/linux-packaging-snippets
+
+Package: mkbootimg
+Architecture: all
+Version: 2:20.0-3+git20230620150119.6a1c624.bookworm.production
+Priority: optional
+Section: devel
+Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
+Installed-Size: 164
+Depends: python3
+Filename: pool/trixie/droidian-build-kernel/binary-all/mkbootimg_2%3a20.0-3+git20230620150119.6a1c624.bookworm.production_all.deb
+Size: 37872
+MD5sum: 8796e5211cb3016cfd6286b6d40b83ba
+SHA1: 1398ffb918395818118089c339bd882f3f2cd2fa
+SHA256: 7aafea3768c5fa62132721b671de10103087d0ec96348f3f9d0222a07e1b922f
+SHA512: 5db6c37f7a12179f173aed941ea3b6e4c58907c05547975bfc8ceb8fcb0ad43097a337746225472c94a5a9b26270c96a1325540eff828fe76696d3b9c4f31bcb
+Homepage: https://github.com/LineageOS/android_system_tools_mkbootimg
+Description: Creates Android boot images that includes kernel image and ramdisk,
+             in a special format which can be used with fastboot.
+
+Package: mkdtboimg
+Architecture: all
+Version: 13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production
+Priority: optional
+Section: utils
+Source: android-platform-system-libufdt
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 66
+Depends: python3:any, python3 (>= 3.8)
+Filename: pool/trixie/droidian-build-kernel/binary-all/mkdtboimg_13.0.0+r18-1+git20221211162814.ff9fc1a.bookworm.production_all.deb
+Size: 16504
+MD5sum: 83d70dab66071ecb087399b4acdc25d7
+SHA1: e0f3c5c33fadc5f327cea42869679e4ed43099ca
+SHA256: 2cce9b087dddfe4761af49e90c479652628279e88068194be267fa90a978136d
+SHA512: 0ed6fc0f22b45627cb9734e929fcd87df049335822320d47a24f4366cbefd78643beabb0fcf99327e3c200cc67795fe88031f727ee7ccd2e889ab0d98fbc607e
+Homepage: https://android.googlesource.com/platform/system/libufdt
+Description: Tool for packing multiple DTB/DTBO files into a single image
+ This package contains mkdtboimg, a tool for packing multiple
+ DTB/DTBO files into a single image.
+
+Package: releng-tools
+Architecture: all
+Version: 4+git20250103174613.7ca405c.unofficial.berb.sid
+Priority: optional
+Section: misc
+Maintainer: Berbascum <berbascum@ticv.cat>
+Installed-Size: 56
+Depends: python3:any, python3-git, git, git-lfs, findutils, equivs
+Recommends: devscripts
+Filename: pool/trixie/droidian-build-kernel/binary-all/releng-tools_4+git20250103174613.7ca405c.unofficial.berb.sid_all.deb
+Size: 14800
+MD5sum: b557b706a4df185742f5882417dc8be5
+SHA1: 48c485ba79a8236a422d8c5747e26af5ba0009ba
+SHA256: 6c953399430f918b75575b39d1ffc4f9d814be587cb6a2f485e59aa68073cd6c
+SHA512: 5f021add116c2911ba5f984dc37fe87869752e37e19af9c2e35039a8d92bc7929ef0df480d840ca50a8320ecff7936a0e8dd1a94a6afc7191e0b61f50008fdce
+Description: Release engineering tools for droidian
+ This package contains various tools related to droidian's
+ release engineering processes.
+X-Droidian-Vcs-Revision: 7ca405cf8849c6c255179d7091bee863dffb3ffc
+X-Droidian-Vcs-Url: git@github.com:droidian-berb/releng-tools
+
+Package: lxc-android
+Architecture: all
+Version: 1:39+git20250906140358.64f9b2f.next.production
+Priority: optional
+Section: libs
+Maintainer: Bardia Moshiri <fakeshell@bardia.tech>
+Installed-Size: 69
+Depends: adduser, cpio, lxc, libc-bin, halium-wrappers (>= 5), parse-android-dynparts, dmsetup
+Filename: pool/trixie/droidian-build-kernel/binary-arm64/lxc-android_1%3a39+git20250906140358.64f9b2f.next.production_all.deb
+Size: 13036
+MD5sum: d4740bdc0c61daf5fafa7132d68231b6
+SHA1: 2bf1cc19d4a8e4ef237121fb205d09ca1120a35f
+SHA256: b1c4a018f79a31a4aa25832371a21433421b6c54c22cc7e9761c047e933459e5
+SHA512: 98c1e7183a40c568d06d399840083c20c786c7df32991b7dd170ebe1cea40321e35d2fc67c66b4b85f804a079b5dacf74dcd52039c89d617c5e9ea12fc223c10
+Homepage: https://github.com/Halium/lxc-android
+Description: lxc configuration for starting android
+ This package provides the configuration for starting android in lxc
+X-Droidian-Vcs-Revision: 64f9b2f4a305fee3ec7d3f0256a8e1d89835cd79
+
+Package: plymouth-theme-droidian
+Architecture: all
+Version: 2+upgrade12+git20211120224717.1925721.bookworm.production
+Priority: optional
+Section: misc
+Maintainer: Eugenio Paolantonio (g7) <me@medesimo.eu>
+Installed-Size: 333
+Provides: plymouth-theme
+Depends: plymouth, plymouth-label
+Filename: pool/trixie/droidian-build-kernel/binary-arm64/plymouth-theme-droidian_2+upgrade12+git20211120224717.1925721.bookworm.production_all.deb
+Size: 308312
+MD5sum: 1a11cb0ca5e3b7b4de0c375b65cddf17
+SHA1: 5722b8256de720098f162bfcdcab1d99602e36d5
+SHA256: 80571fda9fcbc9cddb17a70af11905f004d83003b40d9b7c05d90c98b6dab314
+SHA512: 5f834b522ac34f1d3cda2c9704d05235aa1b087be5488eec02a0322a5da537f511d64083d405f676efbbc0000df6226d6a751bf636bdeabb7c62a038e9c42ead
+Description: boot animation, logger and I/O multiplexer - Droidian theme
+ Plymouth provides a boot-time I/O multiplexing framework - the most obvious
+ use for which is to provide an attractive graphical animation in place of
+ the text messages that normally get shown during boot. (The messages are
+ instead redirected to a logfile for later viewing.) However, in event-driven
+ boot systems Plymouth can also usefully handle user interaction such as
+ password prompts for encrypted file systems.
+ .
+ This package provides the default Droidian theme.
+
